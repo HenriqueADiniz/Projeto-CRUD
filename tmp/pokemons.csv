@@ -2,7 +2,6 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 1,Bulbasaur,Grass,Poison,"['Chlorophyll', 'Overgrow']",45,49,49,27/02/96
 2,Ivysaur,Grass,Poison,"['Chlorophyll', 'Overgrow']",60,62,63,27/02/96
 3,Venusaur,Grass,Poison,"['Chlorophyll', 'Overgrow']",80,82,83,27/02/96
-3,Mega Venusaur,Grass,Poison,['Thick Fat'],80,100,123,27/02/96
 4,Charmander,Fire,,"['Blaze', 'Solar Power']",39,52,43,27/02/96
 5,Charmeleon,Fire,,"['Blaze', 'Solar Power']",58,64,58,27/02/96
 6,Charizard,Fire,Flying,"['Blaze', 'Solar Power']",78,84,78,27/02/96
