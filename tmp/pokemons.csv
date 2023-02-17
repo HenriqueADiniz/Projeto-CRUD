@@ -1,73 +1,73 @@
 Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
-1,Bulbasaur,Grass,Poison,"['Chlorophyll', 'Overgrow']",45,49,49,27/02/96
-2,Ivysaur,Grass,Poison,"['Chlorophyll', 'Overgrow']",60,62,63,27/02/96
-3,Venusaur,Grass,Poison,"['Chlorophyll', 'Overgrow']",80,82,83,27/02/96
-4,Charmander,Fire,,"['Blaze', 'Solar Power']",39,52,43,27/02/96
-5,Charmeleon,Fire,,"['Blaze', 'Solar Power']",58,64,58,27/02/96
-6,Charizard,Fire,Flying,"['Blaze', 'Solar Power']",78,84,78,27/02/96
-7,Squirtle,Water,,"['Rain Dish', 'Torrent']",44,48,65,27/02/96
-8,Wartortle,Water,,"['Rain Dish', 'Torrent']",59,63,80,27/02/96
-9,Blastoise,Water,,"['Rain Dish', 'Torrent']",79,83,100,27/02/96
-10,Caterpie,Bug,,"['Run Away', 'Shield Dust']",45,30,35,27/02/96
-11,Metapod,Bug,,['Shed Skin'],50,20,55,27/02/96
-12,Butterfree,Bug,Flying,['Tinted Lens'],60,45,50,27/02/96
-13,Weedle,Bug,Poison,"['Run Away', 'Shield Dust']",40,35,30,27/02/96
-14,Kakuna,Bug,Poison,['Shed Skin'],45,25,50,27/02/96
-15,Beedrill,Bug,Poison,"['Sniper', 'Swarm']",65,90,40,27/02/96
-16,Pidgey,Normal,Flying,"['Big Pecks', 'Keen Eye', 'Tangled Feet']",40,45,40,27/02/96
-17,Pidgeotto,Normal,Flying,"['Big Pecks', 'Keen Eye', 'Tangled Feet']",63,60,55,27/02/96
-18,Pidgeot,Normal,Flying,"['Big Pecks', 'Keen Eye', 'Tangled Feet']",83,80,75,27/02/96
-19,Rattata,Normal,,"['Guts', 'Hustle', 'Run Away']",30,56,35,27/02/96
-20,Raticate,Normal,,"['Guts', 'Hustle', 'Run Away']",55,81,60,27/02/96
-21,Spearow,Normal,Flying,"['Keen Eye', 'Sniper']",40,60,30,27/02/96
-22,Fearow,Normal,Flying,"['Keen Eye', 'Sniper']",65,90,65,27/02/96
-23,Ekans,Poison,,"['Intimidate', 'Shed Skin', 'Unnerve']",35,60,44,27/02/96
-24,Arbok,Poison,,"['Intimidate', 'Shed Skin', 'Unnerve']",60,95,69,27/02/96
-25,Pikachu,Electric,,"['Lightning Rod', 'Static']",35,55,40,27/02/96
-26,Raichu,Electric,,"['Lightning Rod', 'Static']",60,90,55,27/02/96
-27,Sandshrew,Ground,,"['Sand Rush', 'Sand Veil']",50,75,85,27/02/96
-28,Sandslash,Ground,,"['Sand Rush', 'Sand Veil']",75,100,110,27/02/96
-29,Nidoran♀,Poison,,"['Hustle', 'Poison Point', 'Rivalry']",55,47,52,27/02/96
-30,Nidorina,Poison,,"['Hustle', 'Poison Point', 'Rivalry']",70,62,67,27/02/96
-31,Nidoqueen,Poison,Ground,"['Poison Point', 'Rivalry', 'Sheer Force']",90,92,87,27/02/96
-32,Nidoran♂,Poison,,"['Hustle', 'Poison Point', 'Rivalry']",46,57,40,27/02/96
-33,Nidorino,Poison,,"['Hustle', 'Poison Point', 'Rivalry']",61,72,57,27/02/96
-34,Nidoking,Poison,Ground,"['Poison Point', 'Rivalry', 'Sheer Force']",81,102,77,27/02/96
-35,Clefairy,Fairy,,"['Cute Charm', 'Friend Guard', 'Magic Guard']",70,45,48,27/02/96
-36,Clefable,Fairy,,"['Cute Charm', 'Magic Guard', 'Unaware']",95,70,73,27/02/96
-37,Vulpix,Fire,,"['Drought', 'Flash Fire']",38,41,40,27/02/96
-38,Ninetales,Fire,,"['Drought', 'Flash Fire']",73,76,75,27/02/96
-39,Jigglypuff,Normal,Fairy,"['Competitive', 'Cute Charm', 'Friend Guard']",115,45,20,27/02/96
-40,Wigglytuff,Normal,Fairy,"['Competitive', 'Cute Charm', 'Frisk']",140,70,45,27/02/96
-41,Zubat,Poison,Flying,"['Infiltrator', 'Inner Focus']",40,45,35,27/02/96
-42,Golbat,Poison,Flying,"['Infiltrator', 'Inner Focus']",75,80,70,27/02/96
-43,Oddish,Grass,Poison,"['Chlorophyll', 'Run Away']",45,50,55,27/02/96
-44,Gloom,Grass,Poison,"['Chlorophyll', 'Stench']",60,65,70,27/02/96
-45,Vileplume,Grass,Poison,"['Chlorophyll', 'Effect Spore']",75,80,85,27/02/96
-46,Paras,Bug,Grass,"['Damp', 'Dry Skin', 'Effect Spore']",35,70,55,27/02/96
-47,Parasect,Bug,Grass,"['Damp', 'Dry Skin', 'Effect Spore']",60,95,80,27/02/96
-48,Venonat,Bug,Poison,"['Run Away', 'Tinted Lens']",60,55,50,27/02/96
-49,Venomoth,Bug,Poison,"['Shield Dust', 'Tinted Lens', 'Wonder Skin']",70,65,60,27/02/96
-50,Diglett,Ground,,"['Arena Trap', 'Sand Force', 'Sand Veil']",10,55,25,27/02/96
-51,Dugtrio,Ground,,"['Arena Trap', 'Sand Force', 'Sand Veil']",35,100,50,27/02/96
-52,Meowth,Normal,,"['Pickup', 'Technician', 'Unnerve']",40,45,35,27/02/96
-53,Persian,Normal,,"['Limber', 'Technician', 'Unnerve']",65,70,60,27/02/96
-54,Psyduck,Water,,"['Cloud Nine', 'Damp', 'Swift Swim']",50,52,48,27/02/96
-55,Golduck,Water,,"['Cloud Nine', 'Damp', 'Swift Swim']",80,82,78,27/02/96
-56,Mankey,Fighting,,"['Anger Point', 'Defiant', 'Vital Spirit']",40,80,35,27/02/96
-57,Primeape,Fighting,,"['Anger Point', 'Defiant', 'Vital Spirit']",65,105,60,27/02/96
-58,Growlithe,Fire,,"['Flash Fire', 'Intimidate', 'Justified']",55,70,45,27/02/96
-59,Arcanine,Fire,,"['Flash Fire', 'Intimidate', 'Justified']",90,110,80,27/02/96
-60,Poliwag,Water,,"['Damp', 'Swift Swim', 'Water Absorb']",40,50,40,27/02/96
-61,Poliwhirl,Water,,"['Damp', 'Swift Swim', 'Water Absorb']",65,65,65,27/02/96
-62,Poliwrath,Water,Fighting,"['Damp', 'Swift Swim', 'Water Absorb']",90,95,95,27/02/96
-63,Abra,Psychic,,"['Inner Focus', 'Magic Guard', 'Synchronize']",25,20,15,27/02/96
-64,Kadabra,Psychic,,"['Inner Focus', 'Magic Guard', 'Synchronize']",40,35,30,27/02/96
-65,Alakazam,Psychic,,"['Inner Focus', 'Magic Guard', 'Synchronize']",55,50,45,27/02/96
-66,Machop,Fighting,,"['Guts', 'No Guard', 'Steadfast']",70,80,50,27/02/96
-67,Machoke,Fighting,,"['Guts', 'No Guard', 'Steadfast']",80,100,70,27/02/96
-68,Machamp,Fighting,,"['Guts', 'No Guard', 'Steadfast']",90,130,80,27/02/96
-69,Bellsprout,Grass,Poison,"['Chlorophyll', 'Gluttony']",50,75,35,27/02/96
+1,Bulbasaur,Grass,Poison,"['Chlorophyll', 'Overgrow']",45,49,49,27/02/1996
+2,Ivysaur,Grass,Poison,"['Chlorophyll', 'Overgrow']",60,62,63,27/02/1996
+3,Venusaur,Grass,Poison,"['Chlorophyll', 'Overgrow']",80,82,83,27/02/1996
+4,Charmander,Fire,,"['Blaze', 'Solar Power']",39,52,43,27/02/1996
+5,Charmeleon,Fire,,"['Blaze', 'Solar Power']",58,64,58,27/02/1996
+6,Charizard,Fire,Flying,"['Blaze', 'Solar Power']",78,84,78,27/02/1996
+7,Squirtle,Water,,"['Rain Dish', 'Torrent']",44,48,65,27/02/1996
+8,Wartortle,Water,,"['Rain Dish', 'Torrent']",59,63,80,27/02/1996
+9,Blastoise,Water,,"['Rain Dish', 'Torrent']",79,83,100,27/02/1996
+10,Caterpie,Bug,,"['Run Away', 'Shield Dust']",45,30,35,27/02/1996
+11,Metapod,Bug,,['Shed Skin'],50,20,55,27/02/1996
+12,Butterfree,Bug,Flying,['Tinted Lens'],60,45,50,27/02/1996
+13,Weedle,Bug,Poison,"['Run Away', 'Shield Dust']",40,35,30,27/02/1996
+14,Kakuna,Bug,Poison,['Shed Skin'],45,25,50,27/02/1996
+15,Beedrill,Bug,Poison,"['Sniper', 'Swarm']",65,90,40,27/02/1996
+16,Pidgey,Normal,Flying,"['Big Pecks', 'Keen Eye', 'Tangled Feet']",40,45,40,27/02/1996
+17,Pidgeotto,Normal,Flying,"['Big Pecks', 'Keen Eye', 'Tangled Feet']",63,60,55,27/02/1996
+18,Pidgeot,Normal,Flying,"['Big Pecks', 'Keen Eye', 'Tangled Feet']",83,80,75,27/02/1996
+19,Rattata,Normal,,"['Guts', 'Hustle', 'Run Away']",30,56,35,27/02/1996
+20,Raticate,Normal,,"['Guts', 'Hustle', 'Run Away']",55,81,60,27/02/1996
+21,Spearow,Normal,Flying,"['Keen Eye', 'Sniper']",40,60,30,27/02/1996
+22,Fearow,Normal,Flying,"['Keen Eye', 'Sniper']",65,90,65,27/02/1996
+23,Ekans,Poison,,"['Intimidate', 'Shed Skin', 'Unnerve']",35,60,44,27/02/1996
+24,Arbok,Poison,,"['Intimidate', 'Shed Skin', 'Unnerve']",60,95,69,27/02/1996
+25,Pikachu,Electric,,"['Lightning Rod', 'Static']",35,55,40,27/02/1996
+26,Raichu,Electric,,"['Lightning Rod', 'Static']",60,90,55,27/02/1996
+27,Sandshrew,Ground,,"['Sand Rush', 'Sand Veil']",50,75,85,27/02/1996
+28,Sandslash,Ground,,"['Sand Rush', 'Sand Veil']",75,100,110,27/02/1996
+29,Nidoran♀,Poison,,"['Hustle', 'Poison Point', 'Rivalry']",55,47,52,27/02/1996
+30,Nidorina,Poison,,"['Hustle', 'Poison Point', 'Rivalry']",70,62,67,27/02/1996
+31,Nidoqueen,Poison,Ground,"['Poison Point', 'Rivalry', 'Sheer Force']",90,92,87,27/02/1996
+32,Nidoran♂,Poison,,"['Hustle', 'Poison Point', 'Rivalry']",46,57,40,27/02/1996
+33,Nidorino,Poison,,"['Hustle', 'Poison Point', 'Rivalry']",61,72,57,27/02/1996
+34,Nidoking,Poison,Ground,"['Poison Point', 'Rivalry', 'Sheer Force']",81,102,77,27/02/1996
+35,Clefairy,Fairy,,"['Cute Charm', 'Friend Guard', 'Magic Guard']",70,45,48,27/02/1996
+36,Clefable,Fairy,,"['Cute Charm', 'Magic Guard', 'Unaware']",95,70,73,27/02/1996
+37,Vulpix,Fire,,"['Drought', 'Flash Fire']",38,41,40,27/02/1996
+38,Ninetales,Fire,,"['Drought', 'Flash Fire']",73,76,75,27/02/1996
+39,Jigglypuff,Normal,Fairy,"['Competitive', 'Cute Charm', 'Friend Guard']",115,45,20,27/02/1996
+40,Wigglytuff,Normal,Fairy,"['Competitive', 'Cute Charm', 'Frisk']",140,70,45,27/02/1996
+41,Zubat,Poison,Flying,"['Infiltrator', 'Inner Focus']",40,45,35,27/02/1996
+42,Golbat,Poison,Flying,"['Infiltrator', 'Inner Focus']",75,80,70,27/02/1996
+43,Oddish,Grass,Poison,"['Chlorophyll', 'Run Away']",45,50,55,27/02/1996
+44,Gloom,Grass,Poison,"['Chlorophyll', 'Stench']",60,65,70,27/02/1996
+45,Vileplume,Grass,Poison,"['Chlorophyll', 'Effect Spore']",75,80,85,27/02/1996
+46,Paras,Bug,Grass,"['Damp', 'Dry Skin', 'Effect Spore']",35,70,55,27/02/1996
+47,Parasect,Bug,Grass,"['Damp', 'Dry Skin', 'Effect Spore']",60,95,80,27/02/1996
+48,Venonat,Bug,Poison,"['Run Away', 'Tinted Lens']",60,55,50,27/02/1996
+49,Venomoth,Bug,Poison,"['Shield Dust', 'Tinted Lens', 'Wonder Skin']",70,65,60,27/02/1996
+50,Diglett,Ground,,"['Arena Trap', 'Sand Force', 'Sand Veil']",10,55,25,27/02/1996
+51,Dugtrio,Ground,,"['Arena Trap', 'Sand Force', 'Sand Veil']",35,100,50,27/02/1996
+52,Meowth,Normal,,"['Pickup', 'Technician', 'Unnerve']",40,45,35,27/02/1996
+53,Persian,Normal,,"['Limber', 'Technician', 'Unnerve']",65,70,60,27/02/1996
+54,Psyduck,Water,,"['Cloud Nine', 'Damp', 'Swift Swim']",50,52,48,27/02/1996
+55,Golduck,Water,,"['Cloud Nine', 'Damp', 'Swift Swim']",80,82,78,27/02/1996
+56,Mankey,Fighting,,"['Anger Point', 'Defiant', 'Vital Spirit']",40,80,35,27/02/1996
+57,Primeape,Fighting,,"['Anger Point', 'Defiant', 'Vital Spirit']",65,105,60,27/02/1996
+58,Growlithe,Fire,,"['Flash Fire', 'Intimidate', 'Justified']",55,70,45,27/02/1996
+59,Arcanine,Fire,,"['Flash Fire', 'Intimidate', 'Justified']",90,110,80,27/02/1996
+60,Poliwag,Water,,"['Damp', 'Swift Swim', 'Water Absorb']",40,50,40,27/02/1996
+61,Poliwhirl,Water,,"['Damp', 'Swift Swim', 'Water Absorb']",65,65,65,27/02/1996
+62,Poliwrath,Water,Fighting,"['Damp', 'Swift Swim', 'Water Absorb']",90,95,95,27/02/1996
+63,Abra,Psychic,,"['Inner Focus', 'Magic Guard', 'Synchronize']",25,20,15,27/02/1996
+64,Kadabra,Psychic,,"['Inner Focus', 'Magic Guard', 'Synchronize']",40,35,30,27/02/1996
+65,Alakazam,Psychic,,"['Inner Focus', 'Magic Guard', 'Synchronize']",55,50,45,27/02/1996
+66,Machop,Fighting,,"['Guts', 'No Guard', 'Steadfast']",70,80,50,27/02/1996
+67,Machoke,Fighting,,"['Guts', 'No Guard', 'Steadfast']",80,100,70,27/02/1996
+68,Machamp,Fighting,,"['Guts', 'No Guard', 'Steadfast']",90,130,80,27/02/1996
+69,Bellsprout,Grass,Poison,"['Chlorophyll', 'Gluttony']",50,75,35,27/02/1996
 70,Weepinbell,Grass,Poison,"['Chlorophyll', 'Gluttony']",65,90,50,27/02/96
 71,Victreebel,Grass,Poison,"['Chlorophyll', 'Gluttony']",80,105,65,27/02/96
 72,Tentacool,Water,Poison,"['Clear Body', 'Liquid Ooze', 'Rain Dish']",40,40,35,27/02/96
@@ -772,8 +772,7 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 771,Pyukumuku,Water,,"['Innards Out', 'Unaware']",55,60,130,18/11/16
 772,Type: Null,Normal,,['Battle Armor'],95,95,95,18/11/16
 773,Silvally,Normal,,['RKS System'],95,95,95,18/11/16
-774,Minior Meteor Form,Rock,Flying,['Shields Down'],60,60,100,18/11/16
-774,Minior Core Form,Rock,Flying,['Shields Down'],60,100,60,18/11/16
+774,Minior ,Rock,Flying,['Shields Down'],60,60,100,18/11/16
 775,Komala,Normal,,['Comatose'],65,115,65,18/11/16
 776,Turtonator,Fire,Dragon,['Shell Armor'],60,78,135,18/11/16
 777,Togedemaru,Electric,Steel,"['Iron Barbs', 'Lightning Rod', 'Sturdy']",65,98,63,18/11/16
