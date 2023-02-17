@@ -6,16 +6,16 @@ import java.util.Arrays;
 import java.util.ArrayList;
 
 public class Reader {
-    private static final String CSV_PATH = "../tmp/pokemons.csv";
+    private static final String CSV_PATH = "/tmp/pokemons.csv";
 
     public static void main(String[] args) {
         try {
-            CSVReader csvReader = new CSVReader(new FileReader(new File(CSV_PATH)));
+            CSVReader reader = new CSVReader(new FileReader(CSV_PATH));
 
             List<List<String>> linhas = new ArrayList<List<String>>();
             String[] colunas = null;
 
-            while ((colunas = csvReader.readNext()) != null){
+            while ((colunas = reader.readNext()) != null){
                 linhas.add(Arrays.asList(colunas));
             }
 
