@@ -6,38 +6,28 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 4,Charmander,Fire,,"['Blaze', 'Solar Power']",39,52,43,27/02/96
 5,Charmeleon,Fire,,"['Blaze', 'Solar Power']",58,64,58,27/02/96
 6,Charizard,Fire,Flying,"['Blaze', 'Solar Power']",78,84,78,27/02/96
-6,Mega Charizard Y,Fire,Flying,['Drought'],78,104,78,27/02/96
-6,Mega Charizard X,Fire,Dragon,['Tough Claws'],78,130,111,27/02/96
 7,Squirtle,Water,,"['Rain Dish', 'Torrent']",44,48,65,27/02/96
 8,Wartortle,Water,,"['Rain Dish', 'Torrent']",59,63,80,27/02/96
 9,Blastoise,Water,,"['Rain Dish', 'Torrent']",79,83,100,27/02/96
-9,Mega Blastoise,Water,,['Mega Launcher'],79,103,120,27/02/96
 10,Caterpie,Bug,,"['Run Away', 'Shield Dust']",45,30,35,27/02/96
 11,Metapod,Bug,,['Shed Skin'],50,20,55,27/02/96
 12,Butterfree,Bug,Flying,['Tinted Lens'],60,45,50,27/02/96
 13,Weedle,Bug,Poison,"['Run Away', 'Shield Dust']",40,35,30,27/02/96
 14,Kakuna,Bug,Poison,['Shed Skin'],45,25,50,27/02/96
 15,Beedrill,Bug,Poison,"['Sniper', 'Swarm']",65,90,40,27/02/96
-15,Mega Beedrill,Bug,Poison,['Adaptability'],65,150,40,27/02/96
 16,Pidgey,Normal,Flying,"['Big Pecks', 'Keen Eye', 'Tangled Feet']",40,45,40,27/02/96
 17,Pidgeotto,Normal,Flying,"['Big Pecks', 'Keen Eye', 'Tangled Feet']",63,60,55,27/02/96
 18,Pidgeot,Normal,Flying,"['Big Pecks', 'Keen Eye', 'Tangled Feet']",83,80,75,27/02/96
-18,Mega Pidgeot,Normal,Flying,['No Guard'],83,80,80,27/02/96
 19,Rattata,Normal,,"['Guts', 'Hustle', 'Run Away']",30,56,35,27/02/96
-19,Alolan Rattata,Dark,Normal,"['Gluttony', 'Hustle', 'Thick Fat']",30,56,35,27/02/96
 20,Raticate,Normal,,"['Guts', 'Hustle', 'Run Away']",55,81,60,27/02/96
-20,Alolan Raticate,Dark,Normal,"['Gluttony', 'Hustle', 'Thick Fat']",75,71,70,27/02/96
 21,Spearow,Normal,Flying,"['Keen Eye', 'Sniper']",40,60,30,27/02/96
 22,Fearow,Normal,Flying,"['Keen Eye', 'Sniper']",65,90,65,27/02/96
 23,Ekans,Poison,,"['Intimidate', 'Shed Skin', 'Unnerve']",35,60,44,27/02/96
 24,Arbok,Poison,,"['Intimidate', 'Shed Skin', 'Unnerve']",60,95,69,27/02/96
 25,Pikachu,Electric,,"['Lightning Rod', 'Static']",35,55,40,27/02/96
 26,Raichu,Electric,,"['Lightning Rod', 'Static']",60,90,55,27/02/96
-26,Alolan Raichu,Electric,Psychic,['Surge Surfer'],60,85,50,27/02/96
 27,Sandshrew,Ground,,"['Sand Rush', 'Sand Veil']",50,75,85,27/02/96
-27,Alolan Sandshrew,Ice,Steel,"['Slush Rush', 'Snow Cloak']",50,75,90,27/02/96
 28,Sandslash,Ground,,"['Sand Rush', 'Sand Veil']",75,100,110,27/02/96
-28,Alolan Sandslash,Ice,Steel,"['Slush Rush', 'Snow Cloak']",75,100,120,27/02/96
 29,Nidoran♀,Poison,,"['Hustle', 'Poison Point', 'Rivalry']",55,47,52,27/02/96
 30,Nidorina,Poison,,"['Hustle', 'Poison Point', 'Rivalry']",70,62,67,27/02/96
 31,Nidoqueen,Poison,Ground,"['Poison Point', 'Rivalry', 'Sheer Force']",90,92,87,27/02/96
@@ -47,9 +37,7 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 35,Clefairy,Fairy,,"['Cute Charm', 'Friend Guard', 'Magic Guard']",70,45,48,27/02/96
 36,Clefable,Fairy,,"['Cute Charm', 'Magic Guard', 'Unaware']",95,70,73,27/02/96
 37,Vulpix,Fire,,"['Drought', 'Flash Fire']",38,41,40,27/02/96
-37,Alolan Vulpix,Ice,,"['Snow Cloak', 'Snow Warning']",38,41,40,27/02/96
 38,Ninetales,Fire,,"['Drought', 'Flash Fire']",73,76,75,27/02/96
-38,Alolan Ninetales,Ice,Fairy,"['Snow Cloak', 'Snow Warning']",73,67,75,27/02/96
 39,Jigglypuff,Normal,Fairy,"['Competitive', 'Cute Charm', 'Friend Guard']",115,45,20,27/02/96
 40,Wigglytuff,Normal,Fairy,"['Competitive', 'Cute Charm', 'Frisk']",140,70,45,27/02/96
 41,Zubat,Poison,Flying,"['Infiltrator', 'Inner Focus']",40,45,35,27/02/96
@@ -62,14 +50,9 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 48,Venonat,Bug,Poison,"['Run Away', 'Tinted Lens']",60,55,50,27/02/96
 49,Venomoth,Bug,Poison,"['Shield Dust', 'Tinted Lens', 'Wonder Skin']",70,65,60,27/02/96
 50,Diglett,Ground,,"['Arena Trap', 'Sand Force', 'Sand Veil']",10,55,25,27/02/96
-50,Alolan Diglett,Ground,Steel,"['Sand Force', 'Sand Veil', 'Tangling Hair']",10,55,30,27/02/96
 51,Dugtrio,Ground,,"['Arena Trap', 'Sand Force', 'Sand Veil']",35,100,50,27/02/96
-51,Alolan Dugtrio,Ground,Steel,"['Sand Force', 'Sand Veil', 'Tangling Hair']",35,100,60,27/02/96
 52,Meowth,Normal,,"['Pickup', 'Technician', 'Unnerve']",40,45,35,27/02/96
-52,Alolan Meowth,Dark,,"['Pickup', 'Rattled', 'Technician']",40,35,35,27/02/96
-52,Galarian Meowth,Steel,,"['Pickup', 'Tough Claws', 'Unnerve']",50,65,55,27/02/96
 53,Persian,Normal,,"['Limber', 'Technician', 'Unnerve']",65,70,60,27/02/96
-53,Alolan Persian,Dark,,"['Fur Coat', 'Rattled', 'Technician']",65,60,60,27/02/96
 54,Psyduck,Water,,"['Cloud Nine', 'Damp', 'Swift Swim']",50,52,48,27/02/96
 55,Golduck,Water,,"['Cloud Nine', 'Damp', 'Swift Swim']",80,82,78,27/02/96
 56,Mankey,Fighting,,"['Anger Point', 'Defiant', 'Vital Spirit']",40,80,35,27/02/96
@@ -82,7 +65,6 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 63,Abra,Psychic,,"['Inner Focus', 'Magic Guard', 'Synchronize']",25,20,15,27/02/96
 64,Kadabra,Psychic,,"['Inner Focus', 'Magic Guard', 'Synchronize']",40,35,30,27/02/96
 65,Alakazam,Psychic,,"['Inner Focus', 'Magic Guard', 'Synchronize']",55,50,45,27/02/96
-65,Mega Alakazam,Psychic,,['Trace'],55,50,65,27/02/96
 66,Machop,Fighting,,"['Guts', 'No Guard', 'Steadfast']",70,80,50,27/02/96
 67,Machoke,Fighting,,"['Guts', 'No Guard', 'Steadfast']",80,100,70,27/02/96
 68,Machamp,Fighting,,"['Guts', 'No Guard', 'Steadfast']",90,130,80,27/02/96
@@ -92,38 +74,26 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 72,Tentacool,Water,Poison,"['Clear Body', 'Liquid Ooze', 'Rain Dish']",40,40,35,27/02/96
 73,Tentacruel,Water,Poison,"['Clear Body', 'Liquid Ooze', 'Rain Dish']",80,70,65,27/02/96
 74,Geodude,Rock,Ground,"['Rock Head', 'Sand Veil', 'Sturdy']",40,80,100,27/02/96
-74,Alolan Geodude,Rock,Electric,"['Galvanize', 'Magnet Pull', 'Sturdy']",40,80,100,27/02/96
 75,Graveler,Rock,Ground,"['Rock Head', 'Sand Veil', 'Sturdy']",55,95,115,27/02/96
-75,Alolan Graveler,Rock,Electric,"['Galvanize', 'Magnet Pull', 'Sturdy']",55,95,115,27/02/96
 76,Golem,Rock,Ground,"['Rock Head', 'Sand Veil', 'Sturdy']",80,120,130,27/02/96
-76,Alolan Golem,Rock,Electric,"['Galvanize', 'Magnet Pull', 'Sturdy']",80,120,130,27/02/96
 77,Ponyta,Fire,,"['Flame Body', 'Flash Fire', 'Run Away']",50,85,55,27/02/96
-77,Galarian Ponyta,Psychic,,"['Anticipation', 'Pastel Veil', 'Run Away']",50,85,55,27/02/96
 78,Rapidash,Fire,,"['Flame Body', 'Flash Fire', 'Run Away']",65,100,70,27/02/96
-78,Galarian Rapidash,Psychic,Fairy,"['Anticipation', 'Pastel Veil', 'Run Away']",65,100,70,27/02/96
 79,Slowpoke,Water,Psychic,"['Oblivious', 'Own Tempo', 'Regenerator']",90,65,65,27/02/96
-79,Galarian Slowpoke,Psychic,,"['Gluttony', 'Own Tempo', 'Regenerator']",90,65,65,27/02/96
 80,Slowbro,Water,Psychic,"['Oblivious', 'Own Tempo', 'Regenerator']",95,75,110,27/02/96
-80,Mega Slowbro,Water,Psychic,['Shell Armor'],95,75,180,27/02/96
-80,Galarian Slowbro,Poison,Psychic,"['Own Tempo', 'Quick Draw', 'Regenerator']",95,100,95,27/02/96
 81,Magnemite,Electric,Steel,"['Analytic', 'Magnet Pull', 'Sturdy']",25,35,70,27/02/96
 82,Magneton,Electric,Steel,"['Analytic', 'Magnet Pull', 'Sturdy']",50,60,95,27/02/96
 83,Farfetch'd,Normal,Flying,"['Defiant', 'Inner Focus', 'Keen Eye']",52,90,55,27/02/96
-83,Galarian Farfetch'd,Fighting,,"['Scrappy', 'Steadfast']",52,95,55,27/02/96
 84,Doduo,Normal,Flying,"['Early Bird', 'Run Away', 'Tangled Feet']",35,85,45,27/02/96
 85,Dodrio,Normal,Flying,"['Early Bird', 'Run Away', 'Tangled Feet']",60,110,70,27/02/96
 86,Seel,Water,,"['Hydration', 'Ice Body', 'Thick Fat']",65,45,55,27/02/96
 87,Dewgong,Water,Ice,"['Hydration', 'Ice Body', 'Thick Fat']",90,70,80,27/02/96
 88,Grimer,Poison,,"['Poison Touch', 'Stench', 'Sticky Hold']",80,80,50,27/02/96
-88,Alolan Grimer,Poison,Dark,"['Gluttony', 'Poison Touch', 'Power of Alchemy']",80,80,50,27/02/96
 89,Muk,Poison,,"['Poison Touch', 'Stench', 'Sticky Hold']",105,105,75,27/02/96
-89,Alolan Muk,Poison,Dark,"['Gluttony', 'Poison Touch', 'Power of Alchemy']",105,105,75,27/02/96
 90,Shellder,Water,,"['Overcoat', 'Shell Armor', 'Skill Link']",30,65,100,27/02/96
 91,Cloyster,Water,Ice,"['Overcoat', 'Shell Armor', 'Skill Link']",50,95,180,27/02/96
 92,Gastly,Ghost,Poison,['Levitate'],30,35,30,27/02/96
 93,Haunter,Ghost,Poison,['Levitate'],45,50,45,27/02/96
 94,Gengar,Ghost,Poison,['Cursed Body'],60,65,60,27/02/96
-94,Mega Gengar,Ghost,Poison,['Shadow Tag'],60,65,80,27/02/96
 95,Onix,Rock,Ground,"['Rock Head', 'Sturdy', 'Weak Armor']",35,45,160,27/02/96
 96,Drowzee,Psychic,,"['Forewarn', 'Inner Focus', 'Insomnia']",60,48,45,27/02/96
 97,Hypno,Psychic,,"['Forewarn', 'Inner Focus', 'Insomnia']",85,73,70,27/02/96
@@ -133,22 +103,18 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 101,Electrode,Electric,,"['Aftermath', 'Soundproof', 'Static']",60,50,70,27/02/96
 102,Exeggcute,Grass,Psychic,"['Chlorophyll', 'Harvest']",60,40,80,27/02/96
 103,Exeggutor,Grass,Psychic,"['Chlorophyll', 'Harvest']",95,95,85,27/02/96
-103,Alolan Exeggutor,Grass,Dragon,"['Frisk', 'Harvest']",95,105,85,27/02/96
 104,Cubone,Ground,,"['Battle Armor', 'Lightning Rod', 'Rock Head']",50,50,95,27/02/96
 105,Marowak,Ground,,"['Battle Armor', 'Lightning Rod', 'Rock Head']",60,80,110,27/02/96
-105,Alolan Marowak,Fire,Ghost,"['Cursed Body', 'Rock Head']",60,80,110,27/02/96
 106,Hitmonlee,Fighting,,"['Limber', 'Reckless', 'Unburden']",50,120,53,27/02/96
 107,Hitmonchan,Fighting,,"['Inner Focus', 'Iron Fist', 'Keen Eye']",50,105,79,27/02/96
 108,Lickitung,Normal,,"['Cloud Nine', 'Oblivious', 'Own Tempo']",90,55,75,27/02/96
 109,Koffing,Poison,,"['Levitate', 'Neutralizing Gas', 'Stench']",40,65,95,27/02/96
 110,Weezing,Poison,,"['Levitate', 'Neutralizing Gas', 'Stench']",65,90,120,27/02/96
-110,Galarian Weezing,Poison,Fairy,"['Levitate', 'Misty Surge', 'Neutralizing Gas']",65,90,120,27/02/96
 111,Rhyhorn,Ground,Rock,"['Lightning Rod', 'Reckless', 'Rock Head']",80,85,95,27/02/96
 112,Rhydon,Ground,Rock,"['Lightning Rod', 'Reckless', 'Rock Head']",105,130,120,27/02/96
 113,Chansey,Normal,,"['Healer', 'Natural Cure', 'Serene Grace']",250,5,5,27/02/96
 114,Tangela,Grass,,"['Chlorophyll', 'Leaf Guard', 'Regenerator']",65,55,115,27/02/96
 115,Kangaskhan,Normal,,"['Early Bird', 'Inner Focus', 'Scrappy']",105,95,80,27/02/96
-115,Mega Kangaskhan,Normal,,['Parental Bond'],105,125,100,27/02/96
 116,Horsea,Water,,"['Damp', 'Sniper', 'Swift Swim']",30,40,70,27/02/96
 117,Seadra,Water,,"['Damp', 'Poison Point', 'Sniper']",55,65,95,27/02/96
 118,Goldeen,Water,,"['Lightning Rod', 'Swift Swim', 'Water Veil']",45,67,60,27/02/96
@@ -156,17 +122,14 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 120,Staryu,Water,,"['Analytic', 'Illuminate', 'Natural Cure']",30,45,55,27/02/96
 121,Starmie,Water,Psychic,"['Analytic', 'Illuminate', 'Natural Cure']",60,75,85,27/02/96
 122,Mr. Mime,Psychic,Fairy,"['Filter', 'Soundproof', 'Technician']",40,45,65,27/02/96
-122,Galarian Mr. Mime,Ice,Psychic,"['Ice Body', 'Screen Cleaner', 'Vital Spirit']",50,65,65,27/02/96
 123,Scyther,Bug,Flying,"['Steadfast', 'Swarm', 'Technician']",70,110,80,27/02/96
 124,Jynx,Ice,Psychic,"['Dry Skin', 'Forewarn', 'Oblivious']",65,50,35,27/02/96
 125,Electabuzz,Electric,,"['Static', 'Vital Spirit']",65,83,57,27/02/96
 126,Magmar,Fire,,"['Flame Body', 'Vital Spirit']",65,95,57,27/02/96
 127,Pinsir,Bug,,"['Hyper Cutter', 'Mold Breaker', 'Moxie']",65,125,100,27/02/96
-127,Mega Pinsir,Bug,Flying,['Aerilate'],65,155,120,27/02/96
 128,Tauros,Normal,,"['Anger Point', 'Intimidate', 'Sheer Force']",75,100,95,27/02/96
 129,Magikarp,Water,,"['Rattled', 'Swift Swim']",20,10,55,27/02/96
 130,Gyarados,Water,Flying,"['Intimidate', 'Moxie']",95,125,79,27/02/96
-130,Mega Gyarados,Water,Dark,['Mold Breaker'],95,155,109,27/02/96
 131,Lapras,Water,Ice,"['Hydration', 'Shell Armor', 'Water Absorb']",130,85,80,27/02/96
 132,Ditto,Normal,,"['Imposter', 'Limber']",48,48,48,27/02/96
 133,Eevee,Normal,,"['Adaptability', 'Anticipation', 'Run Away']",55,55,50,27/02/96
@@ -179,20 +142,14 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 140,Kabuto,Rock,Water,"['Battle Armor', 'Swift Swim', 'Weak Armor']",30,80,90,27/02/96
 141,Kabutops,Rock,Water,"['Battle Armor', 'Swift Swim', 'Weak Armor']",60,115,105,27/02/96
 142,Aerodactyl,Rock,Flying,"['Pressure', 'Rock Head', 'Unnerve']",80,105,65,27/02/96
-142,Mega Aerodactyl,Rock,Flying,['Tough Claws'],80,135,85,27/02/96
 143,Snorlax,Normal,,"['Gluttony', 'Immunity', 'Thick Fat']",160,110,65,27/02/96
 144,Articuno,Ice,Flying,"['Pressure', 'Snow Cloak']",90,85,100,27/02/96
-144,Galarian Articuno,Psychic,Flying,['Competitive'],90,85,85,27/02/96
 145,Zapdos,Electric,Flying,"['Pressure', 'Static']",90,90,85,27/02/96
-145,Galarian Zapdos,Fighting,Flying,['Defiant'],90,125,90,27/02/96
 146,Moltres,Fire,Flying,"['Flame Body', 'Pressure']",90,100,90,27/02/96
-146,Galarian Moltres,Dark,Flying,['Berserk'],90,85,90,27/02/96
 147,Dratini,Dragon,,"['Marvel Scale', 'Shed Skin']",41,64,45,27/02/96
 148,Dragonair,Dragon,,"['Marvel Scale', 'Shed Skin']",61,84,65,27/02/96
 149,Dragonite,Dragon,Flying,"['Inner Focus', 'Multiscale']",91,134,95,27/02/96
 150,Mewtwo,Psychic,,"['Pressure', 'Unnerve']",106,110,90,27/02/96
-150,Mega Mewtwo Y,Psychic,,['Insomnia'],106,150,70,27/02/96
-150,Mega Mewtwo X,Psychic,Fighting,['Steadfast'],106,190,100,27/02/96
 151,Mew,Psychic,,['Synchronize'],100,100,100,27/02/96
 152,Chikorita,Grass,,"['Leaf Guard', 'Overgrow']",45,49,65,22/11/99
 153,Bayleef,Grass,,"['Leaf Guard', 'Overgrow']",60,62,80,22/11/99
@@ -224,7 +181,6 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 179,Mareep,Electric,,"['Plus', 'Static']",55,40,40,22/11/99
 180,Flaaffy,Electric,,"['Plus', 'Static']",70,55,55,22/11/99
 181,Ampharos,Electric,,"['Plus', 'Static']",90,75,85,22/11/99
-181,Mega Ampharos,Electric,Dragon,['Mold Breaker'],90,95,105,22/11/99
 182,Bellossom,Grass,,"['Chlorophyll', 'Healer']",75,80,95,22/11/99
 183,Marill,Water,Fairy,"['Huge Power', 'Sap Sipper', 'Thick Fat']",70,20,50,22/11/99
 184,Azumarill,Water,Fairy,"['Huge Power', 'Sap Sipper', 'Thick Fat']",100,50,80,22/11/99
@@ -243,7 +199,6 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 197,Umbreon,Dark,,"['Inner Focus', 'Synchronize']",95,65,110,22/11/99
 198,Murkrow,Dark,Flying,"['Insomnia', 'Prankster', 'Super Luck']",60,85,42,22/11/99
 199,Slowking,Water,Psychic,"['Oblivious', 'Own Tempo', 'Regenerator']",95,75,80,22/11/99
-199,Galarian Slowking,Poison,Psychic,"['Curious Medicine', 'Own Tempo', 'Regenerator']",95,65,80,22/11/99
 200,Misdreavus,Ghost,,['Levitate'],60,60,60,22/11/99
 201,Unown,Psychic,,['Levitate'],48,72,48,22/11/99
 202,Wobbuffet,Psychic,,"['Shadow Tag', 'Telepathy']",190,33,58,22/11/99
@@ -253,15 +208,12 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 206,Dunsparce,Normal,,"['Rattled', 'Run Away', 'Serene Grace']",100,70,70,22/11/99
 207,Gligar,Ground,Flying,"['Hyper Cutter', 'Immunity', 'Sand Veil']",65,75,105,22/11/99
 208,Steelix,Steel,Ground,"['Rock Head', 'Sheer Force', 'Sturdy']",75,85,200,22/11/99
-208,Mega Steelix,Steel,Ground,['Sand Force'],75,125,230,22/11/99
 209,Snubbull,Fairy,,"['Intimidate', 'Rattled', 'Run Away']",60,80,50,22/11/99
 210,Granbull,Fairy,,"['Intimidate', 'Quick Feet', 'Rattled']",90,120,75,22/11/99
 211,Qwilfish,Water,Poison,"['Intimidate', 'Poison Point', 'Swift Swim']",65,95,85,22/11/99
 212,Scizor,Bug,Steel,"['Light Metal', 'Swarm', 'Technician']",70,130,100,22/11/99
-212,Mega Scizor,Bug,Steel,['Technician'],70,150,140,22/11/99
 213,Shuckle,Bug,Rock,"['Contrary', 'Gluttony', 'Sturdy']",20,10,230,22/11/99
 214,Heracross,Bug,Fighting,"['Guts', 'Moxie', 'Swarm']",80,125,75,22/11/99
-214,Mega Heracross,Bug,Fighting,['Skill Link'],80,185,115,22/11/99
 215,Sneasel,Dark,Ice,"['Inner Focus', 'Keen Eye', 'Pickpocket']",55,95,55,22/11/99
 216,Teddiursa,Normal,,"['Honey Gather', 'Pickup', 'Quick Feet']",60,80,50,22/11/99
 217,Ursaring,Normal,,"['Guts', 'Quick Feet', 'Unnerve']",90,130,75,22/11/99
@@ -270,7 +222,6 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 220,Swinub,Ice,Ground,"['Oblivious', 'Snow Cloak', 'Thick Fat']",50,50,40,22/11/99
 221,Piloswine,Ice,Ground,"['Oblivious', 'Snow Cloak', 'Thick Fat']",100,100,80,22/11/99
 222,Corsola,Water,Rock,"['Hustle', 'Natural Cure', 'Regenerator']",65,55,95,22/11/99
-222,Galarian Corsola,Ghost,,"['Cursed Body', 'Weak Armor']",60,55,100,22/11/99
 223,Remoraid,Water,,"['Hustle', 'Moody', 'Sniper']",35,65,35,22/11/99
 224,Octillery,Water,,"['Moody', 'Sniper', 'Suction Cups']",75,105,75,22/11/99
 225,Delibird,Ice,Flying,"['Hustle', 'Insomnia', 'Vital Spirit']",45,55,45,22/11/99
@@ -278,7 +229,6 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 227,Skarmory,Steel,Flying,"['Keen Eye', 'Sturdy', 'Weak Armor']",65,80,140,22/11/99
 228,Houndour,Dark,Fire,"['Early Bird', 'Flash Fire', 'Unnerve']",45,60,30,22/11/99
 229,Houndoom,Dark,Fire,"['Early Bird', 'Flash Fire', 'Unnerve']",75,90,50,22/11/99
-229,Mega Houndoom,Dark,Fire,['Solar Power'],75,90,90,22/11/99
 230,Kingdra,Water,Dragon,"['Damp', 'Sniper', 'Swift Swim']",75,95,95,22/11/99
 231,Phanpy,Ground,,"['Pickup', 'Sand Veil']",90,60,60,22/11/99
 232,Donphan,Ground,,"['Sand Veil', 'Sturdy']",90,120,120,22/11/99
@@ -298,28 +248,22 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 246,Larvitar,Rock,Ground,"['Guts', 'Sand Veil']",50,64,50,22/11/99
 247,Pupitar,Rock,Ground,['Shed Skin'],70,84,70,22/11/99
 248,Tyranitar,Rock,Dark,"['Sand Stream', 'Unnerve']",100,134,110,22/11/99
-248,Mega Tyranitar,Rock,Dark,['Sand Stream'],100,164,150,22/11/99
 249,Lugia,Psychic,Flying,"['Multiscale', 'Pressure']",106,90,130,22/11/99
 250,Ho-Oh,Fire,Flying,"['Pressure', 'Regenerator']",106,130,90,22/11/99
 251,Celebi,Psychic,Grass,['Natural Cure'],100,100,100,22/11/99
 252,Treecko,Grass,,"['Overgrow', 'Unburden']",40,45,35,21/02/02
 253,Grovyle,Grass,,"['Overgrow', 'Unburden']",50,65,45,21/02/02
 254,Sceptile,Grass,,"['Overgrow', 'Unburden']",70,85,65,21/02/02
-254,Mega Sceptile,Grass,Dragon,[],70,110,75,21/02/02
 255,Torchic,Fire,,"['Blaze', 'Speed Boost']",45,60,40,21/02/02
 256,Combusken,Fire,Fighting,"['Blaze', 'Speed Boost']",60,85,60,21/02/02
 257,Blaziken,Fire,Fighting,"['Blaze', 'Speed Boost']",80,120,70,21/02/02
-257,Mega Blaziken,Fire,Fighting,['Speed Boost'],80,160,80,21/02/02
 258,Mudkip,Water,,"['Damp', 'Torrent']",50,70,50,21/02/02
 259,Marshtomp,Water,Ground,"['Damp', 'Torrent']",70,85,70,21/02/02
 260,Swampert,Water,Ground,"['Damp', 'Torrent']",100,110,90,21/02/02
-260,Mega Swampert,Water,Ground,['Swift Swim'],100,150,110,21/02/02
 261,Poochyena,Dark,,"['Quick Feet', 'Rattled', 'Run Away']",35,55,35,21/02/02
 262,Mightyena,Dark,,"['Intimidate', 'Moxie', 'Quick Feet']",70,90,70,21/02/02
 263,Zigzagoon,Normal,,"['Gluttony', 'Pickup', 'Quick Feet']",38,30,41,21/02/02
-263,Galarian Zigzagoon,Dark,Normal,"['Gluttony', 'Pickup', 'Quick Feet']",38,30,41,21/02/02
 264,Linoone,Normal,,"['Gluttony', 'Pickup', 'Quick Feet']",78,70,61,21/02/02
-264,Galarian Linoone,Dark,Normal,"['Gluttony', 'Pickup', 'Quick Feet']",78,70,61,21/02/02
 265,Wurmple,Bug,,"['Run Away', 'Shield Dust']",45,45,35,21/02/02
 266,Silcoon,Bug,,['Shed Skin'],50,35,55,21/02/02
 267,Beautifly,Bug,Flying,"['Rivalry', 'Swarm']",60,70,50,21/02/02
@@ -338,7 +282,6 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 280,Ralts,Psychic,Fairy,"['Synchronize', 'Telepathy', 'Trace']",28,25,25,21/02/02
 281,Kirlia,Psychic,Fairy,"['Synchronize', 'Telepathy', 'Trace']",38,35,35,21/02/02
 282,Gardevoir,Psychic,Fairy,"['Synchronize', 'Telepathy', 'Trace']",68,65,65,21/02/02
-282,Mega Gardevoir,Psychic,Fairy,['Pixilate'],68,85,65,21/02/02
 283,Surskit,Bug,Water,"['Rain Dish', 'Swift Swim']",40,30,32,21/02/02
 284,Masquerain,Bug,Flying,"['Intimidate', 'Unnerve']",70,60,62,21/02/02
 285,Shroomish,Grass,,"['Effect Spore', 'Poison Heal', 'Quick Feet']",60,40,60,21/02/02
@@ -359,19 +302,14 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 300,Skitty,Normal,,"['Cute Charm', 'Normalize', 'Wonder Skin']",50,45,45,21/02/02
 301,Delcatty,Normal,,"['Cute Charm', 'Normalize', 'Wonder Skin']",70,65,65,21/02/02
 302,Sableye,Dark,Ghost,"['Keen Eye', 'Prankster', 'Stall']",50,75,75,21/02/02
-302,Mega Sableye,Dark,Ghost,['Magic Bounce'],50,85,125,21/02/02
 303,Mawile,Steel,Fairy,"['Hyper Cutter', 'Intimidate', 'Sheer Force']",50,85,85,21/02/02
-303,Mega Mawile,Steel,Fairy,['Huge Power'],50,105,125,21/02/02
 304,Aron,Steel,Rock,"['Heavy Metal', 'Rock Head', 'Sturdy']",50,70,100,21/02/02
 305,Lairon,Steel,Rock,"['Heavy Metal', 'Rock Head', 'Sturdy']",60,90,140,21/02/02
 306,Aggron,Steel,Rock,"['Heavy Metal', 'Rock Head', 'Sturdy']",70,110,180,21/02/02
-306,Mega Aggron,Steel,,['Filter'],70,140,230,21/02/02
 307,Meditite,Fighting,Psychic,"['Pure Power', 'Telepathy']",30,40,55,21/02/02
 308,Medicham,Fighting,Psychic,"['Pure Power', 'Telepathy']",60,60,75,21/02/02
-308,Mega Medicham,Fighting,Psychic,['Pure Power'],60,100,85,21/02/02
 309,Electrike,Electric,,"['Lightning Rod', 'Minus', 'Static']",40,45,40,21/02/02
 310,Manectric,Electric,,"['Lightning Rod', 'Minus', 'Static']",70,75,60,21/02/02
-310,Mega Manectric,Electric,,['Intimidate'],70,75,80,21/02/02
 311,Plusle,Electric,,"['Lightning Rod', 'Plus']",60,50,40,21/02/02
 312,Minun,Electric,,"['Minus', 'Volt Absorb']",60,40,50,21/02/02
 313,Volbeat,Bug,,"['Illuminate', 'Prankster', 'Swarm']",65,73,75,21/02/02
@@ -381,12 +319,10 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 317,Swalot,Poison,,"['Gluttony', 'Liquid Ooze', 'Sticky Hold']",100,73,83,21/02/02
 318,Carvanha,Water,Dark,"['Rough Skin', 'Speed Boost']",45,90,20,21/02/02
 319,Sharpedo,Water,Dark,"['Rough Skin', 'Speed Boost']",70,120,40,21/02/02
-319,Mega Sharpedo,Water,Dark,['Strong Jaw'],70,140,70,21/02/02
 320,Wailmer,Water,,"['Oblivious', 'Pressure', 'Water Veil']",130,70,35,21/02/02
 321,Wailord,Water,,"['Oblivious', 'Pressure', 'Water Veil']",170,90,45,21/02/02
 322,Numel,Fire,Ground,"['Oblivious', 'Own Tempo', 'Simple']",60,60,40,21/02/02
 323,Camerupt,Fire,Ground,"['Anger Point', 'Magma Armor', 'Solid Rock']",70,100,70,21/02/02
-323,Mega Camerupt,Fire,Ground,['Sheer Force'],70,120,100,21/02/02
 324,Torkoal,Fire,,"['Drought', 'Shell Armor', 'White Smoke']",70,85,140,21/02/02
 325,Spoink,Psychic,,"['Gluttony', 'Own Tempo', 'Thick Fat']",60,25,35,21/02/02
 326,Grumpig,Psychic,,"['Gluttony', 'Own Tempo', 'Thick Fat']",80,45,65,21/02/02
@@ -398,7 +334,6 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 332,Cacturne,Grass,Dark,"['Sand Veil', 'Water Absorb']",70,115,60,21/02/02
 333,Swablu,Normal,Flying,"['Cloud Nine', 'Natural Cure']",45,40,60,21/02/02
 334,Altaria,Dragon,Flying,"['Cloud Nine', 'Natural Cure']",75,70,90,21/02/02
-334,Mega Altaria,Dragon,Fairy,['Pixilate'],75,110,110,21/02/02
 335,Zangoose,Normal,,"['Immunity', 'Toxic Boost']",73,115,60,21/02/02
 336,Seviper,Poison,,"['Infiltrator', 'Shed Skin']",73,100,60,21/02/02
 337,Lunatone,Rock,Psychic,['Levitate'],90,55,65,21/02/02
@@ -419,17 +354,14 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 352,Kecleon,Normal,,"['Color Change', 'Protean']",60,90,70,21/02/02
 353,Shuppet,Ghost,,"['Cursed Body', 'Frisk', 'Insomnia']",44,75,35,21/02/02
 354,Banette,Ghost,,"['Cursed Body', 'Frisk', 'Insomnia']",64,115,65,21/02/02
-354,Mega Banette,Ghost,,['Prankster'],64,165,75,21/02/02
 355,Duskull,Ghost,,"['Frisk', 'Levitate']",20,40,90,21/02/02
 356,Dusclops,Ghost,,"['Frisk', 'Pressure']",40,70,130,21/02/02
 357,Tropius,Grass,Flying,"['Chlorophyll', 'Harvest', 'Solar Power']",99,68,83,21/02/02
 358,Chimecho,Psychic,,['Levitate'],75,50,80,21/02/02
 359,Absol,Dark,,"['Justified', 'Pressure', 'Super Luck']",65,130,60,21/02/02
-359,Mega Absol,Dark,,['Magic Bounce'],65,150,60,21/02/02
 360,Wynaut,Psychic,,"['Shadow Tag', 'Telepathy']",95,23,48,21/02/02
 361,Snorunt,Ice,,"['Ice Body', 'Inner Focus', 'Moody']",50,50,50,21/02/02
 362,Glalie,Ice,,"['Ice Body', 'Inner Focus', 'Moody']",80,80,80,21/02/02
-362,Mega Glalie,Ice,,['Refrigerate'],80,120,80,21/02/02
 363,Spheal,Ice,Water,"['Ice Body', 'Oblivious', 'Thick Fat']",70,40,50,21/02/02
 364,Sealeo,Ice,Water,"['Ice Body', 'Oblivious', 'Thick Fat']",90,60,70,21/02/02
 365,Walrein,Ice,Water,"['Ice Body', 'Oblivious', 'Thick Fat']",110,80,90,21/02/02
@@ -441,29 +373,19 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 371,Bagon,Dragon,,"['Rock Head', 'Sheer Force']",45,75,60,21/02/02
 372,Shelgon,Dragon,,"['Overcoat', 'Rock Head']",65,95,100,21/02/02
 373,Salamence,Dragon,Flying,"['Intimidate', 'Moxie']",95,135,80,21/02/02
-373,Mega Salamence,Dragon,Flying,['Aerilate'],95,145,130,21/02/02
 374,Beldum,Steel,Psychic,"['Clear Body', 'Light Metal']",40,55,80,21/02/02
 375,Metang,Steel,Psychic,"['Clear Body', 'Light Metal']",60,75,100,21/02/02
 376,Metagross,Steel,Psychic,"['Clear Body', 'Light Metal']",80,135,130,21/02/02
-376,Mega Metagross,Steel,Psychic,['Tough Claws'],80,145,150,21/02/02
 377,Regirock,Rock,,"['Clear Body', 'Sturdy']",80,100,200,21/02/02
 378,Regice,Ice,,"['Clear Body', 'Ice Body']",80,50,100,21/02/02
 379,Registeel,Steel,,"['Clear Body', 'Light Metal']",80,75,150,21/02/02
 380,Latias,Dragon,Psychic,['Levitate'],80,80,90,21/02/02
-380,Mega Latias,Dragon,Psychic,['Levitate'],80,100,120,21/02/02
 381,Latios,Dragon,Psychic,['Levitate'],80,90,80,21/02/02
-381,Mega Latios,Dragon,Psychic,['Levitate'],80,130,100,21/02/02
 382,Kyogre,Water,,['Drizzle'],100,100,90,21/02/02
-382,Primal Kyogre,Water,,['Primordial Sea'],100,150,90,21/02/02
 383,Groudon,Ground,,['Drought'],100,150,140,21/02/02
-383,Primal Groudon,Ground,Fire,['Desolate Land'],100,180,160,21/02/02
 384,Rayquaza,Dragon,Flying,['Air Lock'],105,150,90,21/02/02
-384,Mega Rayquaza,Dragon,Flying,['Delta Stream'],105,180,100,21/02/02
 385,Jirachi,Steel,Psychic,['Serene Grace'],100,100,100,21/02/02
-386,Deoxys Normal Form,Psychic,,['Pressure'],50,150,50,21/02/02
-386,Deoxys Defense Form,Psychic,,['Pressure'],50,70,160,21/02/02
-386,Deoxys Attack Form,Psychic,,['Pressure'],50,180,20,21/02/02
-386,Deoxys Speed Form,Psychic,,['Pressure'],50,95,90,21/02/02
+386,Deoxys ,Psychic,,['Pressure'],50,150,50,21/02/02
 387,Turtwig,Grass,,"['Overgrow', 'Shell Armor']",55,68,64,28/09/06
 388,Grotle,Grass,,"['Overgrow', 'Shell Armor']",75,89,85,28/09/06
 389,Torterra,Grass,Ground,"['Overgrow', 'Shell Armor']",95,109,105,28/09/06
@@ -490,9 +412,7 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 410,Shieldon,Rock,Steel,"['Soundproof', 'Sturdy']",30,42,118,28/09/06
 411,Bastiodon,Rock,Steel,"['Soundproof', 'Sturdy']",60,52,168,28/09/06
 412,Burmy,Bug,,"['Overcoat', 'Shed Skin']",40,29,45,28/09/06
-413,Wormadam Plant Cloak,Bug,Grass,"['Anticipation', 'Overcoat']",60,59,85,28/09/06
-413,Wormadam Sandy Cloak,Bug,Ground,"['Anticipation', 'Overcoat']",60,79,105,28/09/06
-413,Wormadam Trash Cloak,Bug,Steel,"['Anticipation', 'Overcoat']",60,69,95,28/09/06
+413,Wormadam ,Bug,Grass,"['Anticipation', 'Overcoat']",60,59,85,28/09/06
 414,Mothim,Bug,Flying,"['Swarm', 'Tinted Lens']",70,94,50,28/09/06
 415,Combee,Bug,Flying,"['Honey Gather', 'Hustle']",30,30,42,28/09/06
 416,Vespiquen,Bug,Flying,"['Pressure', 'Unnerve']",70,80,102,28/09/06
@@ -508,7 +428,6 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 426,Drifblim,Ghost,Flying,"['Aftermath', 'Flare Boost', 'Unburden']",150,80,44,28/09/06
 427,Buneary,Normal,,"['Klutz', 'Limber', 'Run Away']",55,66,44,28/09/06
 428,Lopunny,Normal,,"['Cute Charm', 'Klutz', 'Limber']",65,76,84,28/09/06
-428,Mega Lopunny,Normal,Fighting,['Scrappy'],65,136,94,28/09/06
 429,Mismagius,Ghost,,['Levitate'],60,60,60,28/09/06
 430,Honchkrow,Dark,Flying,"['Insomnia', 'Moxie', 'Super Luck']",100,125,52,28/09/06
 431,Glameow,Normal,,"['Keen Eye', 'Limber', 'Own Tempo']",49,55,42,28/09/06
@@ -526,11 +445,9 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 443,Gible,Dragon,Ground,"['Rough Skin', 'Sand Veil']",58,70,45,28/09/06
 444,Gabite,Dragon,Ground,"['Rough Skin', 'Sand Veil']",68,90,65,28/09/06
 445,Garchomp,Dragon,Ground,"['Rough Skin', 'Sand Veil']",108,130,95,28/09/06
-445,Mega Garchomp,Dragon,Ground,['Sand Force'],108,170,115,28/09/06
 446,Munchlax,Normal,,"['Gluttony', 'Pickup', 'Thick Fat']",135,85,40,28/09/06
 447,Riolu,Fighting,,"['Inner Focus', 'Prankster', 'Steadfast']",40,70,40,28/09/06
 448,Lucario,Fighting,Steel,"['Inner Focus', 'Justified', 'Steadfast']",70,110,70,28/09/06
-448,Mega Lucario,Fighting,Steel,['Adaptability'],70,145,88,28/09/06
 449,Hippopotas,Ground,,"['Sand Force', 'Sand Stream']",68,72,78,28/09/06
 450,Hippowdon,Ground,,"['Sand Force', 'Sand Stream']",108,112,118,28/09/06
 451,Skorupi,Poison,Bug,"['Battle Armor', 'Keen Eye', 'Sniper']",40,50,90,28/09/06
@@ -543,7 +460,6 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 458,Mantyke,Water,Flying,"['Swift Swim', 'Water Absorb', 'Water Veil']",45,20,50,28/09/06
 459,Snover,Grass,Ice,"['Snow Warning', 'Soundproof']",60,62,50,28/09/06
 460,Abomasnow,Grass,Ice,"['Snow Warning', 'Soundproof']",90,92,75,28/09/06
-460,Mega Abomasnow,Grass,Ice,['Snow Warning'],90,132,105,28/09/06
 461,Weavile,Dark,Ice,"['Pickpocket', 'Pressure']",70,120,65,28/09/06
 462,Magnezone,Electric,Steel,"['Analytic', 'Magnet Pull', 'Sturdy']",70,70,115,28/09/06
 463,Lickilicky,Normal,,"['Cloud Nine', 'Oblivious', 'Own Tempo']",110,85,95,28/09/06
@@ -559,16 +475,10 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 473,Mamoswine,Ice,Ground,"['Oblivious', 'Snow Cloak', 'Thick Fat']",110,130,80,18/09/10
 474,Porygon-Z,Normal,,"['Adaptability', 'Analytic', 'Download']",85,80,70,18/09/10
 475,Gallade,Psychic,Fighting,"['Justified', 'Steadfast']",68,125,65,18/09/10
-475,Mega Gallade,Psychic,Fighting,['Inner Focus'],68,165,95,18/09/10
 476,Probopass,Rock,Steel,"['Magnet Pull', 'Sand Force', 'Sturdy']",60,55,145,18/09/10
 477,Dusknoir,Ghost,,"['Frisk', 'Pressure']",45,100,135,18/09/10
 478,Froslass,Ice,Ghost,"['Cursed Body', 'Snow Cloak']",70,80,70,18/09/10
 479,Rotom,Electric,Ghost,['Levitate'],50,50,77,18/09/10
-479,Rotom-Wash,Electric,Water,['Levitate'],50,65,107,18/09/10
-479,Rotom-Heat,Electric,Fire,['Levitate'],50,65,107,18/09/10
-479,Rotom-Mow,Electric,Grass,['Levitate'],50,65,107,18/09/10
-479,Rotom-Frost,Electric,Ice,['Levitate'],50,65,107,28/09/06
-479,Rotom-Fan,Electric,Flying,['Levitate'],50,65,107,28/09/06
 480,Uxie,Psychic,,['Levitate'],75,75,130,28/09/06
 481,Mesprit,Psychic,,['Levitate'],80,105,105,28/09/06
 482,Azelf,Psychic,,['Levitate'],75,125,70,28/09/06
@@ -577,13 +487,11 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 485,Heatran,Fire,Steel,"['Flame Body', 'Flash Fire']",91,90,106,28/09/06
 486,Regigigas,Normal,,['Slow Start'],110,160,110,28/09/06
 487,Giratina,Ghost,Dragon,"['Pressure', 'Telepathy']",150,100,120,28/09/06
-487,Giratina-Origin,Dragon,Ghost,['Pressure'],150,120,100,28/09/06
 488,Cresselia,Psychic,,['Levitate'],120,70,120,28/09/06
 489,Phione,Water,,['Hydration'],80,80,80,28/09/06
 490,Manaphy,Water,,['Hydration'],100,100,100,28/09/06
 491,Darkrai,Dark,,['Bad Dreams'],70,90,90,28/09/06
 492,Shaymin,Grass,,['Natural Cure'],100,100,100,28/09/06
-492,Shaymin-Sky,Grass,Flying,['Serene Grace'],100,103,75,28/09/06
 493,Arceus,Normal,,['Multitype'],120,120,120,28/09/06
 494,Victini,Psychic,Fire,['Victory Star'],100,100,100,28/09/06
 495,Snivy,Grass,,"['Contrary', 'Overgrow']",45,45,55,18/09/10
@@ -623,7 +531,6 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 529,Drilbur,Ground,,"['Mold Breaker', 'Sand Force', 'Sand Rush']",60,85,40,18/09/10
 530,Excadrill,Ground,Steel,"['Mold Breaker', 'Sand Force', 'Sand Rush']",110,135,60,18/09/10
 531,Audino,Normal,,"['Healer', 'Klutz', 'Regenerator']",103,60,86,18/09/10
-531,Mega Audino,Normal,Fairy,['Healer'],103,60,126,18/09/10
 532,Timburr,Fighting,,"['Guts', 'Iron Fist', 'Sheer Force']",75,80,55,18/09/10
 533,Gurdurr,Fighting,,"['Guts', 'Iron Fist', 'Sheer Force']",85,105,85,18/09/10
 534,Conkeldurr,Fighting,,"['Guts', 'Iron Fist', 'Sheer Force']",105,140,95,18/09/10
@@ -647,11 +554,7 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 552,Krokorok,Ground,Dark,"['Anger Point', 'Intimidate', 'Moxie']",60,82,45,18/09/10
 553,Krookodile,Ground,Dark,"['Anger Point', 'Intimidate', 'Moxie']",95,117,80,18/09/10
 554,Darumaka,Fire,,"['Hustle', 'Inner Focus']",70,90,45,18/09/10
-554,Galarian Darumaka,Ice,,"['Hustle', 'Inner Focus']",70,90,45,18/09/10
 555,Darmanitan,Fire,,"['Sheer Force', 'Zen Mode']",105,140,55,18/09/10
-555,Darmanitan Zen-Mode,Fire,Psychic,['Zen Mode'],105,30,105,18/09/10
-555,Galarian Darmanitan,Ice,,"['Gorilla Tactics', 'Zen Mode']",105,140,55,18/09/10
-555,Galarian Darmanitan Zen-Mode,Ice,Fire,"['Gorilla Tactics', 'Zen Mode']",105,160,55,18/09/10
 556,Maractus,Grass,,"['Chlorophyll', 'Storm Drain', 'Water Absorb']",75,86,67,18/09/10
 557,Dwebble,Bug,Rock,"['Shell Armor', 'Sturdy', 'Weak Armor']",50,65,85,18/09/10
 558,Crustle,Bug,Rock,"['Shell Armor', 'Sturdy', 'Weak Armor']",70,105,125,18/09/10
@@ -659,7 +562,6 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 560,Scrafty,Dark,Fighting,"['Intimidate', 'Moxie', 'Shed Skin']",65,90,115,18/09/10
 561,Sigilyph,Psychic,Flying,"['Magic Guard', 'Tinted Lens', 'Wonder Skin']",72,58,80,18/09/10
 562,Yamask,Ghost,,['Mummy'],38,30,85,18/09/10
-562,Galarian Yamask,Ground,Ghost,['Wandering Spirit'],38,55,85,18/09/10
 563,Cofagrigus,Ghost,,['Mummy'],58,50,145,18/09/10
 564,Tirtouga,Water,Rock,"['Solid Rock', 'Sturdy', 'Swift Swim']",54,78,103,18/09/10
 565,Carracosta,Water,Rock,"['Solid Rock', 'Sturdy', 'Swift Swim']",74,108,133,18/09/10
@@ -716,7 +618,6 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 616,Shelmet,Bug,,"['Hydration', 'Overcoat', 'Shell Armor']",50,40,85,18/09/10
 617,Accelgor,Bug,,"['Hydration', 'Sticky Hold', 'Unburden']",80,70,40,18/09/10
 618,Stunfisk,Ground,Electric,"['Limber', 'Sand Veil', 'Static']",109,66,84,18/09/10
-618,Galarian Stunfisk,Ground,Steel,['Mimicry'],109,81,99,18/09/10
 619,Mienfoo,Fighting,,"['Inner Focus', 'Reckless', 'Regenerator']",45,85,50,18/09/10
 620,Mienshao,Fighting,,"['Inner Focus', 'Reckless', 'Regenerator']",65,125,60,18/09/10
 621,Druddigon,Dragon,,"['Mold Breaker', 'Rough Skin', 'Sheer Force']",77,120,90,18/09/10
@@ -740,19 +641,13 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 639,Terrakion,Rock,Fighting,['Justified'],91,129,90,18/09/10
 640,Virizion,Grass,Fighting,['Justified'],91,90,72,18/09/10
 641,Tornadus,Flying,,"['Defiant', 'Prankster']",79,115,70,18/09/10
-641,Tornadus-Therian,Flying,,['Regenerator'],79,100,80,18/09/10
 642,Thundurus,Electric,Flying,"['Defiant', 'Prankster']",79,115,70,18/09/10
-642,Thundurus-Therian,Electric,Flying,['Volt Absorb'],79,105,70,18/09/10
 643,Reshiram,Dragon,Fire,['Turboblaze'],100,120,100,18/09/10
 644,Zekrom,Dragon,Electric,['Teravolt'],100,150,120,18/09/10
 645,Landorus,Ground,Flying,"['Sand Force', 'Sheer Force']",89,125,90,18/09/10
-645,Landorus-Therian,Ground,Flying,['Intimidate'],89,145,90,18/09/10
 646,Kyurem,Dragon,Ice,['Pressure'],125,130,90,18/09/10
-646,White Kyurem,Dragon,Ice,['Turboblaze'],125,120,90,18/09/10
-646,Black Kyurem,Dragon,Ice,['Teravolt'],125,170,100,18/09/10
 647,Keldeo,Water,Fighting,['Justified'],91,72,90,18/09/10
 648,Meloetta,Normal,Psychic,['Serene Grace'],100,77,77,18/09/10
-648,Meloetta-Pirouette,Normal,Fighting,['Serene Grace'],100,128,90,18/09/10
 649,Genesect,Bug,Steel,['Download'],71,120,95,18/09/10
 650,Chespin,Grass,,"['Bulletproof', 'Overgrow']",56,61,65,12/10/13
 651,Quilladin,Grass,,"['Bulletproof', 'Overgrow']",61,78,95,12/10/13
@@ -763,7 +658,6 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 656,Froakie,Water,,"['Protean', 'Torrent']",41,56,40,12/10/13
 657,Frogadier,Water,,"['Protean', 'Torrent']",54,63,52,12/10/13
 658,Greninja,Water,Dark,"['Protean', 'Torrent']",72,95,67,12/10/13
-658,Ash-Greninja,Water,Dark,['Battle Bond'],72,145,67,12/10/13
 659,Bunnelby,Normal,,"['Cheek Pouch', 'Huge Power', 'Pickup']",38,36,38,12/10/13
 660,Diggersby,Normal,Ground,"['Cheek Pouch', 'Huge Power', 'Pickup']",85,56,77,12/10/13
 661,Fletchling,Normal,Flying,"['Big Pecks', 'Gale Wings']",45,50,43,12/10/13
@@ -786,8 +680,7 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 678,Meowstic,Psychic,,"['Infiltrator', 'Keen Eye', 'Prankster']",74,48,76,12/10/13
 679,Honedge,Steel,Ghost,['No Guard'],45,80,100,12/10/13
 680,Doublade,Steel,Ghost,['No Guard'],59,110,150,12/10/13
-681,Aegislash Shield Form,Steel,Ghost,['Stance Change'],50,70,140,12/10/13
-681,Aegislash Blade Form,Steel,Ghost,['Stance Change'],50,140,70,12/10/13
+681,Aegislash ,Steel,Ghost,['Stance Change'],50,70,140,12/10/13
 682,Spritzee,Fairy,,"['Aroma Veil', 'Healer']",78,52,60,12/10/13
 683,Aromatisse,Fairy,,"['Aroma Veil', 'Healer']",101,72,72,12/10/13
 684,Swirlix,Fairy,,"['Sweet Veil', 'Unburden']",62,48,66,12/10/13
@@ -816,14 +709,8 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 707,Klefki,Steel,Fairy,"['Magician', 'Prankster']",57,80,91,12/10/13
 708,Phantump,Ghost,Grass,"['Frisk', 'Harvest', 'Natural Cure']",43,70,48,12/10/13
 709,Trevenant,Ghost,Grass,"['Frisk', 'Harvest', 'Natural Cure']",85,110,76,12/10/13
-710,Small Size Pumpkaboo,Ghost,Grass,"['Frisk', 'Insomnia', 'Pickup']",44,66,70,12/10/13
-710,Average Size Pumpkaboo,Ghost,Grass,"['Frisk', 'Insomnia', 'Pickup']",49,66,70,12/10/13
-710,Large Size Pumpkaboo,Ghost,Grass,"['Frisk', 'Insomnia', 'Pickup']",54,66,70,12/10/13
-710,Super Size Pumpkaboo,Ghost,Grass,"['Frisk', 'Insomnia', 'Pickup']",59,66,70,12/10/13
-711,Small Size Gourgeist,Ghost,Grass,"['Frisk', 'Insomnia', 'Pickup']",55,85,122,12/10/13
-711,Average Size Gourgeist,Ghost,Grass,"['Frisk', 'Insomnia', 'Pickup']",65,90,122,12/10/13
-711,Large Size Gourgeist,Ghost,Grass,"['Frisk', 'Insomnia', 'Pickup']",75,95,122,12/10/13
-711,Super Size Gourgeist,Ghost,Grass,"['Frisk', 'Insomnia', 'Pickup']",85,100,122,12/10/13
+710,Pumpkabo,Ghost,Grass,"['Frisk', 'Insomnia', 'Pickup']",44,66,70,12/10/13
+711, Gourgeist,Ghost,Grass,"['Frisk', 'Insomnia', 'Pickup']",65,90,122,12/10/13
 712,Bergmite,Ice,,"['Ice Body', 'Own Tempo', 'Sturdy']",55,69,85,12/10/13
 713,Avalugg,Ice,,"['Ice Body', 'Own Tempo', 'Sturdy']",95,117,184,12/10/13
 714,Noibat,Flying,Dragon,"['Frisk', 'Infiltrator', 'Telepathy']",40,30,35,12/10/13
@@ -831,12 +718,8 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 716,Xerneas,Fairy,,['Fairy Aura'],126,131,95,12/10/13
 717,Yveltal,Dark,Flying,['Dark Aura'],126,131,95,12/10/13
 718,Zygarde,Dragon,Ground,['Aura Break'],108,100,121,12/10/13
-718,Zygarde 10%,Dragon,Ground,"['Aura Break', 'Power Construct']",54,100,71,12/10/13
-718,Zygarde Complete,Dragon,Ground,"['Aura Break', 'Power Construct']",216,100,121,12/10/13
-719,Mega Diancie,Rock,Fairy,['Magic Bounce'],50,160,110,12/10/13
 719,Diancie,Rock,Fairy,['Clear Body'],50,100,150,12/10/13
 720,Hoopa,Psychic,Ghost,['Magician'],80,110,60,12/10/13
-720,Hoopa Unbound,Psychic,Dark,['Magician'],80,160,60,12/10/13
 721,Volcanion,Fire,Water,['Water Absorb'],80,110,120,12/10/13
 722,Rowlet,Grass,Flying,"['Long Reach', 'Overgrow']",68,55,55,18/11/16
 723,Dartrix,Grass,Flying,"['Long Reach', 'Overgrow']",78,75,75,18/11/16
@@ -857,18 +740,12 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 738,Vikavolt,Bug,Electric,['Levitate'],77,70,90,18/11/16
 739,Crabrawler,Fighting,,"['Anger Point', 'Hyper Cutter', 'Iron Fist']",47,82,57,18/11/16
 740,Crabominable,Fighting,Ice,"['Anger Point', 'Hyper Cutter', 'Iron Fist']",97,132,77,18/11/16
-741,Oricorio Baile Style,Fire,Flying,['Dancer'],75,70,70,18/11/16
-741,Oricorio Pom-Pom Style,Electric,Flying,['Dancer'],75,70,70,18/11/16
-741,Oricorio Pa'u Style,Psychic,Flying,['Dancer'],75,70,70,18/11/16
-741,Oricorio Sensu Style,Ghost,Flying,['Dancer'],75,70,70,18/11/16
+741,Oricorio,Fire,Flying,['Dancer'],75,70,70,18/11/16
 742,Cutiefly,Bug,Fairy,"['Honey Gather', 'Shield Dust', 'Sweet Veil']",40,45,40,18/11/16
 743,Ribombee,Bug,Fairy,"['Honey Gather', 'Shield Dust', 'Sweet Veil']",60,55,60,18/11/16
 744,Rockruff,Rock,,"['Keen Eye', 'Steadfast', 'Vital Spirit']",45,65,40,18/11/16
 745,Lycanroc,Rock,,"['Keen Eye', 'Sand Rush', 'Steadfast']",75,115,65,18/11/16
-745,Lycanroc Midnight,Rock,,"['Keen Eye', 'No Guard', 'Vital Spirit']",85,115,75,18/11/16
-745,Lycanroc Dusk,Rock,,['Tough Claws'],75,117,65,18/11/16
 746,Wishiwashi,Water,,['Schooling'],45,20,20,18/11/16
-746,Wishiwashi School,Water,,['Schooling'],45,140,130,18/11/16
 747,Mareanie,Poison,Water,"['Limber', 'Merciless', 'Regenerator']",50,53,62,18/11/16
 748,Toxapex,Poison,Water,"['Limber', 'Merciless', 'Regenerator']",50,63,152,18/11/16
 749,Mudbray,Ground,,"['Inner Focus', 'Own Tempo', 'Stamina']",70,100,70,18/11/16
@@ -924,9 +801,6 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 798,Kartana,Grass,Steel,['Beast Boost'],59,181,131,18/11/16
 799,Guzzlord,Dark,Dragon,['Beast Boost'],223,101,53,18/11/16
 800,Necrozma,Psychic,,['Prism Armor'],97,107,101,18/11/16
-800,Dusk Mane Necrozma,Psychic,Steel,['Prism Armor'],97,157,127,18/11/16
-800,Dawn Wings Necrozma,Psychic,Ghost,['Prism Armor'],97,113,109,18/11/16
-800,Ultra Necrozma,Psychic,Dragon,['Prism Armor'],97,167,97,18/11/16
 801,Magearna,Steel,Fairy,['Soul-Heart'],80,95,115,18/11/16
 802,Marshadow,Fighting,Ghost,['Technician'],90,125,80,18/11/16
 803,Poipole,Poison,,['Beast Boost'],67,73,67,18/11/16
@@ -1002,7 +876,6 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 873,Frosmoth,Ice,Bug,"['Ice Scales', 'Shield Dust']",70,65,60,15/11/19
 874,Stonjourner,Rock,,['Power Spot'],100,125,135,15/11/19
 875,Eiscue,Ice,,['Ice Face'],75,80,110,15/11/19
-875,Eiscue Noice Face,Ice,,['Ice Face'],75,80,70,15/11/19
 876,Indeedee,Psychic,Normal,"['Inner Focus', 'Psychic Surge', 'Synchronize']",60,65,55,15/11/19
 877,Morpeko,Electric,Dark,['Hunger Switch'],58,95,58,15/11/19
 878,Cufant,Steel,,"['Heavy Metal', 'Sheer Force']",72,80,49,15/11/19
@@ -1016,18 +889,13 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 886,Drakloak,Dragon,Ghost,"['Clear Body', 'Cursed Body', 'Infiltrator']",68,80,50,15/11/19
 887,Dragapult,Dragon,Ghost,"['Clear Body', 'Cursed Body', 'Infiltrator']",88,120,75,15/11/19
 888,Zacian,Fairy,,['Intrepid Sword'],92,130,115,15/11/19
-888,Zacian Crowned Sword,Fairy,Steel,['Intrepid Sword'],92,170,115,15/11/19
 889,Zamazenta,Fighting,,['Dauntless Shield'],92,130,115,15/11/19
-889,Zamazenta Crowned Shield,Fighting,Steel,['Dauntless Shield'],92,130,145,15/11/19
 890,Eternatus,Poison,Dragon,['Pressure'],140,85,95,15/11/19
 891,Kubfu,Fighting,,['Inner Focus'],60,90,60,15/11/19
-892,Urshifu Rapid Strike Style,Fighting,Water,['Unseen Fist'],100,130,100,15/11/19
-892,Urshifu Single Strike Style,Fighting,Dark,['Unseen Fist'],100,130,100,15/11/19
+892,Urshifu,Fighting,Water,['Unseen Fist'],100,130,100,15/11/19
 893,Zarude,Dark,Grass,['Leaf Guard'],105,120,105,15/11/19
 894,Regieleki,Electric,,['Transistor'],80,100,50,15/11/19
 895,Regidrago,Dragon,,"[""Dragon's Maw""]",200,100,50,15/11/19
 896,Glastrier,Ice,,['Chilling Neigh'],100,145,130,15/11/19
 897,Spectrier,Ghost,,['Grim Neigh'],100,65,60,15/11/19
 898,Calyrex,Psychic,Grass,['Unnerve'],100,80,80,15/11/19
-898,Calyrex Ice Rider,Psychic,Ice,['As One'],100,165,150,15/11/19
-898,Calyrex Shadow Rider,Psychic,Ghost,['As One'],100,85,80,15/11/19
