@@ -9,28 +9,77 @@ public class Reader {
     private static final String CSV_PATH = "/tmp/pokemons.csv";
 
     /*
-     * inicializa o leitor
-     * inicializa LISTA de lista de strings (lista de strings = colunas, sao multivaloradas por causa dos campos)
-     * pula a primeira coluna com o nome de cada campo
-     * adiciona colunas a lista
+     * MAIN
+     * -
+     * realiza carga inicial criando a lista
+     * converte cada linha da lista para objeto
      */
     public static void main(String[] args) {
+        List<List<String>> lista = cargaInicial();
+        listaParaObjeto(lista);
+    }
+
+    /* 
+     * CARGA INICIAL
+     * -
+     * inicializa LISTA de LISTA DE STRINGS, ou seja, LINHA de COLUNAS (linha[y].coluna[x])
+     * inicializa o leitor, pula a primeira linha, e adiciona as colunas de cada linha
+     * retorna a lista
+     */
+    public static List<List<String>> cargaInicial(){
+        List<List<String>> linha = new ArrayList<List<String>>();
+        String[] coluna = null;
+
         try {
             CSVReader reader = new CSVReader(new FileReader(CSV_PATH));
 
-            List<List<String>> linhas = new ArrayList<List<String>>();
-            String[] coluna = null;
-
             coluna = reader.readNext();
             while ((coluna = reader.readNext()) != null){
-                linhas.add(Arrays.asList(coluna));
+                linha.add(Arrays.asList(coluna));
             }
-
-            linhas.forEach(cols -> {
-                System.out.println(cols);
-            });
         } catch (Exception e) {
-
+            // tratamento de erro
         }
+
+        return linha;
+    }
+
+    /* 
+     * LISTA PARA OBJETOS
+     * -
+     * cria lista de objetos
+     * para cada linha, cria um objeto
+     */
+    public static void listaParaObjeto(List<List<String>> lista){
+        List<Pokemon> listaDePokemons = new ArrayList<>();
+        int tam = lista.size();
+
+        for (int i=0; i<tam; i++){
+            int number = Integer.parseInt(lista.get(i).get(0));
+            String name = lista.get(i).get(1);
+            String type1 = lista.get(i).get(2);
+            String type2 = lista.get(i).get(3);
+            String[] abilities = trataMultivalorados(lista.get(i).get(4));
+            int hp = Integer.parseInt(lista.get(i).get(5));
+            int att = Integer.parseInt(lista.get(i).get(6));
+            int def = Integer.parseInt(lista.get(i).get(7));
+            System.out.println(Arrays.toString(abilities));
+
+            listaDePokemons.add(new Pokemon(number, name, type1, type2, abilities, hp, att, def));
+        }
+    }
+    /*
+     * TRATA MULTIVALORADOS
+     * -
+     * remove colchetes
+     * remove aspas simples
+     * realiza split a cada virgula
+     * retorna vetor de strings
+     */
+    public static String[] trataMultivalorados(String temp){
+        temp = temp.substring(1, temp.length()-1);
+        temp = temp.replaceAll("'", "");
+        String[] abilities = temp.split(",");
+        return abilities;
     }
 }
