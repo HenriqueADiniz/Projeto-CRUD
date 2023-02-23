@@ -22,8 +22,8 @@ public class Reader {
     /* 
      * CARGA INICIAL
      * -
-     * inicializa LISTA de LISTA DE STRINGS, ou seja, LINHA de COLUNAS (linha[y].coluna[x])
-     * inicializa o leitor, pula a primeira linha, e adiciona as colunas de cada linha
+     * inicializa LISTA de LISTA de strings, ou seja, LINHAS de COLUNAS (linha[y].coluna[x])
+     * inicializa o leitor, pula a primeira linha, adiciona as colunas de cada linha
      * retorna a lista
      */
     public static List<List<String>> cargaInicial(){
@@ -51,8 +51,8 @@ public class Reader {
      * para cada linha, cria um objeto
      */
     public static void listaParaObjeto(List<List<String>> lista){
-        List<Pokemon> listaDePokemons = new ArrayList<>();
         int tam = lista.size();
+        List<Pokemon> listaDePokemons = new ArrayList<>();
 
         for (int i=0; i<tam; i++){
             int number = Integer.parseInt(lista.get(i).get(0));
@@ -63,7 +63,6 @@ public class Reader {
             int hp = Integer.parseInt(lista.get(i).get(5));
             int att = Integer.parseInt(lista.get(i).get(6));
             int def = Integer.parseInt(lista.get(i).get(7));
-            System.out.println(Arrays.toString(abilities));
 
             listaDePokemons.add(new Pokemon(number, name, type1, type2, abilities, hp, att, def));
         }
