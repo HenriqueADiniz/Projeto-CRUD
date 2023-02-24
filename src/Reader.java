@@ -6,7 +6,7 @@ import com.opencsv.CSVReader;
 
 public class Reader {
     // caminho do arquivo .csv
-    private static final String CSV_PATH = "/tmp/pokemons.csv";
+    private static final String CSV_PATH = "tmp/pokemons.csv";
 
     /*
      * MAIN
@@ -63,10 +63,9 @@ public class Reader {
             int hp = Integer.parseInt(lista.get(i).get(5));
             int att = Integer.parseInt(lista.get(i).get(6));
             int def = Integer.parseInt(lista.get(i).get(7));
-         // date = 
-         // TRATAR DATA AQUI
+            System.out.println(type2);
 
-            listaDePokemons.add(new Pokemon(number, name, type1, type2, abilities, hp, att, def, date));
+            listaDePokemons.add(new Pokemon(number, name, type1, type2, abilities, hp, att, def));
         }
     }
     /*

@@ -13,6 +13,6 @@ public class Pokemon {
         this.hp = hp;
         this.att = att;
         this.def = def;
-        this.date = date;
+        // this.date = date;
     }
 }
