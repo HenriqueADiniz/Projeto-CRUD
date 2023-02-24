@@ -1,9 +1,9 @@
 public class Pokemon {
     int number, hp, att, def;
-    String name, type1, type2,data;
+    String name, type1, type2;
     String[] abilities;
 
-    public Pokemon(int number, String name, String type1, String type2, String[] abilities, int hp, int att, int def,String data){
+    public Pokemon(int number, String name, String type1, String type2, String[] abilities, int hp, int att, int def){
         super();
         this.number = number;
         this.name = name;
@@ -13,6 +13,6 @@ public class Pokemon {
         this.hp = hp;
         this.att = att;
         this.def = def;
-        this.data = data;
+        this.date = date;
     }
 }

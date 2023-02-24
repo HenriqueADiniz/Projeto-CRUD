@@ -63,8 +63,10 @@ public class Reader {
             int hp = Integer.parseInt(lista.get(i).get(5));
             int att = Integer.parseInt(lista.get(i).get(6));
             int def = Integer.parseInt(lista.get(i).get(7));
+         // date = 
+         // TRATAR DATA AQUI
 
-            listaDePokemons.add(new Pokemon(number, name, type1, type2, abilities, hp, att, def));
+            listaDePokemons.add(new Pokemon(number, name, type1, type2, abilities, hp, att, def, date));
         }
     }
     /*
