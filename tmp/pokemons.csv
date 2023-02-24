@@ -2,14 +2,14 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 1,Bulbasaur,Grass,Poison,"['Chlorophyll', 'Overgrow']",45,49,49,27/02/1996
 2,Ivysaur,Grass,Poison,"['Chlorophyll', 'Overgrow']",60,62,63,27/02/1996
 3,Venusaur,Grass,Poison,"['Chlorophyll', 'Overgrow']",80,82,83,27/02/1996
-4,Charmander,Fire,,"['Blaze', 'Solar Power']",39,52,43,27/02/1996
-5,Charmeleon,Fire,,"['Blaze', 'Solar Power']",58,64,58,27/02/1996
+4,Charmander,Fire,None,"['Blaze', 'Solar Power']",39,52,43,27/02/1996
+5,Charmeleon,Fire,None,"['Blaze', 'Solar Power']",58,64,58,27/02/1996
 6,Charizard,Fire,Flying,"['Blaze', 'Solar Power']",78,84,78,27/02/1996
-7,Squirtle,Water,,"['Rain Dish', 'Torrent']",44,48,65,27/02/1996
-8,Wartortle,Water,,"['Rain Dish', 'Torrent']",59,63,80,27/02/1996
-9,Blastoise,Water,,"['Rain Dish', 'Torrent']",79,83,100,27/02/1996
-10,Caterpie,Bug,,"['Run Away', 'Shield Dust']",45,30,35,27/02/1996
-11,Metapod,Bug,,['Shed Skin'],50,20,55,27/02/1996
+7,Squirtle,Water,None,"['Rain Dish', 'Torrent']",44,48,65,27/02/1996
+8,Wartortle,Water,None,"['Rain Dish', 'Torrent']",59,63,80,27/02/1996
+9,Blastoise,Water,None,"['Rain Dish', 'Torrent']",79,83,100,27/02/1996
+10,Caterpie,Bug,None,"['Run Away', 'Shield Dust']",45,30,35,27/02/1996
+11,Metapod,Bug,None,['Shed Skin'],50,20,55,27/02/1996
 12,Butterfree,Bug,Flying,['Tinted Lens'],60,45,50,27/02/1996
 13,Weedle,Bug,Poison,"['Run Away', 'Shield Dust']",40,35,30,27/02/1996
 14,Kakuna,Bug,Poison,['Shed Skin'],45,25,50,27/02/1996
@@ -17,26 +17,26 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 16,Pidgey,Normal,Flying,"['Big Pecks', 'Keen Eye', 'Tangled Feet']",40,45,40,27/02/1996
 17,Pidgeotto,Normal,Flying,"['Big Pecks', 'Keen Eye', 'Tangled Feet']",63,60,55,27/02/1996
 18,Pidgeot,Normal,Flying,"['Big Pecks', 'Keen Eye', 'Tangled Feet']",83,80,75,27/02/1996
-19,Rattata,Normal,,"['Guts', 'Hustle', 'Run Away']",30,56,35,27/02/1996
-20,Raticate,Normal,,"['Guts', 'Hustle', 'Run Away']",55,81,60,27/02/1996
+19,Rattata,Normal,None,"['Guts', 'Hustle', 'Run Away']",30,56,35,27/02/1996
+20,Raticate,Normal,None,"['Guts', 'Hustle', 'Run Away']",55,81,60,27/02/1996
 21,Spearow,Normal,Flying,"['Keen Eye', 'Sniper']",40,60,30,27/02/1996
 22,Fearow,Normal,Flying,"['Keen Eye', 'Sniper']",65,90,65,27/02/1996
-23,Ekans,Poison,,"['Intimidate', 'Shed Skin', 'Unnerve']",35,60,44,27/02/1996
-24,Arbok,Poison,,"['Intimidate', 'Shed Skin', 'Unnerve']",60,95,69,27/02/1996
-25,Pikachu,Electric,,"['Lightning Rod', 'Static']",35,55,40,27/02/1996
-26,Raichu,Electric,,"['Lightning Rod', 'Static']",60,90,55,27/02/1996
-27,Sandshrew,Ground,,"['Sand Rush', 'Sand Veil']",50,75,85,27/02/1996
-28,Sandslash,Ground,,"['Sand Rush', 'Sand Veil']",75,100,110,27/02/1996
-29,Nidoran♀,Poison,,"['Hustle', 'Poison Point', 'Rivalry']",55,47,52,27/02/1996
-30,Nidorina,Poison,,"['Hustle', 'Poison Point', 'Rivalry']",70,62,67,27/02/1996
+23,Ekans,Poison,None,"['Intimidate', 'Shed Skin', 'Unnerve']",35,60,44,27/02/1996
+24,Arbok,Poison,None,"['Intimidate', 'Shed Skin', 'Unnerve']",60,95,69,27/02/1996
+25,Pikachu,Electric,None,"['Lightning Rod', 'Static']",35,55,40,27/02/1996
+26,Raichu,Electric,None,"['Lightning Rod', 'Static']",60,90,55,27/02/1996
+27,Sandshrew,Ground,None,"['Sand Rush', 'Sand Veil']",50,75,85,27/02/1996
+28,Sandslash,Ground,None,"['Sand Rush', 'Sand Veil']",75,100,110,27/02/1996
+29,Nidoran♀,Poison,None,"['Hustle', 'Poison Point', 'Rivalry']",55,47,52,27/02/1996
+30,Nidorina,Poison,None,"['Hustle', 'Poison Point', 'Rivalry']",70,62,67,27/02/1996
 31,Nidoqueen,Poison,Ground,"['Poison Point', 'Rivalry', 'Sheer Force']",90,92,87,27/02/1996
-32,Nidoran♂,Poison,,"['Hustle', 'Poison Point', 'Rivalry']",46,57,40,27/02/1996
-33,Nidorino,Poison,,"['Hustle', 'Poison Point', 'Rivalry']",61,72,57,27/02/1996
+32,Nidoran♂,Poison,None,"['Hustle', 'Poison Point', 'Rivalry']",46,57,40,27/02/1996
+33,Nidorino,Poison,None,"['Hustle', 'Poison Point', 'Rivalry']",61,72,57,27/02/1996
 34,Nidoking,Poison,Ground,"['Poison Point', 'Rivalry', 'Sheer Force']",81,102,77,27/02/1996
-35,Clefairy,Fairy,,"['Cute Charm', 'Friend Guard', 'Magic Guard']",70,45,48,27/02/1996
-36,Clefable,Fairy,,"['Cute Charm', 'Magic Guard', 'Unaware']",95,70,73,27/02/1996
-37,Vulpix,Fire,,"['Drought', 'Flash Fire']",38,41,40,27/02/1996
-38,Ninetales,Fire,,"['Drought', 'Flash Fire']",73,76,75,27/02/1996
+35,Clefairy,Fairy,None,"['Cute Charm', 'Friend Guard', 'Magic Guard']",70,45,48,27/02/1996
+36,Clefable,Fairy,None,"['Cute Charm', 'Magic Guard', 'Unaware']",95,70,73,27/02/1996
+37,Vulpix,Fire,None,"['Drought', 'Flash Fire']",38,41,40,27/02/1996
+38,Ninetales,Fire,None,"['Drought', 'Flash Fire']",73,76,75,27/02/1996
 39,Jigglypuff,Normal,Fairy,"['Competitive', 'Cute Charm', 'Friend Guard']",115,45,20,27/02/1996
 40,Wigglytuff,Normal,Fairy,"['Competitive', 'Cute Charm', 'Frisk']",140,70,45,27/02/1996
 41,Zubat,Poison,Flying,"['Infiltrator', 'Inner Focus']",40,45,35,27/02/1996
@@ -48,25 +48,25 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 47,Parasect,Bug,Grass,"['Damp', 'Dry Skin', 'Effect Spore']",60,95,80,27/02/1996
 48,Venonat,Bug,Poison,"['Run Away', 'Tinted Lens']",60,55,50,27/02/1996
 49,Venomoth,Bug,Poison,"['Shield Dust', 'Tinted Lens', 'Wonder Skin']",70,65,60,27/02/1996
-50,Diglett,Ground,,"['Arena Trap', 'Sand Force', 'Sand Veil']",10,55,25,27/02/1996
-51,Dugtrio,Ground,,"['Arena Trap', 'Sand Force', 'Sand Veil']",35,100,50,27/02/1996
-52,Meowth,Normal,,"['Pickup', 'Technician', 'Unnerve']",40,45,35,27/02/1996
-53,Persian,Normal,,"['Limber', 'Technician', 'Unnerve']",65,70,60,27/02/1996
-54,Psyduck,Water,,"['Cloud Nine', 'Damp', 'Swift Swim']",50,52,48,27/02/1996
-55,Golduck,Water,,"['Cloud Nine', 'Damp', 'Swift Swim']",80,82,78,27/02/1996
-56,Mankey,Fighting,,"['Anger Point', 'Defiant', 'Vital Spirit']",40,80,35,27/02/1996
-57,Primeape,Fighting,,"['Anger Point', 'Defiant', 'Vital Spirit']",65,105,60,27/02/1996
-58,Growlithe,Fire,,"['Flash Fire', 'Intimidate', 'Justified']",55,70,45,27/02/1996
-59,Arcanine,Fire,,"['Flash Fire', 'Intimidate', 'Justified']",90,110,80,27/02/1996
-60,Poliwag,Water,,"['Damp', 'Swift Swim', 'Water Absorb']",40,50,40,27/02/1996
-61,Poliwhirl,Water,,"['Damp', 'Swift Swim', 'Water Absorb']",65,65,65,27/02/1996
+50,Diglett,Ground,None,"['Arena Trap', 'Sand Force', 'Sand Veil']",10,55,25,27/02/1996
+51,Dugtrio,Ground,None,"['Arena Trap', 'Sand Force', 'Sand Veil']",35,100,50,27/02/1996
+52,Meowth,Normal,None,"['Pickup', 'Technician', 'Unnerve']",40,45,35,27/02/1996
+53,Persian,Normal,None,"['Limber', 'Technician', 'Unnerve']",65,70,60,27/02/1996
+54,Psyduck,Water,None,"['Cloud Nine', 'Damp', 'Swift Swim']",50,52,48,27/02/1996
+55,Golduck,Water,None,"['Cloud Nine', 'Damp', 'Swift Swim']",80,82,78,27/02/1996
+56,Mankey,Fighting,None,"['Anger Point', 'Defiant', 'Vital Spirit']",40,80,35,27/02/1996
+57,Primeape,Fighting,None,"['Anger Point', 'Defiant', 'Vital Spirit']",65,105,60,27/02/1996
+58,Growlithe,Fire,None,"['Flash Fire', 'Intimidate', 'Justified']",55,70,45,27/02/1996
+59,Arcanine,Fire,None,"['Flash Fire', 'Intimidate', 'Justified']",90,110,80,27/02/1996
+60,Poliwag,Water,None,"['Damp', 'Swift Swim', 'Water Absorb']",40,50,40,27/02/1996
+61,Poliwhirl,Water,None,"['Damp', 'Swift Swim', 'Water Absorb']",65,65,65,27/02/1996
 62,Poliwrath,Water,Fighting,"['Damp', 'Swift Swim', 'Water Absorb']",90,95,95,27/02/1996
-63,Abra,Psychic,,"['Inner Focus', 'Magic Guard', 'Synchronize']",25,20,15,27/02/1996
-64,Kadabra,Psychic,,"['Inner Focus', 'Magic Guard', 'Synchronize']",40,35,30,27/02/1996
-65,Alakazam,Psychic,,"['Inner Focus', 'Magic Guard', 'Synchronize']",55,50,45,27/02/1996
-66,Machop,Fighting,,"['Guts', 'No Guard', 'Steadfast']",70,80,50,27/02/1996
-67,Machoke,Fighting,,"['Guts', 'No Guard', 'Steadfast']",80,100,70,27/02/1996
-68,Machamp,Fighting,,"['Guts', 'No Guard', 'Steadfast']",90,130,80,27/02/1996
+63,Abra,Psychic,None,"['Inner Focus', 'Magic Guard', 'Synchronize']",25,20,15,27/02/1996
+64,Kadabra,Psychic,None,"['Inner Focus', 'Magic Guard', 'Synchronize']",40,35,30,27/02/1996
+65,Alakazam,Psychic,None,"['Inner Focus', 'Magic Guard', 'Synchronize']",55,50,45,27/02/1996
+66,Machop,Fighting,None,"['Guts', 'No Guard', 'Steadfast']",70,80,50,27/02/1996
+67,Machoke,Fighting,None,"['Guts', 'No Guard', 'Steadfast']",80,100,70,27/02/1996
+68,Machamp,Fighting,None,"['Guts', 'No Guard', 'Steadfast']",90,130,80,27/02/1996
 69,Bellsprout,Grass,Poison,"['Chlorophyll', 'Gluttony']",50,75,35,27/02/1996
 70,Weepinbell,Grass,Poison,"['Chlorophyll', 'Gluttony']",65,90,50,27/02/1996
 71,Victreebel,Grass,Poison,"['Chlorophyll', 'Gluttony']",80,105,65,27/02/1996
@@ -75,8 +75,8 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 74,Geodude,Rock,Ground,"['Rock Head', 'Sand Veil', 'Sturdy']",40,80,100,27/02/1996
 75,Graveler,Rock,Ground,"['Rock Head', 'Sand Veil', 'Sturdy']",55,95,115,27/02/1996
 76,Golem,Rock,Ground,"['Rock Head', 'Sand Veil', 'Sturdy']",80,120,130,27/02/1996
-77,Ponyta,Fire,,"['Flame Body', 'Flash Fire', 'Run Away']",50,85,55,27/02/1996
-78,Rapidash,Fire,,"['Flame Body', 'Flash Fire', 'Run Away']",65,100,70,27/02/1996
+77,Ponyta,Fire,None,"['Flame Body', 'Flash Fire', 'Run Away']",50,85,55,27/02/1996
+78,Rapidash,Fire,None,"['Flame Body', 'Flash Fire', 'Run Away']",65,100,70,27/02/1996
 79,Slowpoke,Water,Psychic,"['Oblivious', 'Own Tempo', 'Regenerator']",90,65,65,27/02/1996
 80,Slowbro,Water,Psychic,"['Oblivious', 'Own Tempo', 'Regenerator']",95,75,110,27/02/1996
 81,Magnemite,Electric,Steel,"['Analytic', 'Magnet Pull', 'Sturdy']",25,35,70,27/02/1996
@@ -84,83 +84,83 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 83,Farfetch'd,Normal,Flying,"['Defiant', 'Inner Focus', 'Keen Eye']",52,90,55,27/02/1996
 84,Doduo,Normal,Flying,"['Early Bird', 'Run Away', 'Tangled Feet']",35,85,45,27/02/1996
 85,Dodrio,Normal,Flying,"['Early Bird', 'Run Away', 'Tangled Feet']",60,110,70,27/02/1996
-86,Seel,Water,,"['Hydration', 'Ice Body', 'Thick Fat']",65,45,55,27/02/1996
+86,Seel,Water,None,"['Hydration', 'Ice Body', 'Thick Fat']",65,45,55,27/02/1996
 87,Dewgong,Water,Ice,"['Hydration', 'Ice Body', 'Thick Fat']",90,70,80,27/02/1996
-88,Grimer,Poison,,"['Poison Touch', 'Stench', 'Sticky Hold']",80,80,50,27/02/1996
-89,Muk,Poison,,"['Poison Touch', 'Stench', 'Sticky Hold']",105,105,75,27/02/1996
-90,Shellder,Water,,"['Overcoat', 'Shell Armor', 'Skill Link']",30,65,100,27/02/1996
+88,Grimer,Poison,None,"['Poison Touch', 'Stench', 'Sticky Hold']",80,80,50,27/02/1996
+89,Muk,Poison,None,"['Poison Touch', 'Stench', 'Sticky Hold']",105,105,75,27/02/1996
+90,Shellder,Water,None,"['Overcoat', 'Shell Armor', 'Skill Link']",30,65,100,27/02/1996
 91,Cloyster,Water,Ice,"['Overcoat', 'Shell Armor', 'Skill Link']",50,95,180,27/02/1996
 92,Gastly,Ghost,Poison,['Levitate'],30,35,30,27/02/1996
 93,Haunter,Ghost,Poison,['Levitate'],45,50,45,27/02/1996
 94,Gengar,Ghost,Poison,['Cursed Body'],60,65,60,27/02/1996
 95,Onix,Rock,Ground,"['Rock Head', 'Sturdy', 'Weak Armor']",35,45,160,27/02/1996
-96,Drowzee,Psychic,,"['Forewarn', 'Inner Focus', 'Insomnia']",60,48,45,27/02/1996
-97,Hypno,Psychic,,"['Forewarn', 'Inner Focus', 'Insomnia']",85,73,70,27/02/1996
-98,Krabby,Water,,"['Hyper Cutter', 'Sheer Force', 'Shell Armor']",30,105,90,27/02/1996
-99,Kingler,Water,,"['Hyper Cutter', 'Sheer Force', 'Shell Armor']",55,130,115,27/02/1996
-100,Voltorb,Electric,,"['Aftermath', 'Soundproof', 'Static']",40,30,50,27/02/1996
-101,Electrode,Electric,,"['Aftermath', 'Soundproof', 'Static']",60,50,70,27/02/1996
+96,Drowzee,Psychic,None,"['Forewarn', 'Inner Focus', 'Insomnia']",60,48,45,27/02/1996
+97,Hypno,Psychic,None,"['Forewarn', 'Inner Focus', 'Insomnia']",85,73,70,27/02/1996
+98,Krabby,Water,None,"['Hyper Cutter', 'Sheer Force', 'Shell Armor']",30,105,90,27/02/1996
+99,Kingler,Water,None,"['Hyper Cutter', 'Sheer Force', 'Shell Armor']",55,130,115,27/02/1996
+100,Voltorb,Electric,None,"['Aftermath', 'Soundproof', 'Static']",40,30,50,27/02/1996
+101,Electrode,Electric,None,"['Aftermath', 'Soundproof', 'Static']",60,50,70,27/02/1996
 102,Exeggcute,Grass,Psychic,"['Chlorophyll', 'Harvest']",60,40,80,27/02/1996
 103,Exeggutor,Grass,Psychic,"['Chlorophyll', 'Harvest']",95,95,85,27/02/1996
-104,Cubone,Ground,,"['Battle Armor', 'Lightning Rod', 'Rock Head']",50,50,95,27/02/1996
-105,Marowak,Ground,,"['Battle Armor', 'Lightning Rod', 'Rock Head']",60,80,110,27/02/1996
-106,Hitmonlee,Fighting,,"['Limber', 'Reckless', 'Unburden']",50,120,53,27/02/1996
-107,Hitmonchan,Fighting,,"['Inner Focus', 'Iron Fist', 'Keen Eye']",50,105,79,27/02/1996
-108,Lickitung,Normal,,"['Cloud Nine', 'Oblivious', 'Own Tempo']",90,55,75,27/02/1996
-109,Koffing,Poison,,"['Levitate', 'Neutralizing Gas', 'Stench']",40,65,95,27/02/1996
-110,Weezing,Poison,,"['Levitate', 'Neutralizing Gas', 'Stench']",65,90,120,27/02/1996
+104,Cubone,Ground,None,"['Battle Armor', 'Lightning Rod', 'Rock Head']",50,50,95,27/02/1996
+105,Marowak,Ground,None,"['Battle Armor', 'Lightning Rod', 'Rock Head']",60,80,110,27/02/1996
+106,Hitmonlee,Fighting,None,"['Limber', 'Reckless', 'Unburden']",50,120,53,27/02/1996
+107,Hitmonchan,Fighting,None,"['Inner Focus', 'Iron Fist', 'Keen Eye']",50,105,79,27/02/1996
+108,Lickitung,Normal,None,"['Cloud Nine', 'Oblivious', 'Own Tempo']",90,55,75,27/02/1996
+109,Koffing,Poison,None,"['Levitate', 'Neutralizing Gas', 'Stench']",40,65,95,27/02/1996
+110,Weezing,Poison,None,"['Levitate', 'Neutralizing Gas', 'Stench']",65,90,120,27/02/1996
 111,Rhyhorn,Ground,Rock,"['Lightning Rod', 'Reckless', 'Rock Head']",80,85,95,27/02/1996
 112,Rhydon,Ground,Rock,"['Lightning Rod', 'Reckless', 'Rock Head']",105,130,120,27/02/1996
-113,Chansey,Normal,,"['Healer', 'Natural Cure', 'Serene Grace']",250,5,5,27/02/1996
-114,Tangela,Grass,,"['Chlorophyll', 'Leaf Guard', 'Regenerator']",65,55,115,27/02/1996
-115,Kangaskhan,Normal,,"['Early Bird', 'Inner Focus', 'Scrappy']",105,95,80,27/02/1996
-116,Horsea,Water,,"['Damp', 'Sniper', 'Swift Swim']",30,40,70,27/02/1996
-117,Seadra,Water,,"['Damp', 'Poison Point', 'Sniper']",55,65,95,27/02/1996
-118,Goldeen,Water,,"['Lightning Rod', 'Swift Swim', 'Water Veil']",45,67,60,27/02/1996
-119,Seaking,Water,,"['Lightning Rod', 'Swift Swim', 'Water Veil']",80,92,65,27/02/1996
-120,Staryu,Water,,"['Analytic', 'Illuminate', 'Natural Cure']",30,45,55,27/02/1996
+113,Chansey,Normal,None,"['Healer', 'Natural Cure', 'Serene Grace']",250,5,5,27/02/1996
+114,Tangela,Grass,None,"['Chlorophyll', 'Leaf Guard', 'Regenerator']",65,55,115,27/02/1996
+115,Kangaskhan,Normal,None,"['Early Bird', 'Inner Focus', 'Scrappy']",105,95,80,27/02/1996
+116,Horsea,Water,None,"['Damp', 'Sniper', 'Swift Swim']",30,40,70,27/02/1996
+117,Seadra,Water,None,"['Damp', 'Poison Point', 'Sniper']",55,65,95,27/02/1996
+118,Goldeen,Water,None,"['Lightning Rod', 'Swift Swim', 'Water Veil']",45,67,60,27/02/1996
+119,Seaking,Water,None,"['Lightning Rod', 'Swift Swim', 'Water Veil']",80,92,65,27/02/1996
+120,Staryu,Water,None,"['Analytic', 'Illuminate', 'Natural Cure']",30,45,55,27/02/1996
 121,Starmie,Water,Psychic,"['Analytic', 'Illuminate', 'Natural Cure']",60,75,85,27/02/1996
 122,Mr. Mime,Psychic,Fairy,"['Filter', 'Soundproof', 'Technician']",40,45,65,27/02/1996
 123,Scyther,Bug,Flying,"['Steadfast', 'Swarm', 'Technician']",70,110,80,27/02/1996
 124,Jynx,Ice,Psychic,"['Dry Skin', 'Forewarn', 'Oblivious']",65,50,35,27/02/1996
-125,Electabuzz,Electric,,"['Static', 'Vital Spirit']",65,83,57,27/02/1996
-126,Magmar,Fire,,"['Flame Body', 'Vital Spirit']",65,95,57,27/02/1996
-127,Pinsir,Bug,,"['Hyper Cutter', 'Mold Breaker', 'Moxie']",65,125,100,27/02/1996
-128,Tauros,Normal,,"['Anger Point', 'Intimidate', 'Sheer Force']",75,100,95,27/02/1996
-129,Magikarp,Water,,"['Rattled', 'Swift Swim']",20,10,55,27/02/1996
+125,Electabuzz,Electric,None,"['Static', 'Vital Spirit']",65,83,57,27/02/1996
+126,Magmar,Fire,None,"['Flame Body', 'Vital Spirit']",65,95,57,27/02/1996
+127,Pinsir,Bug,None,"['Hyper Cutter', 'Mold Breaker', 'Moxie']",65,125,100,27/02/1996
+128,Tauros,Normal,None,"['Anger Point', 'Intimidate', 'Sheer Force']",75,100,95,27/02/1996
+129,Magikarp,Water,None,"['Rattled', 'Swift Swim']",20,10,55,27/02/1996
 130,Gyarados,Water,Flying,"['Intimidate', 'Moxie']",95,125,79,27/02/1996
 131,Lapras,Water,Ice,"['Hydration', 'Shell Armor', 'Water Absorb']",130,85,80,27/02/1996
-132,Ditto,Normal,,"['Imposter', 'Limber']",48,48,48,27/02/1996
-133,Eevee,Normal,,"['Adaptability', 'Anticipation', 'Run Away']",55,55,50,27/02/1996
-134,Vaporeon,Water,,"['Hydration', 'Water Absorb']",130,65,60,27/02/1996
-135,Jolteon,Electric,,"['Quick Feet', 'Volt Absorb']",65,65,60,27/02/1996
-136,Flareon,Fire,,"['Flash Fire', 'Guts']",65,130,60,27/02/1996
-137,Porygon,Normal,,"['Analytic', 'Download', 'Trace']",65,60,70,27/02/1996
+132,Ditto,Normal,None,"['Imposter', 'Limber']",48,48,48,27/02/1996
+133,Eevee,Normal,None,"['Adaptability', 'Anticipation', 'Run Away']",55,55,50,27/02/1996
+134,Vaporeon,Water,None,"['Hydration', 'Water Absorb']",130,65,60,27/02/1996
+135,Jolteon,Electric,None,"['Quick Feet', 'Volt Absorb']",65,65,60,27/02/1996
+136,Flareon,Fire,None,"['Flash Fire', 'Guts']",65,130,60,27/02/1996
+137,Porygon,Normal,None,"['Analytic', 'Download', 'Trace']",65,60,70,27/02/1996
 138,Omanyte,Rock,Water,"['Shell Armor', 'Swift Swim', 'Weak Armor']",35,40,100,27/02/1996
 139,Omastar,Rock,Water,"['Shell Armor', 'Swift Swim', 'Weak Armor']",70,60,125,27/02/1996
 140,Kabuto,Rock,Water,"['Battle Armor', 'Swift Swim', 'Weak Armor']",30,80,90,27/02/1996
 141,Kabutops,Rock,Water,"['Battle Armor', 'Swift Swim', 'Weak Armor']",60,115,105,27/02/1996
 142,Aerodactyl,Rock,Flying,"['Pressure', 'Rock Head', 'Unnerve']",80,105,65,27/02/1996
-143,Snorlax,Normal,,"['Gluttony', 'Immunity', 'Thick Fat']",160,110,65,27/02/1996
+143,Snorlax,Normal,None,"['Gluttony', 'Immunity', 'Thick Fat']",160,110,65,27/02/1996
 144,Articuno,Ice,Flying,"['Pressure', 'Snow Cloak']",90,85,100,27/02/1996
 145,Zapdos,Electric,Flying,"['Pressure', 'Static']",90,90,85,27/02/1996
 146,Moltres,Fire,Flying,"['Flame Body', 'Pressure']",90,100,90,27/02/1996
-147,Dratini,Dragon,,"['Marvel Scale', 'Shed Skin']",41,64,45,27/02/1996
-148,Dragonair,Dragon,,"['Marvel Scale', 'Shed Skin']",61,84,65,27/02/1996
+147,Dratini,Dragon,None,"['Marvel Scale', 'Shed Skin']",41,64,45,27/02/1996
+148,Dragonair,Dragon,None,"['Marvel Scale', 'Shed Skin']",61,84,65,27/02/1996
 149,Dragonite,Dragon,Flying,"['Inner Focus', 'Multiscale']",91,134,95,27/02/1996
-150,Mewtwo,Psychic,,"['Pressure', 'Unnerve']",106,110,90,27/02/1996
-151,Mew,Psychic,,['Synchronize'],100,100,100,27/02/1996
-152,Chikorita,Grass,,"['Leaf Guard', 'Overgrow']",45,49,65,22/11/1999
-153,Bayleef,Grass,,"['Leaf Guard', 'Overgrow']",60,62,80,22/11/1999
-154,Meganium,Grass,,"['Leaf Guard', 'Overgrow']",80,82,100,22/11/1999
-155,Cyndaquil,Fire,,"['Blaze', 'Flash Fire']",39,52,43,22/11/1999
-156,Quilava,Fire,,"['Blaze', 'Flash Fire']",58,64,58,22/11/1999
-157,Typhlosion,Fire,,"['Blaze', 'Flash Fire']",78,84,78,22/11/1999
-158,Totodile,Water,,"['Sheer Force', 'Torrent']",50,65,64,22/11/1999
-159,Croconaw,Water,,"['Sheer Force', 'Torrent']",65,80,80,22/11/1999
-160,Feraligatr,Water,,"['Sheer Force', 'Torrent']",85,105,100,22/11/1999
-161,Sentret,Normal,,"['Frisk', 'Keen Eye', 'Run Away']",35,46,34,22/11/1999
-162,Furret,Normal,,"['Frisk', 'Keen Eye', 'Run Away']",85,76,64,22/11/1999
+150,Mewtwo,Psychic,None,"['Pressure', 'Unnerve']",106,110,90,27/02/1996
+151,Mew,Psychic,None,['Synchronize'],100,100,100,27/02/1996
+152,Chikorita,Grass,None,"['Leaf Guard', 'Overgrow']",45,49,65,22/11/1999
+153,Bayleef,Grass,None,"['Leaf Guard', 'Overgrow']",60,62,80,22/11/1999
+154,Meganium,Grass,None,"['Leaf Guard', 'Overgrow']",80,82,100,22/11/1999
+155,Cyndaquil,Fire,None,"['Blaze', 'Flash Fire']",39,52,43,22/11/1999
+156,Quilava,Fire,None,"['Blaze', 'Flash Fire']",58,64,58,22/11/1999
+157,Typhlosion,Fire,None,"['Blaze', 'Flash Fire']",78,84,78,22/11/1999
+158,Totodile,Water,None,"['Sheer Force', 'Torrent']",50,65,64,22/11/1999
+159,Croconaw,Water,None,"['Sheer Force', 'Torrent']",65,80,80,22/11/1999
+160,Feraligatr,Water,None,"['Sheer Force', 'Torrent']",85,105,100,22/11/1999
+161,Sentret,Normal,None,"['Frisk', 'Keen Eye', 'Run Away']",35,46,34,22/11/1999
+162,Furret,Normal,None,"['Frisk', 'Keen Eye', 'Run Away']",85,76,64,22/11/1999
 163,Hoothoot,Normal,Flying,"['Insomnia', 'Keen Eye', 'Tinted Lens']",60,30,30,22/11/1999
 164,Noctowl,Normal,Flying,"['Insomnia', 'Keen Eye', 'Tinted Lens']",100,50,50,22/11/1999
 165,Ledyba,Bug,Flying,"['Early Bird', 'Rattled', 'Swarm']",40,20,30,22/11/1999
@@ -170,108 +170,108 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 169,Crobat,Poison,Flying,"['Infiltrator', 'Inner Focus']",85,90,80,22/11/1999
 170,Chinchou,Water,Electric,"['Illuminate', 'Volt Absorb', 'Water Absorb']",75,38,38,22/11/1999
 171,Lanturn,Water,Electric,"['Illuminate', 'Volt Absorb', 'Water Absorb']",125,58,58,22/11/1999
-172,Pichu,Electric,,"['Lightning Rod', 'Static']",20,40,15,22/11/1999
-173,Cleffa,Fairy,,"['Cute Charm', 'Friend Guard', 'Magic Guard']",50,25,28,22/11/1999
+172,Pichu,Electric,None,"['Lightning Rod', 'Static']",20,40,15,22/11/1999
+173,Cleffa,Fairy,None,"['Cute Charm', 'Friend Guard', 'Magic Guard']",50,25,28,22/11/1999
 174,Igglybuff,Normal,Fairy,"['Competitive', 'Cute Charm', 'Friend Guard']",90,30,15,22/11/1999
-175,Togepi,Fairy,,"['Hustle', 'Serene Grace', 'Super Luck']",35,20,65,22/11/1999
+175,Togepi,Fairy,None,"['Hustle', 'Serene Grace', 'Super Luck']",35,20,65,22/11/1999
 176,Togetic,Fairy,Flying,"['Hustle', 'Serene Grace', 'Super Luck']",55,40,85,22/11/1999
 177,Natu,Psychic,Flying,"['Early Bird', 'Magic Bounce', 'Synchronize']",40,50,45,22/11/1999
 178,Xatu,Psychic,Flying,"['Early Bird', 'Magic Bounce', 'Synchronize']",65,75,70,22/11/1999
-179,Mareep,Electric,,"['Plus', 'Static']",55,40,40,22/11/1999
-180,Flaaffy,Electric,,"['Plus', 'Static']",70,55,55,22/11/1999
-181,Ampharos,Electric,,"['Plus', 'Static']",90,75,85,22/11/1999
-182,Bellossom,Grass,,"['Chlorophyll', 'Healer']",75,80,95,22/11/1999
+179,Mareep,Electric,None,"['Plus', 'Static']",55,40,40,22/11/1999
+180,Flaaffy,Electric,None,"['Plus', 'Static']",70,55,55,22/11/1999
+181,Ampharos,Electric,None,"['Plus', 'Static']",90,75,85,22/11/1999
+182,Bellossom,Grass,None,"['Chlorophyll', 'Healer']",75,80,95,22/11/1999
 183,Marill,Water,Fairy,"['Huge Power', 'Sap Sipper', 'Thick Fat']",70,20,50,22/11/1999
 184,Azumarill,Water,Fairy,"['Huge Power', 'Sap Sipper', 'Thick Fat']",100,50,80,22/11/1999
-185,Sudowoodo,Rock,,"['Rattled', 'Rock Head', 'Sturdy']",70,100,115,22/11/1999
-186,Politoed,Water,,"['Damp', 'Drizzle', 'Water Absorb']",90,75,75,22/11/1999
+185,Sudowoodo,Rock,None,"['Rattled', 'Rock Head', 'Sturdy']",70,100,115,22/11/1999
+186,Politoed,Water,None,"['Damp', 'Drizzle', 'Water Absorb']",90,75,75,22/11/1999
 187,Hoppip,Grass,Flying,"['Chlorophyll', 'Infiltrator', 'Leaf Guard']",35,35,40,22/11/1999
 188,Skiploom,Grass,Flying,"['Chlorophyll', 'Infiltrator', 'Leaf Guard']",55,45,50,22/11/1999
 189,Jumpluff,Grass,Flying,"['Chlorophyll', 'Infiltrator', 'Leaf Guard']",75,55,70,22/11/1999
-190,Aipom,Normal,,"['Pickup', 'Run Away', 'Skill Link']",55,70,55,22/11/1999
-191,Sunkern,Grass,,"['Chlorophyll', 'Early Bird', 'Solar Power']",30,30,30,22/11/1999
-192,Sunflora,Grass,,"['Chlorophyll', 'Early Bird', 'Solar Power']",75,75,55,22/11/1999
+190,Aipom,Normal,None,"['Pickup', 'Run Away', 'Skill Link']",55,70,55,22/11/1999
+191,Sunkern,Grass,None,"['Chlorophyll', 'Early Bird', 'Solar Power']",30,30,30,22/11/1999
+192,Sunflora,Grass,None,"['Chlorophyll', 'Early Bird', 'Solar Power']",75,75,55,22/11/1999
 193,Yanma,Bug,Flying,"['Frisk', 'Speed Boost']",65,65,45,22/11/1999
 194,Wooper,Water,Ground,"['Damp', 'Unaware', 'Water Absorb']",55,45,45,22/11/1999
 195,Quagsire,Water,Ground,"['Damp', 'Unaware', 'Water Absorb']",95,85,85,22/11/1999
-196,Espeon,Psychic,,"['Magic Bounce', 'Synchronize']",65,65,60,22/11/1999
-197,Umbreon,Dark,,"['Inner Focus', 'Synchronize']",95,65,110,22/11/1999
+196,Espeon,Psychic,None,"['Magic Bounce', 'Synchronize']",65,65,60,22/11/1999
+197,Umbreon,Dark,None,"['Inner Focus', 'Synchronize']",95,65,110,22/11/1999
 198,Murkrow,Dark,Flying,"['Insomnia', 'Prankster', 'Super Luck']",60,85,42,22/11/1999
 199,Slowking,Water,Psychic,"['Oblivious', 'Own Tempo', 'Regenerator']",95,75,80,22/11/1999
-200,Misdreavus,Ghost,,['Levitate'],60,60,60,22/11/1999
-201,Unown,Psychic,,['Levitate'],48,72,48,22/11/1999
-202,Wobbuffet,Psychic,,"['Shadow Tag', 'Telepathy']",190,33,58,22/11/1999
+200,Misdreavus,Ghost,None,['Levitate'],60,60,60,22/11/1999
+201,Unown,Psychic,None,['Levitate'],48,72,48,22/11/1999
+202,Wobbuffet,Psychic,None,"['Shadow Tag', 'Telepathy']",190,33,58,22/11/1999
 203,Girafarig,Normal,Psychic,"['Early Bird', 'Inner Focus', 'Sap Sipper']",70,80,65,22/11/1999
-204,Pineco,Bug,,"['Overcoat', 'Sturdy']",50,65,90,22/11/1999
+204,Pineco,Bug,None,"['Overcoat', 'Sturdy']",50,65,90,22/11/1999
 205,Forretress,Bug,Steel,"['Overcoat', 'Sturdy']",75,90,140,22/11/1999
-206,Dunsparce,Normal,,"['Rattled', 'Run Away', 'Serene Grace']",100,70,70,22/11/1999
+206,Dunsparce,Normal,None,"['Rattled', 'Run Away', 'Serene Grace']",100,70,70,22/11/1999
 207,Gligar,Ground,Flying,"['Hyper Cutter', 'Immunity', 'Sand Veil']",65,75,105,22/11/1999
 208,Steelix,Steel,Ground,"['Rock Head', 'Sheer Force', 'Sturdy']",75,85,200,22/11/1999
-209,Snubbull,Fairy,,"['Intimidate', 'Rattled', 'Run Away']",60,80,50,22/11/1999
-210,Granbull,Fairy,,"['Intimidate', 'Quick Feet', 'Rattled']",90,120,75,22/11/1999
+209,Snubbull,Fairy,None,"['Intimidate', 'Rattled', 'Run Away']",60,80,50,22/11/1999
+210,Granbull,Fairy,None,"['Intimidate', 'Quick Feet', 'Rattled']",90,120,75,22/11/1999
 211,Qwilfish,Water,Poison,"['Intimidate', 'Poison Point', 'Swift Swim']",65,95,85,22/11/1999
 212,Scizor,Bug,Steel,"['Light Metal', 'Swarm', 'Technician']",70,130,100,22/11/1999
 213,Shuckle,Bug,Rock,"['Contrary', 'Gluttony', 'Sturdy']",20,10,230,22/11/1999
 214,Heracross,Bug,Fighting,"['Guts', 'Moxie', 'Swarm']",80,125,75,22/11/1999
 215,Sneasel,Dark,Ice,"['Inner Focus', 'Keen Eye', 'Pickpocket']",55,95,55,22/11/1999
-216,Teddiursa,Normal,,"['Honey Gather', 'Pickup', 'Quick Feet']",60,80,50,22/11/1999
-217,Ursaring,Normal,,"['Guts', 'Quick Feet', 'Unnerve']",90,130,75,22/11/1999
-218,Slugma,Fire,,"['Flame Body', 'Magma Armor', 'Weak Armor']",40,40,40,22/11/1999
+216,Teddiursa,Normal,None,"['Honey Gather', 'Pickup', 'Quick Feet']",60,80,50,22/11/1999
+217,Ursaring,Normal,None,"['Guts', 'Quick Feet', 'Unnerve']",90,130,75,22/11/1999
+218,Slugma,Fire,None,"['Flame Body', 'Magma Armor', 'Weak Armor']",40,40,40,22/11/1999
 219,Magcargo,Fire,Rock,"['Flame Body', 'Magma Armor', 'Weak Armor']",60,50,120,22/11/1999
 220,Swinub,Ice,Ground,"['Oblivious', 'Snow Cloak', 'Thick Fat']",50,50,40,22/11/1999
 221,Piloswine,Ice,Ground,"['Oblivious', 'Snow Cloak', 'Thick Fat']",100,100,80,22/11/1999
 222,Corsola,Water,Rock,"['Hustle', 'Natural Cure', 'Regenerator']",65,55,95,22/11/1999
-223,Remoraid,Water,,"['Hustle', 'Moody', 'Sniper']",35,65,35,22/11/1999
-224,Octillery,Water,,"['Moody', 'Sniper', 'Suction Cups']",75,105,75,22/11/1999
+223,Remoraid,Water,None,"['Hustle', 'Moody', 'Sniper']",35,65,35,22/11/1999
+224,Octillery,Water,None,"['Moody', 'Sniper', 'Suction Cups']",75,105,75,22/11/1999
 225,Delibird,Ice,Flying,"['Hustle', 'Insomnia', 'Vital Spirit']",45,55,45,22/11/1999
 226,Mantine,Water,Flying,"['Swift Swim', 'Water Absorb', 'Water Veil']",85,40,70,22/11/1999
 227,Skarmory,Steel,Flying,"['Keen Eye', 'Sturdy', 'Weak Armor']",65,80,140,22/11/1999
 228,Houndour,Dark,Fire,"['Early Bird', 'Flash Fire', 'Unnerve']",45,60,30,22/11/1999
 229,Houndoom,Dark,Fire,"['Early Bird', 'Flash Fire', 'Unnerve']",75,90,50,22/11/1999
 230,Kingdra,Water,Dragon,"['Damp', 'Sniper', 'Swift Swim']",75,95,95,22/11/1999
-231,Phanpy,Ground,,"['Pickup', 'Sand Veil']",90,60,60,22/11/1999
-232,Donphan,Ground,,"['Sand Veil', 'Sturdy']",90,120,120,22/11/1999
-233,Porygon2,Normal,,"['Analytic', 'Download', 'Trace']",85,80,90,22/11/1999
-234,Stantler,Normal,,"['Frisk', 'Intimidate', 'Sap Sipper']",73,95,62,22/11/1999
-235,Smeargle,Normal,,"['Moody', 'Own Tempo', 'Technician']",55,20,35,22/11/1999
-236,Tyrogue,Fighting,,"['Guts', 'Steadfast', 'Vital Spirit']",35,35,35,22/11/1999
-237,Hitmontop,Fighting,,"['Intimidate', 'Steadfast', 'Technician']",50,95,95,22/11/1999
+231,Phanpy,Ground,None,"['Pickup', 'Sand Veil']",90,60,60,22/11/1999
+232,Donphan,Ground,None,"['Sand Veil', 'Sturdy']",90,120,120,22/11/1999
+233,Porygon2,Normal,None,"['Analytic', 'Download', 'Trace']",85,80,90,22/11/1999
+234,Stantler,Normal,None,"['Frisk', 'Intimidate', 'Sap Sipper']",73,95,62,22/11/1999
+235,Smeargle,Normal,None,"['Moody', 'Own Tempo', 'Technician']",55,20,35,22/11/1999
+236,Tyrogue,Fighting,None,"['Guts', 'Steadfast', 'Vital Spirit']",35,35,35,22/11/1999
+237,Hitmontop,Fighting,None,"['Intimidate', 'Steadfast', 'Technician']",50,95,95,22/11/1999
 238,Smoochum,Ice,Psychic,"['Forewarn', 'Hydration', 'Oblivious']",45,30,15,22/11/1999
-239,Elekid,Electric,,"['Static', 'Vital Spirit']",45,63,37,22/11/1999
-240,Magby,Fire,,"['Flame Body', 'Vital Spirit']",45,75,37,22/11/1999
-241,Miltank,Normal,,"['Sap Sipper', 'Scrappy', 'Thick Fat']",95,80,105,22/11/1999
-242,Blissey,Normal,,"['Healer', 'Natural Cure', 'Serene Grace']",255,10,10,22/11/1999
-243,Raikou,Electric,,"['Inner Focus', 'Pressure']",90,85,75,22/11/1999
-244,Entei,Fire,,"['Inner Focus', 'Pressure']",115,115,85,22/11/1999
-245,Suicune,Water,,"['Inner Focus', 'Pressure']",100,75,115,22/11/1999
+239,Elekid,Electric,None,"['Static', 'Vital Spirit']",45,63,37,22/11/1999
+240,Magby,Fire,None,"['Flame Body', 'Vital Spirit']",45,75,37,22/11/1999
+241,Miltank,Normal,None,"['Sap Sipper', 'Scrappy', 'Thick Fat']",95,80,105,22/11/1999
+242,Blissey,Normal,None,"['Healer', 'Natural Cure', 'Serene Grace']",255,10,10,22/11/1999
+243,Raikou,Electric,None,"['Inner Focus', 'Pressure']",90,85,75,22/11/1999
+244,Entei,Fire,None,"['Inner Focus', 'Pressure']",115,115,85,22/11/1999
+245,Suicune,Water,None,"['Inner Focus', 'Pressure']",100,75,115,22/11/1999
 246,Larvitar,Rock,Ground,"['Guts', 'Sand Veil']",50,64,50,22/11/1999
 247,Pupitar,Rock,Ground,['Shed Skin'],70,84,70,22/11/1999
 248,Tyranitar,Rock,Dark,"['Sand Stream', 'Unnerve']",100,134,110,22/11/1999
 249,Lugia,Psychic,Flying,"['Multiscale', 'Pressure']",106,90,130,22/11/1999
 250,Ho-Oh,Fire,Flying,"['Pressure', 'Regenerator']",106,130,90,22/11/1999
 251,Celebi,Psychic,Grass,['Natural Cure'],100,100,100,22/11/1999
-252,Treecko,Grass,,"['Overgrow', 'Unburden']",40,45,35,21/02/2002
-253,Grovyle,Grass,,"['Overgrow', 'Unburden']",50,65,45,21/02/2002
-254,Sceptile,Grass,,"['Overgrow', 'Unburden']",70,85,65,21/02/2002
-255,Torchic,Fire,,"['Blaze', 'Speed Boost']",45,60,40,21/02/2002
+252,Treecko,Grass,None,"['Overgrow', 'Unburden']",40,45,35,21/02/2002
+253,Grovyle,Grass,None,"['Overgrow', 'Unburden']",50,65,45,21/02/2002
+254,Sceptile,Grass,None,"['Overgrow', 'Unburden']",70,85,65,21/02/2002
+255,Torchic,Fire,None,"['Blaze', 'Speed Boost']",45,60,40,21/02/2002
 256,Combusken,Fire,Fighting,"['Blaze', 'Speed Boost']",60,85,60,21/02/2002
 257,Blaziken,Fire,Fighting,"['Blaze', 'Speed Boost']",80,120,70,21/02/2002
-258,Mudkip,Water,,"['Damp', 'Torrent']",50,70,50,21/02/2002
+258,Mudkip,Water,None,"['Damp', 'Torrent']",50,70,50,21/02/2002
 259,Marshtomp,Water,Ground,"['Damp', 'Torrent']",70,85,70,21/02/2002
 260,Swampert,Water,Ground,"['Damp', 'Torrent']",100,110,90,21/02/2002
-261,Poochyena,Dark,,"['Quick Feet', 'Rattled', 'Run Away']",35,55,35,21/02/2002
-262,Mightyena,Dark,,"['Intimidate', 'Moxie', 'Quick Feet']",70,90,70,21/02/2002
-263,Zigzagoon,Normal,,"['Gluttony', 'Pickup', 'Quick Feet']",38,30,41,21/02/2002
-264,Linoone,Normal,,"['Gluttony', 'Pickup', 'Quick Feet']",78,70,61,21/02/2002
-265,Wurmple,Bug,,"['Run Away', 'Shield Dust']",45,45,35,21/02/2002
-266,Silcoon,Bug,,['Shed Skin'],50,35,55,21/02/2002
+261,Poochyena,Dark,None,"['Quick Feet', 'Rattled', 'Run Away']",35,55,35,21/02/2002
+262,Mightyena,Dark,None,"['Intimidate', 'Moxie', 'Quick Feet']",70,90,70,21/02/2002
+263,Zigzagoon,Normal,None,"['Gluttony', 'Pickup', 'Quick Feet']",38,30,41,21/02/2002
+264,Linoone,Normal,None,"['Gluttony', 'Pickup', 'Quick Feet']",78,70,61,21/02/2002
+265,Wurmple,Bug,None,"['Run Away', 'Shield Dust']",45,45,35,21/02/2002
+266,Silcoon,Bug,None,['Shed Skin'],50,35,55,21/02/2002
 267,Beautifly,Bug,Flying,"['Rivalry', 'Swarm']",60,70,50,21/02/2002
-268,Cascoon,Bug,,['Shed Skin'],50,35,55,21/02/2002
+268,Cascoon,Bug,None,['Shed Skin'],50,35,55,21/02/2002
 269,Dustox,Bug,Poison,['Shield Dust'],60,50,70,21/02/2002
 270,Lotad,Water,Grass,"['Own Tempo', 'Rain Dish', 'Swift Swim']",40,30,30,21/02/2002
 271,Lombre,Water,Grass,"['Own Tempo', 'Rain Dish', 'Swift Swim']",60,50,50,21/02/2002
 272,Ludicolo,Water,Grass,"['Own Tempo', 'Rain Dish', 'Swift Swim']",80,70,70,21/02/2002
-273,Seedot,Grass,,"['Chlorophyll', 'Early Bird', 'Pickpocket']",40,40,50,21/02/2002
+273,Seedot,Grass,None,"['Chlorophyll', 'Early Bird', 'Pickpocket']",40,40,50,21/02/2002
 274,Nuzleaf,Grass,Dark,"['Chlorophyll', 'Early Bird', 'Pickpocket']",70,70,40,21/02/2002
 275,Shiftry,Grass,Dark,"['Chlorophyll', 'Early Bird', 'Pickpocket']",90,100,60,21/02/2002
 276,Taillow,Normal,Flying,"['Guts', 'Scrappy']",40,55,30,21/02/2002
@@ -283,23 +283,23 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 282,Gardevoir,Psychic,Fairy,"['Synchronize', 'Telepathy', 'Trace']",68,65,65,21/02/2002
 283,Surskit,Bug,Water,"['Rain Dish', 'Swift Swim']",40,30,32,21/02/2002
 284,Masquerain,Bug,Flying,"['Intimidate', 'Unnerve']",70,60,62,21/02/2002
-285,Shroomish,Grass,,"['Effect Spore', 'Poison Heal', 'Quick Feet']",60,40,60,21/02/2002
+285,Shroomish,Grass,None,"['Effect Spore', 'Poison Heal', 'Quick Feet']",60,40,60,21/02/2002
 286,Breloom,Grass,Fighting,"['Effect Spore', 'Poison Heal', 'Technician']",60,130,80,21/02/2002
-287,Slakoth,Normal,,['Truant'],60,60,60,21/02/2002
-288,Vigoroth,Normal,,['Vital Spirit'],80,80,80,21/02/2002
-289,Slaking,Normal,,['Truant'],150,160,100,21/02/2002
+287,Slakoth,Normal,None,['Truant'],60,60,60,21/02/2002
+288,Vigoroth,Normal,None,['Vital Spirit'],80,80,80,21/02/2002
+289,Slaking,Normal,None,['Truant'],150,160,100,21/02/2002
 290,Nincada,Bug,Ground,['Run Away'],31,45,90,21/02/2002
 291,Ninjask,Bug,Flying,"['Infiltrator', 'Speed Boost']",61,90,45,21/02/2002
 292,Shedinja,Bug,Ghost,['Wonder Guard'],1,90,45,21/02/2002
-293,Whismur,Normal,,"['Rattled', 'Soundproof']",64,51,23,21/02/2002
-294,Loudred,Normal,,"['Scrappy', 'Soundproof']",84,71,43,21/02/2002
-295,Exploud,Normal,,"['Scrappy', 'Soundproof']",104,91,63,21/02/2002
-296,Makuhita,Fighting,,"['Guts', 'Sheer Force', 'Thick Fat']",72,60,30,21/02/2002
-297,Hariyama,Fighting,,"['Guts', 'Sheer Force', 'Thick Fat']",144,120,60,21/02/2002
+293,Whismur,Normal,None,"['Rattled', 'Soundproof']",64,51,23,21/02/2002
+294,Loudred,Normal,None,"['Scrappy', 'Soundproof']",84,71,43,21/02/2002
+295,Exploud,Normal,None,"['Scrappy', 'Soundproof']",104,91,63,21/02/2002
+296,Makuhita,Fighting,None,"['Guts', 'Sheer Force', 'Thick Fat']",72,60,30,21/02/2002
+297,Hariyama,Fighting,None,"['Guts', 'Sheer Force', 'Thick Fat']",144,120,60,21/02/2002
 298,Azurill,Normal,Fairy,"['Huge Power', 'Sap Sipper', 'Thick Fat']",50,20,40,21/02/2002
-299,Nosepass,Rock,,"['Magnet Pull', 'Sand Force', 'Sturdy']",30,45,135,21/02/2002
-300,Skitty,Normal,,"['Cute Charm', 'Normalize', 'Wonder Skin']",50,45,45,21/02/2002
-301,Delcatty,Normal,,"['Cute Charm', 'Normalize', 'Wonder Skin']",70,65,65,21/02/2002
+299,Nosepass,Rock,None,"['Magnet Pull', 'Sand Force', 'Sturdy']",30,45,135,21/02/2002
+300,Skitty,Normal,None,"['Cute Charm', 'Normalize', 'Wonder Skin']",50,45,45,21/02/2002
+301,Delcatty,Normal,None,"['Cute Charm', 'Normalize', 'Wonder Skin']",70,65,65,21/02/2002
 302,Sableye,Dark,Ghost,"['Keen Eye', 'Prankster', 'Stall']",50,75,75,21/02/2002
 303,Mawile,Steel,Fairy,"['Hyper Cutter', 'Intimidate', 'Sheer Force']",50,85,85,21/02/2002
 304,Aron,Steel,Rock,"['Heavy Metal', 'Rock Head', 'Sturdy']",50,70,100,21/02/2002
@@ -307,39 +307,39 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 306,Aggron,Steel,Rock,"['Heavy Metal', 'Rock Head', 'Sturdy']",70,110,180,21/02/2002
 307,Meditite,Fighting,Psychic,"['Pure Power', 'Telepathy']",30,40,55,21/02/2002
 308,Medicham,Fighting,Psychic,"['Pure Power', 'Telepathy']",60,60,75,21/02/2002
-309,Electrike,Electric,,"['Lightning Rod', 'Minus', 'Static']",40,45,40,21/02/2002
-310,Manectric,Electric,,"['Lightning Rod', 'Minus', 'Static']",70,75,60,21/02/2002
-311,Plusle,Electric,,"['Lightning Rod', 'Plus']",60,50,40,21/02/2002
-312,Minun,Electric,,"['Minus', 'Volt Absorb']",60,40,50,21/02/2002
-313,Volbeat,Bug,,"['Illuminate', 'Prankster', 'Swarm']",65,73,75,21/02/2002
-314,Illumise,Bug,,"['Oblivious', 'Prankster', 'Tinted Lens']",65,47,75,21/02/2002
+309,Electrike,Electric,None,"['Lightning Rod', 'Minus', 'Static']",40,45,40,21/02/2002
+310,Manectric,Electric,None,"['Lightning Rod', 'Minus', 'Static']",70,75,60,21/02/2002
+311,Plusle,Electric,None,"['Lightning Rod', 'Plus']",60,50,40,21/02/2002
+312,Minun,Electric,None,"['Minus', 'Volt Absorb']",60,40,50,21/02/2002
+313,Volbeat,Bug,None,"['Illuminate', 'Prankster', 'Swarm']",65,73,75,21/02/2002
+314,Illumise,Bug,None,"['Oblivious', 'Prankster', 'Tinted Lens']",65,47,75,21/02/2002
 315,Roselia,Grass,Poison,"['Leaf Guard', 'Natural Cure', 'Poison Point']",50,60,45,21/02/2002
-316,Gulpin,Poison,,"['Gluttony', 'Liquid Ooze', 'Sticky Hold']",70,43,53,21/02/2002
-317,Swalot,Poison,,"['Gluttony', 'Liquid Ooze', 'Sticky Hold']",100,73,83,21/02/2002
+316,Gulpin,Poison,None,"['Gluttony', 'Liquid Ooze', 'Sticky Hold']",70,43,53,21/02/2002
+317,Swalot,Poison,None,"['Gluttony', 'Liquid Ooze', 'Sticky Hold']",100,73,83,21/02/2002
 318,Carvanha,Water,Dark,"['Rough Skin', 'Speed Boost']",45,90,20,21/02/2002
 319,Sharpedo,Water,Dark,"['Rough Skin', 'Speed Boost']",70,120,40,21/02/2002
-320,Wailmer,Water,,"['Oblivious', 'Pressure', 'Water Veil']",130,70,35,21/02/2002
-321,Wailord,Water,,"['Oblivious', 'Pressure', 'Water Veil']",170,90,45,21/02/2002
+320,Wailmer,Water,None,"['Oblivious', 'Pressure', 'Water Veil']",130,70,35,21/02/2002
+321,Wailord,Water,None,"['Oblivious', 'Pressure', 'Water Veil']",170,90,45,21/02/2002
 322,Numel,Fire,Ground,"['Oblivious', 'Own Tempo', 'Simple']",60,60,40,21/02/2002
 323,Camerupt,Fire,Ground,"['Anger Point', 'Magma Armor', 'Solid Rock']",70,100,70,21/02/2002
-324,Torkoal,Fire,,"['Drought', 'Shell Armor', 'White Smoke']",70,85,140,21/02/2002
-325,Spoink,Psychic,,"['Gluttony', 'Own Tempo', 'Thick Fat']",60,25,35,21/02/2002
-326,Grumpig,Psychic,,"['Gluttony', 'Own Tempo', 'Thick Fat']",80,45,65,21/02/2002
-327,Spinda,Normal,,"['Contrary', 'Own Tempo', 'Tangled Feet']",60,60,60,21/02/2002
-328,Trapinch,Ground,,"['Arena Trap', 'Hyper Cutter', 'Sheer Force']",45,100,45,21/02/2002
+324,Torkoal,Fire,None,"['Drought', 'Shell Armor', 'White Smoke']",70,85,140,21/02/2002
+325,Spoink,Psychic,None,"['Gluttony', 'Own Tempo', 'Thick Fat']",60,25,35,21/02/2002
+326,Grumpig,Psychic,None,"['Gluttony', 'Own Tempo', 'Thick Fat']",80,45,65,21/02/2002
+327,Spinda,Normal,None,"['Contrary', 'Own Tempo', 'Tangled Feet']",60,60,60,21/02/2002
+328,Trapinch,Ground,None,"['Arena Trap', 'Hyper Cutter', 'Sheer Force']",45,100,45,21/02/2002
 329,Vibrava,Ground,Dragon,['Levitate'],50,70,50,21/02/2002
 330,Flygon,Ground,Dragon,['Levitate'],80,100,80,21/02/2002
-331,Cacnea,Grass,,"['Sand Veil', 'Water Absorb']",50,85,40,21/02/2002
+331,Cacnea,Grass,None,"['Sand Veil', 'Water Absorb']",50,85,40,21/02/2002
 332,Cacturne,Grass,Dark,"['Sand Veil', 'Water Absorb']",70,115,60,21/02/2002
 333,Swablu,Normal,Flying,"['Cloud Nine', 'Natural Cure']",45,40,60,21/02/2002
 334,Altaria,Dragon,Flying,"['Cloud Nine', 'Natural Cure']",75,70,90,21/02/2002
-335,Zangoose,Normal,,"['Immunity', 'Toxic Boost']",73,115,60,21/02/2002
-336,Seviper,Poison,,"['Infiltrator', 'Shed Skin']",73,100,60,21/02/2002
+335,Zangoose,Normal,None,"['Immunity', 'Toxic Boost']",73,115,60,21/02/2002
+336,Seviper,Poison,None,"['Infiltrator', 'Shed Skin']",73,100,60,21/02/2002
 337,Lunatone,Rock,Psychic,['Levitate'],90,55,65,21/02/2002
 338,Solrock,Rock,Psychic,['Levitate'],90,95,85,21/02/2002
 339,Barboach,Water,Ground,"['Anticipation', 'Hydration', 'Oblivious']",50,48,43,21/02/2002
 340,Whiscash,Water,Ground,"['Anticipation', 'Hydration', 'Oblivious']",110,78,73,21/02/2002
-341,Corphish,Water,,"['Adaptability', 'Hyper Cutter', 'Shell Armor']",43,80,65,21/02/2002
+341,Corphish,Water,None,"['Adaptability', 'Hyper Cutter', 'Shell Armor']",43,80,65,21/02/2002
 342,Crawdaunt,Water,Dark,"['Adaptability', 'Hyper Cutter', 'Shell Armor']",63,120,85,21/02/2002
 343,Baltoy,Ground,Psychic,['Levitate'],40,40,55,21/02/2002
 344,Claydol,Ground,Psychic,['Levitate'],60,70,105,21/02/2002
@@ -347,197 +347,197 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 346,Cradily,Rock,Grass,"['Storm Drain', 'Suction Cups']",86,81,97,21/02/2002
 347,Anorith,Rock,Bug,"['Battle Armor', 'Swift Swim']",45,95,50,21/02/2002
 348,Armaldo,Rock,Bug,"['Battle Armor', 'Swift Swim']",75,125,100,21/02/2002
-349,Feebas,Water,,"['Adaptability', 'Oblivious', 'Swift Swim']",20,15,20,21/02/2002
-350,Milotic,Water,,"['Competitive', 'Cute Charm', 'Marvel Scale']",95,60,79,21/02/2002
-351,Castform,Normal,,['Forecast'],70,70,70,21/02/2002
-352,Kecleon,Normal,,"['Color Change', 'Protean']",60,90,70,21/02/2002
-353,Shuppet,Ghost,,"['Cursed Body', 'Frisk', 'Insomnia']",44,75,35,21/02/2002
-354,Banette,Ghost,,"['Cursed Body', 'Frisk', 'Insomnia']",64,115,65,21/02/2002
-355,Duskull,Ghost,,"['Frisk', 'Levitate']",20,40,90,21/02/2002
-356,Dusclops,Ghost,,"['Frisk', 'Pressure']",40,70,130,21/02/2002
+349,Feebas,Water,None,"['Adaptability', 'Oblivious', 'Swift Swim']",20,15,20,21/02/2002
+350,Milotic,Water,None,"['Competitive', 'Cute Charm', 'Marvel Scale']",95,60,79,21/02/2002
+351,Castform,Normal,None,['Forecast'],70,70,70,21/02/2002
+352,Kecleon,Normal,None,"['Color Change', 'Protean']",60,90,70,21/02/2002
+353,Shuppet,Ghost,None,"['Cursed Body', 'Frisk', 'Insomnia']",44,75,35,21/02/2002
+354,Banette,Ghost,None,"['Cursed Body', 'Frisk', 'Insomnia']",64,115,65,21/02/2002
+355,Duskull,Ghost,None,"['Frisk', 'Levitate']",20,40,90,21/02/2002
+356,Dusclops,Ghost,None,"['Frisk', 'Pressure']",40,70,130,21/02/2002
 357,Tropius,Grass,Flying,"['Chlorophyll', 'Harvest', 'Solar Power']",99,68,83,21/02/2002
-358,Chimecho,Psychic,,['Levitate'],75,50,80,21/02/2002
-359,Absol,Dark,,"['Justified', 'Pressure', 'Super Luck']",65,130,60,21/02/2002
-360,Wynaut,Psychic,,"['Shadow Tag', 'Telepathy']",95,23,48,21/02/2002
-361,Snorunt,Ice,,"['Ice Body', 'Inner Focus', 'Moody']",50,50,50,21/02/2002
-362,Glalie,Ice,,"['Ice Body', 'Inner Focus', 'Moody']",80,80,80,21/02/2002
+358,Chimecho,Psychic,None,['Levitate'],75,50,80,21/02/2002
+359,Absol,Dark,None,"['Justified', 'Pressure', 'Super Luck']",65,130,60,21/02/2002
+360,Wynaut,Psychic,None,"['Shadow Tag', 'Telepathy']",95,23,48,21/02/2002
+361,Snorunt,Ice,None,"['Ice Body', 'Inner Focus', 'Moody']",50,50,50,21/02/2002
+362,Glalie,Ice,None,"['Ice Body', 'Inner Focus', 'Moody']",80,80,80,21/02/2002
 363,Spheal,Ice,Water,"['Ice Body', 'Oblivious', 'Thick Fat']",70,40,50,21/02/2002
 364,Sealeo,Ice,Water,"['Ice Body', 'Oblivious', 'Thick Fat']",90,60,70,21/02/2002
 365,Walrein,Ice,Water,"['Ice Body', 'Oblivious', 'Thick Fat']",110,80,90,21/02/2002
-366,Clamperl,Water,,"['Rattled', 'Shell Armor']",35,64,85,21/02/2002
-367,Huntail,Water,,"['Swift Swim', 'Water Veil']",55,104,105,21/02/2002
-368,Gorebyss,Water,,"['Hydration', 'Swift Swim']",55,84,105,21/02/2002
+366,Clamperl,Water,None,"['Rattled', 'Shell Armor']",35,64,85,21/02/2002
+367,Huntail,Water,None,"['Swift Swim', 'Water Veil']",55,104,105,21/02/2002
+368,Gorebyss,Water,None,"['Hydration', 'Swift Swim']",55,84,105,21/02/2002
 369,Relicanth,Water,Rock,"['Rock Head', 'Sturdy', 'Swift Swim']",100,90,130,21/02/2002
-370,Luvdisc,Water,,"['Hydration', 'Swift Swim']",43,30,55,21/02/2002
-371,Bagon,Dragon,,"['Rock Head', 'Sheer Force']",45,75,60,21/02/2002
-372,Shelgon,Dragon,,"['Overcoat', 'Rock Head']",65,95,100,21/02/2002
+370,Luvdisc,Water,None,"['Hydration', 'Swift Swim']",43,30,55,21/02/2002
+371,Bagon,Dragon,None,"['Rock Head', 'Sheer Force']",45,75,60,21/02/2002
+372,Shelgon,Dragon,None,"['Overcoat', 'Rock Head']",65,95,100,21/02/2002
 373,Salamence,Dragon,Flying,"['Intimidate', 'Moxie']",95,135,80,21/02/2002
 374,Beldum,Steel,Psychic,"['Clear Body', 'Light Metal']",40,55,80,21/02/2002
 375,Metang,Steel,Psychic,"['Clear Body', 'Light Metal']",60,75,100,21/02/2002
 376,Metagross,Steel,Psychic,"['Clear Body', 'Light Metal']",80,135,130,21/02/2002
-377,Regirock,Rock,,"['Clear Body', 'Sturdy']",80,100,200,21/02/2002
-378,Regice,Ice,,"['Clear Body', 'Ice Body']",80,50,100,21/02/2002
-379,Registeel,Steel,,"['Clear Body', 'Light Metal']",80,75,150,21/02/2002
+377,Regirock,Rock,None,"['Clear Body', 'Sturdy']",80,100,200,21/02/2002
+378,Regice,Ice,None,"['Clear Body', 'Ice Body']",80,50,100,21/02/2002
+379,Registeel,Steel,None,"['Clear Body', 'Light Metal']",80,75,150,21/02/2002
 380,Latias,Dragon,Psychic,['Levitate'],80,80,90,21/02/2002
 381,Latios,Dragon,Psychic,['Levitate'],80,90,80,21/02/2002
-382,Kyogre,Water,,['Drizzle'],100,100,90,21/02/2002
-383,Groudon,Ground,,['Drought'],100,150,140,21/02/2002
+382,Kyogre,Water,None,['Drizzle'],100,100,90,21/02/2002
+383,Groudon,Ground,None,['Drought'],100,150,140,21/02/2002
 384,Rayquaza,Dragon,Flying,['Air Lock'],105,150,90,21/02/2002
 385,Jirachi,Steel,Psychic,['Serene Grace'],100,100,100,21/02/2002
-386,Deoxys ,Psychic,,['Pressure'],50,150,50,21/02/2002
-387,Turtwig,Grass,,"['Overgrow', 'Shell Armor']",55,68,64,28/09/2006
-388,Grotle,Grass,,"['Overgrow', 'Shell Armor']",75,89,85,28/09/2006
+386,Deoxys ,Psychic,None,['Pressure'],50,150,50,21/02/2002
+387,Turtwig,Grass,None,"['Overgrow', 'Shell Armor']",55,68,64,28/09/2006
+388,Grotle,Grass,None,"['Overgrow', 'Shell Armor']",75,89,85,28/09/2006
 389,Torterra,Grass,Ground,"['Overgrow', 'Shell Armor']",95,109,105,28/09/2006
-390,Chimchar,Fire,,"['Blaze', 'Iron Fist']",44,58,44,28/09/2006
+390,Chimchar,Fire,None,"['Blaze', 'Iron Fist']",44,58,44,28/09/2006
 391,Monferno,Fire,Fighting,"['Blaze', 'Iron Fist']",64,78,52,28/09/2006
 392,Infernape,Fire,Fighting,"['Blaze', 'Iron Fist']",76,104,71,28/09/2006
-393,Piplup,Water,,"['Defiant', 'Torrent']",53,51,53,28/09/2006
-394,Prinplup,Water,,"['Defiant', 'Torrent']",64,66,68,28/09/2006
+393,Piplup,Water,None,"['Defiant', 'Torrent']",53,51,53,28/09/2006
+394,Prinplup,Water,None,"['Defiant', 'Torrent']",64,66,68,28/09/2006
 395,Empoleon,Water,Steel,"['Defiant', 'Torrent']",84,86,88,28/09/2006
 396,Starly,Normal,Flying,"['Keen Eye', 'Reckless']",40,55,30,28/09/2006
 397,Staravia,Normal,Flying,"['Intimidate', 'Reckless']",55,75,50,28/09/2006
 398,Staraptor,Normal,Flying,"['Intimidate', 'Reckless']",85,120,70,28/09/2006
-399,Bidoof,Normal,,"['Moody', 'Simple', 'Unaware']",59,45,40,28/09/2006
+399,Bidoof,Normal,None,"['Moody', 'Simple', 'Unaware']",59,45,40,28/09/2006
 400,Bibarel,Normal,Water,"['Moody', 'Simple', 'Unaware']",79,85,60,28/09/2006
-401,Kricketot,Bug,,"['Run Away', 'Shed Skin']",37,25,41,28/09/2006
-402,Kricketune,Bug,,"['Swarm', 'Technician']",77,85,51,28/09/2006
-403,Shinx,Electric,,"['Guts', 'Intimidate', 'Rivalry']",45,65,34,28/09/2006
-404,Luxio,Electric,,"['Guts', 'Intimidate', 'Rivalry']",60,85,49,28/09/2006
-405,Luxray,Electric,,"['Guts', 'Intimidate', 'Rivalry']",80,120,79,28/09/2006
+401,Kricketot,Bug,None,"['Run Away', 'Shed Skin']",37,25,41,28/09/2006
+402,Kricketune,Bug,None,"['Swarm', 'Technician']",77,85,51,28/09/2006
+403,Shinx,Electric,None,"['Guts', 'Intimidate', 'Rivalry']",45,65,34,28/09/2006
+404,Luxio,Electric,None,"['Guts', 'Intimidate', 'Rivalry']",60,85,49,28/09/2006
+405,Luxray,Electric,None,"['Guts', 'Intimidate', 'Rivalry']",80,120,79,28/09/2006
 406,Budew,Grass,Poison,"['Leaf Guard', 'Natural Cure', 'Poison Point']",40,30,35,28/09/2006
 407,Roserade,Grass,Poison,"['Natural Cure', 'Poison Point', 'Technician']",60,70,65,28/09/2006
-408,Cranidos,Rock,,"['Mold Breaker', 'Sheer Force']",67,125,40,28/09/2006
-409,Rampardos,Rock,,"['Mold Breaker', 'Sheer Force']",97,165,60,28/09/2006
+408,Cranidos,Rock,None,"['Mold Breaker', 'Sheer Force']",67,125,40,28/09/2006
+409,Rampardos,Rock,None,"['Mold Breaker', 'Sheer Force']",97,165,60,28/09/2006
 410,Shieldon,Rock,Steel,"['Soundproof', 'Sturdy']",30,42,118,28/09/2006
 411,Bastiodon,Rock,Steel,"['Soundproof', 'Sturdy']",60,52,168,28/09/2006
-412,Burmy,Bug,,"['Overcoat', 'Shed Skin']",40,29,45,28/09/2006
+412,Burmy,Bug,None,"['Overcoat', 'Shed Skin']",40,29,45,28/09/2006
 413,Wormadam ,Bug,Grass,"['Anticipation', 'Overcoat']",60,59,85,28/09/2006
 414,Mothim,Bug,Flying,"['Swarm', 'Tinted Lens']",70,94,50,28/09/2006
 415,Combee,Bug,Flying,"['Honey Gather', 'Hustle']",30,30,42,28/09/2006
 416,Vespiquen,Bug,Flying,"['Pressure', 'Unnerve']",70,80,102,28/09/2006
-417,Pachirisu,Electric,,"['Pickup', 'Run Away', 'Volt Absorb']",60,45,70,28/09/2006
-418,Buizel,Water,,"['Swift Swim', 'Water Veil']",55,65,35,28/09/2006
-419,Floatzel,Water,,"['Swift Swim', 'Water Veil']",85,105,55,28/09/2006
-420,Cherubi,Grass,,['Chlorophyll'],45,35,45,28/09/2006
-421,Cherrim,Grass,,['Flower Gift'],70,60,70,28/09/2006
-422,Shellos,Water,,"['Sand Force', 'Sticky Hold', 'Storm Drain']",76,48,48,28/09/2006
+417,Pachirisu,Electric,None,"['Pickup', 'Run Away', 'Volt Absorb']",60,45,70,28/09/2006
+418,Buizel,Water,None,"['Swift Swim', 'Water Veil']",55,65,35,28/09/2006
+419,Floatzel,Water,None,"['Swift Swim', 'Water Veil']",85,105,55,28/09/2006
+420,Cherubi,Grass,None,['Chlorophyll'],45,35,45,28/09/2006
+421,Cherrim,Grass,None,['Flower Gift'],70,60,70,28/09/2006
+422,Shellos,Water,None,"['Sand Force', 'Sticky Hold', 'Storm Drain']",76,48,48,28/09/2006
 423,Gastrodon,Water,Ground,"['Sand Force', 'Sticky Hold', 'Storm Drain']",111,83,68,28/09/2006
-424,Ambipom,Normal,,"['Pickup', 'Skill Link', 'Technician']",75,100,66,28/09/2006
+424,Ambipom,Normal,None,"['Pickup', 'Skill Link', 'Technician']",75,100,66,28/09/2006
 425,Drifloon,Ghost,Flying,"['Aftermath', 'Flare Boost', 'Unburden']",90,50,34,28/09/2006
 426,Drifblim,Ghost,Flying,"['Aftermath', 'Flare Boost', 'Unburden']",150,80,44,28/09/2006
-427,Buneary,Normal,,"['Klutz', 'Limber', 'Run Away']",55,66,44,28/09/2006
-428,Lopunny,Normal,,"['Cute Charm', 'Klutz', 'Limber']",65,76,84,28/09/2006
-429,Mismagius,Ghost,,['Levitate'],60,60,60,28/09/2006
+427,Buneary,Normal,None,"['Klutz', 'Limber', 'Run Away']",55,66,44,28/09/2006
+428,Lopunny,Normal,None,"['Cute Charm', 'Klutz', 'Limber']",65,76,84,28/09/2006
+429,Mismagius,Ghost,None,['Levitate'],60,60,60,28/09/2006
 430,Honchkrow,Dark,Flying,"['Insomnia', 'Moxie', 'Super Luck']",100,125,52,28/09/2006
-431,Glameow,Normal,,"['Keen Eye', 'Limber', 'Own Tempo']",49,55,42,28/09/2006
-432,Purugly,Normal,,"['Defiant', 'Own Tempo', 'Thick Fat']",71,82,64,28/09/2006
-433,Chingling,Psychic,,['Levitate'],45,30,50,28/09/2006
+431,Glameow,Normal,None,"['Keen Eye', 'Limber', 'Own Tempo']",49,55,42,28/09/2006
+432,Purugly,Normal,None,"['Defiant', 'Own Tempo', 'Thick Fat']",71,82,64,28/09/2006
+433,Chingling,Psychic,None,['Levitate'],45,30,50,28/09/2006
 434,Stunky,Poison,Dark,"['Aftermath', 'Keen Eye', 'Stench']",63,63,47,28/09/2006
 435,Skuntank,Poison,Dark,"['Aftermath', 'Keen Eye', 'Stench']",103,93,67,28/09/2006
 436,Bronzor,Steel,Psychic,"['Heatproof', 'Heavy Metal', 'Levitate']",57,24,86,28/09/2006
 437,Bronzong,Steel,Psychic,"['Heatproof', 'Heavy Metal', 'Levitate']",67,89,116,28/09/2006
-438,Bonsly,Rock,,"['Rattled', 'Rock Head', 'Sturdy']",50,80,95,28/09/2006
+438,Bonsly,Rock,None,"['Rattled', 'Rock Head', 'Sturdy']",50,80,95,28/09/2006
 439,Mime Jr.,Psychic,Fairy,"['Filter', 'Soundproof', 'Technician']",20,25,45,28/09/2006
-440,Happiny,Normal,,"['Friend Guard', 'Natural Cure', 'Serene Grace']",100,5,5,28/09/2006
+440,Happiny,Normal,None,"['Friend Guard', 'Natural Cure', 'Serene Grace']",100,5,5,28/09/2006
 441,Chatot,Normal,Flying,"['Big Pecks', 'Keen Eye', 'Tangled Feet']",76,65,45,28/09/2006
 442,Spiritomb,Ghost,Dark,"['Infiltrator', 'Pressure']",50,92,108,28/09/2006
 443,Gible,Dragon,Ground,"['Rough Skin', 'Sand Veil']",58,70,45,28/09/2006
 444,Gabite,Dragon,Ground,"['Rough Skin', 'Sand Veil']",68,90,65,28/09/2006
 445,Garchomp,Dragon,Ground,"['Rough Skin', 'Sand Veil']",108,130,95,28/09/2006
-446,Munchlax,Normal,,"['Gluttony', 'Pickup', 'Thick Fat']",135,85,40,28/09/2006
-447,Riolu,Fighting,,"['Inner Focus', 'Prankster', 'Steadfast']",40,70,40,28/09/2006
+446,Munchlax,Normal,None,"['Gluttony', 'Pickup', 'Thick Fat']",135,85,40,28/09/2006
+447,Riolu,Fighting,None,"['Inner Focus', 'Prankster', 'Steadfast']",40,70,40,28/09/2006
 448,Lucario,Fighting,Steel,"['Inner Focus', 'Justified', 'Steadfast']",70,110,70,28/09/2006
-449,Hippopotas,Ground,,"['Sand Force', 'Sand Stream']",68,72,78,28/09/2006
-450,Hippowdon,Ground,,"['Sand Force', 'Sand Stream']",108,112,118,28/09/2006
+449,Hippopotas,Ground,None,"['Sand Force', 'Sand Stream']",68,72,78,28/09/2006
+450,Hippowdon,Ground,None,"['Sand Force', 'Sand Stream']",108,112,118,28/09/2006
 451,Skorupi,Poison,Bug,"['Battle Armor', 'Keen Eye', 'Sniper']",40,50,90,28/09/2006
 452,Drapion,Poison,Dark,"['Battle Armor', 'Keen Eye', 'Sniper']",70,90,110,28/09/2006
 453,Croagunk,Poison,Fighting,"['Anticipation', 'Dry Skin', 'Poison Touch']",48,61,40,28/09/2006
 454,Toxicroak,Poison,Fighting,"['Anticipation', 'Dry Skin', 'Poison Touch']",83,106,65,28/09/2006
-455,Carnivine,Grass,,['Levitate'],74,100,72,28/09/2006
-456,Finneon,Water,,"['Storm Drain', 'Swift Swim', 'Water Veil']",49,49,56,28/09/2006
-457,Lumineon,Water,,"['Storm Drain', 'Swift Swim', 'Water Veil']",69,69,76,28/09/2006
+455,Carnivine,Grass,None,['Levitate'],74,100,72,28/09/2006
+456,Finneon,Water,None,"['Storm Drain', 'Swift Swim', 'Water Veil']",49,49,56,28/09/2006
+457,Lumineon,Water,None,"['Storm Drain', 'Swift Swim', 'Water Veil']",69,69,76,28/09/2006
 458,Mantyke,Water,Flying,"['Swift Swim', 'Water Absorb', 'Water Veil']",45,20,50,28/09/2006
 459,Snover,Grass,Ice,"['Snow Warning', 'Soundproof']",60,62,50,28/09/2006
 460,Abomasnow,Grass,Ice,"['Snow Warning', 'Soundproof']",90,92,75,28/09/2006
 461,Weavile,Dark,Ice,"['Pickpocket', 'Pressure']",70,120,65,28/09/2006
 462,Magnezone,Electric,Steel,"['Analytic', 'Magnet Pull', 'Sturdy']",70,70,115,28/09/2006
-463,Lickilicky,Normal,,"['Cloud Nine', 'Oblivious', 'Own Tempo']",110,85,95,28/09/2006
+463,Lickilicky,Normal,None,"['Cloud Nine', 'Oblivious', 'Own Tempo']",110,85,95,28/09/2006
 464,Rhyperior,Ground,Rock,"['Lightning Rod', 'Reckless', 'Solid Rock']",115,140,130,28/09/2006
-465,Tangrowth,Grass,,"['Chlorophyll', 'Leaf Guard', 'Regenerator']",100,100,125,28/09/2006
-466,Electivire,Electric,,"['Motor Drive', 'Vital Spirit']",75,123,67,28/09/2006
-467,Magmortar,Fire,,"['Flame Body', 'Vital Spirit']",75,95,67,28/09/2006
+465,Tangrowth,Grass,None,"['Chlorophyll', 'Leaf Guard', 'Regenerator']",100,100,125,28/09/2006
+466,Electivire,Electric,None,"['Motor Drive', 'Vital Spirit']",75,123,67,28/09/2006
+467,Magmortar,Fire,None,"['Flame Body', 'Vital Spirit']",75,95,67,28/09/2006
 468,Togekiss,Fairy,Flying,"['Hustle', 'Serene Grace', 'Super Luck']",85,50,95,28/09/2006
 469,Yanmega,Bug,Flying,"['Frisk', 'Speed Boost', 'Tinted Lens']",86,76,86,28/09/2006
-470,Leafeon,Grass,,"['Chlorophyll', 'Leaf Guard']",65,110,130,28/09/2006
-471,Glaceon,Ice,,"['Ice Body', 'Snow Cloak']",65,60,110,28/09/2006
+470,Leafeon,Grass,None,"['Chlorophyll', 'Leaf Guard']",65,110,130,28/09/2006
+471,Glaceon,Ice,None,"['Ice Body', 'Snow Cloak']",65,60,110,28/09/2006
 472,Gliscor,Ground,Flying,"['Hyper Cutter', 'Poison Heal', 'Sand Veil']",75,95,125,18/09/2006
 473,Mamoswine,Ice,Ground,"['Oblivious', 'Snow Cloak', 'Thick Fat']",110,130,80,18/09/2006
-474,Porygon-Z,Normal,,"['Adaptability', 'Analytic', 'Download']",85,80,70,18/09/2006
+474,Porygon-Z,Normal,None,"['Adaptability', 'Analytic', 'Download']",85,80,70,18/09/2006
 475,Gallade,Psychic,Fighting,"['Justified', 'Steadfast']",68,125,65,18/09/2006
 476,Probopass,Rock,Steel,"['Magnet Pull', 'Sand Force', 'Sturdy']",60,55,145,18/09/2006
-477,Dusknoir,Ghost,,"['Frisk', 'Pressure']",45,100,135,18/09/2006
+477,Dusknoir,Ghost,None,"['Frisk', 'Pressure']",45,100,135,18/09/2006
 478,Froslass,Ice,Ghost,"['Cursed Body', 'Snow Cloak']",70,80,70,18/09/2006
 479,Rotom,Electric,Ghost,['Levitate'],50,50,77,18/09/2006
-480,Uxie,Psychic,,['Levitate'],75,75,130,28/09/2006
-481,Mesprit,Psychic,,['Levitate'],80,105,105,28/09/2006
-482,Azelf,Psychic,,['Levitate'],75,125,70,28/09/2006
+480,Uxie,Psychic,None,['Levitate'],75,75,130,28/09/2006
+481,Mesprit,Psychic,None,['Levitate'],80,105,105,28/09/2006
+482,Azelf,Psychic,None,['Levitate'],75,125,70,28/09/2006
 483,Dialga,Steel,Dragon,"['Pressure', 'Telepathy']",100,120,120,28/09/2006
 484,Palkia,Water,Dragon,"['Pressure', 'Telepathy']",90,120,100,28/09/2006
 485,Heatran,Fire,Steel,"['Flame Body', 'Flash Fire']",91,90,106,28/09/2006
-486,Regigigas,Normal,,['Slow Start'],110,160,110,28/09/2006
+486,Regigigas,Normal,None,['Slow Start'],110,160,110,28/09/2006
 487,Giratina,Ghost,Dragon,"['Pressure', 'Telepathy']",150,100,120,28/09/2006
-488,Cresselia,Psychic,,['Levitate'],120,70,120,28/09/2006
-489,Phione,Water,,['Hydration'],80,80,80,28/09/2006
-490,Manaphy,Water,,['Hydration'],100,100,100,28/09/2006
-491,Darkrai,Dark,,['Bad Dreams'],70,90,90,28/09/2006
-492,Shaymin,Grass,,['Natural Cure'],100,100,100,28/09/2006
-493,Arceus,Normal,,['Multitype'],120,120,120,28/09/2006
+488,Cresselia,Psychic,None,['Levitate'],120,70,120,28/09/2006
+489,Phione,Water,None,['Hydration'],80,80,80,28/09/2006
+490,Manaphy,Water,None,['Hydration'],100,100,100,28/09/2006
+491,Darkrai,Dark,None,['Bad Dreams'],70,90,90,28/09/2006
+492,Shaymin,Grass,None,['Natural Cure'],100,100,100,28/09/2006
+493,Arceus,Normal,None,['Multitype'],120,120,120,28/09/2006
 494,Victini,Psychic,Fire,['Victory Star'],100,100,100,28/09/2006
-495,Snivy,Grass,,"['Contrary', 'Overgrow']",45,45,55,18/09/2010
-496,Servine,Grass,,"['Contrary', 'Overgrow']",60,60,75,18/09/2010
-497,Serperior,Grass,,"['Contrary', 'Overgrow']",75,75,95,18/09/2010
-498,Tepig,Fire,,"['Blaze', 'Thick Fat']",65,63,45,18/09/2010
+495,Snivy,Grass,None,"['Contrary', 'Overgrow']",45,45,55,18/09/2010
+496,Servine,Grass,None,"['Contrary', 'Overgrow']",60,60,75,18/09/2010
+497,Serperior,Grass,None,"['Contrary', 'Overgrow']",75,75,95,18/09/2010
+498,Tepig,Fire,None,"['Blaze', 'Thick Fat']",65,63,45,18/09/2010
 499,Pignite,Fire,Fighting,"['Blaze', 'Thick Fat']",90,93,55,18/09/2010
 500,Emboar,Fire,Fighting,"['Blaze', 'Reckless']",110,123,65,18/09/2010
-501,Oshawott,Water,,"['Shell Armor', 'Torrent']",55,55,45,18/09/2010
-502,Dewott,Water,,"['Shell Armor', 'Torrent']",75,75,60,18/09/2010
-503,Samurott,Water,,"['Shell Armor', 'Torrent']",95,100,85,18/09/2010
-504,Patrat,Normal,,"['Analytic', 'Keen Eye', 'Run Away']",45,55,39,18/09/2010
-505,Watchog,Normal,,"['Analytic', 'Illuminate', 'Keen Eye']",60,85,69,18/09/2010
-506,Lillipup,Normal,,"['Pickup', 'Run Away', 'Vital Spirit']",45,60,45,18/09/2010
-507,Herdier,Normal,,"['Intimidate', 'Sand Rush', 'Scrappy']",65,80,65,18/09/2010
-508,Stoutland,Normal,,"['Intimidate', 'Sand Rush', 'Scrappy']",85,110,90,18/09/2010
-509,Purrloin,Dark,,"['Limber', 'Prankster', 'Unburden']",41,50,37,18/09/2010
-510,Liepard,Dark,,"['Limber', 'Prankster', 'Unburden']",64,88,50,18/09/2010
-511,Pansage,Grass,,"['Gluttony', 'Overgrow']",50,53,48,18/09/2010
-512,Simisage,Grass,,"['Gluttony', 'Overgrow']",75,98,63,18/09/2010
-513,Pansear,Fire,,"['Blaze', 'Gluttony']",50,53,48,18/09/2010
-514,Simisear,Fire,,"['Blaze', 'Gluttony']",75,98,63,18/09/2010
-515,Panpour,Water,,"['Gluttony', 'Torrent']",50,53,48,18/09/2010
-516,Simipour,Water,,"['Gluttony', 'Torrent']",75,98,63,18/09/2010
-517,Munna,Psychic,,"['Forewarn', 'Synchronize', 'Telepathy']",76,25,45,18/09/2010
-518,Musharna,Psychic,,"['Forewarn', 'Synchronize', 'Telepathy']",116,55,85,18/09/2010
+501,Oshawott,Water,None,"['Shell Armor', 'Torrent']",55,55,45,18/09/2010
+502,Dewott,Water,None,"['Shell Armor', 'Torrent']",75,75,60,18/09/2010
+503,Samurott,Water,None,"['Shell Armor', 'Torrent']",95,100,85,18/09/2010
+504,Patrat,Normal,None,"['Analytic', 'Keen Eye', 'Run Away']",45,55,39,18/09/2010
+505,Watchog,Normal,None,"['Analytic', 'Illuminate', 'Keen Eye']",60,85,69,18/09/2010
+506,Lillipup,Normal,None,"['Pickup', 'Run Away', 'Vital Spirit']",45,60,45,18/09/2010
+507,Herdier,Normal,None,"['Intimidate', 'Sand Rush', 'Scrappy']",65,80,65,18/09/2010
+508,Stoutland,Normal,None,"['Intimidate', 'Sand Rush', 'Scrappy']",85,110,90,18/09/2010
+509,Purrloin,Dark,None,"['Limber', 'Prankster', 'Unburden']",41,50,37,18/09/2010
+510,Liepard,Dark,None,"['Limber', 'Prankster', 'Unburden']",64,88,50,18/09/2010
+511,Pansage,Grass,None,"['Gluttony', 'Overgrow']",50,53,48,18/09/2010
+512,Simisage,Grass,None,"['Gluttony', 'Overgrow']",75,98,63,18/09/2010
+513,Pansear,Fire,None,"['Blaze', 'Gluttony']",50,53,48,18/09/2010
+514,Simisear,Fire,None,"['Blaze', 'Gluttony']",75,98,63,18/09/2010
+515,Panpour,Water,None,"['Gluttony', 'Torrent']",50,53,48,18/09/2010
+516,Simipour,Water,None,"['Gluttony', 'Torrent']",75,98,63,18/09/2010
+517,Munna,Psychic,None,"['Forewarn', 'Synchronize', 'Telepathy']",76,25,45,18/09/2010
+518,Musharna,Psychic,None,"['Forewarn', 'Synchronize', 'Telepathy']",116,55,85,18/09/2010
 519,Pidove,Normal,Flying,"['Big Pecks', 'Rivalry', 'Super Luck']",50,55,50,18/09/2010
 520,Tranquill,Normal,Flying,"['Big Pecks', 'Rivalry', 'Super Luck']",62,77,62,18/09/2010
 521,Unfezant,Normal,Flying,"['Big Pecks', 'Rivalry', 'Super Luck']",80,115,80,18/09/2010
-522,Blitzle,Electric,,"['Lightning Rod', 'Motor Drive', 'Sap Sipper']",45,60,32,18/09/2010
-523,Zebstrika,Electric,,"['Lightning Rod', 'Motor Drive', 'Sap Sipper']",75,100,63,18/09/2010
-524,Roggenrola,Rock,,"['Sand Force', 'Sturdy', 'Weak Armor']",55,75,85,18/09/2010
-525,Boldore,Rock,,"['Sand Force', 'Sturdy', 'Weak Armor']",70,105,105,18/09/2010
-526,Gigalith,Rock,,"['Sand Force', 'Sand Stream', 'Sturdy']",85,135,130,18/09/2010
+522,Blitzle,Electric,None,"['Lightning Rod', 'Motor Drive', 'Sap Sipper']",45,60,32,18/09/2010
+523,Zebstrika,Electric,None,"['Lightning Rod', 'Motor Drive', 'Sap Sipper']",75,100,63,18/09/2010
+524,Roggenrola,Rock,None,"['Sand Force', 'Sturdy', 'Weak Armor']",55,75,85,18/09/2010
+525,Boldore,Rock,None,"['Sand Force', 'Sturdy', 'Weak Armor']",70,105,105,18/09/2010
+526,Gigalith,Rock,None,"['Sand Force', 'Sand Stream', 'Sturdy']",85,135,130,18/09/2010
 527,Woobat,Psychic,Flying,"['Klutz', 'Simple', 'Unaware']",65,45,43,18/09/2010
 528,Swoobat,Psychic,Flying,"['Klutz', 'Simple', 'Unaware']",67,57,55,18/09/2010
-529,Drilbur,Ground,,"['Mold Breaker', 'Sand Force', 'Sand Rush']",60,85,40,18/09/2010
+529,Drilbur,Ground,None,"['Mold Breaker', 'Sand Force', 'Sand Rush']",60,85,40,18/09/2010
 530,Excadrill,Ground,Steel,"['Mold Breaker', 'Sand Force', 'Sand Rush']",110,135,60,18/09/2010
-531,Audino,Normal,,"['Healer', 'Klutz', 'Regenerator']",103,60,86,18/09/2010
-532,Timburr,Fighting,,"['Guts', 'Iron Fist', 'Sheer Force']",75,80,55,18/09/2010
-533,Gurdurr,Fighting,,"['Guts', 'Iron Fist', 'Sheer Force']",85,105,85,18/09/2010
-534,Conkeldurr,Fighting,,"['Guts', 'Iron Fist', 'Sheer Force']",105,140,95,18/09/2010
-535,Tympole,Water,,"['Hydration', 'Swift Swim', 'Water Absorb']",50,50,40,18/09/2010
+531,Audino,Normal,None,"['Healer', 'Klutz', 'Regenerator']",103,60,86,18/09/2010
+532,Timburr,Fighting,None,"['Guts', 'Iron Fist', 'Sheer Force']",75,80,55,18/09/2010
+533,Gurdurr,Fighting,None,"['Guts', 'Iron Fist', 'Sheer Force']",85,105,85,18/09/2010
+534,Conkeldurr,Fighting,None,"['Guts', 'Iron Fist', 'Sheer Force']",105,140,95,18/09/2010
+535,Tympole,Water,None,"['Hydration', 'Swift Swim', 'Water Absorb']",50,50,40,18/09/2010
 536,Palpitoad,Water,Ground,"['Hydration', 'Swift Swim', 'Water Absorb']",75,65,55,18/09/2010
 537,Seismitoad,Water,Ground,"['Poison Touch', 'Swift Swim', 'Water Absorb']",105,95,75,18/09/2010
-538,Throh,Fighting,,"['Guts', 'Inner Focus', 'Mold Breaker']",120,100,85,18/09/2010
-539,Sawk,Fighting,,"['Inner Focus', 'Mold Breaker', 'Sturdy']",75,125,75,18/09/2010
+538,Throh,Fighting,None,"['Guts', 'Inner Focus', 'Mold Breaker']",120,100,85,18/09/2010
+539,Sawk,Fighting,None,"['Inner Focus', 'Mold Breaker', 'Sturdy']",75,125,75,18/09/2010
 540,Sewaddle,Bug,Grass,"['Chlorophyll', 'Overcoat', 'Swarm']",45,53,70,18/09/2010
 541,Swadloon,Bug,Grass,"['Chlorophyll', 'Leaf Guard', 'Overcoat']",55,63,90,18/09/2010
 542,Leavanny,Bug,Grass,"['Chlorophyll', 'Overcoat', 'Swarm']",75,103,80,18/09/2010
@@ -546,90 +546,90 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 545,Scolipede,Bug,Poison,"['Poison Point', 'Speed Boost', 'Swarm']",60,100,89,18/09/2010
 546,Cottonee,Grass,Fairy,"['Chlorophyll', 'Infiltrator', 'Prankster']",40,27,60,18/09/2010
 547,Whimsicott,Grass,Fairy,"['Chlorophyll', 'Infiltrator', 'Prankster']",60,67,85,18/09/2010
-548,Petilil,Grass,,"['Chlorophyll', 'Leaf Guard', 'Own Tempo']",45,35,50,18/09/2010
-549,Lilligant,Grass,,"['Chlorophyll', 'Leaf Guard', 'Own Tempo']",70,60,75,18/09/2010
-550,Basculin,Water,,"['Adaptability', 'Mold Breaker', 'Reckless']",70,92,65,18/09/2010
+548,Petilil,Grass,None,"['Chlorophyll', 'Leaf Guard', 'Own Tempo']",45,35,50,18/09/2010
+549,Lilligant,Grass,None,"['Chlorophyll', 'Leaf Guard', 'Own Tempo']",70,60,75,18/09/2010
+550,Basculin,Water,None,"['Adaptability', 'Mold Breaker', 'Reckless']",70,92,65,18/09/2010
 551,Sandile,Ground,Dark,"['Anger Point', 'Intimidate', 'Moxie']",50,72,35,18/09/2010
 552,Krokorok,Ground,Dark,"['Anger Point', 'Intimidate', 'Moxie']",60,82,45,18/09/2010
 553,Krookodile,Ground,Dark,"['Anger Point', 'Intimidate', 'Moxie']",95,117,80,18/09/2010
-554,Darumaka,Fire,,"['Hustle', 'Inner Focus']",70,90,45,18/09/2010
-555,Darmanitan,Fire,,"['Sheer Force', 'Zen Mode']",105,140,55,18/09/2010
-556,Maractus,Grass,,"['Chlorophyll', 'Storm Drain', 'Water Absorb']",75,86,67,18/09/2010
+554,Darumaka,Fire,None,"['Hustle', 'Inner Focus']",70,90,45,18/09/2010
+555,Darmanitan,Fire,None,"['Sheer Force', 'Zen Mode']",105,140,55,18/09/2010
+556,Maractus,Grass,None,"['Chlorophyll', 'Storm Drain', 'Water Absorb']",75,86,67,18/09/2010
 557,Dwebble,Bug,Rock,"['Shell Armor', 'Sturdy', 'Weak Armor']",50,65,85,18/09/2010
 558,Crustle,Bug,Rock,"['Shell Armor', 'Sturdy', 'Weak Armor']",70,105,125,18/09/2010
 559,Scraggy,Dark,Fighting,"['Intimidate', 'Moxie', 'Shed Skin']",50,75,70,18/09/2010
 560,Scrafty,Dark,Fighting,"['Intimidate', 'Moxie', 'Shed Skin']",65,90,115,18/09/2010
 561,Sigilyph,Psychic,Flying,"['Magic Guard', 'Tinted Lens', 'Wonder Skin']",72,58,80,18/09/2010
-562,Yamask,Ghost,,['Mummy'],38,30,85,18/09/2010
-563,Cofagrigus,Ghost,,['Mummy'],58,50,145,18/09/2010
+562,Yamask,Ghost,None,['Mummy'],38,30,85,18/09/2010
+563,Cofagrigus,Ghost,None,['Mummy'],58,50,145,18/09/2010
 564,Tirtouga,Water,Rock,"['Solid Rock', 'Sturdy', 'Swift Swim']",54,78,103,18/09/2010
 565,Carracosta,Water,Rock,"['Solid Rock', 'Sturdy', 'Swift Swim']",74,108,133,18/09/2010
 566,Archen,Rock,Flying,['Defeatist'],55,112,45,18/09/2010
 567,Archeops,Rock,Flying,['Defeatist'],75,140,65,18/09/2010
-568,Trubbish,Poison,,"['Aftermath', 'Stench', 'Sticky Hold']",50,50,62,18/09/2010
-569,Garbodor,Poison,,"['Aftermath', 'Stench', 'Weak Armor']",80,95,82,18/09/2010
-570,Zorua,Dark,,['Illusion'],40,65,40,18/09/2010
-571,Zoroark,Dark,,['Illusion'],60,105,60,18/09/2010
-572,Minccino,Normal,,"['Cute Charm', 'Skill Link', 'Technician']",55,50,40,18/09/2010
-573,Cinccino,Normal,,"['Cute Charm', 'Skill Link', 'Technician']",75,95,60,18/09/2010
-574,Gothita,Psychic,,"['Competitive', 'Frisk', 'Shadow Tag']",45,30,50,18/09/2010
-575,Gothorita,Psychic,,"['Competitive', 'Frisk', 'Shadow Tag']",60,45,70,18/09/2010
-576,Gothitelle,Psychic,,"['Competitive', 'Frisk', 'Shadow Tag']",70,55,95,18/09/2010
-577,Solosis,Psychic,,"['Magic Guard', 'Overcoat', 'Regenerator']",45,30,40,18/09/2010
-578,Duosion,Psychic,,"['Magic Guard', 'Overcoat', 'Regenerator']",65,40,50,18/09/2010
-579,Reuniclus,Psychic,,"['Magic Guard', 'Overcoat', 'Regenerator']",110,65,75,18/09/2010
+568,Trubbish,Poison,None,"['Aftermath', 'Stench', 'Sticky Hold']",50,50,62,18/09/2010
+569,Garbodor,Poison,None,"['Aftermath', 'Stench', 'Weak Armor']",80,95,82,18/09/2010
+570,Zorua,Dark,None,['Illusion'],40,65,40,18/09/2010
+571,Zoroark,Dark,None,['Illusion'],60,105,60,18/09/2010
+572,Minccino,Normal,None,"['Cute Charm', 'Skill Link', 'Technician']",55,50,40,18/09/2010
+573,Cinccino,Normal,None,"['Cute Charm', 'Skill Link', 'Technician']",75,95,60,18/09/2010
+574,Gothita,Psychic,None,"['Competitive', 'Frisk', 'Shadow Tag']",45,30,50,18/09/2010
+575,Gothorita,Psychic,None,"['Competitive', 'Frisk', 'Shadow Tag']",60,45,70,18/09/2010
+576,Gothitelle,Psychic,None,"['Competitive', 'Frisk', 'Shadow Tag']",70,55,95,18/09/2010
+577,Solosis,Psychic,None,"['Magic Guard', 'Overcoat', 'Regenerator']",45,30,40,18/09/2010
+578,Duosion,Psychic,None,"['Magic Guard', 'Overcoat', 'Regenerator']",65,40,50,18/09/2010
+579,Reuniclus,Psychic,None,"['Magic Guard', 'Overcoat', 'Regenerator']",110,65,75,18/09/2010
 580,Ducklett,Water,Flying,"['Big Pecks', 'Hydration', 'Keen Eye']",62,44,50,18/09/2010
 581,Swanna,Water,Flying,"['Big Pecks', 'Hydration', 'Keen Eye']",75,87,63,18/09/2010
-582,Vanillite,Ice,,"['Ice Body', 'Snow Cloak', 'Weak Armor']",36,50,50,18/09/2010
-583,Vanillish,Ice,,"['Ice Body', 'Snow Cloak', 'Weak Armor']",51,65,65,18/09/2010
-584,Vanilluxe,Ice,,"['Ice Body', 'Snow Warning', 'Weak Armor']",71,95,85,18/09/2010
+582,Vanillite,Ice,None,"['Ice Body', 'Snow Cloak', 'Weak Armor']",36,50,50,18/09/2010
+583,Vanillish,Ice,None,"['Ice Body', 'Snow Cloak', 'Weak Armor']",51,65,65,18/09/2010
+584,Vanilluxe,Ice,None,"['Ice Body', 'Snow Warning', 'Weak Armor']",71,95,85,18/09/2010
 585,Deerling,Normal,Grass,"['Chlorophyll', 'Sap Sipper', 'Serene Grace']",60,60,50,18/09/2010
 586,Sawsbuck,Normal,Grass,"['Chlorophyll', 'Sap Sipper', 'Serene Grace']",80,100,70,18/09/2010
 587,Emolga,Electric,Flying,"['Motor Drive', 'Static']",55,75,60,18/09/2010
-588,Karrablast,Bug,,"['No Guard', 'Shed Skin', 'Swarm']",50,75,45,18/09/2010
+588,Karrablast,Bug,None,"['No Guard', 'Shed Skin', 'Swarm']",50,75,45,18/09/2010
 589,Escavalier,Bug,Steel,"['Overcoat', 'Shell Armor', 'Swarm']",70,135,105,18/09/2010
 590,Foongus,Grass,Poison,"['Effect Spore', 'Regenerator']",69,55,45,18/09/2010
 591,Amoonguss,Grass,Poison,"['Effect Spore', 'Regenerator']",114,85,70,18/09/2010
 592,Frillish,Water,Ghost,"['Cursed Body', 'Damp', 'Water Absorb']",55,40,50,18/09/2010
 593,Jellicent,Water,Ghost,"['Cursed Body', 'Damp', 'Water Absorb']",100,60,70,18/09/2010
-594,Alomomola,Water,,"['Healer', 'Hydration', 'Regenerator']",165,75,80,18/09/2010
+594,Alomomola,Water,None,"['Healer', 'Hydration', 'Regenerator']",165,75,80,18/09/2010
 595,Joltik,Bug,Electric,"['Swarm', 'Unnerve']",50,47,50,18/09/2010
 596,Galvantula,Bug,Electric,"['Swarm', 'Unnerve']",70,77,60,18/09/2010
 597,Ferroseed,Grass,Steel,['Iron Barbs'],44,50,91,18/09/2010
 598,Ferrothorn,Grass,Steel,"['Anticipation', 'Iron Barbs']",74,94,131,18/09/2010
-599,Klink,Steel,,"['Clear Body', 'Minus', 'Plus']",40,55,70,18/09/2010
-600,Klang,Steel,,"['Clear Body', 'Minus', 'Plus']",60,80,95,18/09/2010
-601,Klinklang,Steel,,"['Clear Body', 'Minus', 'Plus']",60,100,115,18/09/2010
-602,Tynamo,Electric,,['Levitate'],35,55,40,18/09/2010
-603,Eelektrik,Electric,,['Levitate'],65,85,70,18/09/2010
-604,Eelektross,Electric,,['Levitate'],85,115,80,18/09/2010
-605,Elgyem,Psychic,,"['Analytic', 'Synchronize', 'Telepathy']",55,55,55,18/09/2010
-606,Beheeyem,Psychic,,"['Analytic', 'Synchronize', 'Telepathy']",75,75,75,18/09/2010
+599,Klink,Steel,None,"['Clear Body', 'Minus', 'Plus']",40,55,70,18/09/2010
+600,Klang,Steel,None,"['Clear Body', 'Minus', 'Plus']",60,80,95,18/09/2010
+601,Klinklang,Steel,None,"['Clear Body', 'Minus', 'Plus']",60,100,115,18/09/2010
+602,Tynamo,Electric,None,['Levitate'],35,55,40,18/09/2010
+603,Eelektrik,Electric,None,['Levitate'],65,85,70,18/09/2010
+604,Eelektross,Electric,None,['Levitate'],85,115,80,18/09/2010
+605,Elgyem,Psychic,None,"['Analytic', 'Synchronize', 'Telepathy']",55,55,55,18/09/2010
+606,Beheeyem,Psychic,None,"['Analytic', 'Synchronize', 'Telepathy']",75,75,75,18/09/2010
 607,Litwick,Ghost,Fire,"['Flame Body', 'Flash Fire', 'Infiltrator']",50,30,55,18/09/2010
 608,Lampent,Ghost,Fire,"['Flame Body', 'Flash Fire', 'Infiltrator']",60,40,60,18/09/2010
 609,Chandelure,Ghost,Fire,"['Flame Body', 'Flash Fire', 'Infiltrator']",60,55,90,18/09/2010
-610,Axew,Dragon,,"['Mold Breaker', 'Rivalry', 'Unnerve']",46,87,60,18/09/2010
-611,Fraxure,Dragon,,"['Mold Breaker', 'Rivalry', 'Unnerve']",66,117,70,18/09/2010
-612,Haxorus,Dragon,,"['Mold Breaker', 'Rivalry', 'Unnerve']",76,147,90,18/09/2010
-613,Cubchoo,Ice,,"['Rattled', 'Slush Rush', 'Snow Cloak']",55,70,40,18/09/2010
-614,Beartic,Ice,,"['Slush Rush', 'Snow Cloak', 'Swift Swim']",95,130,80,18/09/2010
-615,Cryogonal,Ice,,['Levitate'],80,50,50,18/09/2010
-616,Shelmet,Bug,,"['Hydration', 'Overcoat', 'Shell Armor']",50,40,85,18/09/2010
-617,Accelgor,Bug,,"['Hydration', 'Sticky Hold', 'Unburden']",80,70,40,18/09/2010
+610,Axew,Dragon,None,"['Mold Breaker', 'Rivalry', 'Unnerve']",46,87,60,18/09/2010
+611,Fraxure,Dragon,None,"['Mold Breaker', 'Rivalry', 'Unnerve']",66,117,70,18/09/2010
+612,Haxorus,Dragon,None,"['Mold Breaker', 'Rivalry', 'Unnerve']",76,147,90,18/09/2010
+613,Cubchoo,Ice,None,"['Rattled', 'Slush Rush', 'Snow Cloak']",55,70,40,18/09/2010
+614,Beartic,Ice,None,"['Slush Rush', 'Snow Cloak', 'Swift Swim']",95,130,80,18/09/2010
+615,Cryogonal,Ice,None,['Levitate'],80,50,50,18/09/2010
+616,Shelmet,Bug,None,"['Hydration', 'Overcoat', 'Shell Armor']",50,40,85,18/09/2010
+617,Accelgor,Bug,None,"['Hydration', 'Sticky Hold', 'Unburden']",80,70,40,18/09/2010
 618,Stunfisk,Ground,Electric,"['Limber', 'Sand Veil', 'Static']",109,66,84,18/09/2010
-619,Mienfoo,Fighting,,"['Inner Focus', 'Reckless', 'Regenerator']",45,85,50,18/09/2010
-620,Mienshao,Fighting,,"['Inner Focus', 'Reckless', 'Regenerator']",65,125,60,18/09/2010
-621,Druddigon,Dragon,,"['Mold Breaker', 'Rough Skin', 'Sheer Force']",77,120,90,18/09/2010
+619,Mienfoo,Fighting,None,"['Inner Focus', 'Reckless', 'Regenerator']",45,85,50,18/09/2010
+620,Mienshao,Fighting,None,"['Inner Focus', 'Reckless', 'Regenerator']",65,125,60,18/09/2010
+621,Druddigon,Dragon,None,"['Mold Breaker', 'Rough Skin', 'Sheer Force']",77,120,90,18/09/2010
 622,Golett,Ground,Ghost,"['Iron Fist', 'Klutz', 'No Guard']",59,74,50,18/09/2010
 623,Golurk,Ground,Ghost,"['Iron Fist', 'Klutz', 'No Guard']",89,124,80,18/09/2010
 624,Pawniard,Dark,Steel,"['Defiant', 'Inner Focus', 'Pressure']",45,85,70,18/09/2010
 625,Bisharp,Dark,Steel,"['Defiant', 'Inner Focus', 'Pressure']",65,125,100,18/09/2010
-626,Bouffalant,Normal,,"['Reckless', 'Sap Sipper', 'Soundproof']",95,110,95,18/09/2010
+626,Bouffalant,Normal,None,"['Reckless', 'Sap Sipper', 'Soundproof']",95,110,95,18/09/2010
 627,Rufflet,Normal,Flying,"['Hustle', 'Keen Eye', 'Sheer Force']",70,83,50,18/09/2010
 628,Braviary,Normal,Flying,"['Defiant', 'Keen Eye', 'Sheer Force']",100,123,75,18/09/2010
 629,Vullaby,Dark,Flying,"['Big Pecks', 'Overcoat', 'Weak Armor']",70,55,75,18/09/2010
 630,Mandibuzz,Dark,Flying,"['Big Pecks', 'Overcoat', 'Weak Armor']",110,65,105,18/09/2010
-631,Heatmor,Fire,,"['Flash Fire', 'Gluttony', 'White Smoke']",85,97,66,18/09/2010
+631,Heatmor,Fire,None,"['Flash Fire', 'Gluttony', 'White Smoke']",85,97,66,18/09/2010
 632,Durant,Bug,Steel,"['Hustle', 'Swarm', 'Truant']",58,109,112,18/09/2010
 633,Deino,Dark,Dragon,['Hustle'],52,65,50,18/09/2010
 634,Zweilous,Dark,Dragon,['Hustle'],72,85,70,18/09/2010
@@ -639,7 +639,7 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 638,Cobalion,Steel,Fighting,['Justified'],91,90,129,18/09/2010
 639,Terrakion,Rock,Fighting,['Justified'],91,129,90,18/09/2010
 640,Virizion,Grass,Fighting,['Justified'],91,90,72,18/09/2010
-641,Tornadus,Flying,,"['Defiant', 'Prankster']",79,115,70,18/09/2010
+641,Tornadus,Flying,None,"['Defiant', 'Prankster']",79,115,70,18/09/2010
 642,Thundurus,Electric,Flying,"['Defiant', 'Prankster']",79,115,70,18/09/2010
 643,Reshiram,Dragon,Fire,['Turboblaze'],100,120,100,18/09/2010
 644,Zekrom,Dragon,Electric,['Teravolt'],100,150,120,18/09/2010
@@ -648,73 +648,73 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 647,Keldeo,Water,Fighting,['Justified'],91,72,90,18/09/2010
 648,Meloetta,Normal,Psychic,['Serene Grace'],100,77,77,18/09/2010
 649,Genesect,Bug,Steel,['Download'],71,120,95,18/09/2010
-650,Chespin,Grass,,"['Bulletproof', 'Overgrow']",56,61,65,12/10/2013
-651,Quilladin,Grass,,"['Bulletproof', 'Overgrow']",61,78,95,12/10/2013
+650,Chespin,Grass,None,"['Bulletproof', 'Overgrow']",56,61,65,12/10/2013
+651,Quilladin,Grass,None,"['Bulletproof', 'Overgrow']",61,78,95,12/10/2013
 652,Chesnaught,Grass,Fighting,"['Bulletproof', 'Overgrow']",88,107,122,12/10/2013
-653,Fennekin,Fire,,"['Blaze', 'Magician']",40,45,40,12/10/2013
-654,Braixen,Fire,,"['Blaze', 'Magician']",59,59,58,12/10/2013
+653,Fennekin,Fire,None,"['Blaze', 'Magician']",40,45,40,12/10/2013
+654,Braixen,Fire,None,"['Blaze', 'Magician']",59,59,58,12/10/2013
 655,Delphox,Fire,Psychic,"['Blaze', 'Magician']",75,69,72,12/10/2013
-656,Froakie,Water,,"['Protean', 'Torrent']",41,56,40,12/10/2013
-657,Frogadier,Water,,"['Protean', 'Torrent']",54,63,52,12/10/2013
+656,Froakie,Water,None,"['Protean', 'Torrent']",41,56,40,12/10/2013
+657,Frogadier,Water,None,"['Protean', 'Torrent']",54,63,52,12/10/2013
 658,Greninja,Water,Dark,"['Protean', 'Torrent']",72,95,67,12/10/2013
-659,Bunnelby,Normal,,"['Cheek Pouch', 'Huge Power', 'Pickup']",38,36,38,12/10/2013
+659,Bunnelby,Normal,None,"['Cheek Pouch', 'Huge Power', 'Pickup']",38,36,38,12/10/2013
 660,Diggersby,Normal,Ground,"['Cheek Pouch', 'Huge Power', 'Pickup']",85,56,77,12/10/2013
 661,Fletchling,Normal,Flying,"['Big Pecks', 'Gale Wings']",45,50,43,12/10/2013
 662,Fletchinder,Fire,Flying,"['Flame Body', 'Gale Wings']",62,73,55,12/10/2013
 663,Talonflame,Fire,Flying,"['Flame Body', 'Gale Wings']",78,81,71,12/10/2013
-664,Scatterbug,Bug,,"['Friend Guard', 'Shield Dust']",38,35,40,12/10/2013
-665,Spewpa,Bug,,"['Friend Guard', 'Shed Skin']",45,22,60,12/10/2013
+664,Scatterbug,Bug,None,"['Friend Guard', 'Shield Dust']",38,35,40,12/10/2013
+665,Spewpa,Bug,None,"['Friend Guard', 'Shed Skin']",45,22,60,12/10/2013
 666,Vivillon,Bug,Flying,"['Friend Guard', 'Shield Dust']",80,52,50,12/10/2013
 667,Litleo,Fire,Normal,"['Moxie', 'Rivalry', 'Unnerve']",62,50,58,12/10/2013
 668,Pyroar,Fire,Normal,"['Moxie', 'Rivalry', 'Unnerve']",86,68,72,12/10/2013
-669,Flabébé,Fairy,,"['Flower Veil', 'Symbiosis']",44,38,39,12/10/2013
-670,Floette,Fairy,,"['Flower Veil', 'Symbiosis']",54,45,47,12/10/2013
-671,Florges,Fairy,,"['Flower Veil', 'Symbiosis']",78,65,68,12/10/2013
-672,Skiddo,Grass,,"['Grass Pelt', 'Sap Sipper']",66,65,48,12/10/2013
-673,Gogoat,Grass,,"['Grass Pelt', 'Sap Sipper']",123,100,62,12/10/2013
-674,Pancham,Fighting,,"['Iron Fist', 'Mold Breaker', 'Scrappy']",67,82,62,12/10/2013
+669,Flabébé,Fairy,None,"['Flower Veil', 'Symbiosis']",44,38,39,12/10/2013
+670,Floette,Fairy,None,"['Flower Veil', 'Symbiosis']",54,45,47,12/10/2013
+671,Florges,Fairy,None,"['Flower Veil', 'Symbiosis']",78,65,68,12/10/2013
+672,Skiddo,Grass,None,"['Grass Pelt', 'Sap Sipper']",66,65,48,12/10/2013
+673,Gogoat,Grass,None,"['Grass Pelt', 'Sap Sipper']",123,100,62,12/10/2013
+674,Pancham,Fighting,None,"['Iron Fist', 'Mold Breaker', 'Scrappy']",67,82,62,12/10/2013
 675,Pangoro,Fighting,Dark,"['Iron Fist', 'Mold Breaker', 'Scrappy']",95,124,78,12/10/2013
-676,Furfrou,Normal,,['Fur Coat'],75,80,60,12/10/2013
-677,Espurr,Psychic,,"['Infiltrator', 'Keen Eye', 'Own Tempo']",62,48,54,12/10/2013
-678,Meowstic,Psychic,,"['Infiltrator', 'Keen Eye', 'Prankster']",74,48,76,12/10/2013
+676,Furfrou,Normal,None,['Fur Coat'],75,80,60,12/10/2013
+677,Espurr,Psychic,None,"['Infiltrator', 'Keen Eye', 'Own Tempo']",62,48,54,12/10/2013
+678,Meowstic,Psychic,None,"['Infiltrator', 'Keen Eye', 'Prankster']",74,48,76,12/10/2013
 679,Honedge,Steel,Ghost,['No Guard'],45,80,100,12/10/2013
 680,Doublade,Steel,Ghost,['No Guard'],59,110,150,12/10/2013
 681,Aegislash ,Steel,Ghost,['Stance Change'],50,70,140,12/10/2013
-682,Spritzee,Fairy,,"['Aroma Veil', 'Healer']",78,52,60,12/10/2013
-683,Aromatisse,Fairy,,"['Aroma Veil', 'Healer']",101,72,72,12/10/2013
-684,Swirlix,Fairy,,"['Sweet Veil', 'Unburden']",62,48,66,12/10/2013
-685,Slurpuff,Fairy,,"['Sweet Veil', 'Unburden']",82,80,86,12/10/2013
+682,Spritzee,Fairy,None,"['Aroma Veil', 'Healer']",78,52,60,12/10/2013
+683,Aromatisse,Fairy,None,"['Aroma Veil', 'Healer']",101,72,72,12/10/2013
+684,Swirlix,Fairy,None,"['Sweet Veil', 'Unburden']",62,48,66,12/10/2013
+685,Slurpuff,Fairy,None,"['Sweet Veil', 'Unburden']",82,80,86,12/10/2013
 686,Inkay,Dark,Psychic,"['Contrary', 'Infiltrator', 'Suction Cups']",53,54,53,12/10/2013
 687,Malamar,Dark,Psychic,"['Contrary', 'Infiltrator', 'Suction Cups']",86,92,88,12/10/2013
 688,Binacle,Rock,Water,"['Pickpocket', 'Sniper', 'Tough Claws']",42,52,67,12/10/2013
 689,Barbaracle,Rock,Water,"['Pickpocket', 'Sniper', 'Tough Claws']",72,105,115,12/10/2013
 690,Skrelp,Poison,Water,"['Adaptability', 'Poison Point', 'Poison Touch']",50,60,60,12/10/2013
 691,Dragalge,Poison,Dragon,"['Adaptability', 'Poison Point', 'Poison Touch']",65,75,90,12/10/2013
-692,Clauncher,Water,,['Mega Launcher'],50,53,62,12/10/2013
-693,Clawitzer,Water,,['Mega Launcher'],71,73,88,12/10/2013
+692,Clauncher,Water,None,['Mega Launcher'],50,53,62,12/10/2013
+693,Clawitzer,Water,None,['Mega Launcher'],71,73,88,12/10/2013
 694,Helioptile,Electric,Normal,"['Dry Skin', 'Sand Veil', 'Solar Power']",44,38,33,12/10/2013
 695,Heliolisk,Electric,Normal,"['Dry Skin', 'Sand Veil', 'Solar Power']",62,55,52,12/10/2013
 696,Tyrunt,Rock,Dragon,"['Strong Jaw', 'Sturdy']",58,89,77,12/10/2013
 697,Tyrantrum,Rock,Dragon,"['Rock Head', 'Strong Jaw']",82,121,119,12/10/2013
 698,Amaura,Rock,Ice,"['Refrigerate', 'Snow Warning']",77,59,50,12/10/2013
 699,Aurorus,Rock,Ice,"['Refrigerate', 'Snow Warning']",123,77,72,12/10/2013
-700,Sylveon,Fairy,,"['Cute Charm', 'Pixilate']",95,65,65,12/10/2013
+700,Sylveon,Fairy,None,"['Cute Charm', 'Pixilate']",95,65,65,12/10/2013
 701,Hawlucha,Fighting,Flying,"['Limber', 'Mold Breaker', 'Unburden']",78,92,75,12/10/2013
 702,Dedenne,Electric,Fairy,"['Cheek Pouch', 'Pickup', 'Plus']",67,58,57,12/10/2013
 703,Carbink,Rock,Fairy,"['Clear Body', 'Sturdy']",50,50,150,12/10/2013
-704,Goomy,Dragon,,"['Gooey', 'Hydration', 'Sap Sipper']",45,50,35,12/10/2013
-705,Sliggoo,Dragon,,"['Gooey', 'Hydration', 'Sap Sipper']",68,75,53,12/10/2013
-706,Goodra,Dragon,,"['Gooey', 'Hydration', 'Sap Sipper']",90,100,70,12/10/2013
+704,Goomy,Dragon,None,"['Gooey', 'Hydration', 'Sap Sipper']",45,50,35,12/10/2013
+705,Sliggoo,Dragon,None,"['Gooey', 'Hydration', 'Sap Sipper']",68,75,53,12/10/2013
+706,Goodra,Dragon,None,"['Gooey', 'Hydration', 'Sap Sipper']",90,100,70,12/10/2013
 707,Klefki,Steel,Fairy,"['Magician', 'Prankster']",57,80,91,12/10/2013
 708,Phantump,Ghost,Grass,"['Frisk', 'Harvest', 'Natural Cure']",43,70,48,12/10/2013
 709,Trevenant,Ghost,Grass,"['Frisk', 'Harvest', 'Natural Cure']",85,110,76,12/10/2013
 710,Pumpkabo,Ghost,Grass,"['Frisk', 'Insomnia', 'Pickup']",44,66,70,12/10/2013
 711, Gourgeist,Ghost,Grass,"['Frisk', 'Insomnia', 'Pickup']",65,90,122,12/10/2013
-712,Bergmite,Ice,,"['Ice Body', 'Own Tempo', 'Sturdy']",55,69,85,12/10/2013
-713,Avalugg,Ice,,"['Ice Body', 'Own Tempo', 'Sturdy']",95,117,184,12/10/2013
+712,Bergmite,Ice,None,"['Ice Body', 'Own Tempo', 'Sturdy']",55,69,85,12/10/2013
+713,Avalugg,Ice,None,"['Ice Body', 'Own Tempo', 'Sturdy']",95,117,184,12/10/2013
 714,Noibat,Flying,Dragon,"['Frisk', 'Infiltrator', 'Telepathy']",40,30,35,12/10/2013
 715,Noivern,Flying,Dragon,"['Frisk', 'Infiltrator', 'Telepathy']",85,70,80,12/10/2013
-716,Xerneas,Fairy,,['Fairy Aura'],126,131,95,12/10/2013
+716,Xerneas,Fairy,None,['Fairy Aura'],126,131,95,12/10/2013
 717,Yveltal,Dark,Flying,['Dark Aura'],126,131,95,12/10/2013
 718,Zygarde,Dragon,Ground,['Aura Break'],108,100,121,12/10/2013
 719,Diancie,Rock,Fairy,['Clear Body'],50,100,150,12/10/2013
@@ -723,161 +723,161 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 722,Rowlet,Grass,Flying,"['Long Reach', 'Overgrow']",68,55,55,18/11/2016
 723,Dartrix,Grass,Flying,"['Long Reach', 'Overgrow']",78,75,75,18/11/2016
 724,Decidueye,Grass,Ghost,"['Long Reach', 'Overgrow']",78,107,75,18/11/2016
-725,Litten,Fire,,"['Blaze', 'Intimidate']",45,65,40,18/11/2016
-726,Torracat,Fire,,"['Blaze', 'Intimidate']",65,85,50,18/11/2016
+725,Litten,Fire,None,"['Blaze', 'Intimidate']",45,65,40,18/11/2016
+726,Torracat,Fire,None,"['Blaze', 'Intimidate']",65,85,50,18/11/2016
 727,Incineroar,Fire,Dark,"['Blaze', 'Intimidate']",95,115,90,18/11/2016
-728,Popplio,Water,,"['Liquid Voice', 'Torrent']",50,54,54,18/11/2016
-729,Brionne,Water,,"['Liquid Voice', 'Torrent']",60,69,69,18/11/2016
+728,Popplio,Water,None,"['Liquid Voice', 'Torrent']",50,54,54,18/11/2016
+729,Brionne,Water,None,"['Liquid Voice', 'Torrent']",60,69,69,18/11/2016
 730,Primarina,Water,Fairy,"['Liquid Voice', 'Torrent']",80,74,74,18/11/2016
 731,Pikipek,Normal,Flying,"['Keen Eye', 'Pickup', 'Skill Link']",35,75,30,18/11/2016
 732,Trumbeak,Normal,Flying,"['Keen Eye', 'Pickup', 'Skill Link']",55,85,50,18/11/2016
 733,Toucannon,Normal,Flying,"['Keen Eye', 'Sheer Force', 'Skill Link']",80,120,75,18/11/2016
-734,Yungoos,Normal,,"['Adaptability', 'Stakeout', 'Strong Jaw']",48,70,30,18/11/2016
-735,Gumshoos,Normal,,"['Adaptability', 'Stakeout', 'Strong Jaw']",88,110,60,18/11/2016
-736,Grubbin,Bug,,['Swarm'],47,62,45,18/11/2016
+734,Yungoos,Normal,None,"['Adaptability', 'Stakeout', 'Strong Jaw']",48,70,30,18/11/2016
+735,Gumshoos,Normal,None,"['Adaptability', 'Stakeout', 'Strong Jaw']",88,110,60,18/11/2016
+736,Grubbin,Bug,None,['Swarm'],47,62,45,18/11/2016
 737,Charjabug,Bug,Electric,['Battery'],57,82,95,18/11/2016
 738,Vikavolt,Bug,Electric,['Levitate'],77,70,90,18/11/2016
-739,Crabrawler,Fighting,,"['Anger Point', 'Hyper Cutter', 'Iron Fist']",47,82,57,18/11/2016
+739,Crabrawler,Fighting,None,"['Anger Point', 'Hyper Cutter', 'Iron Fist']",47,82,57,18/11/2016
 740,Crabominable,Fighting,Ice,"['Anger Point', 'Hyper Cutter', 'Iron Fist']",97,132,77,18/11/2016
 741,Oricorio,Fire,Flying,['Dancer'],75,70,70,18/11/2016
 742,Cutiefly,Bug,Fairy,"['Honey Gather', 'Shield Dust', 'Sweet Veil']",40,45,40,18/11/2016
 743,Ribombee,Bug,Fairy,"['Honey Gather', 'Shield Dust', 'Sweet Veil']",60,55,60,18/11/2016
-744,Rockruff,Rock,,"['Keen Eye', 'Steadfast', 'Vital Spirit']",45,65,40,18/11/2016
-745,Lycanroc,Rock,,"['Keen Eye', 'Sand Rush', 'Steadfast']",75,115,65,18/11/2016
-746,Wishiwashi,Water,,['Schooling'],45,20,20,18/11/2016
+744,Rockruff,Rock,None,"['Keen Eye', 'Steadfast', 'Vital Spirit']",45,65,40,18/11/2016
+745,Lycanroc,Rock,None,"['Keen Eye', 'Sand Rush', 'Steadfast']",75,115,65,18/11/2016
+746,Wishiwashi,Water,None,['Schooling'],45,20,20,18/11/2016
 747,Mareanie,Poison,Water,"['Limber', 'Merciless', 'Regenerator']",50,53,62,18/11/2016
 748,Toxapex,Poison,Water,"['Limber', 'Merciless', 'Regenerator']",50,63,152,18/11/2016
-749,Mudbray,Ground,,"['Inner Focus', 'Own Tempo', 'Stamina']",70,100,70,18/11/2016
-750,Mudsdale,Ground,,"['Inner Focus', 'Own Tempo', 'Stamina']",100,125,100,18/11/2016
+749,Mudbray,Ground,None,"['Inner Focus', 'Own Tempo', 'Stamina']",70,100,70,18/11/2016
+750,Mudsdale,Ground,None,"['Inner Focus', 'Own Tempo', 'Stamina']",100,125,100,18/11/2016
 751,Dewpider,Water,Bug,"['Water Absorb', 'Water Bubble']",38,40,52,18/11/2016
 752,Araquanid,Water,Bug,"['Water Absorb', 'Water Bubble']",68,70,92,18/11/2016
-753,Fomantis,Grass,,"['Contrary', 'Leaf Guard']",40,55,35,'18/11/2016
-754,Lurantis,Grass,,"['Contrary', 'Leaf Guard']",70,105,90,18/11/2016
+753,Fomantis,Grass,None,"['Contrary', 'Leaf Guard']",40,55,35,'18/11/2016
+754,Lurantis,Grass,None,"['Contrary', 'Leaf Guard']",70,105,90,18/11/2016
 755,Morelull,Grass,Fairy,"['Effect Spore', 'Illuminate', 'Rain Dish']",40,35,55,18/11/2016
 756,Shiinotic,Grass,Fairy,"['Effect Spore', 'Illuminate', 'Rain Dish']",60,45,80,18/11/2016
 757,Salandit,Poison,Fire,"['Corrosion', 'Oblivious']",48,44,40,18/11/2016
 758,Salazzle,Poison,Fire,"['Corrosion', 'Oblivious']",68,64,60,18/11/2016
 759,Stufful,Normal,Fighting,"['Cute Charm', 'Fluffy', 'Klutz']",70,75,50,18/11/2016
 760,Bewear,Normal,Fighting,"['Fluffy', 'Klutz', 'Unnerve']",120,125,80,18/11/2016
-761,Bounsweet,Grass,,"['Leaf Guard', 'Oblivious', 'Sweet Veil']",42,30,38,18/11/2016
-762,Steenee,Grass,,"['Leaf Guard', 'Oblivious', 'Sweet Veil']",52,40,48,18/11/2016
-763,Tsareena,Grass,,"['Leaf Guard', 'Queenly Majesty', 'Sweet Veil']",72,120,98,18/11/2016
-764,Comfey,Fairy,,"['Flower Veil', 'Natural Cure', 'Triage']",51,52,90,18/11/2016
+761,Bounsweet,Grass,None,"['Leaf Guard', 'Oblivious', 'Sweet Veil']",42,30,38,18/11/2016
+762,Steenee,Grass,None,"['Leaf Guard', 'Oblivious', 'Sweet Veil']",52,40,48,18/11/2016
+763,Tsareena,Grass,None,"['Leaf Guard', 'Queenly Majesty', 'Sweet Veil']",72,120,98,18/11/2016
+764,Comfey,Fairy,None,"['Flower Veil', 'Natural Cure', 'Triage']",51,52,90,18/11/2016
 765,Oranguru,Normal,Psychic,"['Inner Focus', 'Symbiosis', 'Telepathy']",90,60,80,18/11/2016
-766,Passimian,Fighting,,"['Defiant', 'Receiver']",100,120,90,18/11/2016
+766,Passimian,Fighting,None,"['Defiant', 'Receiver']",100,120,90,18/11/2016
 767,Wimpod,Bug,Water,['Wimp Out'],25,35,40,18/11/2016
 768,Golisopod,Bug,Water,['Emergency Exit'],75,125,140,18/11/2016
 769,Sandygast,Ghost,Ground,"['Sand Veil', 'Water Compaction']",55,55,80,18/11/2016
 770,Palossand,Ghost,Ground,"['Sand Veil', 'Water Compaction']",85,75,110,18/11/2016
-771,Pyukumuku,Water,,"['Innards Out', 'Unaware']",55,60,130,18/11/2016
-772,Type: Null,Normal,,['Battle Armor'],95,95,95,18/11/2016
-773,Silvally,Normal,,['RKS System'],95,95,95,18/11/2016
+771,Pyukumuku,Water,None,"['Innards Out', 'Unaware']",55,60,130,18/11/2016
+772,Type: Null,Normal,None,['Battle Armor'],95,95,95,18/11/2016
+773,Silvally,Normal,None,['RKS System'],95,95,95,18/11/2016
 774,Minior ,Rock,Flying,['Shields Down'],60,60,100,18/11/2016
-775,Komala,Normal,,['Comatose'],65,115,65,18/11/2016
+775,Komala,Normal,None,['Comatose'],65,115,65,18/11/2016
 776,Turtonator,Fire,Dragon,['Shell Armor'],60,78,135,18/11/2016
 777,Togedemaru,Electric,Steel,"['Iron Barbs', 'Lightning Rod', 'Sturdy']",65,98,63,18/11/2016
 778,Mimikyu,Ghost,Fairy,['Disguise'],55,90,80,18/11/2016
 779,Bruxish,Water,Psychic,"['Dazzling', 'Strong Jaw', 'Wonder Skin']",68,105,70,18/11/2016
 780,Drampa,Normal,Dragon,"['Berserk', 'Cloud Nine', 'Sap Sipper']",78,60,85,18/11/2016
 781,Dhelmise,Ghost,Grass,['Steelworker'],70,131,100,18/11/2016
-782,Jangmo-o,Dragon,,"['Bulletproof', 'Overcoat', 'Soundproof']",45,55,65,18/11/2016
+782,Jangmo-o,Dragon,None,"['Bulletproof', 'Overcoat', 'Soundproof']",45,55,65,18/11/2016
 783,Hakamo-o,Dragon,Fighting,"['Bulletproof', 'Overcoat', 'Soundproof']",55,75,90,18/11/2016
 784,Kommo-o,Dragon,Fighting,"['Bulletproof', 'Overcoat', 'Soundproof']",75,110,125,18/11/2016
 785,Tapu Koko,Electric,Fairy,"['Electric Surge', 'Telepathy']",70,115,85,18/11/2016
 786,Tapu Lele,Psychic,Fairy,"['Psychic Surge', 'Telepathy']",70,85,75,18/11/2016
 787,Tapu Bulu,Grass,Fairy,"['Grassy Surge', 'Telepathy']",70,130,115,18/11/2016
 788,Tapu Fini,Water,Fairy,"['Misty Surge', 'Telepathy']",70,75,115,18/11/2016
-789,Cosmog,Psychic,,['Unaware'],43,29,31,18/11/2016
-790,Cosmoem,Psychic,,['Sturdy'],43,29,131,18/11/2016
+789,Cosmog,Psychic,None,['Unaware'],43,29,31,18/11/2016
+790,Cosmoem,Psychic,None,['Sturdy'],43,29,131,18/11/2016
 791,Solgaleo,Psychic,Steel,['Full Metal Body'],137,137,107,18/11/2016
 792,Lunala,Psychic,Ghost,['Shadow Shield'],137,113,89,18/11/2016
 793,Nihilego,Rock,Poison,['Beast Boost'],109,53,47,18/11/2016
 794,Buzzwole,Bug,Fighting,['Beast Boost'],107,139,139,18/11/2016
 795,Pheromosa,Bug,Fighting,['Beast Boost'],71,137,37,18/11/2016
-796,Xurkitree,Electric,,['Beast Boost'],83,89,71,18/11/2016
+796,Xurkitree,Electric,None,['Beast Boost'],83,89,71,18/11/2016
 797,Celesteela,Steel,Flying,['Beast Boost'],97,101,103,18/11/2016
 798,Kartana,Grass,Steel,['Beast Boost'],59,181,131,18/11/2016
 799,Guzzlord,Dark,Dragon,['Beast Boost'],223,101,53,18/11/2016
-800,Necrozma,Psychic,,['Prism Armor'],97,107,101,18/11/2016
+800,Necrozma,Psychic,None,['Prism Armor'],97,107,101,18/11/2016
 801,Magearna,Steel,Fairy,['Soul-Heart'],80,95,115,18/11/2016
 802,Marshadow,Fighting,Ghost,['Technician'],90,125,80,18/11/2016
-803,Poipole,Poison,,['Beast Boost'],67,73,67,18/11/2016
+803,Poipole,Poison,None,['Beast Boost'],67,73,67,18/11/2016
 804,Naganadel,Poison,Dragon,['Beast Boost'],73,73,73,18/11/2016
 805,Stakataka,Rock,Steel,['Beast Boost'],61,131,211,'18/11/2016
 806,Blacephalon,Fire,Ghost,['Beast Boost'],53,127,53,18/11/2016
-807,Zeraora,Electric,,['Volt Absorb'],88,112,75,18/11/2016
-808,Meltan,Steel,,['Magnet Pull'],46,65,65,18/11/2016
-809,Melmetal,Steel,,['Iron Fist'],135,143,143,18/11/2016
-810,Grookey,Grass,,"['Grassy Surge', 'Overgrow']",50,65,50,15/11/2019
-811,Thwackey,Grass,,"['Grassy Surge', 'Overgrow']",70,85,70,15/11/2019
-812,Rillaboom,Grass,,"['Grassy Surge', 'Overgrow']",100,125,90,15/11/2019
-813,Scorbunny,Fire,,"['Blaze', 'Libero']",50,71,40,15/11/2019
-814,Raboot,Fire,,"['Blaze', 'Libero']",65,86,60,15/11/2019
-815,Cinderace,Fire,,"['Blaze', 'Libero']",80,116,75,15/11/2019
-816,Sobble,Water,,"['Sniper', 'Torrent']",50,40,40,15/11/2019
-817,Drizzile,Water,,"['Sniper', 'Torrent']",65,60,55,15/11/2019
-818,Inteleon,Water,,"['Sniper', 'Torrent']",70,85,65,15/11/2019
-819,Skwovet,Normal,,"['Cheek Pouch', 'Gluttony']",70,55,55,15/11/2019
-820,Greedent,Normal,,"['Cheek Pouch', 'Gluttony']",120,95,95,15/11/2019
-821,Rookidee,Flying,,"['Big Pecks', 'Keen Eye', 'Unnerve']",38,47,35,15/11/2019
-822,Corvisquire,Flying,,"['Big Pecks', 'Keen Eye', 'Unnerve']",68,67,55,15/11/2019
+807,Zeraora,Electric,None,['Volt Absorb'],88,112,75,18/11/2016
+808,Meltan,Steel,None,['Magnet Pull'],46,65,65,18/11/2016
+809,Melmetal,Steel,None,['Iron Fist'],135,143,143,18/11/2016
+810,Grookey,Grass,None,"['Grassy Surge', 'Overgrow']",50,65,50,15/11/2019
+811,Thwackey,Grass,None,"['Grassy Surge', 'Overgrow']",70,85,70,15/11/2019
+812,Rillaboom,Grass,None,"['Grassy Surge', 'Overgrow']",100,125,90,15/11/2019
+813,Scorbunny,Fire,None,"['Blaze', 'Libero']",50,71,40,15/11/2019
+814,Raboot,Fire,None,"['Blaze', 'Libero']",65,86,60,15/11/2019
+815,Cinderace,Fire,None,"['Blaze', 'Libero']",80,116,75,15/11/2019
+816,Sobble,Water,None,"['Sniper', 'Torrent']",50,40,40,15/11/2019
+817,Drizzile,Water,None,"['Sniper', 'Torrent']",65,60,55,15/11/2019
+818,Inteleon,Water,None,"['Sniper', 'Torrent']",70,85,65,15/11/2019
+819,Skwovet,Normal,None,"['Cheek Pouch', 'Gluttony']",70,55,55,15/11/2019
+820,Greedent,Normal,None,"['Cheek Pouch', 'Gluttony']",120,95,95,15/11/2019
+821,Rookidee,Flying,None,"['Big Pecks', 'Keen Eye', 'Unnerve']",38,47,35,15/11/2019
+822,Corvisquire,Flying,None,"['Big Pecks', 'Keen Eye', 'Unnerve']",68,67,55,15/11/2019
 823,Corviknight,Flying,Steel,"['Mirror Armor', 'Pressure', 'Unnerve']",98,87,105,15/11/2019
-824,Blipbug,Bug,,"['Swarm', 'Telepathy']",25,20,20,15/11/2019
+824,Blipbug,Bug,None,"['Swarm', 'Telepathy']",25,20,20,15/11/2019
 825,Dottler,Bug,Psychic,"['Swarm', 'Telepathy']",50,35,80,15/11/2019
 826,Orbeetle,Bug,Psychic,"['Frisk', 'Swarm', 'Telepathy']",60,45,110,15/11/2019
-827,Nickit,Dark,,"['Run Away', 'Stakeout', 'Unburden']",40,28,28,15/11/2019
-828,Thievul,Dark,,"['Run Away', 'Stakeout', 'Unburden']",70,58,58,15/11/2019
-829,Gossifleur,Grass,,"['Cotton Down', 'Effect Spore', 'Regenerator']",40,40,60,15/11/2019
-830,Eldegoss,Grass,,"['Cotton Down', 'Effect Spore', 'Regenerator']",60,50,90,15/11/2019
-831,Wooloo,Normal,,"['Bulletproof', 'Fluffy', 'Run Away']",42,40,55,15/11/2019
-832,Dubwool,Normal,,"['Bulletproof', 'Fluffy', 'Steadfast']",72,80,100,15/11/2019
-833,Chewtle,Water,,"['Shell Armor', 'Strong Jaw', 'Swift Swim']",50,64,50,15/11/2019
+827,Nickit,Dark,None,"['Run Away', 'Stakeout', 'Unburden']",40,28,28,15/11/2019
+828,Thievul,Dark,None,"['Run Away', 'Stakeout', 'Unburden']",70,58,58,15/11/2019
+829,Gossifleur,Grass,None,"['Cotton Down', 'Effect Spore', 'Regenerator']",40,40,60,15/11/2019
+830,Eldegoss,Grass,None,"['Cotton Down', 'Effect Spore', 'Regenerator']",60,50,90,15/11/2019
+831,Wooloo,Normal,None,"['Bulletproof', 'Fluffy', 'Run Away']",42,40,55,15/11/2019
+832,Dubwool,Normal,None,"['Bulletproof', 'Fluffy', 'Steadfast']",72,80,100,15/11/2019
+833,Chewtle,Water,None,"['Shell Armor', 'Strong Jaw', 'Swift Swim']",50,64,50,15/11/2019
 834,Drednaw,Water,Rock,"['Shell Armor', 'Strong Jaw', 'Swift Swim']",90,115,90,15/11/2019
-835,Yamper,Electric,,"['Ball Fetch', 'Rattled']",59,45,50,15/11/2019
-836,Boltund,Electric,,"['Competitive', 'Strong Jaw']",69,90,60,15/11/2019
-837,Rolycoly,Rock,,"['Flash Fire', 'Heatproof', 'Steam Engine']",30,40,50,15/11/2019
+835,Yamper,Electric,None,"['Ball Fetch', 'Rattled']",59,45,50,15/11/2019
+836,Boltund,Electric,None,"['Competitive', 'Strong Jaw']",69,90,60,15/11/2019
+837,Rolycoly,Rock,None,"['Flash Fire', 'Heatproof', 'Steam Engine']",30,40,50,15/11/2019
 838,Carkol,Rock,Fire,"['Flame Body', 'Flash Fire', 'Steam Engine']",80,60,90,15/11/2019
 839,Coalossal,Rock,Fire,"['Flame Body', 'Flash Fire', 'Steam Engine']",110,80,120,15/11/2019
 840,Applin,Grass,Dragon,"['Bulletproof', 'Gluttony', 'Ripen']",40,40,80,15/11/2019
 841,Flapple,Grass,Dragon,"['Gluttony', 'Hustle', 'Ripen']",70,110,80,15/11/2019
 842,Appletun,Grass,Dragon,"['Gluttony', 'Ripen', 'Thick Fat']",110,85,80,15/11/2019
-843,Silicobra,Ground,,"['Sand Spit', 'Sand Veil', 'Shed Skin']",52,57,75,15/11/2019
-844,Sandaconda,Ground,,"['Sand Spit', 'Sand Veil', 'Shed Skin']",72,107,125,15/11/2019
+843,Silicobra,Ground,None,"['Sand Spit', 'Sand Veil', 'Shed Skin']",52,57,75,15/11/2019
+844,Sandaconda,Ground,None,"['Sand Spit', 'Sand Veil', 'Shed Skin']",72,107,125,15/11/2019
 845,Cramorant,Flying,Water,['Gulp Missile'],70,85,55,15/11/2019
-846,Arrokuda,Water,,"['Propeller Tail', 'Swift Swim']",41,63,40,15/11/2019
-847,Barraskewda,Water,,"['Propeller Tail', 'Swift Swim']",61,123,60,15/11/2019
+846,Arrokuda,Water,None,"['Propeller Tail', 'Swift Swim']",41,63,40,15/11/2019
+847,Barraskewda,Water,None,"['Propeller Tail', 'Swift Swim']",61,123,60,15/11/2019
 848,Toxel,Electric,Poison,"['Klutz', 'Rattled', 'Static']",40,38,35,15/11/2019
 849,Toxtricity,Electric,Poison,"['Plus', 'Punk Rock', 'Technician']",75,98,70,15/11/2019
 850,Sizzlipede,Fire,Bug,"['Flame Body', 'Flash Fire', 'White Smoke']",50,65,45,15/11/2019
 851,Centiskorch,Fire,Bug,"['Flame Body', 'Flash Fire', 'White Smoke']",100,115,65,15/11/2019
-852,Clobbopus,Fighting,,"['Limber', 'Technician']",50,68,60,15/11/2019
-853,Grapploct,Fighting,,"['Limber', 'Technician']",80,118,90,15/11/2019
-854,Sinistea,Ghost,,"['Cursed Body', 'Weak Armor']",40,45,45,15/11/2019
-855,Polteageist,Ghost,,"['Cursed Body', 'Weak Armor']",60,65,65,15/11/2019
-856,Hatenna,Psychic,,"['Anticipation', 'Healer', 'Magic Bounce']",42,30,45,15/11/2019
-857,Hattrem,Psychic,,"['Anticipation', 'Healer', 'Magic Bounce']",57,40,65,15/11/2019
+852,Clobbopus,Fighting,None,"['Limber', 'Technician']",50,68,60,15/11/2019
+853,Grapploct,Fighting,None,"['Limber', 'Technician']",80,118,90,15/11/2019
+854,Sinistea,Ghost,None,"['Cursed Body', 'Weak Armor']",40,45,45,15/11/2019
+855,Polteageist,Ghost,None,"['Cursed Body', 'Weak Armor']",60,65,65,15/11/2019
+856,Hatenna,Psychic,None,"['Anticipation', 'Healer', 'Magic Bounce']",42,30,45,15/11/2019
+857,Hattrem,Psychic,None,"['Anticipation', 'Healer', 'Magic Bounce']",57,40,65,15/11/2019
 858,Hatterene,Psychic,Fairy,"['Anticipation', 'Healer', 'Magic Bounce']",57,90,95,15/11/2019
 859,Impidimp,Dark,Fairy,"['Frisk', 'Pickpocket', 'Prankster']",45,45,30,15/11/2019
 860,Morgrem,Dark,Fairy,"['Frisk', 'Pickpocket', 'Prankster']",65,60,45,15/11/2019
 861,Grimmsnarl,Dark,Fairy,"['Frisk', 'Pickpocket', 'Prankster']",95,120,65,15/11/2019
 862,Obstagoon,Dark,Normal,"['Defiant', 'Guts', 'Reckless']",93,90,101,15/11/2019
-863,Perrserker,Steel,,"['Battle Armor', 'Steely Spirit', 'Tough Claws']",70,110,100,15/11/2019
-864,Cursola,Ghost,,"['Perish Body', 'Weak Armor']",60,95,50,15/11/2019
-865,Sirfetch'd,Fighting,,"['Scrappy', 'Steadfast']",62,135,95,15/11/2019
+863,Perrserker,Steel,None,"['Battle Armor', 'Steely Spirit', 'Tough Claws']",70,110,100,15/11/2019
+864,Cursola,Ghost,None,"['Perish Body', 'Weak Armor']",60,95,50,15/11/2019
+865,Sirfetch'd,Fighting,None,"['Scrappy', 'Steadfast']",62,135,95,15/11/2019
 866,Mr. Rime,Ice,Psychic,"['Ice Body', 'Screen Cleaner', 'Tangled Feet']",80,85,75,15/11/2019
 867,Runerigus,Ground,Ghost,['Wandering Spirit'],58,95,145,15/11/2019
-868,Milcery,Fairy,,"['Aroma Veil', 'Sweet Veil']",45,40,40,15/11/2019
-869,Alcremie,Fairy,,"['Aroma Veil', 'Sweet Veil']",65,60,75,15/11/2019
-870,Falinks,Fighting,,"['Battle Armor', 'Defiant']",65,100,100,15/11/2019
-871,Pincurchin,Electric,,"['Electric Surge', 'Lightning Rod']",48,101,95,15/11/2019
+868,Milcery,Fairy,None,"['Aroma Veil', 'Sweet Veil']",45,40,40,15/11/2019
+869,Alcremie,Fairy,None,"['Aroma Veil', 'Sweet Veil']",65,60,75,15/11/2019
+870,Falinks,Fighting,None,"['Battle Armor', 'Defiant']",65,100,100,15/11/2019
+871,Pincurchin,Electric,None,"['Electric Surge', 'Lightning Rod']",48,101,95,15/11/2019
 872,Snom,Ice,Bug,"['Ice Scales', 'Shield Dust']",30,25,35,15/11/2019
 873,Frosmoth,Ice,Bug,"['Ice Scales', 'Shield Dust']",70,65,60,15/11/2019
-874,Stonjourner,Rock,,['Power Spot'],100,125,135,15/11/2019
-875,Eiscue,Ice,,['Ice Face'],75,80,110,15/11/2019
+874,Stonjourner,Rock,None,['Power Spot'],100,125,135,15/11/2019
+875,Eiscue,Ice,None,['Ice Face'],75,80,110,15/11/2019
 876,Indeedee,Psychic,Normal,"['Inner Focus', 'Psychic Surge', 'Synchronize']",60,65,55,15/11/2019
 877,Morpeko,Electric,Dark,['Hunger Switch'],58,95,58,15/11/2019
-878,Cufant,Steel,,"['Heavy Metal', 'Sheer Force']",72,80,49,15/11/2019
-879,Copperajah,Steel,,"['Heavy Metal', 'Sheer Force']",122,130,69,15/11/2019
+878,Cufant,Steel,None,"['Heavy Metal', 'Sheer Force']",72,80,49,15/11/2019
+879,Copperajah,Steel,None,"['Heavy Metal', 'Sheer Force']",122,130,69,15/11/2019
 880,Dracozolt,Electric,Dragon,"['Hustle', 'Sand Rush', 'Volt Absorb']",90,100,90,15/11/2019
 881,Arctozolt,Electric,Ice,"['Slush Rush', 'Static', 'Volt Absorb']",90,100,90,15/11/2019
 882,Dracovish,Water,Dragon,"['Sand Rush', 'Strong Jaw', 'Water Absorb']",90,90,100,15/11/2019
@@ -886,14 +886,14 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 885,Dreepy,Dragon,Ghost,"['Clear Body', 'Cursed Body', 'Infiltrator']",28,60,30,15/11/2019
 886,Drakloak,Dragon,Ghost,"['Clear Body', 'Cursed Body', 'Infiltrator']",68,80,50,15/11/2019
 887,Dragapult,Dragon,Ghost,"['Clear Body', 'Cursed Body', 'Infiltrator']",88,120,75,15/11/2019
-888,Zacian,Fairy,,['Intrepid Sword'],92,130,115,15/11/2019
-889,Zamazenta,Fighting,,['Dauntless Shield'],92,130,115,15/11/2019
+888,Zacian,Fairy,None,['Intrepid Sword'],92,130,115,15/11/2019
+889,Zamazenta,Fighting,None,['Dauntless Shield'],92,130,115,15/11/2019
 890,Eternatus,Poison,Dragon,['Pressure'],140,85,95,15/11/2019
-891,Kubfu,Fighting,,['Inner Focus'],60,90,60,15/11/2019
+891,Kubfu,Fighting,None,['Inner Focus'],60,90,60,15/11/2019
 892,Urshifu,Fighting,Water,['Unseen Fist'],100,130,100,15/11/2019
 893,Zarude,Dark,Grass,['Leaf Guard'],105,120,105,15/11/2019
-894,Regieleki,Electric,,['Transistor'],80,100,50,15/11/2019
-895,Regidrago,Dragon,,"[""Dragon's Maw""]",200,100,50,15/11/2019
-896,Glastrier,Ice,,['Chilling Neigh'],100,145,130,15/11/2019
-897,Spectrier,Ghost,,['Grim Neigh'],100,65,60,15/11/2019
+894,Regieleki,Electric,None,['Transistor'],80,100,50,15/11/2019
+895,Regidrago,Dragon,None,"[""Dragon's Maw""]",200,100,50,15/11/2019
+896,Glastrier,Ice,None,['Chilling Neigh'],100,145,130,15/11/2019
+897,Spectrier,Ghost,None,['Grim Neigh'],100,65,60,15/11/2019
 898,Calyrex,Psychic,Grass,['Unnerve'],100,80,80,15/11/2019
