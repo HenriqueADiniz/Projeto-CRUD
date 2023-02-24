@@ -3,6 +3,9 @@ import java.util.Arrays;
 import java.util.ArrayList;
 import java.io.FileReader;
 import com.opencsv.CSVReader;
+import java.util.Date;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 
 public class Reader {
     // caminho do arquivo .csv
@@ -63,7 +66,7 @@ public class Reader {
             int hp = Integer.parseInt(lista.get(i).get(5));
             int att = Integer.parseInt(lista.get(i).get(6));
             int def = Integer.parseInt(lista.get(i).get(7));
-            System.out.println(type2);
+            Date date = trataDatas(lista.get(i).get(8));
 
             listaDePokemons.add(new Pokemon(number, name, type1, type2, abilities, hp, att, def));
         }
@@ -81,5 +84,22 @@ public class Reader {
         temp = temp.replaceAll("'", "");
         String[] abilities = temp.split(",");
         return abilities;
+    }
+    /*
+     * TRATA DATAS
+     * -
+     * formata a string pro padrao dd/mm/aaaa
+     */
+    public static Date trataDatas(String temp){
+        Date date = null;
+
+        try {
+            SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
+            date = format.parse(temp);
+        } catch (ParseException e) {
+            // tratamento de erro
+        }
+
+        return date;
     }
 }

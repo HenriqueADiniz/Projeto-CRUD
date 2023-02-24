@@ -384,7 +384,7 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 383,Groudon,Ground,None,['Drought'],100,150,140,21/02/2002
 384,Rayquaza,Dragon,Flying,['Air Lock'],105,150,90,21/02/2002
 385,Jirachi,Steel,Psychic,['Serene Grace'],100,100,100,21/02/2002
-386,Deoxys ,Psychic,None,['Pressure'],50,150,50,21/02/2002
+386,"Deoxys ",Psychic,None,['Pressure'],50,150,50,21/02/2002
 387,Turtwig,Grass,None,"['Overgrow', 'Shell Armor']",55,68,64,28/09/2006
 388,Grotle,Grass,None,"['Overgrow', 'Shell Armor']",75,89,85,28/09/2006
 389,Torterra,Grass,Ground,"['Overgrow', 'Shell Armor']",95,109,105,28/09/2006
@@ -411,7 +411,7 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 410,Shieldon,Rock,Steel,"['Soundproof', 'Sturdy']",30,42,118,28/09/2006
 411,Bastiodon,Rock,Steel,"['Soundproof', 'Sturdy']",60,52,168,28/09/2006
 412,Burmy,Bug,None,"['Overcoat', 'Shed Skin']",40,29,45,28/09/2006
-413,Wormadam ,Bug,Grass,"['Anticipation', 'Overcoat']",60,59,85,28/09/2006
+413,"Wormadam ",Bug,Grass,"['Anticipation', 'Overcoat']",60,59,85,28/09/2006
 414,Mothim,Bug,Flying,"['Swarm', 'Tinted Lens']",70,94,50,28/09/2006
 415,Combee,Bug,Flying,"['Honey Gather', 'Hustle']",30,30,42,28/09/2006
 416,Vespiquen,Bug,Flying,"['Pressure', 'Unnerve']",70,80,102,28/09/2006
@@ -679,7 +679,7 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 678,Meowstic,Psychic,None,"['Infiltrator', 'Keen Eye', 'Prankster']",74,48,76,12/10/2013
 679,Honedge,Steel,Ghost,['No Guard'],45,80,100,12/10/2013
 680,Doublade,Steel,Ghost,['No Guard'],59,110,150,12/10/2013
-681,Aegislash ,Steel,Ghost,['Stance Change'],50,70,140,12/10/2013
+681,"Aegislash ",Steel,Ghost,['Stance Change'],50,70,140,12/10/2013
 682,Spritzee,Fairy,None,"['Aroma Veil', 'Healer']",78,52,60,12/10/2013
 683,Aromatisse,Fairy,None,"['Aroma Veil', 'Healer']",101,72,72,12/10/2013
 684,Swirlix,Fairy,None,"['Sweet Veil', 'Unburden']",62,48,66,12/10/2013
@@ -709,7 +709,7 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 708,Phantump,Ghost,Grass,"['Frisk', 'Harvest', 'Natural Cure']",43,70,48,12/10/2013
 709,Trevenant,Ghost,Grass,"['Frisk', 'Harvest', 'Natural Cure']",85,110,76,12/10/2013
 710,Pumpkabo,Ghost,Grass,"['Frisk', 'Insomnia', 'Pickup']",44,66,70,12/10/2013
-711, Gourgeist,Ghost,Grass,"['Frisk', 'Insomnia', 'Pickup']",65,90,122,12/10/2013
+711," Gourgeist",Ghost,Grass,"['Frisk', 'Insomnia', 'Pickup']",65,90,122,12/10/2013
 712,Bergmite,Ice,None,"['Ice Body', 'Own Tempo', 'Sturdy']",55,69,85,12/10/2013
 713,Avalugg,Ice,None,"['Ice Body', 'Own Tempo', 'Sturdy']",95,117,184,12/10/2013
 714,Noibat,Flying,Dragon,"['Frisk', 'Infiltrator', 'Telepathy']",40,30,35,12/10/2013
@@ -751,7 +751,7 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 750,Mudsdale,Ground,None,"['Inner Focus', 'Own Tempo', 'Stamina']",100,125,100,18/11/2016
 751,Dewpider,Water,Bug,"['Water Absorb', 'Water Bubble']",38,40,52,18/11/2016
 752,Araquanid,Water,Bug,"['Water Absorb', 'Water Bubble']",68,70,92,18/11/2016
-753,Fomantis,Grass,None,"['Contrary', 'Leaf Guard']",40,55,35,'18/11/2016
+753,Fomantis,Grass,None,"['Contrary', 'Leaf Guard']",40,55,35,18/11/2016
 754,Lurantis,Grass,None,"['Contrary', 'Leaf Guard']",70,105,90,18/11/2016
 755,Morelull,Grass,Fairy,"['Effect Spore', 'Illuminate', 'Rain Dish']",40,35,55,18/11/2016
 756,Shiinotic,Grass,Fairy,"['Effect Spore', 'Illuminate', 'Rain Dish']",60,45,80,18/11/2016
@@ -772,7 +772,7 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 771,Pyukumuku,Water,None,"['Innards Out', 'Unaware']",55,60,130,18/11/2016
 772,Type: Null,Normal,None,['Battle Armor'],95,95,95,18/11/2016
 773,Silvally,Normal,None,['RKS System'],95,95,95,18/11/2016
-774,Minior ,Rock,Flying,['Shields Down'],60,60,100,18/11/2016
+774,"Minior ",Rock,Flying,['Shields Down'],60,60,100,18/11/2016
 775,Komala,Normal,None,['Comatose'],65,115,65,18/11/2016
 776,Turtonator,Fire,Dragon,['Shell Armor'],60,78,135,18/11/2016
 777,Togedemaru,Electric,Steel,"['Iron Barbs', 'Lightning Rod', 'Sturdy']",65,98,63,18/11/2016
@@ -803,7 +803,7 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 802,Marshadow,Fighting,Ghost,['Technician'],90,125,80,18/11/2016
 803,Poipole,Poison,None,['Beast Boost'],67,73,67,18/11/2016
 804,Naganadel,Poison,Dragon,['Beast Boost'],73,73,73,18/11/2016
-805,Stakataka,Rock,Steel,['Beast Boost'],61,131,211,'18/11/2016
+805,Stakataka,Rock,Steel,['Beast Boost'],61,131,211,18/11/2016
 806,Blacephalon,Fire,Ghost,['Beast Boost'],53,127,53,18/11/2016
 807,Zeraora,Electric,None,['Volt Absorb'],88,112,75,18/11/2016
 808,Meltan,Steel,None,['Magnet Pull'],46,65,65,18/11/2016
