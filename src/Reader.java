@@ -21,18 +21,19 @@ public class Reader {
         List<List<String>> lista = cargaInicial();
         listaParaObjeto(lista);
     }
-
+    
     /* 
-     * CARGA INICIAL
-     * -
-     * inicializa LISTA de LISTA de strings, ou seja, LINHAS de COLUNAS (linha[y].coluna[x])
-     * inicializa o leitor, pula a primeira linha, adiciona as colunas de cada linha
-     * retorna a lista
-     */
+    * CARGA INICIAL
+    * -
+    * inicializa LISTA de LISTA de strings, ou seja, LINHAS de COLUNAS (linha[y].coluna[x])
+    * inicializa o leitor, pula a primeira linha, adiciona as colunas de cada linha
+    * retorna a lista
+    */
     public static List<List<String>> cargaInicial(){
+        System.out.println("Realizando carga inicial...");
         List<List<String>> linha = new ArrayList<List<String>>();
         String[] coluna = null;
-
+        
         try {
             CSVReader reader = new CSVReader(new FileReader(CSV_PATH));
 
@@ -40,8 +41,11 @@ public class Reader {
             while ((coluna = reader.readNext()) != null){
                 linha.add(Arrays.asList(coluna));
             }
+            
+            System.out.println("Dados carregados!");
         } catch (Exception e) {
-            // tratamento de erro
+            System.out.println("Erro ao carregar os dados. Confira o caminho do arquivo.");
+            System.exit(1);
         }
 
         return linha;
