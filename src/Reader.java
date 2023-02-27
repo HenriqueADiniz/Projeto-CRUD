@@ -11,29 +11,30 @@ public class Reader {
     // caminho do arquivo .csv
     private static final String CSV_PATH = "tmp/pokemons.csv";
 
-    /*
+    /* ----
      * MAIN
-     * -
-     * realiza carga inicial criando a lista
-     * converte cada linha da lista para objeto
+     * ----
+     * realiza carga inicial criando uma lista
+     * converte cada linha da lista criada para objeto
      */
     public static void main(String[] args) {
         List<List<String>> lista = cargaInicial();
+        
         listaParaObjeto(lista);
     }
     
-    /* 
-    * CARGA INICIAL
-    * -
-    * inicializa LISTA de LISTA de strings, ou seja, LINHAS de COLUNAS (linha[y].coluna[x])
-    * inicializa o leitor, pula a primeira linha, adiciona as colunas de cada linha
-    * retorna a lista
-    */
+    /* -------------
+     * CARGA INICIAL
+     * -------------
+     * inicializa LISTA de LISTA de strings, ou seja, LINHAS de COLUNAS (linha[y].coluna[x])
+     * pula a primeira linha, inicializa o leitor, adiciona as colunas de cada linha
+     * retorna a lista
+     */
     public static List<List<String>> cargaInicial(){
         System.out.println("Realizando carga inicial...");
         List<List<String>> linha = new ArrayList<List<String>>();
+
         String[] coluna = null;
-        
         try {
             CSVReader reader = new CSVReader(new FileReader(CSV_PATH));
 
@@ -51,17 +52,16 @@ public class Reader {
         return linha;
     }
 
-    /* 
+    /* ------------------
      * LISTA PARA OBJETOS
-     * -
+     * ------------------
      * cria lista de objetos
-     * para cada linha, cria um objeto
+     * para cada linha lida, adiciona um objeto
      */
     public static void listaParaObjeto(List<List<String>> lista){
-        int tam = lista.size();
         List<Pokemon> listaDePokemons = new ArrayList<>();
 
-        for (int i=0; i<tam; i++){
+        for (int i=0; i<lista.size(); i++){
             int number = Integer.parseInt(lista.get(i).get(0));
             String name = lista.get(i).get(1);
             String type1 = lista.get(i).get(2);
@@ -75,9 +75,9 @@ public class Reader {
             listaDePokemons.add(new Pokemon(number, name, type1, type2, abilities, hp, att, def, date));
         }
     }
-    /*
+    /* --------------------
      * TRATA MULTIVALORADOS
-     * -
+     * --------------------
      * remove colchetes
      * remove aspas simples
      * realiza split a cada virgula
@@ -89,21 +89,19 @@ public class Reader {
         String[] abilities = temp.split(",");
         return abilities;
     }
-    /*
+    /* -----------
      * TRATA DATAS
-     * -
+     * -----------
      * formata a string pro padrao dd/mm/aaaa
      */
     public static Date trataDatas(String temp){
         Date date = null;
-
         try {
             SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
             date = format.parse(temp);
         } catch (ParseException e) {
             // tratamento de erro
         }
-
         return date;
     }
 }
