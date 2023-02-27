@@ -1,5 +1,11 @@
 import java.util.Date;
 
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.DataInputStream;
+import java.io.DataOutputStream;
+import java.io.IOException;
+
 public class Pokemon {
     int number, hp, att, def;
     String name, type1, type2;
@@ -47,4 +53,43 @@ public class Pokemon {
     // date
     public Date getDate(){return date;}
     public void setDate(Date date){this.date = date;}
+
+    //Métodos
+
+    public byte[] toByteArray() throws IOException { // Converte objeto para array de bytes
+    ByteArrayOutputStream baos = new ByteArrayOutputStream(); // Cria um array de bytes
+    DataOutputStream dos = new DataOutputStream(baos); // Cria um fluxo de dados
+
+    dos.writeInt(this.getNumber()); // Escreve o numero do pokemon no array de bytes
+    dos.writeInt(this.getHP()); // Escreve o Hp do pokemon no array de bytes
+    dos.writeInt(this.getAtt()); // Escreve o Att do pokemon no array de bytes
+    dos.writeInt(this.getDef()); // Escreve a Def do pokemon no array de bytes
+    dos.writeUTF(this.getName()); // Escreve o nome do pokemon no array de bytes
+    dos.writeUTF(this.getType1()); // Escreve o Type1 do pokemon no array de bytes
+    dos.writeUTF(this.getType2()); // Escreve o Type2 do pokemon no array de bytes
+    //abilities
+    //date
+    dos.close();
+    baos.close();
+
+    return baos.toByteArray(); // Retorna o array de bytes
 }
+public void fromByteArray(byte[] ba) throws IOException {
+    ByteArrayInputStream bais = new ByteArrayInputStream(ba); // Cria um array de bytes
+    DataInputStream dis = new DataInputStream(bais); // Cria um fluxo de dados
+    this.number = dis.readInt(); // Le o numero do pokemon do array de bytes
+    this.hp = dis.readInt(); // Le o hp do pokemon do array de bytes
+    this.att = dis.readInt(); // Le o att do pokemon do array de bytes
+    this.def = dis.readInt(); // Le a def do pokemon do array de bytes
+    this.name = dis.readUTF(); // Le o nome do pokemon do array de bytes
+    this.type1 = dis.readUTF(); // Le o type1 de usuario do array de bytes
+    this.type2 = dis.readUTF(); // Le o type2 do array de bytes
+
+}
+public short size() throws IOException {
+    return (short)this.toByteArray().length;
+}
+
+
+}
+
