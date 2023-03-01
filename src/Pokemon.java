@@ -23,6 +23,10 @@ public class Pokemon {
         this.def = def;
         this.date = date;
     }
+    public Pokemon (byte [] bytes) throws Exception {
+        this.date = new Date();
+        this.fromByteArray(bytes);
+    }
     
     //=====GETTERS & SETTERS=====//
     // number
@@ -53,27 +57,30 @@ public class Pokemon {
     public Date getDate(){return date;}
     public void setDate(Date date){this.date = date;}
 
+    /* ------------------
+     * LER ARRAY DE BYTES
+     * ------------------
+     * cria um array de bytes
+     * cria um fluxo de dados
+     * le e atribui, do array de bytes, os atributos do pokemon
+     */
+    public void fromByteArray(byte[] ba) throws IOException {
+        ByteArrayInputStream bais = new ByteArrayInputStream(ba);
+        DataInputStream dis = new DataInputStream(bais);
 
-
-    public static String [] readUTFarray (DataInputStream dis) throws IOException {
-        int tam = dis.readInt();
-        String [] sarr = new String [tam];
-        for (int i = 0; i < tam; i++) {
-            sarr[i] = dis.readUTF();
-        } // end for
-        return sarr;
-    } // end readUTFarray ()
-
-    public static void writeUTFarray (String [] sarr, DataOutputStream dos) throws IOException {
-        dos.writeInt(sarr.length);
-        for (int i = 0; i < sarr.length; i++) {
-            dos.writeUTF(sarr[i]);
-        } // end for
-    } // end writeUTFarray ()
-
-    /* --------------------------
-     * OBJETO PARA ARRAY DE BYTES
-     * --------------------------
+        this.number = dis.readInt();
+        this.name = dis.readUTF();
+        this.type1 = dis.readUTF();
+        this.type2 = dis.readUTF();
+        this.abilities= readUTFarray(dis);
+        this.hp = dis.readInt();
+        this.att = dis.readInt();
+        this.def = dis.readInt();
+        this.date.setTime(dis.readLong());
+    }
+    /* -----------------------
+     * ESCREVER ARRAY DE BYTES
+     * -----------------------
      * cria um array de bytes
      * cria um fluxo de dados
      * escreve os atributos do pokemon no array de bytes
@@ -98,35 +105,35 @@ public class Pokemon {
         return baos.toByteArray();
     }
 
-    /* ------------------
-     * LER ARRAY DE BYTES
-     * ------------------
-     * cria um array de bytes
-     * cria um fluxo de dados
-     * le e atribui, do array de bytes, os atributos do pokemon
-     */
-    public void fromByteArray(byte[] ba) throws IOException {
-        ByteArrayInputStream bais = new ByteArrayInputStream(ba);
-        DataInputStream dis = new DataInputStream(bais);
-
-        this.number = dis.readInt();
-        this.name = dis.readUTF();
-        this.type1 = dis.readUTF();
-        this.type2 = dis.readUTF();
-        this.abilities= readUTFarray(dis);
-        this.hp = dis.readInt();
-        this.att = dis.readInt();
-        this.def = dis.readInt();
-        this.date.setTime(dis.readLong());
-    }
-
     /* -------------------------
-     * TAMANHO DO ARRAY DE BYTES
+     * BYTES PARA MULTIVALORADOS
      * -------------------------
-     * retorna o tamanho do array de bytes
+     * le o tamanho da sequencia de bytes
+     * cria uma string com esse tamanho
+     * le cada string e as armazena no array
+     * retorna o array de strings
      */
-    public short size() throws IOException {
-        return (short)this.toByteArray().length;
+    public static String [] readUTFarray (DataInputStream dis) throws IOException {
+        int tam = dis.readInt();
+        String [] arr = new String [tam];
+
+        for (int i = 0; i < tam; i++) {
+            arr[i] = dis.readUTF();
+        }
+
+        return arr;
+    }
+    /* -------------------------
+     * MULTIVALORADOS PARA BYTES
+     * -------------------------
+     * escreve um int com o tamanho do array
+     * escreve cada string armazenada no array
+     */
+    public static void writeUTFarray (String [] arr, DataOutputStream dos) throws IOException {
+        dos.writeInt(arr.length);
+
+        for (int i = 0; i < arr.length; i++) {
+            dos.writeUTF(arr[i]);
+        }
     }
 }
-
