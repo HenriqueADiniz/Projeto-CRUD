@@ -1,10 +1,8 @@
 import java.util.Scanner;
-import java.io.RandomAccessFile;
 import java.io.IOException;
+import java.io.RandomAccessFile;
 
 public class CRUD {
-
-
     public static void main(String[] args) {
         System.out.print("\033[H\033[2J");
         
@@ -60,161 +58,177 @@ public class CRUD {
     /* ------
      * CREATE
      * ------
-     * posiciona o ponteiro no comeco do arquivo
+     * move o ponteiro pro inicio do arquivo
      * le a quantidade de ids
-     * atualiza o id
-     * move o ponteiro para o comeco do arquivo
-     * escreve a quantidade de ids nova
-     * mover o ponteiro para o fim do arquivo
-     * escrever o tamnho do byte
-     * escreve registro
+     * cria a id do pokemon novo (qntd + 1)
+     * move o ponteiro pro inicio do arquivo
+     * altera a quantidade de id's nova para (qntd + 1)
+     * move o ponteiro pro fim do arquivo
+     * escreve a lapide
+     * escreve o tamanho do byte
+     * escreve o registro
      */
     public void create(RandomAccessFile ras, Pokemon pokemon) throws IOException{
         if (pokemon == null) pokemon = new Pokemon(0, null, null, null, null, 0, 0, 0, null);
-         // mover o ponteiro para o comeco do arquivo
-         ras.seek(0);
-        // ler quantidade de ids
-         int qntIds = ras.readInt();
-        // atualizar id
-         pokemon.setNumber(qntIds + 1);
-         // mover o ponteiro para o comeco do arquivo
+        
         ras.seek(0);
-        // escrever quantidade de ids nova
+        int qntIds = ras.readInt();
+        pokemon.setNumber(qntIds + 1);
+
+        ras.seek(0);
         ras.writeInt( qntIds + 1 );
-         // mover o ponteiro para o fim do arquivo
+
         ras.seek(ras.length()); 
-        // escrever lapide
         ras.writeBoolean(true);
-        // escrever tamanho do byte
         ras.writeInt(pokemon.toByteArray().length);
-        // escrever tamanho do byte
         ras.write(pokemon.toByteArray());
+    }
+
+    /* ----
+     * READ
+     * ----
+     * move o ponteiro pro inicio do arquivo (APOS O CABECALHO)
+     * varre o arquivo (tamReg = tamanho do registro + 1 da lapide (booleano) + 4 do tamanho (int))
+     * 
+     * em cada registro,
+     * le a lapide do registro
+     * le o tamanho do registro
+     * cria o byte a ser lido
+     * le e aloca o byte
+     * cria o pokemon com as informacoes do byte lido
+     * 
+     * se a lapide for verdadeira,
+     * se encontrado o registro a ser lido,
+     * retorna o objeto pokemon
+     */
+    public Pokemon read(RandomAccessFile ras, int id) throws Exception{
+        boolean lapide = false;
+        int tamReg = 0;
+
+        ras.seek(4);
+        for (long i = 4; i < ras.length(); i += tamReg + 5) {
+            lapide = ras.readBoolean();
+            tamReg = ras.readInt();
+
+            byte [] bytes = new byte [tamReg];
+            ras.read(bytes);
+            Pokemon pokemon = new Pokemon(bytes);
+
+            if(lapide == true){
+                if(pokemon.number == id) {
+                    return pokemon;
+                }
+            }
+        }
+
+        return null;
+    }
+
+    /* ------
+     * UPDATE
+     * ------
+     * move o ponteiro pro inicio do arquivo (APOS O CABECALHO)
+     * varre o arquivo (tamReg = tamanho do registro + 1 da lapide (booleano) + 4 do tamanho (int))
+     * 
+     * em cada registro,
+     * salva a posicao inicial
+     * le a lapide do registro
+     * le o tamanho do registro
+     * cria o byte a ser lido
+     * le e aloca o byte
+     * cria o pokemon com as informacoes do byte lido
+     * 
+     * se a lapide for verdadeira,
+     * se o pokemon tiver o mesmo id do novo pokemon,
+     * cria o novo registro em bytes
+     * 
+     * se o tamanho do novo regitro for igual ao antigo,
+     * ?????????????????????????
+     * 
+     * senao,
+     * ?????????????????????????
+     * move o ponteiro para a lapide do registro
+     * e a demarca como excluida (false)
+     */
+    public boolean update (RandomAccessFile ras, Pokemon novo) throws Exception {
+        boolean lapide = false;
+        int tamReg = 0;
+
+        ras.seek(4);
+        for (long i = 4; i < ras.length(); i += tamReg + 5) {
+            long posInicial = ras.getFilePointer();
+            lapide = ras.readBoolean();
+            tamReg = ras.readInt();
+
+            byte [] bytes = new byte [tamReg];
+            ras.read(bytes);
+            Pokemon pokemon = new Pokemon(bytes);
+
+            if(lapide == true){
+                if(pokemon.getNumber() == novo.getNumber()) {
+                    byte [] bytesNovo = novo.toByteArray();
+
+                    if(bytesNovo.length <= tamReg) {
+                        ras.seek(posInicial + 5);
+                        ras.write(bytesNovo);
+                        return true;
+                    } else {
+                        ras.seek(posInicial);
+                        ras.writeBoolean(false);
+                        this.create(ras, novo);
+                        return true;
+                    }
+                }
+            }
+        }
+
+        return false;
     }
 
     /* ------
      * DELETE
      * ------
-     * posiciona o ponteiro no inicio do arquivo após o cabeçalho
-     * varre o arquivo, somente de lapide ativa em lapide ativa (true)
-     * quando encontrado o registro a ser excluido,
-     * volta o ponteiro para o inicio do registro
-     * e demarca a lapide como excluida (false)
+     * move o ponteiro pro inicio do arquivo (APOS O CABECALHO)
+     * varre o arquivo (tamReg = tamanho do registro + 1 da lapide (booleano) + 4 do tamanho (int))
+     * 
+     * em cada registro,
+     * salva a posicao inicial
+     * le a lapide do registro
+     * le o tamanho do registro
+     * cria o byte a ser lido
+     * le e aloca o byte
+     * cria o pokemon com as informacoes do byte lido
+     * 
+     * se a lapide for verdadeira,
+     * se encontrado o registro a ser excluido,
+     * move o ponteiro para a lapide do registro
+     * e a demarca como excluida (false)
      */
-    public static boolean delete(RandomAccessFile ras ,int id) throws Exception{
+    public static boolean delete(RandomAccessFile ras, int id) throws Exception{
         boolean lapide = false;
-        int tamRegistro = 0;
-          // posicionar o ponteiro no comeco do arquivo depois do cabecalho
-         ras.seek(4); //1 int 
-          // enquanto nao atingir o fim do arquivo // tamRegistro + 5 -> tamanho do registro + 1 booleano (lapide) + 1 int (tamanho)
-        for (long i = 4; i < ras.length(); i += tamRegistro + 5) {
-             // salvar a posicao inicial
-               long posInicial = ras.getFilePointer();
-            // leitura da lapide
-               lapide = ras.readBoolean();
-            // leitura do tamanho
-               tamRegistro = ras.readInt();
-            // criacao do filme pelo byte array
-               byte [] ba = new byte [tamRegistro];
-               ras.read(ba);
-               Pokemon pokemon = new Pokemon(ba);
-               // se lapide verdadeira
-               if(lapide == true)
-               // se lapide verdadeira
-                   if(pokemon.getNumber() == id) {
-                      // retorna o ponteiro para a lapide desse registro
-                       ras.seek(posInicial);
-                         // escreve por cima da lapide, ou seja exclusao logica
-                       ras.writeBoolean(false);
-                       return true;
-                   } //ends if
-           } //end for
-           return false;
-       } //end delete
+        int tamReg = 0;
 
-
-    
-       public Pokemon read(RandomAccessFile ras ,int id) throws Exception{
-        boolean lapide = false;
-        int tamRegistro = 0;
-     // posicionar o ponteiro no comeco do arquivo depois do cabecalho
-        ras.seek(4); // 1 int
-
-     // enquanto nao atingir o fim do arquivo // tamRegistro + 5 -> tamanho do registro + 1 booleano (lapide) + 1 int (tamanho)
-        for (long i = 4; i < ras.length(); i += tamRegistro + 5) {
-
-         // leitura da lapide
-            lapide = ras.readBoolean();
-
-         // leitura do tamanho
-            tamRegistro = ras.readInt();
-
-         // criacao do filme pelo byte array
-            byte [] ba = new byte [tamRegistro];
-            ras.read(ba);
-            Pokemon pokemon = new Pokemon(ba);
-
-         // se lapide for verdadeira
-            if(lapide == true)
-             // se o id for igual ao pesquisado
-                if(pokemon.number == id) {
-                    return pokemon;
-                } // end if
-        } // end for
-        return null;
-    } // end read ()
-
-    public boolean update (RandomAccessFile ras, Pokemon novo) throws Exception {
-        boolean lapide = false;
-        int tamRegistro = 0;
-     // posicionar o ponteiro no comeco do arquivo depois do cabecalho
-        ras.seek(4); // 1 int
-
-     // enquanto nao atingir o fim do arquivo // tamRegistro + 5 -> tamanho do registro + 1 booleano (lapide) + 1 int (tamanho)
-        for (long i = 4; i < ras.length(); i += tamRegistro + 5) {
-
-         // salvar a posicao inicial
+        ras.seek(4);
+        for (long i = 4; i < ras.length(); i += tamReg + 5) {
             long posInicial = ras.getFilePointer();
-
-         // leitura da lapide
             lapide = ras.readBoolean();
+            tamReg = ras.readInt();
 
-         // leitura do tamanho
-            tamRegistro = ras.readInt();
+            byte [] bytes = new byte [tamReg];
+            ras.read(bytes);
+            Pokemon pokemon = new Pokemon(bytes);
+            
+            if(lapide == true){
+                if(pokemon.getNumber() == id) {
+                    ras.seek(posInicial);
+                    ras.writeBoolean(false);
+                    return true;
+                }
+            }
+        }
 
-         // criacao do filme pelo byte array
-            byte [] ba = new byte [tamRegistro];
-            ras.read(ba);
-            Pokemon filme = new Pokemon(ba);
-
-         // se lapide verdadeira
-            if(lapide == true)
-
-             // se o filme tiver o mesmo id do novo filme
-                if(filme.getNumber() == novo.getNumber()) {
-
-                 // criacao de novo registro
-                    byte [] baNovo = novo.toByteArray();
-
-                 // se o tamanho do novo registro for igual ao antigo
-                    if(baNovo.length <= tamRegistro) {
-                        ras.seek(posInicial + 5);
-                        ras.write(baNovo);
-                        return true;
-                    } else {
-                        ras.seek(posInicial);
-                        ras.writeBoolean(false);
-                        this.create(ras,novo);
-                        return true;
-                    } // end if
-                } // end if
-        } // end for
         return false;
-    } // end update ()
-
- 
-
-        
-    
+    }
 
     //=====DELAY=====//
     public static void delay(int ms){
