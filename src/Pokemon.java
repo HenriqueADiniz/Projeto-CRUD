@@ -53,6 +53,24 @@ public class Pokemon {
     public Date getDate(){return date;}
     public void setDate(Date date){this.date = date;}
 
+
+
+    public static String [] readUTFarray (DataInputStream dis) throws IOException {
+        int tam = dis.readInt();
+        String [] sarr = new String [tam];
+        for (int i = 0; i < tam; i++) {
+            sarr[i] = dis.readUTF();
+        } // end for
+        return sarr;
+    } // end readUTFarray ()
+
+    public static void writeUTFarray (String [] sarr, DataOutputStream dos) throws IOException {
+        dos.writeInt(sarr.length);
+        for (int i = 0; i < sarr.length; i++) {
+            dos.writeUTF(sarr[i]);
+        } // end for
+    } // end writeUTFarray ()
+
     /* --------------------------
      * OBJETO PARA ARRAY DE BYTES
      * --------------------------
@@ -69,11 +87,11 @@ public class Pokemon {
         dos.writeUTF(this.getName());
         dos.writeUTF(this.getType1());
         dos.writeUTF(this.getType2());
-        // abilities
+        writeUTFarray(this.abilities, dos);
         dos.writeInt(this.getHP());
         dos.writeInt(this.getAtt());
         dos.writeInt(this.getDef());
-        // date
+        dos.writeLong(this.date.getTime());
 
         dos.close();
         baos.close();
@@ -95,11 +113,11 @@ public class Pokemon {
         this.name = dis.readUTF();
         this.type1 = dis.readUTF();
         this.type2 = dis.readUTF();
-        // abilities
+        this.abilities= readUTFarray(dis);
         this.hp = dis.readInt();
         this.att = dis.readInt();
         this.def = dis.readInt();
-        // date
+        this.date.setTime(dis.readLong());
     }
 
     /* -------------------------
