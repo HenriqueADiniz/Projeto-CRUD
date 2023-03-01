@@ -1,10 +1,9 @@
 import java.util.Date;
-
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
-import java.io.IOException;
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
 
 public class Pokemon {
     int number, hp, att, def;
@@ -54,42 +53,62 @@ public class Pokemon {
     public Date getDate(){return date;}
     public void setDate(Date date){this.date = date;}
 
-    //Métodos
+    /* --------------------------
+     * OBJETO PARA ARRAY DE BYTES
+     * --------------------------
+     * cria um array de bytes
+     * cria um fluxo de dados
+     * escreve os atributos do pokemon no array de bytes
+     * retorna o array de bytes
+     */
+    public byte[] toByteArray() throws IOException {
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        DataOutputStream dos = new DataOutputStream(baos);
 
-    public byte[] toByteArray() throws IOException { // Converte objeto para array de bytes
-    ByteArrayOutputStream baos = new ByteArrayOutputStream(); // Cria um array de bytes
-    DataOutputStream dos = new DataOutputStream(baos); // Cria um fluxo de dados
+        dos.writeInt(this.getNumber());
+        dos.writeUTF(this.getName());
+        dos.writeUTF(this.getType1());
+        dos.writeUTF(this.getType2());
+        // abilities
+        dos.writeInt(this.getHP());
+        dos.writeInt(this.getAtt());
+        dos.writeInt(this.getDef());
+        // date
 
-    dos.writeInt(this.getNumber()); // Escreve o numero do pokemon no array de bytes
-    dos.writeInt(this.getHP()); // Escreve o Hp do pokemon no array de bytes
-    dos.writeInt(this.getAtt()); // Escreve o Att do pokemon no array de bytes
-    dos.writeInt(this.getDef()); // Escreve a Def do pokemon no array de bytes
-    dos.writeUTF(this.getName()); // Escreve o nome do pokemon no array de bytes
-    dos.writeUTF(this.getType1()); // Escreve o Type1 do pokemon no array de bytes
-    dos.writeUTF(this.getType2()); // Escreve o Type2 do pokemon no array de bytes
-    //abilities
-    //date
-    dos.close();
-    baos.close();
+        dos.close();
+        baos.close();
+        return baos.toByteArray();
+    }
 
-    return baos.toByteArray(); // Retorna o array de bytes
-}
-public void fromByteArray(byte[] ba) throws IOException {
-    ByteArrayInputStream bais = new ByteArrayInputStream(ba); // Cria um array de bytes
-    DataInputStream dis = new DataInputStream(bais); // Cria um fluxo de dados
-    this.number = dis.readInt(); // Le o numero do pokemon do array de bytes
-    this.hp = dis.readInt(); // Le o hp do pokemon do array de bytes
-    this.att = dis.readInt(); // Le o att do pokemon do array de bytes
-    this.def = dis.readInt(); // Le a def do pokemon do array de bytes
-    this.name = dis.readUTF(); // Le o nome do pokemon do array de bytes
-    this.type1 = dis.readUTF(); // Le o type1 de usuario do array de bytes
-    this.type2 = dis.readUTF(); // Le o type2 do array de bytes
+    /* ------------------
+     * LER ARRAY DE BYTES
+     * ------------------
+     * cria um array de bytes
+     * cria um fluxo de dados
+     * le e atribui, do array de bytes, os atributos do pokemon
+     */
+    public void fromByteArray(byte[] ba) throws IOException {
+        ByteArrayInputStream bais = new ByteArrayInputStream(ba);
+        DataInputStream dis = new DataInputStream(bais);
 
-}
-public short size() throws IOException {
-    return (short)this.toByteArray().length;
-}
+        this.number = dis.readInt();
+        this.name = dis.readUTF();
+        this.type1 = dis.readUTF();
+        this.type2 = dis.readUTF();
+        // abilities
+        this.hp = dis.readInt();
+        this.att = dis.readInt();
+        this.def = dis.readInt();
+        // date
+    }
 
-
+    /* -------------------------
+     * TAMANHO DO ARRAY DE BYTES
+     * -------------------------
+     * retorna o tamanho do array de bytes
+     */
+    public short size() throws IOException {
+        return (short)this.toByteArray().length;
+    }
 }
 
