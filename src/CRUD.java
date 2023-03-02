@@ -32,8 +32,8 @@ public class CRUD {
                     int number, hp, att, def;
                     String name, type1, type2, abilitiesTemp, dateTemp;
 
-                    System.out.print("Digite o numero: ");
-                    number = scan.nextInt();
+                    // DEFINIR NUMERO
+
                     System.out.print("Digite o nome: ");
                     name = scan.next();
                     System.out.print("Digite o tipo 1: ");
