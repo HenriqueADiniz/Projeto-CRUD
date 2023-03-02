@@ -27,6 +27,10 @@ public class Pokemon {
         this.date = new Date();
         this.fromByteArray(bytes);
     }
+    @Override
+    public String toString(){
+        return "Numero: " + this.number + "\nNome: " + this.name + "\nTipo 1: " + this.type1 + "\nTipo 2: " + this.type2 + "\nHabilidades: " + this.printaMultivalorados(abilities) + "\nHP: " + this.hp + "\nAtaque: " + this.att + "\nDefesa: " + this.def + "\nData: " + this.date;
+    }
     
     //=====GETTERS & SETTERS=====//
     // number
@@ -135,5 +139,14 @@ public class Pokemon {
         for (int i = 0; i < arr.length; i++) {
             dos.writeUTF(arr[i]);
         }
+    }
+
+    //=====PRINTA MULTIVALORADOS=====//
+    public String printaMultivalorados(String[] arr){
+        String str = "";
+        for (String habilidade : arr){
+            str += habilidade + ",";
+        }
+        return str.substring(0, str.length() - 1);
     }
 }

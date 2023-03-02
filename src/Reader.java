@@ -1,11 +1,9 @@
+import java.util.Date;
 import java.util.List;
 import java.util.Arrays;
 import java.util.ArrayList;
 import java.io.FileReader;
 import com.opencsv.CSVReader;
-import java.util.Date;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 
 public class Reader {
     // caminho do arquivo .csv
@@ -66,42 +64,13 @@ public class Reader {
             String name = lista.get(i).get(1);
             String type1 = lista.get(i).get(2);
             String type2 = lista.get(i).get(3);
-            String[] abilities = trataMultivalorados(lista.get(i).get(4));
+            String[] abilities = Tratamentos.trataMultivalorados(lista.get(i).get(4));
             int hp = Integer.parseInt(lista.get(i).get(5));
             int att = Integer.parseInt(lista.get(i).get(6));
             int def = Integer.parseInt(lista.get(i).get(7));
-            Date date = trataDatas(lista.get(i).get(8));
+            Date date = Tratamentos.trataDatas(lista.get(i).get(8));
 
             listaDePokemons.add(new Pokemon(number, name, type1, type2, abilities, hp, att, def, date));
         }
-    }
-    /* --------------------
-     * TRATA MULTIVALORADOS
-     * --------------------
-     * remove colchetes
-     * remove aspas simples
-     * realiza split a cada virgula
-     * retorna vetor de strings
-     */
-    public static String[] trataMultivalorados(String temp){
-        temp = temp.substring(1, temp.length()-1);
-        temp = temp.replaceAll("'", "");
-        String[] abilities = temp.split(",");
-        return abilities;
-    }
-    /* -----------
-     * TRATA DATAS
-     * -----------
-     * formata a string pro padrao dd/mm/aaaa
-     */
-    public static Date trataDatas(String temp){
-        Date date = null;
-        try {
-            SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
-            date = format.parse(temp);
-        } catch (ParseException e) {
-            // tratamento de erro
-        }
-        return date;
     }
 }

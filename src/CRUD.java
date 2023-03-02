@@ -1,3 +1,4 @@
+import java.util.Date;
 import java.util.Scanner;
 import java.io.IOException;
 import java.io.RandomAccessFile;
@@ -8,16 +9,18 @@ public class CRUD {
         
         Reader.main(args);
         
-        delay(1500);
+        delay(1250);
         Scanner scan = new Scanner (System.in);
+        Scanner scanLinha = new Scanner (System.in).useDelimiter("\\n");
         while (true){
             System.out.print("\033[H\033[2J");
             System.out.print("*--------------------------*\n");
             System.out.print("#    OPCOES DE REGISTRO    #\n");
             System.out.print("*--------------------------*\n");
-            System.out.print("| 1) Ler                   |\n");
-            System.out.print("| 2) Atualizar             |\n");
-            System.out.print("| 3) Deletar               |\n");
+            System.out.print("| 1) Criar                 |\n");
+            System.out.print("| 2) Ler                   |\n");
+            System.out.print("| 3) Atualizar             |\n");
+            System.out.print("| 4) Deletar               |\n");
             System.out.print("|                          |\n");
             System.out.print("| 0) Sair                  |\n");
             System.out.print("*--------------------------*\n");
@@ -26,26 +29,61 @@ public class CRUD {
 
             switch (opt){
                 case "1":
-                    System.out.println();
-                    // chamar metodo ler
-                    System.out.println();
+                    int number, hp, att, def;
+                    String name, type1, type2, abilitiesTemp, dateTemp;
+
+                    System.out.print("Digite o numero: ");
+                    number = scan.nextInt();
+                    System.out.print("Digite o nome: ");
+                    name = scan.next();
+                    System.out.print("Digite o tipo 1: ");
+                    type1 = scan.next();
+                    System.out.print("Digite o tipo 2: ");
+                    type2 = scan.next();
+                    System.out.print("Digite as habilidades, separadas por virgulas: ");
+                    abilitiesTemp = scanLinha.next();
+                    System.out.print("Digite o HP: ");
+                    hp = scan.nextInt();
+                    System.out.print("Digite o ataque: ");
+                    att = scan.nextInt();
+                    System.out.print("Digite a defesa: ");
+                    def = scan.nextInt();
+                    System.out.print("Digite a data, no formato (dd/mm/aaaa): ");
+                    dateTemp = scan.next();
+
+                    Date date = Tratamentos.trataDatas(dateTemp);
+                    String[] abilities = abilitiesTemp.split(",");
+
+                    Pokemon criado = new Pokemon(number, name, type1, type2, abilities, hp, att, def, date);
+                    create(ras, criado);
                     break;
 
                 case "2":
+                    System.out.print("Digite o ID do Pokemon a ser lido: ");
+                    int idRead = scan.nextInt();
+                    
+                    Pokemon lido = read(ras, idRead);
+                    break;
+
+                case "3":
                     System.out.println();
                     // chamar metodo atualizar
                     System.out.println();
                     break;
-                
-                case "3":
-                    System.out.println();
-                    // chamar metodo deletar
-                    System.out.println();
+                    
+                case "4":
+                    System.out.print("Digite o ID do Pokemon a ser deletado: ");
+                    int idDel = scan.nextInt();
+
+                    Boolean ctrl = delete(ras, idDel);
+                    String out = (ctrl) ? "Pokemon deletado com sucesso." : "Erro: Pokemon nao-existente.";
+                    System.out.println(out);
                     break;
 
                 case "0":
                     System.out.println();
                     scan.close();
+                    scanLinha.close();
                     System.exit(1);
                 
                 default:
