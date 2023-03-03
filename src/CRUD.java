@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.RandomAccessFile;
 
 public class CRUD {
+    public static RandomAccessFile ras;
     public static void main(String[] args) {
         System.out.print("\033[H\033[2J");
         
@@ -55,7 +56,7 @@ public class CRUD {
                     String[] abilities = abilitiesTemp.split(",");
 
                     Pokemon criado = new Pokemon(number, name, type1, type2, abilities, hp, att, def, date);
-                    create(ras, criado);
+                    create(ras,criado);
                     break;
 
                 case "2":
@@ -106,7 +107,7 @@ public class CRUD {
      * escreve o tamanho do byte
      * escreve o registro
      */
-    public void create(RandomAccessFile ras, Pokemon pokemon) throws IOException{
+    public int create(RandomAccessFile ras, Pokemon pokemon) throws IOException{
         if (pokemon == null) pokemon = new Pokemon(0, null, null, null, null, 0, 0, 0, null);
         
         ras.seek(0);
@@ -120,6 +121,11 @@ public class CRUD {
         ras.writeBoolean(true);
         ras.writeInt(pokemon.toByteArray().length);
         ras.write(pokemon.toByteArray());
+        return pokemon.getNumber();
+
+    }
+    public int create(Pokemon pokemon) throws IOException{
+       return create(ras, pokemon);
     }
 
     /* ----
