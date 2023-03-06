@@ -19,6 +19,8 @@ public class Reader {
         List<List<String>> lista = cargaInicial();
         
         listaParaObjeto(lista);
+       
+    
     }
     
     /* -------------
@@ -71,6 +73,39 @@ public class Reader {
             Date date = Tratamentos.trataDatas(lista.get(i).get(8));
 
             listaDePokemons.add(new Pokemon(number, name, type1, type2, abilities, hp, att, def, date));
+
         }
     }
+
+    /*Após colocar todos os objetos em uma lista, acrescentar elemento por elemento da lista em um arquivo binario
+      public static void iniciarBdPeloCSV(String arquivo,objesto pokemon) throws Exception {
+
+     *  // Deletar o arquivo para recomeçar
+        File arq = new File(arquivo);
+        if(arq.delete()) System.out.println("deletado"); else System.out.println("nao foi possivel deletar");
+          // Objeto que permite ler e escrever aleatoriamente no arquivo
+        RandomAccessFile ras = new RandomAccessFile(arquivo, "rw");
+            int qntReg = 0;
+             ras.writeInt(qntReg);
+        laço de repetição , seleciona os pokemons 
+
+         // escrever registro no arquivo
+            byte [] barr = pokemon.toByteArray();
+            ras.writeBoolean(true);    // escrever lapide
+            ras.writeInt(barr.length); // escrever tamanho
+            ras.write(barr);           // escrever registro
+
+         // aumento da quantidade de registros
+         qntReg++
+        
+        } // end laço 
+
+     // acessa o comeco do arquivo e escreve a quantidade de registros(necessario para o Create, e para intercalação balanceada)
+        ras.seek(0);
+        ras.writeInt(qntReg);
+        
+     // fechamento dos manipuladores de arquivo
+        ras.close();
+        freader.close();
+     */
 }
