@@ -6,9 +6,11 @@ import java.io.FileNotFoundException;
 
 public class CRUD {
     private RandomAccessFile ras;
+    
     public CRUD (String arquivo) throws FileNotFoundException {
         this.ras = new RandomAccessFile(arquivo, "rw");
     } // end constructor
+
     public static void main(String[] args) {
         System.out.print("\033[H\033[2J");
         
