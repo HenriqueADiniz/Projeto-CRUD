@@ -11,6 +11,17 @@ public class Pokemon {
     String[] abilities;
     Date date;
 
+    
+   
+    /**
+     * 
+     */
+    public Pokemon(){
+       this (0, "z", "a", "s", new String [0], 0, 0, 0, new Date());
+
+
+    }
+
     public Pokemon(int number, String name, String type1, String type2, String[] abilities, int hp, int att, int def, Date date){
         super();
         this.number = number;

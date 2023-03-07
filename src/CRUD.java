@@ -2,8 +2,13 @@ import java.util.Date;
 import java.util.Scanner;
 import java.io.IOException;
 import java.io.RandomAccessFile;
+import java.io.FileNotFoundException;
 
 public class CRUD {
+    private RandomAccessFile ras;
+    public CRUD (String arquivo) throws FileNotFoundException {
+        this.ras = new RandomAccessFile(arquivo, "rw");
+    } // end constructor
     public static void main(String[] args) {
         System.out.print("\033[H\033[2J");
         
@@ -191,6 +196,9 @@ public class CRUD {
      * move o ponteiro para a lapide do registro
      * e a demarca como excluida (false)
      */
+    public boolean update(Pokemon pokemon) throws Exception{
+        return update(ras, pokemon);
+     }
     public boolean update(RandomAccessFile ras, Pokemon novo) throws Exception {
         boolean lapide = false;
         int tamReg = 0;
