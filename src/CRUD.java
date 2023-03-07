@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.io.RandomAccessFile;
 
 public class CRUD {
-    public static RandomAccessFile ras;
     public static void main(String[] args) {
         System.out.print("\033[H\033[2J");
         
@@ -33,8 +32,6 @@ public class CRUD {
                     int number, hp, att, def;
                     String name, type1, type2, abilitiesTemp, dateTemp;
 
-                    // DEFINIR NUMERO
-
                     System.out.print("Digite o nome: ");
                     name = scan.next();
                     System.out.print("Digite o tipo 1: ");
@@ -56,7 +53,7 @@ public class CRUD {
                     String[] abilities = abilitiesTemp.split(",");
 
                     Pokemon criado = new Pokemon(number, name, type1, type2, abilities, hp, att, def, date);
-                    create(ras,criado);
+                    create(ras, criado);
                     break;
 
                 case "2":
@@ -90,7 +87,6 @@ public class CRUD {
                 default:
                     break;
             }
-
         }
     }
 
@@ -104,25 +100,26 @@ public class CRUD {
      * altera a quantidade de id's nova para (qntd + 1)
      * move o ponteiro pro fim do arquivo
      * escreve a lapide
-     * escreve o tamanho do byte
-     * escreve o registro
+     * escreve o tamanho do registro
+     * escreve o objeto
+     * retorna o novo ID gerado
      */
     public int create(RandomAccessFile ras, Pokemon pokemon) throws IOException{
         if (pokemon == null) pokemon = new Pokemon(0, null, null, null, null, 0, 0, 0, null);
         
         ras.seek(0);
-        int qntIds = ras.readInt();
-        pokemon.setNumber(qntIds + 1);
+        int qntReg = ras.readInt();
+        pokemon.setNumber(qntReg+1);
 
         ras.seek(0);
-        ras.writeInt( qntIds + 1 );
+        ras.writeInt(qntReg+1);
 
         ras.seek(ras.length()); 
         ras.writeBoolean(true);
         ras.writeInt(pokemon.toByteArray().length);
         ras.write(pokemon.toByteArray());
-        return pokemon.getNumber();
 
+        return pokemon.getNumber();
     }
     public int create(Pokemon pokemon) throws IOException{
        return create(ras, pokemon);
@@ -194,7 +191,7 @@ public class CRUD {
      * move o ponteiro para a lapide do registro
      * e a demarca como excluida (false)
      */
-    public boolean update (RandomAccessFile ras, Pokemon novo) throws Exception {
+    public boolean update(RandomAccessFile ras, Pokemon novo) throws Exception {
         boolean lapide = false;
         int tamReg = 0;
 
@@ -204,7 +201,7 @@ public class CRUD {
             lapide = ras.readBoolean();
             tamReg = ras.readInt();
 
-            byte [] bytes = new byte [tamReg];
+            byte [] bytes = new byte[tamReg];
             ras.read(bytes);
             Pokemon pokemon = new Pokemon(bytes);
 

@@ -2,7 +2,9 @@ import java.util.Date;
 import java.util.List;
 import java.util.Arrays;
 import java.util.ArrayList;
+import java.io.File;
 import java.io.FileReader;
+import java.io.RandomAccessFile;
 import com.opencsv.CSVReader;
 
 public class Reader {
@@ -15,12 +17,10 @@ public class Reader {
      * realiza carga inicial criando uma lista
      * converte cada linha da lista criada para objeto
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         List<List<String>> lista = cargaInicial();
-        
-        listaParaObjeto(lista);
-       
-    
+        List<Pokemon> listaDePokemons = listaParaObjeto(lista);
+        inicializarBD(listaDePokemons);
     }
     
     /* -------------
@@ -58,8 +58,8 @@ public class Reader {
      * cria lista de objetos
      * para cada linha lida, adiciona um objeto
      */
-    public static void listaParaObjeto(List<List<String>> lista){
-        List<Pokemon> listaDePokemons = new ArrayList<>();
+    public static List<Pokemon> listaParaObjeto(List<List<String>> lista){
+        List<Pokemon> listaDePokemonsTEMP = new ArrayList<>();
 
         for (int i=0; i<lista.size(); i++){
             int number = Integer.parseInt(lista.get(i).get(0));
@@ -72,40 +72,40 @@ public class Reader {
             int def = Integer.parseInt(lista.get(i).get(7));
             Date date = Tratamentos.trataDatas(lista.get(i).get(8));
 
-            listaDePokemons.add(new Pokemon(number, name, type1, type2, abilities, hp, att, def, date));
-
+            listaDePokemonsTEMP.add(new Pokemon(number, name, type1, type2, abilities, hp, att, def, date));
         }
+
+        return listaDePokemonsTEMP;
     }
 
-    /*Após colocar todos os objetos em uma lista, acrescentar elemento por elemento da lista em um arquivo binario
-      public static void iniciarBdPeloCSV(String arquivo,objesto pokemon) throws Exception {
-
-     *  // Deletar o arquivo para recomeçar
+    /* --------------------------
+     * INICIALIZAR BANCO DE DADOS
+     * --------------------------
+     * cria arquivo e inicializa o RAS
+     * inicializa e grava a variavel que conta o numero de registros
+     * percorre a lista de pokemons, os convertendo pra binario, gravando a lapide, o tamanho do registro e o objeto
+     * volta para o inicio do arquivo e atualiza a quantidade de registros
+     */
+    public static void inicializarBD(List<Pokemon> listaDePokemons) throws Exception {
+        String arquivo = "banco";
         File arq = new File(arquivo);
-        if(arq.delete()) System.out.println("deletado"); else System.out.println("nao foi possivel deletar");
-          // Objeto que permite ler e escrever aleatoriamente no arquivo
         RandomAccessFile ras = new RandomAccessFile(arquivo, "rw");
-            int qntReg = 0;
-             ras.writeInt(qntReg);
-        laço de repetição , seleciona os pokemons 
 
-         // escrever registro no arquivo
-            byte [] barr = pokemon.toByteArray();
-            ras.writeBoolean(true);    // escrever lapide
-            ras.writeInt(barr.length); // escrever tamanho
-            ras.write(barr);           // escrever registro
+        int qntReg = 0;
+        ras.writeInt(qntReg);
 
-         // aumento da quantidade de registros
-         qntReg++
-        
-        } // end laço 
+        for (int i = 0; i < listaDePokemons.size(); i++){
+            byte [] barr = listaDePokemons.get(i).toByteArray();
+            ras.writeBoolean(true);
+            ras.writeInt(barr.length);
+            ras.write(barr);
 
-     // acessa o comeco do arquivo e escreve a quantidade de registros(necessario para o Create, e para intercalação balanceada)
+            qntReg++;
+        }
+
         ras.seek(0);
         ras.writeInt(qntReg);
-        
-     // fechamento dos manipuladores de arquivo
+
         ras.close();
-        freader.close();
-     */
+    }
 }
