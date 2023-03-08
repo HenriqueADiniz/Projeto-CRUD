@@ -6,16 +6,28 @@ import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 
 public class Pokemon {
-    int number, hp, att, def;
-    String name, type1, type2;
-    String[] abilities;
-    Date date;
+    private int number, hp, att, def;
+    private String name, type1, type2;
+    private String[] abilities;
+    private Date date;
 
     /*
      * TESTE 
      */
     public Pokemon(){
-       this (0, "z", "a", "s", new String [0], 0, 0, 0, new Date());
+       this (-1, "", "", "", new String [0], -1, -1, -1, new Date());
+    }
+     public Pokemon(String name, String type1, String type2, String[] abilities, int hp, int att, int def, Date date){
+        super();
+        this.number = 0;
+        this.name = name;
+        this.type1 = type1;
+        this.type2 = type2;
+        this.abilities = abilities;
+        this.hp = hp;
+        this.att = att;
+        this.def = def;
+        this.date = date;
     }
 
     public Pokemon(int number, String name, String type1, String type2, String[] abilities, int hp, int att, int def, Date date){
@@ -41,31 +53,31 @@ public class Pokemon {
     
     //=====GETTERS & SETTERS=====//
     // number
-    public int getNumber(){return number;}
+    public int getNumber(){return this.number;}
     public void setNumber(int number){this.number = number;}
     // name
-    public String getName(){return name;}
+    public String getName(){return this.name;}
     public void setName(String name){this.name = name;}
     // type 1
-    public String getType1(){return type1;}
+    public String getType1(){return this.type1;}
     public void setType1(String type1){this.type1 = type1;}
     // type 2
-    public String getType2(){return type2;}
+    public String getType2(){return this.type2;}
     public void setType2(String type2){this.type2 = type2;}
     // abilities
-    public String[] getAbilities(){return abilities;}
+    public String[] getAbilities(){return this.abilities;}
     public void setAbilities(String[] abilities){this.abilities = abilities;}
     // hp
-    public int getHP(){return hp;}
+    public int getHP(){return this.hp;}
     public void setHP(int hp){this.hp = hp;}
     // att
-    public int getAtt(){return att;}
+    public int getAtt(){return this.att;}
     public void setAtt(int att){this.att = att;}
     // def
-    public int getDef(){return def;}
+    public int getDef(){return this.def;}
     public void setDef(int def){this.def = def;}
     // date
-    public Date getDate(){return date;}
+    public Date getDate(){return this.date;}
     public void setDate(Date date){this.date = date;}
 
     /* ------------------
@@ -88,6 +100,9 @@ public class Pokemon {
         this.att = dis.readInt();
         this.def = dis.readInt();
         this.date.setTime(dis.readLong());
+        dis.close();
+        bais.close();
+
     }
     /* -----------------------
      * ESCREVER ARRAY DE BYTES
@@ -101,18 +116,18 @@ public class Pokemon {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         DataOutputStream dos = new DataOutputStream(baos);
 
-        dos.writeInt(this.getNumber());
-        dos.writeUTF(this.getName());
-        dos.writeUTF(this.getType1());
-        dos.writeUTF(this.getType2());
+        dos.writeInt(this.number);
+        dos.writeUTF(this.name);
+        dos.writeUTF(this.type1);
+        dos.writeUTF(this.type2);
         writeUTFarray(this.abilities, dos);
-        dos.writeInt(this.getHP());
-        dos.writeInt(this.getAtt());
-        dos.writeInt(this.getDef());
+        dos.writeInt(this.hp);
+        dos.writeInt(this.att);
+        dos.writeInt(this.def);
         dos.writeLong(this.date.getTime());
-
-        dos.close();
         baos.close();
+        dos.close();
+     
         return baos.toByteArray();
     }
 

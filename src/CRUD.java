@@ -6,13 +6,13 @@ import java.io.FileNotFoundException;
 import org.apache.commons.lang3.ObjectUtils.Null;
 
 public class CRUD {
-    // caminho do arquivo .bin
-    private static final String BIN_PATH = "tmp/pokemons.bin";
+    // caminho do arquivo .db
+    private static final String DB_PATH = "tmp/pokemons.db";
 
     // inicializa o RAS
     private  RandomAccessFile ras;
 
-    // construtor do CRUD com o arquivo .bin
+    // construtor do CRUD com o arquivo .db
     public CRUD (String arquivo) throws FileNotFoundException {
         this.ras = new RandomAccessFile(arquivo, "rw");
     }
@@ -20,14 +20,14 @@ public class CRUD {
     /* ----
      * MAIN
      * ----
-     * inicializa instancia do CRUD com o arquivo .bin
+     * inicializa instancia do CRUD com o arquivo .db
      * aciona o arquivo reader e seus metodos
      * entra em loop com as opcoes do CRUD
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         System.out.print("\033[H\033[2J");
 
-        CRUD crud = new CRUD(BIN_PATH);
+        CRUD crud = new CRUD(DB_PATH);
         Reader.main(args);
         
         delay(1250);
@@ -73,7 +73,7 @@ public class CRUD {
                     Date date = Tratamentos.trataDatas(dateTemp);
                     String[] abilities = abilitiesTemp.split(",");
 
-                    Pokemon criado = new Pokemon(number, name, type1, type2, abilities, hp, att, def, date);
+                    Pokemon criado = new Pokemon(name, type1, type2, abilities, hp, att, def, date);
                     crud.create(crud.ras, criado);
                     break;
 
@@ -94,7 +94,7 @@ public class CRUD {
                     System.out.print("Digite o ID do Pokemon a ser deletado: ");
                     int idDel = scan.nextInt();
 
-                    Boolean ctrl = crud.delete(ras, idDel);
+                    Boolean ctrl = crud.delete(idDel);
                     String out = (ctrl) ? "Pokemon deletado com sucesso." : "Erro: Pokemon nao-existente.";
                     System.out.println(out);
                     break;
@@ -178,7 +178,7 @@ public class CRUD {
             Pokemon pokemon = new Pokemon(bytes);
 
             if(!lapide){
-                if(pokemon.number == id) {
+                if(pokemon.getNumber() == id) {
                     return pokemon;
                 }
             }

@@ -3,16 +3,16 @@ import java.io.RandomAccessFile;
 
 public class Testes {
     public static void main(String[] args) throws Exception {
-        File arq = new File("tmp/pokemons.bin");
+        File arq = new File("tmp/pokemons.db");
         testes(); 
     }
 
     public static void testes () throws Exception {
-        RandomAccessFile ras = new RandomAccessFile("tmp/pokemons.bin", "rw");
+        RandomAccessFile ras = new RandomAccessFile("tmp/pokemons.db", "rw");
         ras.writeInt(0);
         ras.close();
     
-        CRUD crud = new CRUD("tmp/pokemons.bin");
+        CRUD crud = new CRUD("tmp/pokemons.db");
         Pokemon temp = new Pokemon();
     
         // criacao de 100 pokemons
