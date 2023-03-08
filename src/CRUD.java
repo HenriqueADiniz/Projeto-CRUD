@@ -1,17 +1,21 @@
 import java.util.Date;
 import java.util.Scanner;
+
+import org.apache.commons.lang3.ObjectUtils.Null;
+
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.io.FileNotFoundException;
 
 public class CRUD {
-    private RandomAccessFile ras;
+    private  RandomAccessFile ras;
     
     public CRUD (String arquivo) throws FileNotFoundException {
         this.ras = new RandomAccessFile(arquivo, "rw");
     } // end constructor
 
     public static void main(String[] args) {
+        CRUD crud = new CRUD("tmp/pokemons.bin");
         System.out.print("\033[H\033[2J");
         
         Reader.main(args);
@@ -60,14 +64,14 @@ public class CRUD {
                     String[] abilities = abilitiesTemp.split(",");
 
                     Pokemon criado = new Pokemon(number, name, type1, type2, abilities, hp, att, def, date);
-                    create(ras, criado);
+                    crud.create(crud.ras, criado);
                     break;
 
                 case "2":
                     System.out.print("Digite o ID do Pokemon a ser lido: ");
                     int idRead = scan.nextInt();
                     
-                    Pokemon lido = read(ras, idRead);
+                    Pokemon lido = crud.read(idRead);
                     break;
 
                 case "3":
@@ -80,7 +84,7 @@ public class CRUD {
                     System.out.print("Digite o ID do Pokemon a ser deletado: ");
                     int idDel = scan.nextInt();
 
-                    Boolean ctrl = delete(ras, idDel);
+                    Boolean ctrl = crud.delete(ras, idDel);
                     String out = (ctrl) ? "Pokemon deletado com sucesso." : "Erro: Pokemon nao-existente.";
                     System.out.println(out);
                     break;
@@ -111,6 +115,7 @@ public class CRUD {
      * escreve o objeto
      * retorna o novo ID gerado
      */
+   
     public int create(RandomAccessFile ras, Pokemon pokemon) throws IOException{
         if (pokemon == null) pokemon = new Pokemon(0, null, null, null, null, 0, 0, 0, null);
         
@@ -149,8 +154,8 @@ public class CRUD {
      * se encontrado o registro a ser lido,
      * retorna o objeto pokemon
      */
-    public Pokemon read(RandomAccessFile ras, int id) throws Exception{
-        boolean lapide = false;
+    public Pokemon read(int id) throws Exception{
+        boolean lapide = true;
         int tamReg = 0;
 
         ras.seek(4);
@@ -162,7 +167,7 @@ public class CRUD {
             ras.read(bytes);
             Pokemon pokemon = new Pokemon(bytes);
 
-            if(lapide == true){
+            if(!lapide){
                 if(pokemon.number == id) {
                     return pokemon;
                 }
@@ -171,7 +176,7 @@ public class CRUD {
 
         return null;
     }
-
+   
     /* ------
      * UPDATE
      * ------
@@ -202,7 +207,7 @@ public class CRUD {
         return update(ras, pokemon);
      }
     public boolean update(RandomAccessFile ras, Pokemon novo) throws Exception {
-        boolean lapide = false;
+        boolean lapide = true;
         int tamReg = 0;
 
         ras.seek(4);
@@ -215,7 +220,7 @@ public class CRUD {
             ras.read(bytes);
             Pokemon pokemon = new Pokemon(bytes);
 
-            if(lapide == true){
+            if(!lapide){
                 if(pokemon.getNumber() == novo.getNumber()) {
                     byte [] bytesNovo = novo.toByteArray();
 
@@ -225,8 +230,11 @@ public class CRUD {
                         return true;
                     } else {
                         ras.seek(posInicial);
+                        ras.writeBoolean(true);
+                        ras.seek(ras.length()); 
                         ras.writeBoolean(false);
-                        this.create(ras, novo);
+                        ras.writeInt(novo.toByteArray().length);
+                        ras.write(novo.toByteArray());
                         return true;
                     }
                 }
@@ -255,8 +263,8 @@ public class CRUD {
      * move o ponteiro para a lapide do registro
      * e a demarca como excluida (false)
      */
-    public static boolean delete(RandomAccessFile ras, int id) throws Exception{
-        boolean lapide = false;
+    public  boolean delete(RandomAccessFile ras,int id) throws Exception{
+        boolean lapide = true;
         int tamReg = 0;
 
         ras.seek(4);
@@ -269,10 +277,10 @@ public class CRUD {
             ras.read(bytes);
             Pokemon pokemon = new Pokemon(bytes);
             
-            if(lapide == true){
+            if(!lapide){
                 if(pokemon.getNumber() == id) {
                     ras.seek(posInicial);
-                    ras.writeBoolean(false);
+                    ras.writeBoolean(true);
                     return true;
                 }
             }
@@ -280,7 +288,10 @@ public class CRUD {
 
         return false;
     }
-
+    public  boolean delete(int id) throws Exception{
+        return delete(ras,id);
+    }
+   
     //=====DELAY=====//
     public static void delay(int ms){
         try {
