@@ -60,7 +60,7 @@ public class Reader {
      */
     public static List<Pokemon> listaParaObjeto(List<List<String>> lista){
         List<Pokemon> listaDePokemonsTEMP = new ArrayList<>();
-
+        
         for (int i=0; i<lista.size(); i++){
             int number = Integer.parseInt(lista.get(i).get(0));
             String name = lista.get(i).get(1);
@@ -74,7 +74,6 @@ public class Reader {
 
             listaDePokemonsTEMP.add(new Pokemon(number, name, type1, type2, abilities, hp, att, def, date));
         }
-
         return listaDePokemonsTEMP;
     }
 

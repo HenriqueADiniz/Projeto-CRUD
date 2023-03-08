@@ -1,7 +1,7 @@
 import java.io.File;
 import java.io.RandomAccessFile;
 
-public class main {
+public class Testes {
     public static void main(String[] args) throws Exception {
         File arq = new File("tmp/pokemons.bin");
         testes(); 

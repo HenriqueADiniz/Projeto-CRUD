@@ -1,23 +1,33 @@
 import java.util.Date;
 import java.util.Scanner;
-
-import org.apache.commons.lang3.ObjectUtils.Null;
-
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.io.FileNotFoundException;
+import org.apache.commons.lang3.ObjectUtils.Null;
 
 public class CRUD {
+    // caminho do arquivo .bin
+    private static final String BIN_PATH = "tmp/pokemons.bin";
+
+    // inicializa o RAS
     private  RandomAccessFile ras;
-    
+
+    // construtor do CRUD com o arquivo .bin
     public CRUD (String arquivo) throws FileNotFoundException {
         this.ras = new RandomAccessFile(arquivo, "rw");
-    } // end constructor
+    }
 
+    /* ----
+     * MAIN
+     * ----
+     * inicializa instancia do CRUD com o arquivo .bin
+     * aciona o arquivo reader e seus metodos
+     * entra em loop com as opcoes do CRUD
+     */
     public static void main(String[] args) {
-        CRUD crud = new CRUD("tmp/pokemons.bin");
         System.out.print("\033[H\033[2J");
-        
+
+        CRUD crud = new CRUD(BIN_PATH);
         Reader.main(args);
         
         delay(1250);
@@ -203,9 +213,6 @@ public class CRUD {
      * move o ponteiro para a lapide do registro
      * e a demarca como excluida (false)
      */
-    public boolean update(Pokemon pokemon) throws Exception{
-        return update(ras, pokemon);
-     }
     public boolean update(RandomAccessFile ras, Pokemon novo) throws Exception {
         boolean lapide = true;
         int tamReg = 0;
@@ -243,6 +250,9 @@ public class CRUD {
 
         return false;
     }
+    public boolean update(Pokemon pokemon) throws Exception{
+        return update(ras, pokemon);
+    }
 
     /* ------
      * DELETE
@@ -263,7 +273,7 @@ public class CRUD {
      * move o ponteiro para a lapide do registro
      * e a demarca como excluida (false)
      */
-    public  boolean delete(RandomAccessFile ras,int id) throws Exception{
+    public boolean delete(RandomAccessFile ras, int id) throws Exception{
         boolean lapide = true;
         int tamReg = 0;
 
@@ -288,8 +298,8 @@ public class CRUD {
 
         return false;
     }
-    public  boolean delete(int id) throws Exception{
-        return delete(ras,id);
+    public boolean delete(int id) throws Exception{
+        return delete(ras, id);
     }
    
     //=====DELAY=====//
