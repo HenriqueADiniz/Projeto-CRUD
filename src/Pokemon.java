@@ -11,9 +11,7 @@ public class Pokemon {
     private String[] abilities;
     private Date date;
 
-    /*
-     * TESTE 
-     */
+    
     public Pokemon(){
        this (-1, "", "", "", new String [0], -1, -1, -1, new Date());
     }
@@ -43,6 +41,7 @@ public class Pokemon {
         this.date = date;
     }
     public Pokemon (byte [] bytes) throws Exception {
+        this.date = new Date();
         this.fromByteArray(bytes);
     }
     @Override
@@ -168,6 +167,6 @@ public class Pokemon {
         for (String habilidade : arr){
             str += habilidade + ",";
         }
-        return str.substring(0, str.length() - 1);
+        return str;
     }
 }

@@ -17,11 +17,11 @@ public class Testes {
     
         // criacao de 100 pokemons
         for (int i = 0; i < 100; i++) {
-            temp.setName("Pokemon " + i);
+            temp.setName("Pokemon " + i + 1);
             crud.create(temp);
         } // end for
 
-        for (int i = 0; i < 100; i++){
+        for (int i = 1; i < 100; i++){
             crud.read(i);
         }
     

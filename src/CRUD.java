@@ -133,7 +133,7 @@ public class CRUD {
      */
    
     public int create(RandomAccessFile ras, Pokemon pokemon) throws IOException{
-        if (pokemon == null) pokemon = new Pokemon(-1, null, null, null, null, 0, 0, 0, null);
+        if (pokemon == null) pokemon = new Pokemon();
         
         ras.seek(0);
         int qntReg = ras.readInt();
@@ -147,7 +147,7 @@ public class CRUD {
         ras.writeBoolean(true);
         ras.writeInt(ba.length);
         ras.write(ba);
-
+       // System.out.println(pokemon.toString());
         return pokemon.getNumber();
     }
     public int create(Pokemon pokemon) throws IOException{
@@ -178,19 +178,24 @@ public class CRUD {
         ras.seek(4);
         for (long i = 4; i < ras.length(); i += tamReg + 5) {
             lapide = ras.readBoolean();
+            System.out.println(lapide);
             tamReg = ras.readInt();
 
             byte [] ba = new byte [tamReg];
             ras.read(ba);
             Pokemon pokemon = new Pokemon(ba);
 
-            if(!lapide){
+
+            if(lapide){
+                System.out.println(pokemon.getNumber() +  " " + id);
                 if(pokemon.getNumber() == id) {
+                    System.out.println("Chegou");
                     return pokemon;
+                    
                 }
             }
         }
-
+    System.out.println("NÃO CHEGOU");
         return null;
     }
    
@@ -234,7 +239,7 @@ public class CRUD {
             ras.read(bytes);
             Pokemon pokemon = new Pokemon(bytes);
 
-            if(!lapide){
+            if(lapide){
                 if(pokemon.getNumber() == novo.getNumber()) {
                     byte [] bytesNovo = novo.toByteArray();
 
