@@ -4,7 +4,7 @@ import java.io.RandomAccessFile;
 public class Testes {
     public static void main(String[] args) throws Exception {
         File arq = new File("tmp/pokemons.db");
-        testes(); 
+        testes();
     }
 
     public static void testes () throws Exception {
@@ -20,11 +20,15 @@ public class Testes {
             temp.setName("Pokemon " + i);
             crud.create(temp);
         } // end for
+
+        for (int i = 0; i < 100; i++){
+            crud.read(i);
+        }
     
         // // update de 20 pokemons
         // for (int i = 0; i < 20; i+=2) {
-        //     temp.setName("Atualizado Filme " + i);
-        //     crud.update(temp);
+            // temp.setName("Atualizado Filme " + i);
+           //  crud.update(temp);
         // } // end for
     } // end testes ()
 }

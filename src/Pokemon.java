@@ -43,7 +43,6 @@ public class Pokemon {
         this.date = date;
     }
     public Pokemon (byte [] bytes) throws Exception {
-        this.date = new Date();
         this.fromByteArray(bytes);
     }
     @Override
