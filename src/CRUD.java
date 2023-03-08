@@ -147,7 +147,6 @@ public class CRUD {
         ras.writeBoolean(true);
         ras.writeInt(ba.length);
         ras.write(ba);
-       // System.out.println(pokemon.toString());
         return pokemon.getNumber();
     }
     public int create(Pokemon pokemon) throws IOException{
@@ -186,7 +185,7 @@ public class CRUD {
             Pokemon pokemon = new Pokemon(ba);
 
 
-            if(lapide){
+            if(!lapide){
                 System.out.println(pokemon.getNumber() +  " " + id);
                 if(pokemon.getNumber() == id) {
                     System.out.println("Chegou");
@@ -246,6 +245,7 @@ public class CRUD {
                     if(bytesNovo.length <= tamReg) {
                         ras.seek(posInicial + 5);
                         ras.write(bytesNovo);
+                        System.out.println(pokemon.toString());
                         return true;
                     } else {
                         ras.seek(posInicial);
@@ -254,12 +254,12 @@ public class CRUD {
                         ras.writeBoolean(false);
                         ras.writeInt(novo.toByteArray().length);
                         ras.write(novo.toByteArray());
+                        System.out.println(pokemon.toString());
                         return true;
                     }
                 }
             }
         }
-
         return false;
     }
     public boolean update(Pokemon pokemon) throws Exception{
@@ -299,7 +299,7 @@ public class CRUD {
             ras.read(bytes);
             Pokemon pokemon = new Pokemon(bytes);
             
-            if(!lapide){
+            if(lapide){
                 if(pokemon.getNumber() == id) {
                     ras.seek(posInicial);
                     ras.writeBoolean(true);

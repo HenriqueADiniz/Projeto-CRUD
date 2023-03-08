@@ -14,15 +14,23 @@ public class Testes {
     
         CRUD crud = new CRUD("tmp/pokemons.db");
         Pokemon temp = new Pokemon();
+    //Create Ok
+    //Read Ok
+    //update Ok
+    //Delete OK
+    //CRUD COMPLETO
     
+
         // criacao de 100 pokemons
         for (int i = 0; i < 100; i++) {
             temp.setName("Pokemon " + i + 1);
             crud.create(temp);
         } // end for
 
-        for (int i = 1; i < 100; i++){
-            crud.read(i);
+        for (int i = 1; i < 200; i++){
+            temp.setNumber(i);
+            crud.delete(temp.getNumber());
+            
         }
     
         // // update de 20 pokemons
