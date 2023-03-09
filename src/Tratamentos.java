@@ -1,4 +1,5 @@
 import java.util.Date;
+import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
@@ -17,7 +18,6 @@ public class Tratamentos {
         String[] abilities = temp.split(",");
         return abilities;
     }
-    
     /* -----------
      * TRATA DATAS
      * -----------
@@ -32,5 +32,21 @@ public class Tratamentos {
             // tratamento de erro
         }
         return date;
+    }
+
+    //=====PRINTA MULTIVALORADOS=====//
+    public static String printaMultivalorados(String[] arr){
+        String str = "";
+        for (String habilidade : arr){
+            str += habilidade + ",";
+        }
+        str = str.substring(0, str.length()-1);
+        return str;
+    }
+    //=====PRINTA DATAS=====//
+    public static String printaDatas(Date date){
+        DateFormat format = new SimpleDateFormat("dd/MM/yyyy");
+        String str = format.format(date);
+        return str;
     }
 }

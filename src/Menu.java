@@ -33,7 +33,6 @@ public class Menu {
             System.out.print("| 0) Sair                  |\n");
             System.out.print("*--------------------------*\n");
             System.out.print("Digite uma opcao: ");
-            String out = "";
             String opt = scan.next();
 
             switch (opt){
@@ -66,36 +65,52 @@ public class Menu {
                     int i = crud.create(criado);
                     System.out.println(i);
 
-                    scanLinha.close();
-                    espera();
+                    waitForEnter();
                     break;
-
+                    
                 case "2":
                     System.out.print("Digite o ID do Pokemon a ser lido: ");
                     int idRead = scan.nextInt();
                     
+                    System.out.println();
                     Pokemon lido = crud.read(idRead);
-                    out = (lido != null) ? "Pokemon encontrado!\n" + lido.toString() : "Erro: Pokemon nao-existente.";
-                    System.out.println(out);
-                    
-                    espera();
+                    if (lido != null){
+                        System.out.println("+---------------------+");
+                        System.out.println("| POKEMON ENCONTRADO! |");
+                        System.out.println("+---------------------+------------");
+                        System.out.println(lido.toString());
+                    } else {
+                        System.out.println("*-------------------------------*");
+                        System.out.println("| ERRO: POKEMON NAO ENCONTRADO. |");
+                        System.out.println("*-------------------------------*");
+                    }
+                    waitForEnter();
                     break;
 
                 case "3":
                     // chamar metodo atualizar
+                    waitForEnter();
                     break;
                     
                 case "4":
                     System.out.print("Digite o ID do Pokemon a ser deletado: ");
                     int idDel = scan.nextInt();
 
+                    System.out.println();
                     Boolean ctrl = crud.delete(idDel);
-                    out = (ctrl) ? "Pokemon deletado com sucesso." : "Erro: Pokemon nao-existente.";
-                    System.out.println(out);
+                    if (ctrl){
+                        System.out.println("*-------------------------------*");
+                        System.out.println("| POKEMON DELETADO COM SUCESSO! |");
+                        System.out.println("*-------------------------------*");
+                    } else {
+                        System.out.println("*-------------------------------*");
+                        System.out.println("| ERRO: POKEMON NAO ENCONTRADO. |");
+                        System.out.println("*-------------------------------*");
+                    }
+                    waitForEnter();
                     break;
 
                 case "0":
-                    scan.close();
                     System.exit(1);
                 
                 default:
@@ -105,9 +120,11 @@ public class Menu {
     }
 
     //=====WAIT=====//
-    public static void espera(){
-        System.out.println("\nPressione Enter para continuar...");
-        delay(3500);
+    public static void waitForEnter(){
+        Scanner s = new Scanner(System.in);
+        System.out.println("-----------------------------------");
+        System.out.print("Pressione Enter para continuar...");
+        s.nextLine();
     }
    
     //=====DELAY=====//

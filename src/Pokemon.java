@@ -46,7 +46,7 @@ public class Pokemon {
     }
     @Override
     public String toString(){
-        return "ID: " + this.number + "\nNome: " + this.name + "\nTipo 1: " + this.type1 + "\nTipo 2: " + this.type2 + "\nHabilidades: " + this.printaMultivalorados(abilities) + "\nHP: " + this.hp + "\nAtaque: " + this.att + "\nDefesa: " + this.def + "\nData: " + this.date;
+        return "ID: " + this.number + "\nNome: " + this.name + "\nTipo 1: " + this.type1 + "\nTipo 2: " + this.type2 + "\nHabilidades: " + Tratamentos.printaMultivalorados(abilities) + "\nHP: " + this.hp + "\nAtaque: " + this.att + "\nDefesa: " + this.def + "\nData: " + Tratamentos.printaDatas(this.date);
     }
     
     //=====GETTERS & SETTERS=====//
@@ -160,15 +160,5 @@ public class Pokemon {
         for (int i = 0; i < arr.length; i++) {
             dos.writeUTF(arr[i]);
         }
-    }
-
-    //=====PRINTA MULTIVALORADOS=====//
-    public String printaMultivalorados(String[] arr){
-        String str = "";
-        for (String habilidade : arr){
-            str += habilidade + ",";
-        }
-        str = str.substring(0, str.length()-1);
-        return str;
     }
 }
