@@ -31,7 +31,6 @@ public class CRUD {
         
         delay(1250);
         Scanner scan = new Scanner (System.in);
-        Scanner scanLinha = new Scanner (System.in).useDelimiter("\\n");
         while (true){
             System.out.print("\033[H\033[2J");
             System.out.print("*--------------------------*\n");
@@ -52,6 +51,7 @@ public class CRUD {
                 case "1":
                     int hp, att, def;
                     String name, type1, type2, abilitiesTemp, dateTemp;
+                    Scanner scanLinha = new Scanner (System.in).useDelimiter("\\n");
 
                     System.out.print("Digite o nome: ");
                     name = scan.next();
@@ -75,6 +75,8 @@ public class CRUD {
 
                     Pokemon criado = new Pokemon(name, type1, type2, abilities, hp, att, def, date);
                     crud.create(crud.ras, criado);
+
+                    scanLinha.close();
                     break;
 
                 case "2":
@@ -84,12 +86,11 @@ public class CRUD {
                     Pokemon lido = crud.read(idRead);
                     out = (lido != null) ? "Pokemon encontrado!\n" + lido.toString() : "Erro: Pokemon nao-existente.";
                     
+                    delay(5000);
                     break;
 
                 case "3":
-                    System.out.println();
                     // chamar metodo atualizar
-                    System.out.println();
                     break;
                     
                 case "4":
@@ -102,9 +103,7 @@ public class CRUD {
                     break;
 
                 case "0":
-                    System.out.println();
                     scan.close();
-                    scanLinha.close();
                     System.exit(1);
                 
                 default:
@@ -166,7 +165,7 @@ public class CRUD {
      * le e aloca o byte
      * cria o pokemon com as informacoes do byte lido
      * 
-     * se a lapide for verdadeira,
+     * se a lapide for falsa,
      * se encontrado o registro a ser lido,
      * retorna o objeto pokemon
      */
@@ -177,24 +176,21 @@ public class CRUD {
         ras.seek(4);
         for (long i = 4; i < ras.length(); i += tamReg + 5) {
             lapide = ras.readBoolean();
-            System.out.println(lapide);
             tamReg = ras.readInt();
 
             byte [] ba = new byte [tamReg];
             ras.read(ba);
             Pokemon pokemon = new Pokemon(ba);
 
-
             if(!lapide){
                 System.out.println(pokemon.getNumber() +  " " + id);
                 if(pokemon.getNumber() == id) {
                     System.out.println("Chegou");
                     return pokemon;
-                    
                 }
             }
         }
-    System.out.println("NÃO CHEGOU");
+        System.out.println("NÃO CHEGOU");
         return null;
     }
    

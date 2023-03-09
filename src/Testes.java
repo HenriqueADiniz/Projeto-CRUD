@@ -29,7 +29,7 @@ public class Testes {
 
         for (int i = 1; i < 200; i++){
             temp.setNumber(i);
-            crud.delete(temp.getNumber());
+            crud.read(temp.getNumber());
             
         }
     
