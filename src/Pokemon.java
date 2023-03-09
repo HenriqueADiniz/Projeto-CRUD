@@ -11,12 +11,12 @@ public class Pokemon {
     private String[] abilities;
     private Date date;
 
-    
+    // CONSTRUTOR NULO
     public Pokemon(){
        this (-1, "", "", "", new String [0], -1, -1, -1, new Date());
     }
+    // CONSTRUTOR CREATE
      public Pokemon(String name, String type1, String type2, String[] abilities, int hp, int att, int def, Date date){
-        super();
         this.number = 0;
         this.name = name;
         this.type1 = type1;
@@ -27,9 +27,8 @@ public class Pokemon {
         this.def = def;
         this.date = date;
     }
-
+    // CONSTRUTOR PADRAO
     public Pokemon(int number, String name, String type1, String type2, String[] abilities, int hp, int att, int def, Date date){
-        super();
         this.number = number;
         this.name = name;
         this.type1 = type1;
@@ -40,43 +39,45 @@ public class Pokemon {
         this.def = def;
         this.date = date;
     }
-    public Pokemon (byte [] bytes) throws Exception {
+    // CONSTRUTOR BYTES
+    public Pokemon (byte [] ba) throws Exception {
         this.date = new Date();
-        this.fromByteArray(bytes);
+        this.fromByteArray(ba);
     }
     @Override
     public String toString(){
-        return "Numero: " + this.number + "\nNome: " + this.name + "\nTipo 1: " + this.type1 + "\nTipo 2: " + this.type2 + "\nHabilidades: " + this.printaMultivalorados(abilities) + "\nHP: " + this.hp + "\nAtaque: " + this.att + "\nDefesa: " + this.def + "\nData: " + this.date;
+        return "ID: " + this.number + "\nNome: " + this.name + "\nTipo 1: " + this.type1 + "\nTipo 2: " + this.type2 + "\nHabilidades: " + this.printaMultivalorados(abilities) + "\nHP: " + this.hp + "\nAtaque: " + this.att + "\nDefesa: " + this.def + "\nData: " + this.date;
     }
     
     //=====GETTERS & SETTERS=====//
-    // number
-    public int getNumber(){return this.number;}
-    public void setNumber(int number){this.number = number;}
-    // name
-    public String getName(){return this.name;}
-    public void setName(String name){this.name = name;}
-    // type 1
-    public String getType1(){return this.type1;}
-    public void setType1(String type1){this.type1 = type1;}
-    // type 2
-    public String getType2(){return this.type2;}
-    public void setType2(String type2){this.type2 = type2;}
-    // abilities
-    public String[] getAbilities(){return this.abilities;}
-    public void setAbilities(String[] abilities){this.abilities = abilities;}
-    // hp
-    public int getHP(){return this.hp;}
-    public void setHP(int hp){this.hp = hp;}
-    // att
-    public int getAtt(){return this.att;}
-    public void setAtt(int att){this.att = att;}
-    // def
-    public int getDef(){return this.def;}
-    public void setDef(int def){this.def = def;}
-    // date
-    public Date getDate(){return this.date;}
-    public void setDate(Date date){this.date = date;}
+        // number
+        public int getNumber(){return this.number;}
+        public void setNumber(int number){this.number = number;}
+        // name
+        public String getName(){return this.name;}
+        public void setName(String name){this.name = name;}
+        // type 1
+        public String getType1(){return this.type1;}
+        public void setType1(String type1){this.type1 = type1;}
+        // type 2
+        public String getType2(){return this.type2;}
+        public void setType2(String type2){this.type2 = type2;}
+        // abilities
+        public String[] getAbilities(){return this.abilities;}
+        public void setAbilities(String[] abilities){this.abilities = abilities;}
+        // hp
+        public int getHP(){return this.hp;}
+        public void setHP(int hp){this.hp = hp;}
+        // att
+        public int getAtt(){return this.att;}
+        public void setAtt(int att){this.att = att;}
+        // def
+        public int getDef(){return this.def;}
+        public void setDef(int def){this.def = def;}
+        // date
+        public Date getDate(){return this.date;}
+        public void setDate(Date date){this.date = date;}
+    //=====GETTERS & SETTERS=====//
 
     /* ------------------
      * LER ARRAY DE BYTES
@@ -167,6 +168,7 @@ public class Pokemon {
         for (String habilidade : arr){
             str += habilidade + ",";
         }
+        str = str.substring(0, str.length()-1);
         return str;
     }
 }

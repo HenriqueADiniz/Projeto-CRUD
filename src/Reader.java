@@ -2,7 +2,6 @@ import java.util.Date;
 import java.util.List;
 import java.util.Arrays;
 import java.util.ArrayList;
-import java.io.File;
 import java.io.FileReader;
 import java.io.RandomAccessFile;
 import com.opencsv.CSVReader;
@@ -10,12 +9,15 @@ import com.opencsv.CSVReader;
 public class Reader {
     // caminho do arquivo .csv
     private static final String CSV_PATH = "tmp/pokemons.csv";
+    // caminho do arquivo .db
+    private static final String DB_PATH = "tmp/pokemons.db";
 
     /* ----
      * MAIN
      * ----
-     * realiza carga inicial criando uma lista
-     * converte cada linha da lista criada para objeto
+     * .csv para lista de strings
+     * lista de strings para lista de objetos
+     * lista de objetos para .db
      */
     public static void main(String[] args) throws Exception {
         List<List<String>> lista = cargaInicial();
@@ -80,16 +82,13 @@ public class Reader {
     /* --------------------------
      * INICIALIZAR BANCO DE DADOS
      * --------------------------
-     * cria arquivo e inicializa o RAS
+     * cria o arquivo
      * inicializa e grava a variavel que conta o numero de registros
-     * percorre a lista de pokemons, os convertendo pra binario, gravando a lapide, o tamanho do registro e o objeto
+     * percorre TODA a lista de pokemons, os convertendo pra binario, gravando a lapide, o tamanho do registro e o objeto
      * volta para o inicio do arquivo e atualiza a quantidade de registros
      */
     public static void inicializarBD(List<Pokemon> listaDePokemons) throws Exception {
-        String arquivo = "banco";
-        File arq = new File(arquivo);
-        RandomAccessFile ras = new RandomAccessFile(arquivo, "rw");
-
+        RandomAccessFile ras = new RandomAccessFile(DB_PATH, "rw");
         int qntReg = 0;
         ras.writeInt(qntReg);
 
@@ -104,7 +103,6 @@ public class Reader {
 
         ras.seek(0);
         ras.writeInt(qntReg);
-
         ras.close();
     }
 }

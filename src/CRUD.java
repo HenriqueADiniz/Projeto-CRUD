@@ -1,115 +1,13 @@
-import java.util.Date;
-import java.util.Scanner;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.io.FileNotFoundException;
 
 public class CRUD {
-    // caminho do arquivo .db
-    private static final String DB_PATH = "tmp/pokemons.db";
-
     // inicializa o RAS
     private  RandomAccessFile ras;
-
     // construtor do CRUD com o arquivo .db
     public CRUD (String arquivo) throws FileNotFoundException {
         this.ras = new RandomAccessFile(arquivo, "rw");
-    }
-
-    /* ----
-     * MAIN
-     * ----
-     * inicializa instancia do CRUD com o arquivo .db
-     * aciona o arquivo reader e seus metodos
-     * entra em loop com as opcoes do CRUD
-     */
-    public static void main(String[] args) throws Exception {
-        System.out.print("\033[H\033[2J");
-
-        CRUD crud = new CRUD(DB_PATH);
-        Reader.main(args);
-        
-        delay(1250);
-        Scanner scan = new Scanner (System.in);
-        while (true){
-            System.out.print("\033[H\033[2J");
-            System.out.print("*--------------------------*\n");
-            System.out.print("#    OPCOES DE REGISTRO    #\n");
-            System.out.print("*--------------------------*\n");
-            System.out.print("| 1) Criar                 |\n");
-            System.out.print("| 2) Ler                   |\n");
-            System.out.print("| 3) Atualizar             |\n");
-            System.out.print("| 4) Deletar               |\n");
-            System.out.print("|                          |\n");
-            System.out.print("| 0) Sair                  |\n");
-            System.out.print("*--------------------------*\n");
-            System.out.print("Digite uma opcao: ");
-            String out = "";
-            String opt = scan.next();
-
-            switch (opt){
-                case "1":
-                    int hp, att, def;
-                    String name, type1, type2, abilitiesTemp, dateTemp;
-                    Scanner scanLinha = new Scanner (System.in).useDelimiter("\\n");
-
-                    System.out.print("Digite o nome: ");
-                    name = scan.next();
-                    System.out.print("Digite o tipo 1: ");
-                    type1 = scan.next();
-                    System.out.print("Digite o tipo 2: ");
-                    type2 = scan.next();
-                    System.out.print("Digite as habilidades, separadas por virgulas: ");
-                    abilitiesTemp = scanLinha.next();
-                    System.out.print("Digite o HP: ");
-                    hp = scan.nextInt();
-                    System.out.print("Digite o ataque: ");
-                    att = scan.nextInt();
-                    System.out.print("Digite a defesa: ");
-                    def = scan.nextInt();
-                    System.out.print("Digite a data, no formato (dd/mm/aaaa): ");
-                    dateTemp = scan.next();
-
-                    Date date = Tratamentos.trataDatas(dateTemp);
-                    String[] abilities = abilitiesTemp.split(",");
-
-                    Pokemon criado = new Pokemon(name, type1, type2, abilities, hp, att, def, date);
-                    crud.create(crud.ras, criado);
-
-                    scanLinha.close();
-                    break;
-
-                case "2":
-                    System.out.print("Digite o ID do Pokemon a ser lido: ");
-                    int idRead = scan.nextInt();
-                    
-                    Pokemon lido = crud.read(idRead);
-                    out = (lido != null) ? "Pokemon encontrado!\n" + lido.toString() : "Erro: Pokemon nao-existente.";
-                    
-                    delay(5000);
-                    break;
-
-                case "3":
-                    // chamar metodo atualizar
-                    break;
-                    
-                case "4":
-                    System.out.print("Digite o ID do Pokemon a ser deletado: ");
-                    int idDel = scan.nextInt();
-
-                    Boolean ctrl = crud.delete(idDel);
-                    out = (ctrl) ? "Pokemon deletado com sucesso." : "Erro: Pokemon nao-existente.";
-                    System.out.println(out);
-                    break;
-
-                case "0":
-                    scan.close();
-                    System.exit(1);
-                
-                default:
-                    break;
-            }
-        }
     }
 
     /* ------
@@ -130,16 +28,16 @@ public class CRUD {
      *
      * retorna o id do registro gerado
      */
-   
-    public int create(RandomAccessFile ras, Pokemon pokemon) throws IOException{
+     public int create(RandomAccessFile ras, Pokemon pokemon) throws IOException{
         if (pokemon == null) pokemon = new Pokemon();
         
         ras.seek(0);
         int qntReg = ras.readInt();
-        pokemon.setNumber(qntReg+1);
+        qntReg++;
+        pokemon.setNumber(qntReg);
 
         ras.seek(0);
-        ras.writeInt(qntReg+1);
+        ras.writeInt(qntReg);
         
         ras.seek(ras.length()); 
         byte[] ba = pokemon.toByteArray();
@@ -165,7 +63,7 @@ public class CRUD {
      * le e aloca o byte
      * cria o pokemon com as informacoes do byte lido
      * 
-     * se a lapide for falsa,
+     * se a lapide for verdadeira,
      * se encontrado o registro a ser lido,
      * retorna o objeto pokemon
      */
@@ -182,15 +80,12 @@ public class CRUD {
             ras.read(ba);
             Pokemon pokemon = new Pokemon(ba);
 
-            if(!lapide){
-                System.out.println(pokemon.getNumber() +  " " + id);
+            if(lapide){
                 if(pokemon.getNumber() == id) {
-                    System.out.println("Chegou");
                     return pokemon;
                 }
             }
         }
-        System.out.println("NÃO CHEGOU");
         return null;
     }
    
@@ -298,7 +193,7 @@ public class CRUD {
             if(lapide){
                 if(pokemon.getNumber() == id) {
                     ras.seek(posInicial);
-                    ras.writeBoolean(true);
+                    ras.writeBoolean(false);
                     return true;
                 }
             }
@@ -308,14 +203,5 @@ public class CRUD {
     }
     public boolean delete(int id) throws Exception{
         return delete(ras, id);
-    }
-   
-    //=====DELAY=====//
-    public static void delay(int ms){
-        try {
-            Thread.sleep(ms);
-        } catch(InterruptedException ex) {
-            Thread.currentThread().interrupt();
-        }
     }
 }
