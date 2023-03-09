@@ -20,19 +20,19 @@ public class Reader {
      * lista de objetos para .db
      */
     public static void main(String[] args) throws Exception {
-        List<List<String>> lista = cargaInicial();
-        List<Pokemon> listaDePokemons = listaParaObjeto(lista);
+        List<List<String>> lista = csvPraLista();
+        List<Pokemon> listaDePokemons = listaPraObjetos(lista);
         inicializarBD(listaDePokemons);
     }
     
     /* -------------
-     * CARGA INICIAL
+     * CSV PRA LISTA
      * -------------
      * inicializa LISTA de LISTA de strings, ou seja, LINHAS de COLUNAS (linha[y].coluna[x])
      * pula a primeira linha, inicializa o leitor, adiciona as colunas de cada linha
      * retorna a lista
      */
-    public static List<List<String>> cargaInicial(){
+    public static List<List<String>> csvPraLista(){
         System.out.println("Realizando carga inicial...");
         List<List<String>> linha = new ArrayList<List<String>>();
 
@@ -54,13 +54,13 @@ public class Reader {
         return linha;
     }
 
-    /* ------------------
-     * LISTA PARA OBJETOS
-     * ------------------
+    /* -----------------
+     * LISTA PRA OBJETOS
+     * -----------------
      * cria lista de objetos
      * para cada linha lida, adiciona um objeto
      */
-    public static List<Pokemon> listaParaObjeto(List<List<String>> lista){
+    public static List<Pokemon> listaPraObjetos(List<List<String>> lista){
         List<Pokemon> listaDePokemonsTEMP = new ArrayList<>();
         
         for (int i=0; i<lista.size(); i++){

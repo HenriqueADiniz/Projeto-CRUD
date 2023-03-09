@@ -63,7 +63,7 @@ public class Menu {
 
                     Pokemon criado = new Pokemon(name, type1, type2, abilities, hp, att, def, date);
                     int i = crud.create(criado);
-                    System.out.println(i);
+                    System.out.println("\nID criado: " + i);
 
                     waitForEnter();
                     break;
