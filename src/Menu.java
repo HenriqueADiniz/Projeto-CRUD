@@ -79,6 +79,7 @@ public class Menu {
                         System.out.println("| POKEMON ENCONTRADO! |");
                         System.out.println("+---------------------+------------");
                         System.out.println(lido.toString());
+                        System.out.println("-----------------------------------");
                     } else {
                         System.out.println("*-------------------------------*");
                         System.out.println("| ERRO: POKEMON NAO ENCONTRADO. |");
@@ -122,8 +123,7 @@ public class Menu {
     //=====WAIT=====//
     public static void waitForEnter(){
         Scanner s = new Scanner(System.in);
-        System.out.println("-----------------------------------");
-        System.out.print("Pressione Enter para continuar...");
+        System.out.println("Pressione Enter para continuar...");
         s.nextLine();
     }
    
