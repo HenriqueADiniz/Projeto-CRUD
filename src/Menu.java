@@ -89,6 +89,34 @@ public class Menu {
                     break;
 
                 case "3":
+                    int hpA, attA, defA,IdA;
+                    String nameA, type1A, type2A, abilitiesTempA, dateTempA;
+
+                    Scanner scanLinhaA = new Scanner (System.in).useDelimiter("\\n");
+                    System.out.print("Digite o id do pokemon que deseja atualizar: ");
+                    IdA = scan.nextInt();
+                    System.out.print("Digite o novo nome: ");
+                    nameA = scan.next();
+                    System.out.print("Digite o novo tipo 1: ");
+                    type1A = scan.next();
+                    System.out.print("Digite o novo tipo 2: ");
+                    type2A = scan.next();
+                    System.out.print("Digite as novas habilidades, separadas por virgulas: ");
+                    abilitiesTempA = scanLinhaA.next();
+                    System.out.print("Digite o novo HP: ");
+                    hpA = scan.nextInt();
+                    System.out.print("Digite o novo ataque: ");
+                    attA = scan.nextInt();
+                    System.out.print("Digite a nova defesa: ");
+                    defA = scan.nextInt();
+                    System.out.print("Digite a nova data, no formato (dd/mm/aaaa): ");
+                    dateTempA = scan.next();
+
+                    Date dateA = Tratamentos.trataDatas(dateTempA);
+                    String[] abilitiesA = abilitiesTempA.split(",");
+
+                    Pokemon criadoA = new Pokemon(IdA,nameA, type1A, type2A, abilitiesA, hpA, attA, defA, dateA);
+                    crud.update(criadoA);
                     // chamar metodo atualizar
                     waitForEnter();
                     break;

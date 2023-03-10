@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.io.FileReader;
 import java.io.RandomAccessFile;
 import com.opencsv.CSVReader;
+import java.io.File;
 
 public class Reader {
     // caminho do arquivo .csv
@@ -88,6 +89,8 @@ public class Reader {
      * volta para o inicio do arquivo e atualiza a quantidade de registros
      */
     public static void inicializarBD(List<Pokemon> listaDePokemons) throws Exception {
+        File arq = new File(DB_PATH);
+        if(arq.delete()) System.out.println("deletado"); else System.out.println("nao foi possivel deletar");
         RandomAccessFile ras = new RandomAccessFile(DB_PATH, "rw");
         int qntReg = 0;
         ras.writeInt(qntReg);

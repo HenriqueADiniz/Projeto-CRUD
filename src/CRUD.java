@@ -136,16 +136,14 @@ public class CRUD {
                     if(bytesNovo.length <= tamReg) {
                         ras.seek(posInicial + 5);
                         ras.write(bytesNovo);
-                        System.out.println(pokemon.toString());
                         return true;
                     } else {
                         ras.seek(posInicial);
-                        ras.writeBoolean(true);
-                        ras.seek(ras.length()); 
                         ras.writeBoolean(false);
+                        ras.seek(ras.length()); 
+                        ras.writeBoolean(true);
                         ras.writeInt(novo.toByteArray().length);
                         ras.write(novo.toByteArray());
-                        System.out.println(pokemon.toString());
                         return true;
                     }
                 }
