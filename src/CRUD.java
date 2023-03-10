@@ -108,12 +108,11 @@ public class CRUD {
      * cria o novo registro em bytes
      * 
      * se o tamanho do novo regitro for igual ao antigo,
-     * ?????????????????????????
+     * reescrevemos o pokemon na mesma posição
      * 
      * senao,
-     * ?????????????????????????
-     * move o ponteiro para a lapide do registro
-     * e a demarca como excluida (false)
+     * deletmos o antigo pokemon que possuia o id que estamos atualizando
+     * escrevemos o pokemon atualizado sem alterar seu id original ao final do arquivo
      */
     public boolean update(RandomAccessFile ras, Pokemon novo) throws Exception {
         boolean lapide = true;
