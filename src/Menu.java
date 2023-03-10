@@ -21,6 +21,8 @@ public class Menu {
         delay(1250);
         Scanner scan = new Scanner (System.in);
         while (true){
+            int hp, att, def, id;
+            String name, type1, type2, abilitiesTemp, dateTemp;
             System.out.print("\033[H\033[2J");
             System.out.print("*--------------------------*\n");
             System.out.print("#    OPCOES DE REGISTRO    #\n");
@@ -37,9 +39,7 @@ public class Menu {
 
             switch (opt){
                 case "1":
-                    int hp, att, def;
-                    String name, type1, type2, abilitiesTemp, dateTemp;
-                    Scanner scanLinha = new Scanner (System.in).useDelimiter("\\n");
+                    Scanner scanLinhaA = new Scanner (System.in).useDelimiter("\\n");
 
                     System.out.print("Digite o nome: ");
                     name = scan.next();
@@ -48,7 +48,7 @@ public class Menu {
                     System.out.print("Digite o tipo 2: ");
                     type2 = scan.next();
                     System.out.print("Digite as habilidades, separadas por virgulas: ");
-                    abilitiesTemp = scanLinha.next();
+                    abilitiesTemp = scanLinhaA.next();
                     System.out.print("Digite o HP: ");
                     hp = scan.nextInt();
                     System.out.print("Digite o ataque: ");
@@ -89,35 +89,33 @@ public class Menu {
                     break;
 
                 case "3":
-                    int hpA, attA, defA,IdA;
-                    String nameA, type1A, type2A, abilitiesTempA, dateTempA;
+                    Scanner scanLinhaB = new Scanner (System.in).useDelimiter("\\n");
 
-                    Scanner scanLinhaA = new Scanner (System.in).useDelimiter("\\n");
-                    System.out.print("Digite o id do pokemon que deseja atualizar: ");
-                    IdA = scan.nextInt();
+                    System.out.print("Digite o ID do pokemon que deseja atualizar: ");
+                    id = scan.nextInt();
                     System.out.print("Digite o novo nome: ");
-                    nameA = scan.next();
+                    name = scan.next();
                     System.out.print("Digite o novo tipo 1: ");
-                    type1A = scan.next();
+                    type1 = scan.next();
                     System.out.print("Digite o novo tipo 2: ");
-                    type2A = scan.next();
+                    type2 = scan.next();
                     System.out.print("Digite as novas habilidades, separadas por virgulas: ");
-                    abilitiesTempA = scanLinhaA.next();
+                    abilitiesTemp = scanLinhaB.next();
                     System.out.print("Digite o novo HP: ");
-                    hpA = scan.nextInt();
+                    hp = scan.nextInt();
                     System.out.print("Digite o novo ataque: ");
-                    attA = scan.nextInt();
+                    att = scan.nextInt();
                     System.out.print("Digite a nova defesa: ");
-                    defA = scan.nextInt();
+                    def = scan.nextInt();
                     System.out.print("Digite a nova data, no formato (dd/mm/aaaa): ");
-                    dateTempA = scan.next();
+                    dateTemp = scan.next();
 
-                    Date dateA = Tratamentos.trataDatas(dateTempA);
-                    String[] abilitiesA = abilitiesTempA.split(",");
+                    date = Tratamentos.trataDatas(dateTemp);
+                    abilities = abilitiesTemp.split(",");
 
-                    Pokemon criadoA = new Pokemon(IdA,nameA, type1A, type2A, abilitiesA, hpA, attA, defA, dateA);
-                    crud.update(criadoA);
-                    // chamar metodo atualizar
+                    Pokemon atualizado = new Pokemon(id, name, type1, type2, abilities, hp, att, def, date);
+                    crud.update(atualizado);
+
                     waitForEnter();
                     break;
                     
