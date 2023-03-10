@@ -113,9 +113,18 @@ public class Menu {
                     date = Tratamentos.trataDatas(dateTemp);
                     abilities = abilitiesTemp.split(",");
 
+                    System.out.println();
                     Pokemon atualizado = new Pokemon(id, name, type1, type2, abilities, hp, att, def, date);
-                    crud.update(atualizado);
-
+                    Boolean upd = crud.update(atualizado);
+                    if (upd){
+                        System.out.println("*-------------------------------*");
+                        System.out.println("| POKEMON ATUALIZADO COM SUCESSO! |");
+                        System.out.println("*-------------------------------*");
+                    } else {
+                        System.out.println("*-------------------------------*");
+                        System.out.println("| ERRO: POKEMON NAO ENCONTRADO. |");
+                        System.out.println("*-------------------------------*");
+                    }
                     waitForEnter();
                     break;
                     
@@ -124,8 +133,8 @@ public class Menu {
                     int idDel = scan.nextInt();
 
                     System.out.println();
-                    Boolean ctrl = crud.delete(idDel);
-                    if (ctrl){
+                    Boolean del = crud.delete(idDel);
+                    if (del){
                         System.out.println("*-------------------------------*");
                         System.out.println("| POKEMON DELETADO COM SUCESSO! |");
                         System.out.println("*-------------------------------*");
