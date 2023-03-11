@@ -146,7 +146,7 @@ public class Menu {
                     waitForEnter();
                     break;
                     case "5":
-                    Intercalações.iBComum(6, 5);
+                    Intercalações.iBComum(5, 4);
                     waitForEnter();
                     break;
                 case "0":
