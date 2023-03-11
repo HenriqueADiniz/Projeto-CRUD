@@ -145,7 +145,10 @@ public class Menu {
                     }
                     waitForEnter();
                     break;
-
+                    case "5":
+                    Intercalações.iBComum(6, 5);
+                    waitForEnter();
+                    break;
                 case "0":
                     System.exit(1);
                 
