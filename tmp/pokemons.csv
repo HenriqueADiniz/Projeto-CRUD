@@ -27,10 +27,10 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 26,Raichu,Electric,None,"['Lightning Rod', 'Static']",60,90,55,27/02/1996
 27,Sandshrew,Ground,None,"['Sand Rush', 'Sand Veil']",50,75,85,27/02/1996
 28,Sandslash,Ground,None,"['Sand Rush', 'Sand Veil']",75,100,110,27/02/1996
-29,Nidoran♀,Poison,None,"['Hustle', 'Poison Point', 'Rivalry']",55,47,52,27/02/1996
+29,Nidoran,Poison,None,"['Hustle', 'Poison Point', 'Rivalry']",55,47,52,27/02/1996
 30,Nidorina,Poison,None,"['Hustle', 'Poison Point', 'Rivalry']",70,62,67,27/02/1996
 31,Nidoqueen,Poison,Ground,"['Poison Point', 'Rivalry', 'Sheer Force']",90,92,87,27/02/1996
-32,Nidoran♂,Poison,None,"['Hustle', 'Poison Point', 'Rivalry']",46,57,40,27/02/1996
+32,Nidoran,Poison,None,"['Hustle', 'Poison Point', 'Rivalry']",46,57,40,27/02/1996
 33,Nidorino,Poison,None,"['Hustle', 'Poison Point', 'Rivalry']",61,72,57,27/02/1996
 34,Nidoking,Poison,Ground,"['Poison Point', 'Rivalry', 'Sheer Force']",81,102,77,27/02/1996
 35,Clefairy,Fairy,None,"['Cute Charm', 'Friend Guard', 'Magic Guard']",70,45,48,27/02/1996
@@ -667,7 +667,7 @@ Number,Name,Type 1,Type 2,Abilities,HP,Att,Def,Date
 666,Vivillon,Bug,Flying,"['Friend Guard', 'Shield Dust']",80,52,50,12/10/2013
 667,Litleo,Fire,Normal,"['Moxie', 'Rivalry', 'Unnerve']",62,50,58,12/10/2013
 668,Pyroar,Fire,Normal,"['Moxie', 'Rivalry', 'Unnerve']",86,68,72,12/10/2013
-669,Flabébé,Fairy,None,"['Flower Veil', 'Symbiosis']",44,38,39,12/10/2013
+669,Flabebe,Fairy,None,"['Flower Veil', 'Symbiosis']",44,38,39,12/10/2013
 670,Floette,Fairy,None,"['Flower Veil', 'Symbiosis']",54,45,47,12/10/2013
 671,Florges,Fairy,None,"['Flower Veil', 'Symbiosis']",78,65,68,12/10/2013
 672,Skiddo,Grass,None,"['Grass Pelt', 'Sap Sipper']",66,65,48,12/10/2013

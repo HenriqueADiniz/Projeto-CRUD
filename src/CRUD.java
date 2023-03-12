@@ -108,7 +108,7 @@ public class CRUD {
      * cria o novo registro em bytes
      * 
      * se o tamanho do novo regitro for  menor ou igual ao antigo,
-     * reescreve o pokemon na mesma posição
+     * reescreve o pokemon na mesma posicao
      * 
      * senao,
      * deleta o antigo pokemon que possuia o id que esta sendo atualizando
@@ -143,6 +143,7 @@ public class CRUD {
                         ras.writeBoolean(true);
                         ras.writeInt(novo.toByteArray().length);
                         ras.write(novo.toByteArray());
+                        System.out.println("Update realizado no final do arquivo!");
                         return true;
                     }
                 }

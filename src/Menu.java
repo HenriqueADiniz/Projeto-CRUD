@@ -31,7 +31,9 @@ public class Menu {
             System.out.print("| 2) Ler                   |\n");
             System.out.print("| 3) Atualizar             |\n");
             System.out.print("| 4) Deletar               |\n");
-            System.out.print("| 5) Ordenação externa     |\n");
+            System.out.print("|                          |\n");
+            System.out.print("| 5) Ordenacao Externa     |\n");
+            System.out.print("|                          |\n");
             System.out.print("| 0) Sair                  |\n");
             System.out.print("*--------------------------*\n");
             System.out.print("Digite uma opcao: ");
@@ -117,9 +119,9 @@ public class Menu {
                     Pokemon atualizado = new Pokemon(id, name, type1, type2, abilities, hp, att, def, date);
                     Boolean upd = crud.update(atualizado);
                     if (upd){
-                        System.out.println("*-------------------------------*");
+                        System.out.println("*---------------------------------*");
                         System.out.println("| POKEMON ATUALIZADO COM SUCESSO! |");
-                        System.out.println("*-------------------------------*");
+                        System.out.println("*---------------------------------*");
                     } else {
                         System.out.println("*-------------------------------*");
                         System.out.println("| ERRO: POKEMON NAO ENCONTRADO. |");
@@ -145,10 +147,11 @@ public class Menu {
                     }
                     waitForEnter();
                     break;
-                    case "5":
-                    System.out.print("Digite a quantidade de Registros: ");
+
+                case "5":
+                    System.out.print("Digite a quantidade de registros: ");
                     N = scan.nextInt();
-                    System.out.print("Digite a quantidade de Caminhos: ");
+                    System.out.print("Digite a quantidade de caminhos: ");
                     M = scan.nextInt();
                     Intercalacoes.iBComum(N, M);
                     waitForEnter();
