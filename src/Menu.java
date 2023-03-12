@@ -1,3 +1,6 @@
+// HENRIQUE DE ALMEIDA DINIZ
+// SAMUEL LUIZ DA CUNHA VIANA CRUZ
+
 import java.util.Date;
 import java.util.Scanner;
 
