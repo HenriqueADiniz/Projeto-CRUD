@@ -31,7 +31,7 @@ public class Menu {
             System.out.print("| 2) Ler                   |\n");
             System.out.print("| 3) Atualizar             |\n");
             System.out.print("| 4) Deletar               |\n");
-            System.out.print("|                          |\n");
+            System.out.print("| 5) Ordenação externa     |\n");
             System.out.print("| 0) Sair                  |\n");
             System.out.print("*--------------------------*\n");
             System.out.print("Digite uma opcao: ");

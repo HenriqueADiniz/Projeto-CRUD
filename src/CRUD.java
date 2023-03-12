@@ -107,7 +107,7 @@ public class CRUD {
      * se o pokemon lido tiver o mesmo id do novo pokemon,
      * cria o novo registro em bytes
      * 
-     * se o tamanho do novo regitro for igual ao antigo,
+     * se o tamanho do novo regitro for  menor ou igual ao antigo,
      * reescreve o pokemon na mesma posição
      * 
      * senao,
