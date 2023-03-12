@@ -15,10 +15,10 @@ public class CRUD {
      * ------
      * move o ponteiro pro inicio do arquivo
      * le a quantidade de ids
-     * cria a id do pokemon novo (qntd + 1)
+     * cria a id do pokemon novo 
      *
      * move o ponteiro pro inicio do arquivo
-     * altera a quantidade de id's nova para (qntd + 1)
+     * altera a quantidade de id's nova para (qntdReg)
      *
      * move o ponteiro pro fim do arquivo
      * converte o objeto para bytes
@@ -92,7 +92,7 @@ public class CRUD {
     /* ------
      * UPDATE
      * ------
-     * move o ponteiro pro inicio do arquivo (APOS O CABECALHO)
+     * move o ponteiro pro inicio do arquivo (apos o cabecalho)
      * varre o arquivo (tamReg = tamanho do registro + 1 da lapide (booleano) + 4 do tamanho (int))
      * 
      * em cada registro,

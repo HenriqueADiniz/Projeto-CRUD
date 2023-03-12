@@ -21,7 +21,7 @@ public class Menu {
         delay(1250);
         Scanner scan = new Scanner (System.in);
         while (true){
-            int hp, att, def, id;
+            int hp, att, def, id,N,M;
             String name, type1, type2, abilitiesTemp, dateTemp;
             System.out.print("\033[H\033[2J");
             System.out.print("*--------------------------*\n");
@@ -146,7 +146,11 @@ public class Menu {
                     waitForEnter();
                     break;
                     case "5":
-                    Intercalações.iBComum(5, 4);
+                    System.out.print("Digite a quantidade de Registros: ");
+                    N = scan.nextInt();
+                    System.out.print("Digite a quantidade de Caminhos: ");
+                    M = scan.nextInt();
+                    Intercalacoes.iBComum(N, M);
                     waitForEnter();
                     break;
                 case "0":
