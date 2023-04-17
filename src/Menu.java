@@ -1,12 +1,16 @@
 // HENRIQUE DE ALMEIDA DINIZ
 // SAMUEL LUIZ DA CUNHA VIANA CRUZ
 
+import java.io.RandomAccessFile;
 import java.util.Date;
 import java.util.Scanner;
 
 public class Menu {
     // caminho do arquivo .db
     private static final String DB_PATH = "tmp/pokemons.db";
+    private static final String BT_PATH = "tmp/Bplus.db";
+    private static final String H_PATH = "tmp/Hash.db";
+    private static final String HB_PATH = "tmp/HashB.db";
 
     /* ----
      * MAIN
@@ -20,7 +24,23 @@ public class Menu {
 
         Reader.main(args);
         CRUD crud = new CRUD(DB_PATH);
-        
+        Hash hash = new Hash(45, H_PATH, HB_PATH);
+        RandomAccessFile ras = new RandomAccessFile(DB_PATH,"rw");
+
+        int tamReg = 0;
+        boolean lapide = true;
+        ras.seek(4);
+        for (long j = 4; j < ras.length(); j += tamReg + 5) {
+            lapide = ras.readBoolean();
+            tamReg = ras.readInt();
+
+            byte [] ba = new byte [tamReg];
+            ras.read(ba);
+            Pokemon pokemon = new Pokemon(ba);
+             hash.create(tamReg,pokemon.getNumber());
+            
+        }
+
         delay(1250);
         Scanner scan = new Scanner (System.in);
         while (true){
