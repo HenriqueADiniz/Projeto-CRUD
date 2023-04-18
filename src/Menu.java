@@ -44,6 +44,8 @@ public class Menu {
             System.out.print("|                          |\n");
             System.out.print("| 5) Ordenacao Externa     |\n");
             System.out.print("|                          |\n");
+            System.out.print("| 6) Buscar na Arvore      |\n");
+            System.out.print("|                          |\n");
             System.out.print("| 0) Sair                  |\n");
             System.out.print("*--------------------------*\n");
             System.out.print("Digite uma opcao: ");
@@ -167,12 +169,14 @@ public class Menu {
                     waitForEnter();
                     break;
                 case "6":
-                    crud.ler(ras,index);
+                    CRUD.ler(ras,index);
                     waitForEnter();
                     break;
-                    case "7":
+
+                case "7":
                     waitForEnter();
                     break;
+                    
                 case "0":
                     System.exit(1);
                 

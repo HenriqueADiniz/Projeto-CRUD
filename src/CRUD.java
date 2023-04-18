@@ -3,9 +3,6 @@ import java.io.RandomAccessFile;
 import java.util.Scanner;
 import java.io.FileNotFoundException;
 import java.io.EOFException;
-import java.io.File;
-import java.io.FileReader;
-
 
 public class CRUD {
     // inicializa o RAS
@@ -74,49 +71,6 @@ public class CRUD {
      * se encontrado o registro a ser lido,
      * retorna o objeto pokemon
      */
-
-public static void ler(RandomAccessFile ras,ArvoreBmais index)throws IOException{
-     // Variáveis e Instâncias//
-     int len = 0;
-     String idProcurado = "";
-     long posIni = 0;
-     boolean valido;
-     Scanner sc = new Scanner(System.in);
-     byte ba[];
-     Pokemon filmeTemp = new Pokemon();
-     // Variáveis e Instâncias//
-     System.out.println("Digite o id: "); // Pede id para usuário
-        idProcurado = sc.nextLine();
-        posIni = index.read(idProcurado);
-
-        try {
-            ras.seek(posIni); // posiciona ponteiro no inicio do arquivo
-            valido = ras.readBoolean();// ler lapide -- se TRUE filme existe , caso FALSE filme apagado
-            len = ras.readInt(); // ler tamanho do registro
-            ba = new byte[len]; // cria um vetor de bytes com o tamanho do registro
-            ras.read(ba); // Ler registro
-            filmeTemp.fromByteArray(ba); // Transforma vetor de bytes lido por instancia de FIlme
-            posIni = ras.getFilePointer();// Marca posição que acabou o registro e será iniciado outro
-
-            if (valido == true) { // caso idProcurado e id do filme lido forem iguais
-                                  // e filme não tver sido apagado será escrito as
-                                  // informações.
-                System.out.println("-------------------------");
-                System.out.println("");
-                System.out.println("POS = " + posIni);
-                System.out.println("Number = " + (filmeTemp.getNumber()-1));
-                System.out.println("Nome = " + filmeTemp.getName());
-                System.out.println("Tipo1 = " + filmeTemp.getType1());
-                System.out.println("DATA " + filmeTemp.getDate());
-            
-            }
-        } catch (java.io.IOException e) {
-            System.out.println("Não achei o Pokemon");
-         } // Erro fim do arquivo , ou seja , não achou o
-                   
-}
-
-
     public Pokemon read(int id) throws Exception{
         int tamReg = 0;
         boolean lapide = true;
@@ -138,7 +92,45 @@ public static void ler(RandomAccessFile ras,ArvoreBmais index)throws IOException
         }
         return null;
     }
-   
+    public static void ler(RandomAccessFile ras, ArvoreBmais index)throws IOException{
+        // Variáveis e Instâncias//
+        int len = 0;
+        String idProcurado = "";
+        long posIni = 0;
+        boolean valido;
+        Scanner sc = new Scanner(System.in);
+        byte ba[];
+        Pokemon filmeTemp = new Pokemon();
+        System.out.print("Digite o ID do Pokemon a ser lido: "); // Pede id para usuário
+        idProcurado = sc.nextLine();
+        System.out.println();
+        posIni = index.read(idProcurado);
+        try {
+            ras.seek(posIni); // posiciona ponteiro no inicio do arquivo
+            valido = ras.readBoolean();// ler lapide -- se TRUE filme existe , caso FALSE filme apagado
+            len = ras.readInt(); // ler tamanho do registro
+            ba = new byte[len]; // cria um vetor de bytes com o tamanho do registro
+            ras.read(ba); // Ler registro
+            filmeTemp.fromByteArray(ba); // Transforma vetor de bytes lido por instancia de FIlme
+            posIni = ras.getFilePointer();// Marca posição que acabou o registro e será iniciado outro
+            if (valido == true) { // caso idProcurado e id do filme lido forem iguais
+                                 // e filme não tver sido apagado será escrito as
+                                 // informações.
+                System.out.println("+---------------------+");
+                System.out.println("| POKEMON ENCONTRADO! |");
+                System.out.println("+---------------------+------------");
+                System.out.println("POSIÇÃO: " + posIni + "\n");
+                System.out.println(filmeTemp.toString());
+                System.out.println("-----------------------------------");
+            }
+        } catch (java.io.IOException e) {
+            System.out.println("*-------------------------------*");
+            System.out.println("| ERRO: POKEMON NAO ENCONTRADO. |");
+            System.out.println("*-------------------------------*");
+        } // Erro fim do arquivo , ou seja , não achou o
+
+    }
+
     /* ------
      * UPDATE
      * ------
