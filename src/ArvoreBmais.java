@@ -13,7 +13,7 @@ public class ArvoreBmais {
     private int  maxElementos;          // Variável igual a ordem - 1 para facilitar a clareza do código
     private int  maxFilhos;             // Variável igual a ordem para facilitar a clareza do código
     private RandomAccessFile arquivo;   // Arquivo em que a árvore será armazenada
-    private String nomeArquivo ="tmp/Bplus.db";
+    private String nomeArquivo;
     
     // Variáveis usadas nas funções recursivas (já que não é possível passar valores por referência)
     private String  chaveAux;

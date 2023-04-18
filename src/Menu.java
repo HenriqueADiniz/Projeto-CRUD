@@ -21,25 +21,11 @@ public class Menu {
      */
     public static void main(String[] args) throws Exception {
         System.out.print("\033[H\033[2J");
+        ArvoreBmais index= new ArvoreBmais(8, BT_PATH);
 
         Reader.main(args);
         CRUD crud = new CRUD(DB_PATH);
-        Hash hash = new Hash(45, H_PATH, HB_PATH);
-        RandomAccessFile ras = new RandomAccessFile(DB_PATH,"rw");
-
-        int tamReg = 0;
-        boolean lapide = true;
-        ras.seek(4);
-        for (long j = 4; j < ras.length(); j += tamReg + 5) {
-            lapide = ras.readBoolean();
-            tamReg = ras.readInt();
-
-            byte [] ba = new byte [tamReg];
-            ras.read(ba);
-            Pokemon pokemon = new Pokemon(ba);
-             hash.create(tamReg,pokemon.getNumber());
-            
-        }
+        RandomAccessFile ras=new RandomAccessFile(DB_PATH, "rw");
 
         delay(1250);
         Scanner scan = new Scanner (System.in);
@@ -87,7 +73,7 @@ public class Menu {
                     String[] abilities = abilitiesTemp.split(",");
 
                     Pokemon criado = new Pokemon(name, type1, type2, abilities, hp, att, def, date);
-                    int i = crud.create(criado);
+                    int i = crud.create(criado,index);
                     System.out.println("\nID criado: " + i);
 
                     waitForEnter();
@@ -179,11 +165,20 @@ public class Menu {
                     Intercalacoes.iBComum(N, M);
                     waitForEnter();
                     break;
+                case "6":
+                    crud.ler(ras,index);
+                    waitForEnter();
+                    break;
+                    case "7":
+                    crud.deletar(ras, index);
+                    waitForEnter();
+                    break;
                 case "0":
                     System.exit(1);
                 
                 default:
                     break;
+            
             }
         }
     }
