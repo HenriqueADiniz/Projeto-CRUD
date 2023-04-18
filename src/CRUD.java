@@ -104,14 +104,14 @@ public static void ler(RandomAccessFile ras,ArvoreBmais index)throws IOException
                 System.out.println("-------------------------");
                 System.out.println("");
                 System.out.println("POS = " + posIni);
-                System.out.println("Number = " + filmeTemp.getNumber());
-                System.out.println("Nome = " + filmeTemp.getNumber());
+                System.out.println("Number = " + (filmeTemp.getNumber()-1));
+                System.out.println("Nome = " + filmeTemp.getName());
                 System.out.println("Tipo1 = " + filmeTemp.getType1());
                 System.out.println("DATA " + filmeTemp.getDate());
             
             }
         } catch (java.io.IOException e) {
-            System.out.println("Não achei o filme");
+            System.out.println("Não achei o Pokemon");
          } // Erro fim do arquivo , ou seja , não achou o
                    
 }
@@ -164,7 +164,7 @@ public static void ler(RandomAccessFile ras,ArvoreBmais index)throws IOException
      * deleta o antigo pokemon que possuia o id que esta sendo atualizando
      * escreve o pokemon atualizado sem alterar seu id original ao final do arquivo
      */
-    public boolean update(RandomAccessFile ras, Pokemon novo) throws Exception {
+    public boolean update(RandomAccessFile ras, Pokemon novo,ArvoreBmais index) throws Exception {
         boolean lapide = true;
         int tamReg = 0;
 
@@ -185,14 +185,17 @@ public static void ler(RandomAccessFile ras,ArvoreBmais index)throws IOException
                     if(bytesNovo.length <= tamReg) {
                         ras.seek(posInicial + 5);
                         ras.write(bytesNovo);
+                        index.create(Integer.toString(novo.getNumber()),Long.valueOf(ras.length()).intValue());
                         return true;
                     } else {
                         ras.seek(posInicial);
                         ras.writeBoolean(false);
                         ras.seek(ras.length()); 
+                        int posNova = Long.valueOf(ras.length()).intValue();
                         ras.writeBoolean(true);
                         ras.writeInt(novo.toByteArray().length);
                         ras.write(novo.toByteArray());
+                        index.create(Integer.toString((novo.getNumber())),posNova);
                         System.out.println("Update realizado no final do arquivo!");
                         return true;
                     }
@@ -201,8 +204,8 @@ public static void ler(RandomAccessFile ras,ArvoreBmais index)throws IOException
         }
         return false;
     }
-    public boolean update(Pokemon pokemon) throws Exception{
-        return update(ras, pokemon);
+    public boolean update(Pokemon pokemon,ArvoreBmais index) throws Exception{
+        return update(ras, pokemon,index);
     }
 
     /* ------
@@ -224,7 +227,7 @@ public static void ler(RandomAccessFile ras,ArvoreBmais index)throws IOException
      * move o ponteiro para a lapide do registro
      * e a demarca como excluida (false)
      */
-    public boolean delete(RandomAccessFile ras, int id) throws Exception{
+    public boolean delete(RandomAccessFile ras, int id,ArvoreBmais index) throws Exception{
         boolean lapide = true;
         int tamReg = 0;
 
@@ -242,6 +245,7 @@ public static void ler(RandomAccessFile ras,ArvoreBmais index)throws IOException
                 if(pokemon.getNumber() == id) {
                     ras.seek(posInicial);
                     ras.writeBoolean(false);
+                    index.delete(Integer.toString(pokemon.getNumber()));
                     return true;
                 }
             }
@@ -249,86 +253,10 @@ public static void ler(RandomAccessFile ras,ArvoreBmais index)throws IOException
 
         return false;
     }
-    public boolean delete(int id) throws Exception{
-        return delete(ras, id);
+    public boolean delete(int id,ArvoreBmais index) throws Exception{
+        return delete(ras, id,index);
     }
-    /* Função DELETE do CRUD */
-    public static void deletar(RandomAccessFile ras,ArvoreBmais index)
-            throws Exception {
-        // Variáveis e Instâncias
-        int idDeletado = 0, len = 0;
-        long posIni = 0, posDel = 0;
-        byte ba[];
-        boolean valido;
-        Pokemon filmeTemp = new Pokemon();
-
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Digite o id que você deseja deletar: ");// Pede id para usuário do filme a ser deletado
-        idDeletado = sc.nextInt();
-
-        try {
-            // Funcionamento similar ao READ, porém a posição incial é marcada por meio da
-            // variavel posDel
-
-            posDel = index.read(Integer.toString(idDeletado));
-
-            ras.seek(posDel);
-            valido = ras.readBoolean();
-            len = ras.readInt();
-            ba = new byte[len];
-            ras.read(ba);
-            filmeTemp.fromByteArray(ba);
-            posDel = ras.getFilePointer();
-
-            if (valido == true) {
-                ras.seek(posIni);
-                ras.writeBoolean(false);// lápide <- false
-                index.delete(Integer.toString(filmeTemp.getNumber()));
-                System.out.println("Filme Deletado com sucesso!");
-            }
-        } catch (java.io.IOException e) {
-            System.out.println("Não achei o filme");
-        }
-
-    }
-
-     /* Função DELETE do CRUD recebendo o ID como parâmetro */
-     public static void deletar(RandomAccessFile arq, int idDeletado, ArvoreBmais index)
-     throws Exception {
- int len = 0;
- long posIni = 0, posDel = 0;
- byte ba[];
- boolean valido;
- Pokemon filmeTemp = new Pokemon();
- while (true) {
-     try {
-         arq.seek(posDel);
-         posIni = arq.getFilePointer();
-         valido = arq.readBoolean();
-         len = arq.readInt();
-         ba = new byte[len];
-         arq.read(ba);
-         filmeTemp.fromByteArray(ba);
-         posDel = arq.getFilePointer();
-
-         if (idDeletado == filmeTemp.getNumber() && valido == true) {
-             arq.seek(posIni);
-             arq.writeBoolean(false);
-             index.delete(Integer.toString(filmeTemp.getNumber()));
-             System.out.println("Filme Deletado com sucesso!");
-             break;
-         }
-     } catch (EOFException e) {
-         System.out.println("Acabou o arquivo não achei o filme");
-         break;
-     }
- }
-
-}
-
-
-
-
+  
 
     public static void criaIndexArvoreB(RandomAccessFile arq, ArvoreBmais index)
             throws IOException {

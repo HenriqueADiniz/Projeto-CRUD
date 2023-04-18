@@ -26,6 +26,7 @@ public class Menu {
         Reader.main(args);
         CRUD crud = new CRUD(DB_PATH);
         RandomAccessFile ras=new RandomAccessFile(DB_PATH, "rw");
+        crud.create(null, index);
 
         delay(1250);
         Scanner scan = new Scanner (System.in);
@@ -74,7 +75,7 @@ public class Menu {
 
                     Pokemon criado = new Pokemon(name, type1, type2, abilities, hp, att, def, date);
                     int i = crud.create(criado,index);
-                    System.out.println("\nID criado: " + i);
+                    System.out.println("\nID criado: " + (i-1));
 
                     waitForEnter();
                     break;
@@ -125,8 +126,8 @@ public class Menu {
                     abilities = abilitiesTemp.split(",");
 
                     System.out.println();
-                    Pokemon atualizado = new Pokemon(id, name, type1, type2, abilities, hp, att, def, date);
-                    Boolean upd = crud.update(atualizado);
+                    Pokemon atualizado = new Pokemon((id+1), name, type1, type2, abilities, hp, att, def, date);
+                    Boolean upd = crud.update(atualizado,index);
                     if (upd){
                         System.out.println("*---------------------------------*");
                         System.out.println("| POKEMON ATUALIZADO COM SUCESSO! |");
@@ -144,7 +145,7 @@ public class Menu {
                     int idDel = scan.nextInt();
 
                     System.out.println();
-                    Boolean del = crud.delete(idDel);
+                    Boolean del = crud.delete(idDel,index);
                     if (del){
                         System.out.println("*-------------------------------*");
                         System.out.println("| POKEMON DELETADO COM SUCESSO! |");
@@ -170,7 +171,6 @@ public class Menu {
                     waitForEnter();
                     break;
                     case "7":
-                    crud.deletar(ras, index);
                     waitForEnter();
                     break;
                 case "0":
