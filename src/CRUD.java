@@ -132,6 +132,54 @@ public class CRUD {
         } // Erro fim do arquivo , ou seja , não achou o
 
     }
+    public static void lerHash(RandomAccessFile arq, Hash index)
+            throws NumberFormatException, Exception {
+        // Variáveis e Instâncias//
+        int len = 0;
+        String idProcurado = "";
+        long posIni = 0;
+        boolean valido;
+        byte ba[];
+        Scanner sc = new Scanner(System.in);
+        Pokemon filmeTemp = new Pokemon();
+        // Variáveis e Instâncias//
+
+        System.out.println("Digite o id: "); // Pede id para usuário
+        idProcurado = sc.nextLine();
+        posIni = index.read(Integer.parseInt(idProcurado));
+
+        try {
+            arq.seek(posIni); // posiciona ponteiro no inicio do arquivo
+            valido = arq.readBoolean();// ler lapide -- se TRUE filme existe , caso FALSE filme apagado
+            len = arq.readInt(); // ler tamanho do registro
+            ba = new byte[len]; // cria um vetor de bytes com o tamanho do registro
+            arq.read(ba); // Ler registro
+            filmeTemp.fromByteArray(ba); // Transforma vetor de bytes lido por instancia de FIlme
+            posIni = arq.getFilePointer();// Marca posição que acabou o registro e será iniciado outro
+
+            if (valido == true) { // caso idProcurado e id do filme lido forem iguais
+                                  // e filme não tver sido apagado será escrito as
+                                  // informações.
+                                  filmeTemp.setNumber(filmeTemp.getNumber()-1);
+                                  System.out.println("+---------------------+");
+                                  System.out.println("| POKEMON ENCONTRADO! |");
+                                  System.out.println("+---------------------+------------");
+                                  System.out.println("POSIÇÃO: " + posIni + "\n");
+                                  System.out.println(filmeTemp.toString());
+                                  System.out.println("-----------------------------------");
+        }
+    }catch (java.io.IOException e) {
+            System.out.println("Não achei o filme"); // Erro fim do arquivo , ou seja , não achou o
+                                                     // filme
+        }
+
+        /*
+         * Vale ressaltar que foi usado um while(true) tanto no read quanto no update e
+         * delete, pois mesmo que o id certo for
+         * achado ele podia estar apagado, e se um filme com o mesmo id fosse criado,
+         * não seria identificado, dessa forma , esse erro identificado foi corrigido.
+         */
+    }
 
     /* ------
      * UPDATE
@@ -158,7 +206,7 @@ public class CRUD {
      * deleta o antigo pokemon que possuia o id que esta sendo atualizando
      * escreve o pokemon atualizado sem alterar seu id original ao final do arquivo
      */
-    public boolean update(RandomAccessFile ras, Pokemon novo,ArvoreBmais index) throws Exception {
+    public boolean update(RandomAccessFile ras, Pokemon novo,ArvoreBmais index,Hash index2) throws Exception {
         boolean lapide = true;
         int tamReg = 0;
 
@@ -180,6 +228,7 @@ public class CRUD {
                         ras.seek(posInicial + 5);
                         ras.write(bytesNovo);
                         index.create(Integer.toString(novo.getNumber()),Long.valueOf(ras.length()).intValue());
+                        index2.create(novo.getNumber(), ras.length());
                         return true;
                     } else {
                         ras.seek(posInicial);
@@ -190,6 +239,7 @@ public class CRUD {
                         ras.writeInt(novo.toByteArray().length);
                         ras.write(novo.toByteArray());
                         index.create(Integer.toString((novo.getNumber())),posNova);
+                        index2.create(novo.getNumber(), posNova);
                         System.out.println("Update realizado no final do arquivo!");
                         return true;
                     }
@@ -198,8 +248,8 @@ public class CRUD {
         }
         return false;
     }
-    public boolean update(Pokemon pokemon,ArvoreBmais index) throws Exception{
-        return update(ras, pokemon,index);
+    public boolean update(Pokemon pokemon,ArvoreBmais index,Hash index2) throws Exception{
+        return update(ras, pokemon,index,index2);
     }
 
     /* ------
@@ -221,7 +271,7 @@ public class CRUD {
      * move o ponteiro para a lapide do registro
      * e a demarca como excluida (false)
      */
-    public boolean delete(RandomAccessFile ras, int id,ArvoreBmais index) throws Exception{
+    public boolean delete(RandomAccessFile ras, int id,ArvoreBmais index,Hash index2) throws Exception{
         boolean lapide = true;
         int tamReg = 0;
 
@@ -240,6 +290,8 @@ public class CRUD {
                     ras.seek(posInicial);
                     ras.writeBoolean(false);
                     index.delete(Integer.toString(pokemon.getNumber()));
+                    index2.delete(pokemon.getNumber());
+
                     return true;
                 }
             }
@@ -247,8 +299,8 @@ public class CRUD {
 
         return false;
     }
-    public boolean delete(int id,ArvoreBmais index) throws Exception{
-        return delete(ras, id,index);
+    public boolean delete(int id,ArvoreBmais index,Hash index2) throws Exception{
+        return delete(ras, id,index,index2);
     }
   
 

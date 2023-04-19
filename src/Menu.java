@@ -28,7 +28,6 @@ public class Menu {
         Reader.main(args);
         CRUD crud = new CRUD(DB_PATH);
         RandomAccessFile ras=new RandomAccessFile(DB_PATH, "rw");
-        crud.create(null, index,index2);
 
         delay(1250);
         Scanner scan = new Scanner (System.in);
@@ -131,7 +130,7 @@ public class Menu {
 
                     System.out.println();
                     Pokemon atualizado = new Pokemon((id+1), name, type1, type2, abilities, hp, att, def, date);
-                    Boolean upd = crud.update(atualizado,index);
+                    Boolean upd = crud.update(atualizado,index,index2);
                     if (upd){
                         System.out.println("*---------------------------------*");
                         System.out.println("| POKEMON ATUALIZADO COM SUCESSO! |");
@@ -149,7 +148,7 @@ public class Menu {
                     int idDel = scan.nextInt();
 
                     System.out.println();
-                    Boolean del = crud.delete(idDel,index);
+                    Boolean del = crud.delete(idDel,index,index2);
                     if (del){
                         System.out.println("*-------------------------------*");
                         System.out.println("| POKEMON DELETADO COM SUCESSO! |");
@@ -176,6 +175,7 @@ public class Menu {
                     break;
 
                 case "7":
+                    CRUD.lerHash(ras, index2);
                     waitForEnter();
                     break;
                     
