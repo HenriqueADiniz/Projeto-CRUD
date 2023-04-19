@@ -89,6 +89,7 @@ public class Reader {
      */
     public static void inicializarBD(List<Pokemon> listaDePokemons) throws Exception {
         RandomAccessFile ras = new RandomAccessFile(DB_PATH, "rw");
+        ArvoreBmais arvore = new ArvoreBmais(8,"tmp/Bplus.db" );
         int qntReg = 0;
         ras.writeInt(qntReg);
 
@@ -96,8 +97,9 @@ public class Reader {
             byte [] barr = listaDePokemons.get(i).toByteArray();
             ras.writeBoolean(true);
             ras.writeInt(barr.length);
-            ras.write(barr);
 
+            ras.write(barr);
+            arvore.create(Integer.toString(barr.length), qntReg);
             qntReg++;
         }
 

@@ -46,7 +46,7 @@ public class Pokemon {
     }
     @Override
     public String toString(){
-        return "ID: " + this.number + "\nNome: " + this.name + "\nTipo 1: " + this.type1 + "\nTipo 2: " + this.type2 + "\nHabilidades: " + Tratamentos.printaMultivalorados(abilities) + "\nHP: " + this.hp + "\nAtaque: " + this.att + "\nDefesa: " + this.def + "\nData: " + Tratamentos.printaDatas(this.date);
+        return "Numero: " + this.number + "\nNome: " + this.name + "\nTipo 1: " + this.type1 + "\nTipo 2: " + this.type2 + "\nHabilidades: " + Tratamentos.printaMultivalorados(abilities) + "\nHP: " + this.hp + "\nAtaque: " + this.att + "\nDefesa: " + this.def + "\nData: " + Tratamentos.printaDatas(this.date);
     }
     
     //=====GETTERS & SETTERS=====//

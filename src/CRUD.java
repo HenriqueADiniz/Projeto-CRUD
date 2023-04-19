@@ -30,7 +30,7 @@ public class CRUD {
      *
      * retorna o id do registro gerado
      */
-     public int create(RandomAccessFile ras, Pokemon pokemon,ArvoreBmais index) throws IOException{
+     public int create(RandomAccessFile ras, Pokemon pokemon,ArvoreBmais index,Hash index2) throws Exception{
         if (pokemon == null) pokemon = new Pokemon();
         
         ras.seek(0);
@@ -47,10 +47,11 @@ public class CRUD {
         ras.writeInt(ba.length);
         ras.write(ba);
         index.create(Integer.toString(pokemon.getNumber()),Long.valueOf(ras.length()).intValue());
+        index2.create(pokemon.getNumber(),ras.length());
         return pokemon.getNumber();
     }
-    public int create(Pokemon pokemon,ArvoreBmais index) throws IOException{
-       return create(ras,pokemon,index);
+    public int create(Pokemon pokemon,ArvoreBmais index,Hash index2) throws Exception{
+       return create(ras,pokemon,index,index2);
    }
    
 
@@ -100,7 +101,7 @@ public class CRUD {
         boolean valido;
         Scanner sc = new Scanner(System.in);
         byte ba[];
-        Pokemon filmeTemp = new Pokemon();
+        Pokemon pokemonTemp = new Pokemon();
         System.out.print("Digite o ID do Pokemon a ser lido: "); // Pede id para usuário
         idProcurado = sc.nextLine();
         System.out.println();
@@ -111,16 +112,17 @@ public class CRUD {
             len = ras.readInt(); // ler tamanho do registro
             ba = new byte[len]; // cria um vetor de bytes com o tamanho do registro
             ras.read(ba); // Ler registro
-            filmeTemp.fromByteArray(ba); // Transforma vetor de bytes lido por instancia de FIlme
+            pokemonTemp.fromByteArray(ba); // Transforma vetor de bytes lido por instancia de FIlme
             posIni = ras.getFilePointer();// Marca posição que acabou o registro e será iniciado outro
             if (valido == true) { // caso idProcurado e id do filme lido forem iguais
                                  // e filme não tver sido apagado será escrito as
                                  // informações.
+                pokemonTemp.setNumber(pokemonTemp.getNumber()-1);
                 System.out.println("+---------------------+");
                 System.out.println("| POKEMON ENCONTRADO! |");
                 System.out.println("+---------------------+------------");
                 System.out.println("POSIÇÃO: " + posIni + "\n");
-                System.out.println(filmeTemp.toString());
+                System.out.println(pokemonTemp.toString());
                 System.out.println("-----------------------------------");
             }
         } catch (java.io.IOException e) {

@@ -21,12 +21,14 @@ public class Menu {
      */
     public static void main(String[] args) throws Exception {
         System.out.print("\033[H\033[2J");
+        
         ArvoreBmais index= new ArvoreBmais(8, BT_PATH);
+        Hash index2 =new Hash(45, HB_PATH, H_PATH);
 
         Reader.main(args);
         CRUD crud = new CRUD(DB_PATH);
         RandomAccessFile ras=new RandomAccessFile(DB_PATH, "rw");
-        crud.create(null, index);
+        crud.create(null, index,index2);
 
         delay(1250);
         Scanner scan = new Scanner (System.in);
@@ -76,7 +78,7 @@ public class Menu {
                     String[] abilities = abilitiesTemp.split(",");
 
                     Pokemon criado = new Pokemon(name, type1, type2, abilities, hp, att, def, date);
-                    int i = crud.create(criado,index);
+                    int i = crud.create(criado,index,index2);
                     System.out.println("\nID criado: " + (i-1));
 
                     waitForEnter();
