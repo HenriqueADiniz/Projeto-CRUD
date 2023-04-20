@@ -7,10 +7,12 @@ import java.io.RandomAccessFile;
 import com.opencsv.CSVReader;
 
 public class Reader {
-    // caminho do arquivo .csv
+    // caminho dos arquivos
     private static final String CSV_PATH = "tmp/pokemons.csv";
-    // caminho do arquivo .db
     private static final String DB_PATH = "tmp/pokemons.db";
+    private static final String BT_PATH = "tmp/Bplus.db";
+    private static final String H_PATH = "tmp/Hash.db";
+    private static final String HB_PATH = "tmp/HashB.db";
 
     /* ----
      * MAIN
@@ -89,7 +91,8 @@ public class Reader {
      */
     public static void inicializarBD(List<Pokemon> listaDePokemons) throws Exception {
         RandomAccessFile ras = new RandomAccessFile(DB_PATH, "rw");
-        ArvoreBmais arvore = new ArvoreBmais(8,"tmp/Bplus.db" );
+        ArvoreBmais arvore = new ArvoreBmais(8, BT_PATH);
+        Hash hash = new Hash(95, HB_PATH, H_PATH);
         int qntReg = 0;
         ras.writeInt(qntReg);
 
@@ -99,7 +102,8 @@ public class Reader {
             ras.writeInt(barr.length);
 
             ras.write(barr);
-            arvore.create(Integer.toString(barr.length), qntReg);
+            arvore.create(Integer.toString(barr.length), Long.valueOf(ras.length()).intValue());
+            hash.create(barr.length, ras.length());
             qntReg++;
         }
 

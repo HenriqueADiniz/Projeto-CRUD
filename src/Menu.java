@@ -46,6 +46,7 @@ public class Menu {
             System.out.print("| 5) Ordenacao Externa     |\n");
             System.out.print("|                          |\n");
             System.out.print("| 6) Buscar na Arvore      |\n");
+            System.out.print("| 7) Buscar no Hash        |\n");
             System.out.print("|                          |\n");
             System.out.print("| 0) Sair                  |\n");
             System.out.print("*--------------------------*\n");
@@ -169,6 +170,7 @@ public class Menu {
                     Intercalacoes.iBComum(N, M);
                     waitForEnter();
                     break;
+
                 case "6":
                     CRUD.ler(ras,index);
                     waitForEnter();
