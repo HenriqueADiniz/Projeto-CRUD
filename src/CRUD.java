@@ -228,7 +228,7 @@ public class CRUD {
                         ras.seek(posInicial + 5);
                         ras.write(bytesNovo);
                         index.create(Integer.toString(novo.getNumber()),Long.valueOf(ras.length()).intValue());
-                        index2.create(novo.getNumber(), ras.length());
+                        index2.update(novo.getNumber(), ras.length());
                         return true;
                     } else {
                         delete(pokemon.getNumber(), index, index2);
@@ -237,7 +237,7 @@ public class CRUD {
                         ras.seek(ras.length()); 
                         int posNova = Long.valueOf(ras.length()).intValue();
                         index.create(Integer.toString((novo.getNumber())),posNova);
-                        index2.create(novo.getNumber(), posNova);
+                        index2.update(posNova, posNova);
                         ras.writeBoolean(true);
                         ras.writeInt(novo.toByteArray().length);
                         ras.write(novo.toByteArray());
