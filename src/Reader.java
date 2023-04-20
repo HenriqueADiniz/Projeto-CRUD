@@ -102,8 +102,8 @@ public class Reader {
             ras.writeInt(barr.length);
 
             ras.write(barr);
-            arvore.create(Integer.toString(barr.length), Long.valueOf(ras.length()).intValue());
-            hash.create(barr.length, ras.length());
+          //  arvore.create(Integer.toString(barr.length), Long.valueOf(ras.length()).intValue());
+            //hash.create(barr.length, ras.length());
             qntReg++;
         }
 

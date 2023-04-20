@@ -231,7 +231,7 @@ public class CRUD {
                         index2.create(novo.getNumber(), ras.length());
                         return true;
                     } else {
-                        delete(novo.getNumber(), index, index2);
+                        delete(pokemon.getNumber(), index, index2);
                         ras.seek(posInicial);
                         ras.writeBoolean(false);
                         ras.seek(ras.length()); 
