@@ -28,6 +28,7 @@ public class Menu {
         Reader.main(args);
         CRUD crud = new CRUD(DB_PATH);
         RandomAccessFile ras=new RandomAccessFile(DB_PATH, "rw");
+        crud.create(null, index, index2);
 
         delay(1250);
         Scanner scan = new Scanner (System.in);

@@ -226,19 +226,17 @@ public class CRUD {
                         index2.update(novo.getNumber(), ras.length());
                         return true;
                     } else {
-                        delete(pokemon.getNumber(), index, index2);
                         ras.seek(posInicial);
                         ras.writeBoolean(false);
                         ras.seek(ras.length()); 
                         int posNova = Long.valueOf(ras.length()).intValue();
-                        index.create(Integer.toString((novo.getNumber())),posNova);
-                        index2.update(posNova, posNova);
+                        index.update(Integer.toString((novo.getNumber()-1)),posNova);
+                        index2.update(novo.getNumber()-1, posNova);
                         ras.writeBoolean(true);
                         ras.writeInt(novo.toByteArray().length);
                         ras.write(novo.toByteArray());
             
                         System.out.println("Update realizado no final do arquivo!");
-                        System.out.println("\n Novo id ="+novo.getNumber());
                         return true;
                     }
                 }
