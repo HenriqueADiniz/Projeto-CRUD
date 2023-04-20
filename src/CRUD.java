@@ -224,23 +224,26 @@ public class CRUD {
                 if(pokemon.getNumber() == novo.getNumber()) {
                     byte [] bytesNovo = novo.toByteArray();
 
-                    if(bytesNovo.length <= tamReg) {
+                    if(bytesNovo.length < tamReg) {
                         ras.seek(posInicial + 5);
                         ras.write(bytesNovo);
                         index.create(Integer.toString(novo.getNumber()),Long.valueOf(ras.length()).intValue());
                         index2.create(novo.getNumber(), ras.length());
                         return true;
                     } else {
+                        delete(novo.getNumber(), index, index2);
                         ras.seek(posInicial);
                         ras.writeBoolean(false);
                         ras.seek(ras.length()); 
                         int posNova = Long.valueOf(ras.length()).intValue();
+                        index.create(Integer.toString((novo.getNumber())),posNova);
+                        index2.create(novo.getNumber(), posNova);
                         ras.writeBoolean(true);
                         ras.writeInt(novo.toByteArray().length);
                         ras.write(novo.toByteArray());
-                        index.create(Integer.toString((novo.getNumber())),posNova);
-                        index2.create(novo.getNumber(), posNova);
+            
                         System.out.println("Update realizado no final do arquivo!");
+                        System.out.println("\n Novo id ="+novo.getNumber());
                         return true;
                     }
                 }
@@ -251,6 +254,8 @@ public class CRUD {
     public boolean update(Pokemon pokemon,ArvoreBmais index,Hash index2) throws Exception{
         return update(ras, pokemon,index,index2);
     }
+
+
 
     /* ------
      * DELETE
