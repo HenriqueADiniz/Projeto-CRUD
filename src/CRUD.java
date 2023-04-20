@@ -108,14 +108,14 @@ public class CRUD {
         posIni = index.read(idProcurado);
         try {
             ras.seek(posIni); // posiciona ponteiro no inicio do arquivo
-            valido = ras.readBoolean();// ler lapide -- se TRUE filme existe , caso FALSE filme apagado
+            valido = ras.readBoolean();// ler lapide -- se TRUE pokemon existe , caso FALSE pokemon apagado
             len = ras.readInt(); // ler tamanho do registro
             ba = new byte[len]; // cria um vetor de bytes com o tamanho do registro
             ras.read(ba); // Ler registro
-            pokemonTemp.fromByteArray(ba); // Transforma vetor de bytes lido por instancia de FIlme
+            pokemonTemp.fromByteArray(ba); // Transforma vetor de bytes lido por instancia de Pokemon
             posIni = ras.getFilePointer();// Marca posição que acabou o registro e será iniciado outro
-            if (valido == true) { // caso idProcurado e id do filme lido forem iguais
-                                 // e filme não tver sido apagado será escrito as
+            if (valido == true) { // caso idProcurado e id do Pokemon lido forem iguais
+                                 // e Pokemon não tver sido apagado será escrito as
                                  // informações.
                 pokemonTemp.setNumber(pokemonTemp.getNumber()-1);
                 System.out.println("+---------------------+");
@@ -129,7 +129,7 @@ public class CRUD {
             System.out.println("*-------------------------------*");
             System.out.println("| ERRO: POKEMON NAO ENCONTRADO. |");
             System.out.println("*-------------------------------*");
-        } // Erro fim do arquivo , ou seja , não achou o
+        } // Erro fim do arquivo , ou seja , não achou o Pokemon
 
     }
     public static void lerHash(RandomAccessFile arq, Hash index)
@@ -150,15 +150,15 @@ public class CRUD {
 
         try {
             arq.seek(posIni); // posiciona ponteiro no inicio do arquivo
-            valido = arq.readBoolean();// ler lapide -- se TRUE filme existe , caso FALSE filme apagado
+            valido = arq.readBoolean();// ler lapide -- se TRUE Pokemon existe , caso FALSE Pokemon apagado
             len = arq.readInt(); // ler tamanho do registro
             ba = new byte[len]; // cria um vetor de bytes com o tamanho do registro
             arq.read(ba); // Ler registro
-            filmeTemp.fromByteArray(ba); // Transforma vetor de bytes lido por instancia de FIlme
+            filmeTemp.fromByteArray(ba); // Transforma vetor de bytes lido por instancia de Pokemon
             posIni = arq.getFilePointer();// Marca posição que acabou o registro e será iniciado outro
 
-            if (valido == true) { // caso idProcurado e id do filme lido forem iguais
-                                  // e filme não tver sido apagado será escrito as
+            if (valido == true) { // caso idProcurado e id do Pokemon lido forem iguais
+                                  // e pokemon não tver sido apagado será escrito as
                                   // informações.
                                   filmeTemp.setNumber(filmeTemp.getNumber()-1);
                                   System.out.println("+---------------------+");
@@ -169,16 +169,11 @@ public class CRUD {
                                   System.out.println("-----------------------------------");
         }
     }catch (java.io.IOException e) {
-            System.out.println("Não achei o filme"); // Erro fim do arquivo , ou seja , não achou o
-                                                     // filme
+            System.out.println("Não achei o Pokemon"); // Erro fim do arquivo , ou seja , não achou o
+                                                     // Pokemon
         }
 
-        /*
-         * Vale ressaltar que foi usado um while(true) tanto no read quanto no update e
-         * delete, pois mesmo que o id certo for
-         * achado ele podia estar apagado, e se um filme com o mesmo id fosse criado,
-         * não seria identificado, dessa forma , esse erro identificado foi corrigido.
-         */
+
     }
 
     /* ------
