@@ -169,11 +169,11 @@ public class CRUD {
                                   System.out.println("-----------------------------------");
         }
     }catch (java.io.IOException e) {
-            System.out.println("Não achei o Pokemon"); // Erro fim do arquivo , ou seja , não achou o
+        System.out.println("*-------------------------------*");
+        System.out.println("| ERRO: POKEMON NAO ENCONTRADO. |");
+        System.out.println("*-------------------------------*"); // Erro fim do arquivo , ou seja , não achou o
                                                      // Pokemon
         }
-
-
     }
 
     /* ------

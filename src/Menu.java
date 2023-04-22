@@ -13,7 +13,7 @@ public class Menu {
     private static final String HB_PATH = "tmp/HashB.db";
 
     /* ----
-     * M11101AIN
+     * MAIN
      * ----
      * inicializa instancia do CRUD com o arquivo .db
      * aciona o arquivo reader e seus metodos
