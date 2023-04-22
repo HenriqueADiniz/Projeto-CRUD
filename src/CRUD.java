@@ -144,7 +144,7 @@ public class CRUD {
         Pokemon pokeTemp = new Pokemon();
         // Variáveis e Instâncias//
 
-        System.out.println("Digite o id: "); // Pede id para usuário
+        System.out.print("Digite o id: "); // Pede id para usuário
         idProcurado = sc.nextLine();
         posIni = index.read(Integer.parseInt(idProcurado));
 
