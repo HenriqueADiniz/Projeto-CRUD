@@ -7,8 +7,6 @@ import java.io.IOException;
 import java.io.RandomAccessFile;
 
 public class ArvoreBmais {
-
-    
     private int  ordem;                 // Número máximo de filhos que uma página pode conter
     private int  maxElementos;          // Variável igual a ordem - 1 para facilitar a clareza do código
     private int  maxFilhos;             // Variável igual a ordem para facilitar a clareza do código
