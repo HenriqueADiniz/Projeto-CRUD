@@ -141,7 +141,7 @@ public class CRUD {
         boolean valido;
         byte ba[];
         Scanner sc = new Scanner(System.in);
-        Pokemon filmeTemp = new Pokemon();
+        Pokemon pokeTemp = new Pokemon();
         // Variáveis e Instâncias//
 
         System.out.println("Digite o id: "); // Pede id para usuário
@@ -154,18 +154,18 @@ public class CRUD {
             len = arq.readInt(); // ler tamanho do registro
             ba = new byte[len]; // cria um vetor de bytes com o tamanho do registro
             arq.read(ba); // Ler registro
-            filmeTemp.fromByteArray(ba); // Transforma vetor de bytes lido por instancia de Pokemon
+            pokeTemp.fromByteArray(ba); // Transforma vetor de bytes lido por instancia de Pokemon
             posIni = arq.getFilePointer();// Marca posição que acabou o registro e será iniciado outro
 
             if (valido == true) { // caso idProcurado e id do Pokemon lido forem iguais
                                   // e pokemon não tver sido apagado será escrito as
                                   // informações.
-                                  filmeTemp.setNumber(filmeTemp.getNumber()-1);
+                                  pokeTemp.setNumber(pokeTemp.getNumber()-1);
                                   System.out.println("+---------------------+");
                                   System.out.println("| POKEMON ENCONTRADO! |");
                                   System.out.println("+---------------------+------------");
                                   System.out.println("POSIÇÃO: " + posIni + "\n");
-                                  System.out.println(filmeTemp.toString());
+                                  System.out.println(pokeTemp.toString());
                                   System.out.println("-----------------------------------");
         }
     }catch (java.io.IOException e) {
