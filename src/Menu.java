@@ -6,7 +6,7 @@ import java.util.Date;
 import java.util.Scanner;
 
 public class Menu {
-    // caminho do arquivo .db
+    // caminho dos arquivos
     private static final String DB_PATH = "tmp/pokemons.db";
     private static final String BT_PATH = "tmp/Bplus.db";
     private static final String H_PATH = "tmp/Hash.db";
