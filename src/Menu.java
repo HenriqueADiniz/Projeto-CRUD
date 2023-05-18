@@ -36,21 +36,25 @@ public class Menu {
             int hp, att, def, id,N,M;
             String name, type1, type2, abilitiesTemp, dateTemp;
             System.out.print("\033[H\033[2J");
-            System.out.print("*--------------------------*\n");
-            System.out.print("#    OPCOES DE REGISTRO    #\n");
-            System.out.print("*--------------------------*\n");
-            System.out.print("| 1) Criar                 |\n");
-            System.out.print("| 2) Ler                   |\n");
-            System.out.print("| 3) Atualizar             |\n");
-            System.out.print("| 4) Deletar               |\n");
-            System.out.print("|                          |\n");
-            System.out.print("| 5) Ordenacao Externa     |\n");
-            System.out.print("|                          |\n");
-            System.out.print("| 6) Buscar na Arvore      |\n");
-            System.out.print("| 7) Buscar no Hash        |\n");
-            System.out.print("|                          |\n");
-            System.out.print("| 0) Sair                  |\n");
-            System.out.print("*--------------------------*\n");
+            System.out.print("*---------------------------*\n");
+            System.out.print("#     OPCOES DE REGISTRO    #\n");
+            System.out.print("*---------------------------*\n");
+            System.out.print("| 1)  Criar                 |\n");
+            System.out.print("| 2)  Ler                   |\n");
+            System.out.print("| 3)  Atualizar             |\n");
+            System.out.print("| 4)  Deletar               |\n");
+            System.out.print("|                           |\n");
+            System.out.print("| 5)  Ordenacao Externa     |\n");
+            System.out.print("| 6)  Buscar na Arvore      |\n");
+            System.out.print("| 7)  Buscar no Hash        |\n");
+            System.out.print("|                           |\n");
+            System.out.print("| 8)  Comp.: LZW            |\n");
+            System.out.print("| 9)  Comp.: Huffman        |\n");
+            System.out.print("| 10) Descomp.: LZW         |\n");
+            System.out.print("| 11) Descomp.: Huffman     |\n");
+            System.out.print("|                           |\n");
+            System.out.print("| 0) Sair                   |\n");
+            System.out.print("*---------------------------*\n");
             System.out.print("Digite uma opcao: ");
             String opt = scan.next();
 
@@ -181,6 +185,21 @@ public class Menu {
                     CRUD.lerHash(ras, index2);
                     waitForEnter();
                     break;
+
+                case "8":
+                    // COMPRESSÃO LZW
+                    break;
+
+                case "9":
+                    // COMPRESSÃO HUFFMAN
+                    break;
+
+                case "10":
+                    // DESCOMPRESSÃO LZW
+                    break;
+
+                case "11":
+                    // DESCOMPRESSÃO HUFFMAN
                     
                 case "0":
                     System.exit(1);
