@@ -4,6 +4,7 @@
 import java.io.RandomAccessFile;
 import java.util.Date;
 import java.util.Scanner;
+import java.util.HashMap;
 
 public class Menu {
     // caminho dos arquivos

@@ -25,7 +25,7 @@ class LZW {
             while(raf.getFilePointer() < raf.length() - 1) {
 
                 // read lapide
-                originString += raf.readByte() + "~";
+                originString += raf.readBoolean() + "~";
                
                 // read size
                 originString += raf.readInt() + "~";
@@ -33,27 +33,31 @@ class LZW {
                 // read Id
                 originString += raf.readInt() + "~";
        
-                // read name, user, pass, cpf, city
-                for(int x = 0; x < 5; x++) {
+                // read name, type1, type2
+                for(int x = 0; x < 3; x++) {
 
                     originString += raf.readUTF() + "~";
                 }
-
-                // read balance
-                originString += raf.readFloat() + "~";
-
-                // read transactions
-                originString += raf.readInt() + "~";
-
-                // read emails number
-                int emailsNumber = raf.readInt();
-                originString += emailsNumber + "~";
-
-                // read emails
-                for(int i = 0; i < emailsNumber; i++) {
+                
+                // read abilities number
+                int abilitiesNumber = raf.readInt();
+                originString += abilitiesNumber + "~";
+                // read abilities
+               for(int i = 0; i < abilitiesNumber; i++) {
                     
-                    originString += raf.readUTF() + "~";
+             originString += raf.readUTF() + "~";
                 }
+                 // read hp, att, def
+                 for(int x = 0; x < 3; x++) {
+
+                    originString += raf.readInt() + "~";
+                }
+
+                // read date
+                originString += raf.readLong() + "~";
+
+            
+
             }
 
             raf.close();
@@ -205,20 +209,24 @@ class LZW {
 
             for(int i = 1; i < args.length; i++) {
 
-                raf.writeByte(Byte.parseByte(args[i]));
+                raf.writeBoolean(Boolean.parseBoolean(args[i]));
                 raf.writeInt(Integer.parseInt(args[++i]));
                 raf.writeInt(Integer.parseInt(args[++i]));
                 
-                for(int x = 0; x < 5; x++) raf.writeUTF(args[++i]);
-
-                raf.writeFloat(Float.parseFloat(args[++i]));
-                raf.writeInt(Integer.parseInt(args[++i]));
-
+                for(int x = 0; x < 3; x++) raf.writeUTF(args[++i]);
                 int emails_count = Integer.parseInt(args[++i]);
                 
                 raf.writeInt(emails_count);
 
                 for(int j = 0; j < emails_count; j++) raf.writeUTF(args[++i]);
+                
+
+                raf.writeFloat(Float.parseFloat(args[++i]));
+                raf.writeInt(Integer.parseInt(args[++i]));
+                for(int x = 0; x < 3; x++) raf.writeInt(Integer.parseInt(args[++i]));
+                raf.writeLong(Long.parseLong(args[++i]));
+                
+
             }
 
             raf.close();
