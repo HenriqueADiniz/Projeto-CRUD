@@ -213,7 +213,6 @@ public class Menu {
                     System.out.println("\n>>> Arquivo compactado com sucesso!");
                     System.out.println("\n>>> Arquivo descompactado com sucesso!");
                     break;
-            
 
                 case "9":
                     var frequency = makeFrequency(DB_PATH);
