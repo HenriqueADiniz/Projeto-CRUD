@@ -12,7 +12,7 @@ public class Menu {
     private static final String BT_PATH = "tmp/Bplus.db";
     private static final String H_PATH = "tmp/Hash.db";
     private static final String HB_PATH = "tmp/HashB.db";
-    private static final String teste_path = "tmp/teste.db";
+    private static final String teste_path = "tmp/LZW.db";
     public static HashMap<Character, Integer> makeFrequency(String filename) {
         var frequency = new HashMap<Character, Integer>();
         try {
@@ -45,7 +45,7 @@ public class Menu {
         Reader.main(args);
         CRUD crud = new CRUD(DB_PATH);
         RandomAccessFile ras=new RandomAccessFile(DB_PATH, "rw");
-        RandomAccessFile ran=new RandomAccessFile("tmp/teste.db", "rw");
+        RandomAccessFile ran=new RandomAccessFile("tmp/LZW.db", "rw");
         crud.create(null, index, index2);
 
         delay(1250);
@@ -66,10 +66,8 @@ public class Menu {
             System.out.print("| 6)  Buscar na Arvore      |\n");
             System.out.print("| 7)  Buscar no Hash        |\n");
             System.out.print("|                           |\n");
-            System.out.print("| 8)  Comp.: LZW            |\n");
-            System.out.print("| 9)  Comp.: Huffman        |\n");
-            System.out.print("| 10) Descomp.: LZW         |\n");
-            System.out.print("| 11) Descomp.: Huffman     |\n");
+            System.out.print("| 8)  LZW                   |\n");
+            System.out.print("| 9)  Huffman               |\n");
             System.out.print("|                           |\n");
             System.out.print("| 0) Sair                   |\n");
             System.out.print("*---------------------------*\n");
@@ -205,24 +203,26 @@ public class Menu {
                     break;
 
                 case "8":
-                    // COMPRESSÃO LZW
                     System.out.println("> Digite o nome do arquivo de saída: ");
-                    String fileName = scan.next();
+                    String fileName = "tmp/";
+                    fileName += scan.next();
 
                     LZW.compress(DB_PATH, fileName);
+                    LZW.decompress(fileName, teste_path);
 
-                    System.out.println("\n>>> Arquivo compactado com sucesso em \"" + fileName + "\"!");
+                    System.out.println("\n>>> Arquivo compactado com sucesso!");
+                    System.out.println("\n>>> Arquivo descompactado com sucesso!");
                     break;
             
 
                 case "9":
-                var frequency = makeFrequency(DB_PATH);
+                    var frequency = makeFrequency(DB_PATH);
                     var tree = new Huffman(frequency);
                     tree.traverse(Huffman.root, "");
                     try {
-                        RandomAccessFile source = new RandomAccessFile(DEFAULT_FILE, "rw");
-                        RandomAccessFile dest = new RandomAccessFile("h_compressed.bin", "rw");
-                        RandomAccessFile desc = new RandomAccessFile("h_descompressed.bin", "rw");
+                        RandomAccessFile source = new RandomAccessFile(DB_PATH, "rw");
+                        RandomAccessFile dest = new RandomAccessFile("tmp/huff_comp.bin", "rw");
+                        RandomAccessFile desc = new RandomAccessFile("tmp/huff_descomp.bin", "rw");
                         Huffman.compress(source, dest);
                         Huffman.decompress(dest, desc);
             
@@ -233,26 +233,9 @@ public class Menu {
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
-                    System.out.println("Arquivos h_compressed.bin, h_descompressed.bin criados");
-                    System.out.println("Feito!");
+                    System.out.println("\n>>> Arquivo compactado com sucesso!");
+                    System.out.println("\n>>> Arquivo descompactado com sucesso!");
                     break;
-                }
-                    // COMPRESSÃO HUFFMAN
-                    break;
-
-                case "10":
-                System.out.println("> Digite o nome do arquivo compactado: ");
-                String fileName2 = scan.next();
-
-                LZW.decompress(fileName2, teste_path);
-
-                System.out.println(
-                        "\n>>> Arquivo descompactado com sucesso em \"" + DB_PATH + "\"!");
-                break;
-                  
-
-                case "11":
-                    // DESCOMPRESSÃO HUFFMAN
                     
                 case "0":
                     System.exit(1);

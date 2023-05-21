@@ -19,8 +19,8 @@ public class Huffman {
     }
 
     static Node root;
-    static HashMap<Character, String> charMap = new HashMap<>();// hashmap de char pra String do byte O(1) 
-    static HashMap<String, Character> codeMap = new HashMap<>();// hashmap de String do byte pra char O(1) 
+    static HashMap<Character, String> charMap = new HashMap<>();    // hashmap de char pra String do byte O(1) 
+    static HashMap<String, Character> codeMap = new HashMap<>();    // hashmap de String do byte pra char O(1) 
 
     public Huffman(HashMap<Character, Integer> frequency) {
         PriorityQueue<Node> pq = new PriorityQueue<Node>(frequency.size(), new Comparator<Node>() {
@@ -55,15 +55,13 @@ public class Huffman {
         root = pq.poll();
     }
 
-    /*
+    /* --------
+     * TRAVERSE
+     * --------
      * percorre a arvore e adiciona o codigo de cada letra no map
-     * 
-     * @param node: no atual
-     * 
-     * @param s: codigo da letra
      */
     public void traverse(Node root, String s) {
-        if (root.left == null && root.right == null) {// && Character.isLetter(root.data)){
+        if (root.left == null && root.right == null) { // && Character.isLetter(root.data)){
             charMap.put(root.data, s);
             codeMap.put(s, root.data);
             return;
@@ -105,10 +103,10 @@ public class Huffman {
         return ans;
     }
 
-    /*
+    /* ----------
+     * DECOMPRESS
+     * ----------
      * descomprime a string de bits
-     * 
-     * @param s: string a ser decodificada e descomprimida
      */
     public static void decompress(RandomAccessFile source, RandomAccessFile dest) throws IOException {
         source.seek(0);
@@ -144,8 +142,10 @@ public class Huffman {
         }
     }
 
-    /*
-     * comprime o arquivo @source para o arquivo @dest
+    /* --------
+     * COMPRESS
+     * --------
+     * comprime o arquivo source para o arquivo dest
      */
     public static void compress(RandomAccessFile source, RandomAccessFile dest) throws IOException {
         // 2508
