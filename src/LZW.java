@@ -208,12 +208,13 @@ class LZW {
             raf.writeInt(Integer.parseInt(args[0]));
 
             for(int i = 1; i < args.length; i++) {
-
+                //write cabecalho
                 raf.writeBoolean(Boolean.parseBoolean(args[i]));
                 raf.writeInt(Integer.parseInt(args[++i]));
                 raf.writeInt(Integer.parseInt(args[++i]));
-                
-                for(int x = 0; x < 3; x++) raf.writeUTF(args[++i]);
+                // read name, type1, type2
+                for(int x = 0; x < 3; x++) {raf.writeUTF(args[++i]);}
+                //write abilities
                 int emails_count = Integer.parseInt(args[++i]);
                 
                 raf.writeInt(emails_count);
@@ -221,9 +222,9 @@ class LZW {
                 for(int j = 0; j < emails_count; j++) raf.writeUTF(args[++i]);
                 
 
-                raf.writeFloat(Float.parseFloat(args[++i]));
-                raf.writeInt(Integer.parseInt(args[++i]));
+                //write hp,att,def
                 for(int x = 0; x < 3; x++) raf.writeInt(Integer.parseInt(args[++i]));
+               //write date
                 raf.writeLong(Long.parseLong(args[++i]));
                 
 

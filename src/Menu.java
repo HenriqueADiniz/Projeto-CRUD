@@ -12,6 +12,7 @@ public class Menu {
     private static final String BT_PATH = "tmp/Bplus.db";
     private static final String H_PATH = "tmp/Hash.db";
     private static final String HB_PATH = "tmp/HashB.db";
+    private static final String teste_path = "tmp/teste.db";
 
     /* ----
      * MAIN
@@ -29,6 +30,7 @@ public class Menu {
         Reader.main(args);
         CRUD crud = new CRUD(DB_PATH);
         RandomAccessFile ras=new RandomAccessFile(DB_PATH, "rw");
+        RandomAccessFile ran=new RandomAccessFile("tmp/teste.db", "rw");
         crud.create(null, index, index2);
 
         delay(1250);
@@ -206,7 +208,7 @@ public class Menu {
                 System.out.println("> Digite o nome do arquivo compactado: ");
                 String fileName2 = scan.next();
 
-                LZW.decompress(fileName2, DB_PATH);
+                LZW.decompress(fileName2, teste_path);
 
                 System.out.println(
                         "\n>>> Arquivo descompactado com sucesso em \"" + DB_PATH + "\"!");
