@@ -13,6 +13,21 @@ public class Menu {
     private static final String H_PATH = "tmp/Hash.db";
     private static final String HB_PATH = "tmp/HashB.db";
     private static final String teste_path = "tmp/teste.db";
+    public static HashMap<Character, Integer> makeFrequency(String filename) {
+        var frequency = new HashMap<Character, Integer>();
+        try {
+            RandomAccessFile raf = new RandomAccessFile(DB_PATH, "rw");
+            while (raf.getFilePointer() < raf.length()) {
+                char c = (char) raf.readByte();
+                frequency.merge(c, 1, Integer::sum);
+            }
+            raf.seek(0);
+            raf.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return frequency;
+    }
 
     /* ----
      * MAIN
@@ -201,6 +216,27 @@ public class Menu {
             
 
                 case "9":
+                var frequency = makeFrequency(DB_PATH);
+                    var tree = new Huffman(frequency);
+                    tree.traverse(Huffman.root, "");
+                    try {
+                        RandomAccessFile source = new RandomAccessFile(DEFAULT_FILE, "rw");
+                        RandomAccessFile dest = new RandomAccessFile("h_compressed.bin", "rw");
+                        RandomAccessFile desc = new RandomAccessFile("h_descompressed.bin", "rw");
+                        Huffman.compress(source, dest);
+                        Huffman.decompress(dest, desc);
+            
+                        source.seek(0);
+                        dest.seek(0);
+                        source.close();
+                        dest.close();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                    System.out.println("Arquivos h_compressed.bin, h_descompressed.bin criados");
+                    System.out.println("Feito!");
+                    break;
+                }
                     // COMPRESSÃO HUFFMAN
                     break;
 
