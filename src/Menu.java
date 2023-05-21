@@ -189,15 +189,29 @@ public class Menu {
 
                 case "8":
                     // COMPRESSÃO LZW
+                    System.out.println("> Digite o nome do arquivo de saída: ");
+                    String fileName = scan.next();
+
+                    LZW.compress(DB_PATH, fileName);
+
+                    System.out.println("\n>>> Arquivo compactado com sucesso em \"" + fileName + "\"!");
                     break;
+            
 
                 case "9":
                     // COMPRESSÃO HUFFMAN
                     break;
 
                 case "10":
-                    // DESCOMPRESSÃO LZW
-                    break;
+                System.out.println("> Digite o nome do arquivo compactado: ");
+                String fileName2 = scan.next();
+
+                LZW.decompress(fileName2, DB_PATH);
+
+                System.out.println(
+                        "\n>>> Arquivo descompactado com sucesso em \"" + DB_PATH + "\"!");
+                break;
+                  
 
                 case "11":
                     // DESCOMPRESSÃO HUFFMAN
