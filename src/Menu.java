@@ -1,7 +1,10 @@
 // HENRIQUE DE ALMEIDA DINIZ
 // SAMUEL LUIZ DA CUNHA VIANA CRUZ
 
+import java.io.EOFException;
+import java.io.IOException;
 import java.io.RandomAccessFile;
+import java.text.ParseException;
 import java.util.Date;
 import java.util.Scanner;
 import java.util.HashMap;
@@ -13,11 +16,12 @@ public class Menu {
     private static final String H_PATH = "tmp/Hash.db";
     private static final String HB_PATH = "tmp/HashB.db";
     private static final String teste_path = "tmp/LZW.db";
-    public static HashMap<Character, Integer> makeFrequency(String filename) {
+
+  /*   public static HashMap<Character, Integer> makeFrequency(String filename) {
         var frequency = new HashMap<Character, Integer>();
         try {
-            RandomAccessFile raf = new RandomAccessFile(DB_PATH, "rw");
-            while (raf.getFilePointer() < raf.length()) {
+           RandomAccessFile raf = new RandomAccessFile(DB_PATH, "rw");
+        while (raf.getFilePointer() < raf.length()) {
                 char c = (char) raf.readByte();
                 frequency.merge(c, 1, Integer::sum);
             }
@@ -28,7 +32,7 @@ public class Menu {
         }
         return frequency;
     }
-
+ */
     /* ----
      * MAIN
      * ----
@@ -36,6 +40,29 @@ public class Menu {
      * aciona o arquivo reader e seus metodos
      * entra em loop com as opcoes do CRUD
      */
+    public static String fileToString(RandomAccessFile arq) throws IOException, ParseException {
+        String resp = "";
+        boolean valido = true;
+        int len = 0;
+        byte ba[];
+        long posIni = 0;
+
+        while (true) {
+            try {
+                arq.seek(posIni);
+                valido = arq.readBoolean();// ler lapide -- se TRUE pokemon existe , caso FALSE pokemon apagado
+                len = arq.readInt(); // ler tamanho do registro
+                ba = new byte[len]; // cria um vetor de bytes com o tamanho do registro
+                arq.read(ba); // Ler registro
+                Pokemon pokemonTemp = new Pokemon();
+                pokemonTemp.fromByteArray(ba);
+                resp += pokemonTemp.toString();
+                posIni = arq.getFilePointer();
+            } catch (EOFException e) {
+                return resp;
+            }
+        }
+    }
     public static void main(String[] args) throws Exception {
         System.out.print("\033[H\033[2J");
         
@@ -215,9 +242,9 @@ public class Menu {
                     break;
 
                 case "9":
-                    var frequency = makeFrequency(DB_PATH);
-                    var tree = new Huffman(frequency);
-                    tree.traverse(Huffman.root, "");
+                    //var frequency = makeFrequency(DB_PATH);
+                   // var tree = new Huffman(frequency);
+                   // tree.traverse(Huffman.root, "");
                     try {
                         RandomAccessFile source = new RandomAccessFile(DB_PATH, "rw");
                         RandomAccessFile dest = new RandomAccessFile("tmp/huff_comp.bin", "rw");
