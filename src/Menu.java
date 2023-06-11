@@ -95,6 +95,8 @@ public class Menu {
             System.out.print("|                           |\n");
             System.out.print("| 8)  LZW                   |\n");
             System.out.print("| 9)  Huffman               |\n");
+            System.out.print("| 10)  KMP                  |\n");
+            System.out.print("| 11)  Força Bruta          |\n");
             System.out.print("|                           |\n");
             System.out.print("| 0) Sair                   |\n");
             System.out.print("*---------------------------*\n");
@@ -234,8 +236,8 @@ public class Menu {
                     String fileName = "tmp/";
                     fileName += scan.next();
 
-                    LZW.compress(DB_PATH, fileName);
-                    LZW.decompress(fileName, teste_path);
+                   // LZW.compress(DB_PATH, fileName);
+                   // LZW.decompress(fileName, teste_path);
 
                     System.out.println("\n>>> Arquivo compactado com sucesso!");
                     System.out.println("\n>>> Arquivo descompactado com sucesso!");
@@ -262,6 +264,24 @@ public class Menu {
                     System.out.println("\n>>> Arquivo compactado com sucesso!");
                     System.out.println("\n>>> Arquivo descompactado com sucesso!");
                     break;
+                case "10":
+                 long start = System.currentTimeMillis();
+                            int resp = 0;
+                            System.out.println("----------------KMP-----------------------");
+                             RandomAccessFile source = new RandomAccessFile(DB_PATH, "rw");
+                            String arqString = fileToString(source);
+                            System.out.println("Digite o padrao: ");
+                            Scanner sc2 = new Scanner(System.in);
+                            String padrao = sc2.nextLine();
+                            resp = BuscadorPadrao.executaKMP(arqString, padrao);
+                            while (resp != -1) {
+                                arqString = arqString.substring(resp + 1);
+                                resp = BuscadorPadrao.executaKMP(arqString, padrao);
+                            }
+                            long end = System.currentTimeMillis() - start;
+                            System.out.println("Tempo decorrido(ms): " + end);
+                            break;
+                
                     
                 case "0":
                     System.exit(1);
