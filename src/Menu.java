@@ -284,6 +284,25 @@ public class Menu {
                             System.out.println("Tempo decorrido(ms): " + end);
                              waitForEnter();
                             break;
+                case "11":
+                 start = System.currentTimeMillis();
+                            resp = 0;
+                            System.out.println("----------------FORÇA BRUTA-----------------------");
+                             RandomAccessFile source2 = new RandomAccessFile(DB_PATH, "rw");
+                            arqString = fileToString(source2);
+                            System.out.println("Digite o padrao: ");
+                            sc2 = new Scanner(System.in);
+                            padrao = sc2.nextLine();
+                            resp = BuscadorPadrao.forcaBruta(padrao, arqString);
+                            while (resp != -1) {
+                                arqString = arqString.substring(resp + 1);
+                         
+                                resp = BuscadorPadrao.forcaBruta(padrao, arqString);
+                            }
+                            end = System.currentTimeMillis() - start;
+                            System.out.println("Tempo decorrido(ms): " + end);
+                                 waitForEnter();
+                            break;
                 
                     
                 case "0":
