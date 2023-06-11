@@ -241,6 +241,7 @@ public class Menu {
 
                     System.out.println("\n>>> Arquivo compactado com sucesso!");
                     System.out.println("\n>>> Arquivo descompactado com sucesso!");
+                     waitForEnter();
                     break;
 
                 case "9":
@@ -263,6 +264,7 @@ public class Menu {
                     }
                     System.out.println("\n>>> Arquivo compactado com sucesso!");
                     System.out.println("\n>>> Arquivo descompactado com sucesso!");
+                     waitForEnter();
                     break;
                 case "10":
                  long start = System.currentTimeMillis();
@@ -280,6 +282,7 @@ public class Menu {
                             }
                             long end = System.currentTimeMillis() - start;
                             System.out.println("Tempo decorrido(ms): " + end);
+                             waitForEnter();
                             break;
                 
                     
