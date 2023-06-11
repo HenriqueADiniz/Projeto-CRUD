@@ -46,8 +46,14 @@ public class Pokemon {
     }
     @Override
     public String toString(){
-        return "Numero: " + this.number + "\nNome: " + this.name + "\nTipo 1: " + this.type1 + "\nTipo 2: " + this.type2 + "\nHabilidades: " + Tratamentos.printaMultivalorados(abilities) + "\nHP: " + this.hp + "\nAtaque: " + this.att + "\nDefesa: " + this.def + "\nData: " + Tratamentos.printaDatas(this.date);
+        String resp="";
+        resp = this.number+","+this.name+","+this.type1+","+this.type2+","+this.hp+","+this.att+","+this.def+","+this.date+",";
+        for (int i = 0; i < abilities.length; i++) {
+            resp+=abilities[i]+",";
+        }
+        return resp;
     }
+    
     
     //=====GETTERS & SETTERS=====//
         // number

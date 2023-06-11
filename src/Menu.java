@@ -49,7 +49,7 @@ public class Menu {
 
         while (true) {
             try {
-                arq.seek(posIni);
+                arq.seek(posIni+4);
                 valido = arq.readBoolean();// ler lapide -- se TRUE pokemon existe , caso FALSE pokemon apagado
                 len = arq.readInt(); // ler tamanho do registro
                 ba = new byte[len]; // cria um vetor de bytes com o tamanho do registro
