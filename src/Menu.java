@@ -17,7 +17,7 @@ public class Menu {
     private static final String HB_PATH = "tmp/HashB.db";
     private static final String teste_path = "tmp/LZW.db";
 
-  /*   public static HashMap<Character, Integer> makeFrequency(String filename) {
+    public static HashMap<Character, Integer> makeFrequency(String filename) {
         var frequency = new HashMap<Character, Integer>();
         try {
            RandomAccessFile raf = new RandomAccessFile(DB_PATH, "rw");
@@ -32,7 +32,7 @@ public class Menu {
         }
         return frequency;
     }
- */
+
     /* ----
      * MAIN
      * ----
@@ -95,8 +95,9 @@ public class Menu {
             System.out.print("|                           |\n");
             System.out.print("| 8)  LZW                   |\n");
             System.out.print("| 9)  Huffman               |\n");
-            System.out.print("| 10)  KMP                  |\n");
-            System.out.print("| 11)  Força Bruta          |\n");
+            System.out.print("|                           |\n");
+            System.out.print("| 10) KMP                   |\n");
+            System.out.print("| 11) Força Bruta           |\n");
             System.out.print("|                           |\n");
             System.out.print("| 0) Sair                   |\n");
             System.out.print("*---------------------------*\n");
