@@ -37,7 +37,6 @@ public class BuscadorPadrao {
             if (j == m) {
                 operacoes = operacoes + 2;
                 System.out.println("Numero de operacoes: " + operacoes);
-                System.out.println("Padrao encontrado na posicao: " + (i - m + 1));
                 return i - m + 1;
             }
         }
@@ -61,7 +60,6 @@ public class BuscadorPadrao {
             }
             if (j == M) {
                 operacoes++;
-                System.out.println("Padrao encontrado na posicao: "+i);
                 System.out.println("Numero de operacoes:"+operacoes);
                 return i;
             }
