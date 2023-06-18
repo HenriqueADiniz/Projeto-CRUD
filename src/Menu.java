@@ -17,6 +17,13 @@ public class Menu {
     private static final String HB_PATH = "tmp/HashB.db";
     private static final String teste_path = "tmp/LZW.db";
 
+       public static void criarArquivoCriptografadoCesar(String resp, String nomeArq) throws IOException {
+        RandomAccessFile arq = new RandomAccessFile(nomeArq, "rw");
+        byte ba[];
+        ba = resp.getBytes();
+        arq.write(ba);
+        arq.close();
+    }
   /*   public static HashMap<Character, Integer> makeFrequency(String filename) {
         var frequency = new HashMap<Character, Integer>();
         try {
@@ -45,11 +52,11 @@ public class Menu {
         boolean valido = true;
         int len = 0;
         byte ba[];
-        long posIni = 0;
+        long posIni = 4;
 
         while (true) {
             try {
-                arq.seek(posIni+4);
+                arq.seek(posIni);
                 valido = arq.readBoolean();// ler lapide -- se TRUE pokemon existe , caso FALSE pokemon apagado
                 len = arq.readInt(); // ler tamanho do registro
                 ba = new byte[len]; // cria um vetor de bytes com o tamanho do registro
@@ -81,25 +88,28 @@ public class Menu {
             int hp, att, def, id,N,M;
             String name, type1, type2, abilitiesTemp, dateTemp;
             System.out.print("\033[H\033[2J");
-            System.out.print("*---------------------------*\n");
-            System.out.print("#     OPCOES DE REGISTRO    #\n");
-            System.out.print("*---------------------------*\n");
-            System.out.print("| 1)  Criar                 |\n");
-            System.out.print("| 2)  Ler                   |\n");
-            System.out.print("| 3)  Atualizar             |\n");
-            System.out.print("| 4)  Deletar               |\n");
-            System.out.print("|                           |\n");
-            System.out.print("| 5)  Ordenacao Externa     |\n");
-            System.out.print("| 6)  Buscar na Arvore      |\n");
-            System.out.print("| 7)  Buscar no Hash        |\n");
-            System.out.print("|                           |\n");
-            System.out.print("| 8)  LZW                   |\n");
-            System.out.print("| 9)  Huffman               |\n");
-            System.out.print("| 10)  KMP                  |\n");
-            System.out.print("| 11)  Força Bruta          |\n");
-            System.out.print("|                           |\n");
-            System.out.print("| 0) Sair                   |\n");
-            System.out.print("*---------------------------*\n");
+            System.out.print("*---------------------------   *\n");
+            System.out.print("#     OPCOES DE REGISTRO       #\n");
+            System.out.print("*---------------------------   *\n");
+            System.out.print("| 1)  Criar                    |\n");
+            System.out.print("| 2)  Ler                      |\n");
+            System.out.print("| 3)  Atualizar                |\n");
+            System.out.print("| 4)  Deletar                  |\n");
+            System.out.print("|                              |\n");
+            System.out.print("| 5)  Ordenacao Externa        |\n");
+            System.out.print("| 6)  Buscar na Arvore         |\n");
+            System.out.print("| 7)  Buscar no Hash           |\n");
+            System.out.print("|                              |\n");
+            System.out.print("| 8)  LZW                      |\n");
+            System.out.print("| 9)  Huffman                  |\n");
+            System.out.print("| 10)  KMP                     |\n");
+            System.out.print("| 11)  Força Bruta             |\n");
+            System.out.print("|12)criptografar Cifra de Cesar|\n");
+            System.out.print("|13)descriptografar Cifra de Cesar|\n");
+            System.out.print("|14)descriptografar Cifra de Cesar|\n");
+            System.out.print("|                              |\n");
+            System.out.print("| 0) Sair                      |\n");
+            System.out.print("*---------------------------   *\n");
             System.out.print("Digite uma opcao: ");
             String opt = scan.next();
 
@@ -303,8 +313,28 @@ public class Menu {
                             System.out.println("Tempo decorrido(ms): " + end);
                                  waitForEnter();
                             break;
-                
-                    
+                case "12":
+                String respC = "";
+                 RandomAccessFile source3 = new RandomAccessFile(DB_PATH, "rw");
+                respC = Criptografia.criptografaCesar(fileToString(source3));
+                criarArquivoCriptografadoCesar(respC, "tmp/dadosCriptografadoCesar.db");
+                 waitForEnter();
+                    break;
+
+                case "13":
+                  RandomAccessFile source4 = new RandomAccessFile(DB_PATH, "rw");
+                  RandomAccessFile arq2 = new RandomAccessFile("tmp/dadosCriptografadoCesar.db", "rw");
+                            respC = arq2.readUTF();
+                            respC = Criptografia.descriptografaCesar(Criptografia.criptografaCesar(fileToString(source4)));
+                            criarArquivoCriptografadoCesar(respC, "tmp/dadosDescriptografadoCesar.db");
+                              waitForEnter();
+                            break;
+                case"14":
+                 RandomAccessFile source5 = new RandomAccessFile(DB_PATH, "rw");
+                DES.mostraAlgoritimo(fileToString(source5));
+                 waitForEnter();
+                     break;
+
                 case "0":
                     System.exit(1);
                 
