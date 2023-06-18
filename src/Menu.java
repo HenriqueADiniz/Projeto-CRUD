@@ -88,9 +88,9 @@ public class Menu {
             int hp, att, def, id,N,M;
             String name, type1, type2, abilitiesTemp, dateTemp;
             System.out.print("\033[H\033[2J");
-            System.out.print("*---------------------------   *\n");
+            System.out.print("*------------------------------*\n");
             System.out.print("#     OPCOES DE REGISTRO       #\n");
-            System.out.print("*---------------------------   *\n");
+            System.out.print("*------------------------------*\n");
             System.out.print("| 1)  Criar                    |\n");
             System.out.print("| 2)  Ler                      |\n");
             System.out.print("| 3)  Atualizar                |\n");
@@ -102,14 +102,15 @@ public class Menu {
             System.out.print("|                              |\n");
             System.out.print("| 8)  LZW                      |\n");
             System.out.print("| 9)  Huffman                  |\n");
-            System.out.print("| 10)  KMP                     |\n");
-            System.out.print("| 11)  Força Bruta             |\n");
-            System.out.print("|12)Criptografar Cifra de Cesar|\n");
-            System.out.print("|13)Descriptografar Cifra Cesar|\n");
-            System.out.print("|15)Criptografia DES           |\n");
+            System.out.print("| 10) KMP                      |\n");
+            System.out.print("| 11) Força Bruta              |\n");
+            System.out.print("|                              |\n");
+            System.out.print("| 12) Crip. Cifra de Cesar     |\n");
+            System.out.print("| 13) Descrip. Cifra Cesar     |\n");
+            System.out.print("| 14) Criptografia DES         |\n");
             System.out.print("|                              |\n");
             System.out.print("| 0) Sair                      |\n");
-            System.out.print("*---------------------------   *\n");
+            System.out.print("*------------------------------*\n");
             System.out.print("Digite uma opcao: ");
             String opt = scan.next();
 
