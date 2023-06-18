@@ -104,9 +104,9 @@ public class Menu {
             System.out.print("| 9)  Huffman                  |\n");
             System.out.print("| 10)  KMP                     |\n");
             System.out.print("| 11)  Força Bruta             |\n");
-            System.out.print("|12)criptografar Cifra de Cesar|\n");
-            System.out.print("|13)descriptografar Cifra de Cesar|\n");
-            System.out.print("|14)descriptografar Cifra de Cesar|\n");
+            System.out.print("|12)Criptografar Cifra de Cesar|\n");
+            System.out.print("|13)Descriptografar Cifra Cesar|\n");
+            System.out.print("|15)Criptografia DES           |\n");
             System.out.print("|                              |\n");
             System.out.print("| 0) Sair                      |\n");
             System.out.print("*---------------------------   *\n");
