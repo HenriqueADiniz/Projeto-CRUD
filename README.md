@@ -1,6 +1,6 @@
 # Projeto de Manipulação de Dados em Java
 
-Este projeto em Java tem como objetivo ler uma base de dados de um arquivo CSV e transformá-la em uma base de dados utilizando o Java. Em seguida, realiza operações CRUD (Create, Read, Update, Delete) sobre essa base de dados, abordando diferentes estruturas de dados para organização e manipulação eficiente dos registros.
+Este projeto em Java tem como objetivo ler uma base de dados de um arquivo CSV e transformá-la em uma base de dados utilizando o Java. Em seguida, realiza operações CRUD (Create, Read, Update, Delete) sobre essa base de dados, abordando diferentes estruturas de dados para organização e manipulação eficiente dos registros.Foi desenvolvido como parte da disciplina de Algoritmos e Estruturas de Dados 3, ministrada pelo professor Hayala Curto, na Universidade PUC Minas, unidade Coração Eucarístico.
 
 ## Estruturas de Dados Utilizadas
 
